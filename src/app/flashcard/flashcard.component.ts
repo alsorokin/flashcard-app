@@ -16,15 +16,15 @@ export class FlashcardComponent {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get('https://localhost:7073/words').subscribe(data => {
-      this.words = data as any[];
       this.nextWord();
-    });
   }
 
   nextWord(): void {
-    const randomIndex = Math.floor(Math.random() * this.words.length);
-    this.currentWord = this.words[randomIndex];
+    this.http.get('https://localhost:7073/words?limit=5').subscribe(data => {
+      this.words = data as any[];
+      const randomIndex = Math.floor(Math.random() * this.words.length);
+      this.currentWord = this.words[randomIndex];
+    });
   }
 
   checkAnswer(selectedTranslation: string): void {
