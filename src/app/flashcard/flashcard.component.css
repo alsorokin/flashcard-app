@@ -23,12 +23,14 @@ p.current-word {
     max-height: 100%;
     border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    overflow: auto; /* Ensure content doesn't overflow the container */
+    overflow: auto;
 }
 
 .translations-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin: 10px;
 }
@@ -40,6 +42,7 @@ p.current-word {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .word-button:hover {
