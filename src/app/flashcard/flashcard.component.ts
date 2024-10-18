@@ -13,6 +13,7 @@ import Words from '../words';
 export class FlashcardComponent {
   words: Word[] = [];
   currentWord: Word;
+  nextWordTimeout: ReturnType<typeof setTimeout> | null = null;
 
   constructor(private http: HttpClient) {
     this.currentWord = { value: 'բարև', translation: 'привет' };
@@ -40,13 +41,19 @@ export class FlashcardComponent {
     this.currentWord = this.words[randomIndex];
   }
 
-  checkAnswer(selectedTranslation: string): void {
+  checkAnswer(evt:MouseEvent, selectedTranslation: string): void {
+    const button = evt.target as HTMLButtonElement;
     if (selectedTranslation === this.currentWord.translation) {
-      alert('Correct!');
+      button.classList.add('correct');
+      if (this.nextWordTimeout == null) {
+        this.nextWordTimeout = setTimeout(() => {
+          this.nextWord();
+          this.nextWordTimeout = null;
+        }, 2000);
+      }
     } else {
-      alert(`Incorrect! The correct translation is: ${this.currentWord.translation}`);
+      button.classList.add('incorrect');
     }
-    this.nextWord();
   }
 }
 

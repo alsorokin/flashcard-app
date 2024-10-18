@@ -1,6 +1,10 @@
-<div *ngIf="currentWord">
-    <p>{{ currentWord.value }}</p>
-    <button *ngFor="let word of words" (click)="checkAnswer(word.translation)">
-        {{ word.translation }}
-    </button>
+<div class="parent-container">
+    <div *ngIf="currentWord" class="flashcard-container">
+        <p>{{ currentWord.value }}</p>
+        <div class="translations-container">
+            <button class="word-button" *ngFor="let word of words" (click)="checkAnswer($event, word.translation)">
+                {{ word.translation }}
+            </button>
+        </div>
+    </div>
 </div>
