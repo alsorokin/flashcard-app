@@ -24,4 +24,4 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
-        folder: dist/flashcard-app
+        folder: dist/flashcard-app/browser
