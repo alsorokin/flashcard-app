@@ -101,7 +101,7 @@ export default
         "translation": "удачи"
     },
     {
-        "value": "յաջող",
+        "value": "հաջող",
         "translation": "пока"
     },
     {
