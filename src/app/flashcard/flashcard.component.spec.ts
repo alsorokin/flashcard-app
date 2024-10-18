@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { FlashcardComponent } from './flashcard.component';
 
@@ -8,7 +9,7 @@ describe('FlashcardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FlashcardComponent]
+      imports: [FlashcardComponent, HttpClientTestingModule],
     })
     .compileComponents();
 
