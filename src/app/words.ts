@@ -113,10 +113,6 @@ export default
         "translation": "до встречи"
     },
     {
-        "value": "առայժմ",
-        "translation": "до встречи"
-    },
-    {
         "value": "կարոտ",
         "translation": "тоска"
     },
@@ -265,7 +261,7 @@ export default
         "translation": "масло"
     },
     {
-        "value": "ճու",
+        "value": "ձու",
         "translation": "яйцо"
     },
     {
@@ -735,5 +731,94 @@ export default
     {
         "value": "հյուր գնալ",
         "translation": "пойти в гости"
-    }
-];
+    },
+	{
+		"value": "ատամ",
+		"translation": "зуб"
+	},
+	{
+		"value": "քայլել",
+		"translation": "ходить, гулять"
+	},
+	{
+		"value": "Խնդրում եմ",
+		"translation": "пожалуйста (просьба)"
+	},
+	{
+		"value": "խնդրեմ",
+		"translation": "пожалуйста (на спасибо)"
+	},
+	{
+		"value": "դեռ ոչ",
+		"translation": "ещё нет"
+	},
+	{
+		"value": "դե",
+		"translation": "ну"
+	},
+	{
+		"value": "հատ",
+		"translation": "штука"
+	},
+	{
+		"value": "մի հատ",
+		"translation": "одна штука, за одного (в автобусе)"
+	},
+	{
+		"value": "ինչքան",
+		"translation": "сколько"
+	},
+	{
+		"value": "կապի մեջ",
+		"translation": "на связи"
+	},
+	{
+		"value": "ամպամած",
+		"translation": "пасмурно"
+	},
+	{
+		"value": "մոխրագույն",
+		"translation": "серый"
+	},
+	{
+		"value": "մոխիր",
+		"translation": "пепел"
+	},
+	{
+		"value": "պլանավորել",
+		"translation": "планировать"
+	},
+	{
+		"value": "կարկանդակ",
+		"translation": "пирог"
+	},
+	{
+		"value": "ցուրտ",
+		"translation": "холодный"
+	},
+	{
+		"value": "խաղ",
+		"translation": "игра"
+	},
+	{
+		"value": "լսել",
+		"translation": "слышать, слушать"
+	},
+	{
+		"value": "նվագել",
+		"translation": "играть (на муз. инструменте)"
+	},
+	{
+		"value": "շուն",
+		"translation": "собака"
+	},
+	{
+		"value": "ոնց միշտ",
+		"translation": "как всегда"
+	},
+	{
+		"value": "ինձ",
+		"translation": "мне"
+	}
+]
+;

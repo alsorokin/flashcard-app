@@ -49,7 +49,7 @@ export class FlashcardComponent {
         this.nextWordTimeout = setTimeout(() => {
           this.nextWord();
           this.nextWordTimeout = null;
-        }, 2000);
+        }, 1000);
       }
     } else {
       button.classList.add('incorrect');
