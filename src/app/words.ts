@@ -481,7 +481,7 @@ export default
         "translation": "или"
     },
     {
-        "value": "հանգստանել",
+        "value": "հանգստանալ",
         "translation": "отдыхать"
     },
     {
