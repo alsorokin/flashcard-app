@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "testCi": "ng test --watch=false --browsers=ChromeHeadless",
-    "deploy": "ng build --prod --base-href=/flashcard-app/"
+    "deploy": "ng build --configuration production --base-href=/flashcard-app/"
   },
   "private": true,
   "dependencies": {
