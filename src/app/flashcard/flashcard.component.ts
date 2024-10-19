@@ -57,6 +57,9 @@ export class FlashcardComponent {
     });
     */
     // for now, just get the words from a local file (../words.ts)
+    if (count >= Words.length) {
+      return Words.map(w => this.cloneWord(w));
+    }
     const result: Word[] = [];
     let i = 0;
     while (i < count) {
