@@ -11,32 +11,64 @@ import Words from '../words';
   styleUrl: './flashcard.component.css'
 })
 export class FlashcardComponent {
-  currentOptions: Word[] = [];
-  currentWord: Word;
-  nextWordTimeout: ReturnType<typeof setTimeout> | null = null;
+  frontOptions: Word[] = [];
+  frontWord: Word;
+  backOptions: Word[] = [];
+  backWord: Word;
+  goNextTimeout: ReturnType<typeof setTimeout> | null = null;
+  isFlipped:boolean = false;
+
+  getCurrentWord(): Word {
+    return this.isFlipped ? this.backWord : this.frontWord;
+  }
+
+  getCurrentOptions(): Word[] {
+    return this.isFlipped ? this.frontOptions : this.backOptions;
+  }
 
   constructor(private http: HttpClient) {
-    this.currentWord = { value: 'բարև', translation: 'привет' };
+    this.frontWord = { value: 'բարև', translation: 'привет' };
+    this.backWord = { value: 'բարև', translation: 'привет' };
   }
 
   ngOnInit(): void {
-      this.nextWord();
+    this.refreshFront();
+    this.refreshBack();
   }
 
-  nextWord(): void {
-    this.currentOptions = this.getRandomWords(5);
-    const randomIndex = Math.floor(Math.random() * this.currentOptions.length);
-    this.currentWord = this.currentOptions[randomIndex];
+  goNext(): void {
+    if (this.isFlipped) {
+      setTimeout(() => {
+        this.refreshFront();
+      }, 500);
+    } else {
+      setTimeout(() => {
+        this.refreshBack();
+      }, 500);
+    }
+  }
+
+  refreshFront(): void {
+    this.frontOptions = this.getRandomWords(5);
+    const randomIndex = Math.floor(Math.random() * this.frontOptions.length);
+    this.frontWord = this.frontOptions[randomIndex];
+  }
+
+  refreshBack(): void {
+    this.backOptions = this.getRandomWords(5);
+    const randomIndex = Math.floor(Math.random() * this.backOptions.length);
+    this.backWord = this.backOptions[randomIndex];
   }
 
   checkAnswer(evt:MouseEvent, selectedTranslation: string): void {
     const button = evt.target as HTMLButtonElement;
-    if (selectedTranslation === this.currentWord.translation) {
+    if (selectedTranslation === this.getCurrentWord().translation) {
       button.classList.add('correct');
-      if (this.nextWordTimeout == null) {
-        this.nextWordTimeout = setTimeout(() => {
-          this.nextWord();
-          this.nextWordTimeout = null;
+      if (this.goNextTimeout == null) {
+        this.goNextTimeout = setTimeout(() => {
+          this.isFlipped = !this.isFlipped;
+          this.goNext();
+          this.goNextTimeout = null;
         }, 1000);
       }
     } else {
@@ -65,7 +97,7 @@ export class FlashcardComponent {
     while (i < count) {
       const randomOverallIndex = Math.floor(Math.random() * Words.length);
       if (result.find(w => w.value === Words[randomOverallIndex].value) ||
-          Words[randomOverallIndex].value === this.currentWord.value) {
+          Words[randomOverallIndex].value === this.frontWord.value) {
         continue;
       }
       result.push(this.cloneWord(Words[randomOverallIndex]));

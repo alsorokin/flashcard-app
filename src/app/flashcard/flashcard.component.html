@@ -1,10 +1,20 @@
-<div class="parent-container">
-    <div *ngIf="currentWord" class="flashcard-container">
-        <p class="current-word">{{ currentWord.value }}</p>
-        <div class="translations-container">
-            <button class="word-button" *ngFor="let word of currentOptions" (click)="checkAnswer($event, word.translation)">
-                {{ word.translation }}
-            </button>
+<div class="parent-container" [ngClass]="{'flipped': isFlipped}">
+    <div *ngIf="frontWord" class="flashcard-container">
+        <div class="flashcard-front">
+            <p class="current-word">{{ frontWord.value }}</p>
+            <div class="translations-container">
+                <button class="word-button" *ngFor="let word of frontOptions" (click)="checkAnswer($event, word.translation)">
+                    {{ word.translation }}
+                </button>
+            </div>
+        </div>
+        <div class="flashcard-back">
+            <p class="current-word">{{ backWord.value }}</p>
+            <div class="translations-container">
+                <button class="word-button" *ngFor="let word of backOptions" (click)="checkAnswer($event, word.translation)">
+                    {{ word.translation }}
+                </button>
+            </div>
         </div>
     </div>
 </div>

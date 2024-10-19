@@ -1,18 +1,32 @@
+/* container for the whole component */
 .parent-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 96vh;
+    perspective: 1000px; /* This gives the 3D effect */
+}
+
+/* container for the flashcard */
+.flashcard-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 95vw;
     height: 95vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
-p.current-word {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px;
+.parent-container.flipped .flashcard-container {
+    transform: rotateY(180deg);
 }
 
-.flashcard-container {
+/* the flashcard */
+.flashcard-front, .flashcard-back {
+    background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +38,12 @@ p.current-word {
     border-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     overflow: auto;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
 }
 
 .translations-container {
@@ -35,8 +55,14 @@ p.current-word {
     margin: 10px;
 }
 
+p.current-word {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+}
+
 .word-button {
-    background-color: #f0f0f0;
+    background-color: #dddddd;
     border-color: #999999;
     border-radius: 3px;
     padding: 10px;
@@ -46,13 +72,13 @@ p.current-word {
 }
 
 .word-button:hover {
-    background-color: #e0e26b;
+    background-color: #8db4fd;
 }
 
 .word-button.correct {
-    background-color: #00ff00;
+    background-color: #5eff5e;
 }
 
 .word-button.incorrect {
-    background-color: #ff0000;
+    background-color: #ff4d4d;
 }
