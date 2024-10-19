@@ -35,7 +35,7 @@ export class FlashcardComponent {
     this.words = [];
     for (let i = 0; i < 5; i++) {
       const randomOverallIndex = Math.floor(Math.random() * Words.length);
-      this.words.push(Words[randomOverallIndex]);
+      this.words.push(this.cloneWord(Words[randomOverallIndex]));
     }
     const randomIndex = Math.floor(Math.random() * this.words.length);
     this.currentWord = this.words[randomIndex];
@@ -54,6 +54,10 @@ export class FlashcardComponent {
     } else {
       button.classList.add('incorrect');
     }
+  }
+
+  cloneWord(word: Word): Word {
+    return { value: word.value, translation: word.translation };
   }
 }
 
