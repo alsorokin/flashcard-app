@@ -422,7 +422,7 @@ export default
     },
     {
         "value": "ձմեռ",
-        "translation": "осень"
+        "translation": "зима"
     },
     {
         "value": "ձեռք",
@@ -489,7 +489,7 @@ export default
         "translation": "смотреть"
     },
     {
-        "value": "կարդել",
+        "value": "կարդալ",
         "translation": "читать"
     },
     {
