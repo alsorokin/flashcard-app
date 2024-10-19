@@ -1,828 +1,828 @@
 export default
     [
         {
-            "value": "\u056E\u0561\u0576\u0578\u0569\u0561\u0576\u0561\u056C ",
-            "translation": "\u043F\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u044C\u0441\u044F"
+            "value": "ծանոթանալ",
+            "translation": "познакомиться"
         },
         {
-            "value": "\u0577\u0561\u057F \u0578\u0582\u0580\u0561\u056D \u0565\u0574",
-            "translation": "\u043E\u0447\u0435\u043D\u044C \u0440\u0430\u0434"
+            "value": "շատ ուրախ եմ",
+            "translation": "очень рад"
         },
         {
-            "value": "\u0577\u0561\u057F \u0570\u0561\u0573\u0565\u056C\u056B \u0567",
-            "translation": "\u043E\u0447\u0435\u043D\u044C \u043F\u0440\u0438\u044F\u0442\u043D\u043E"
+            "value": "շատ հաճելի է",
+            "translation": "очень приятно"
         },
         {
-            "value": "\u056B\u0576\u0571 \u0567\u056C",
-            "translation": "\u043C\u043D\u0435 \u0442\u043E\u0436\u0435"
+            "value": "ինձ էլ",
+            "translation": "мне тоже"
         },
         {
-            "value": "\u0565\u057D \u0567\u056C",
-            "translation": "\u044F \u0442\u043E\u0436\u0435"
+            "value": "ես էլ",
+            "translation": "я тоже"
         },
         {
-            "value": "\u056B\u0574",
-            "translation": "\u043C\u043E\u0439"
+            "value": "իմ",
+            "translation": "мой"
         },
         {
-            "value": "\u0574\u056B",
-            "translation": "\u043E\u0434\u0438\u043D"
+            "value": "մի",
+            "translation": "один"
         },
         {
-            "value": "\u0574\u056B\u057D",
-            "translation": "\u043C\u044F\u0441\u043E"
+            "value": "միս",
+            "translation": "мясо"
         },
         {
-            "value": "\u0544\u0561\u057D\u056B\u057D",
-            "translation": "\u0410\u0440\u0430\u0440\u0430\u0442"
+            "value": "Մասիս",
+            "translation": "Арарат"
         },
         {
-            "value": "\u0564\u0578\u0582",
-            "translation": "\u0442\u044B"
+            "value": "դու",
+            "translation": "ты"
         },
         {
-            "value": "\u0564\u0561\u057D",
-            "translation": "\u0443\u0440\u043E\u043A"
+            "value": "դաս",
+            "translation": "урок"
         },
         {
-            "value": "\u0576\u0561",
-            "translation": "\u043E\u043D/\u043E\u043D\u0430"
+            "value": "նա",
+            "translation": "он/она"
         },
         {
-            "value": "\u0531\u0576\u056B",
-            "translation": "\u0410\u043D\u0438"
+            "value": "Անի",
+            "translation": "Ани"
         },
         {
-            "value": "\u056F\u0561",
-            "translation": "\u0435\u0441\u0442\u044C, \u0438\u043C\u0435\u0435\u0442\u0441\u044F"
+            "value": "կա",
+            "translation": "есть, имеется"
         },
         {
-            "value": "\u0576\u0561\u0574\u0561\u056F",
-            "translation": "\u043F\u0438\u0441\u044C\u043C\u043E"
+            "value": "նամակ",
+            "translation": "письмо"
         },
         {
-            "value": "\u0564\u0561\u0576\u0561\u056F",
-            "translation": "\u043D\u043E\u0436"
+            "value": "դանակ",
+            "translation": "нож"
         },
         {
-            "value": "\u0574\u0561\u0574\u0561",
-            "translation": "\u043C\u0430\u043C\u0430"
+            "value": "մամա",
+            "translation": "мама"
         },
         {
-            "value": "\u0574\u0578\u0582\u056F",
-            "translation": "\u043C\u044B\u0448\u044C"
+            "value": "մուկ",
+            "translation": "мышь"
         },
         {
-            "value": "\u056F\u0561\u0574",
-            "translation": "\u0438\u043B\u0438"
+            "value": "կամ",
+            "translation": "или"
         },
         {
-            "value": "\u0574\u056B\u0561\u056F",
-            "translation": "\u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439"
+            "value": "միակ",
+            "translation": "единственный"
         },
         {
-            "value": "\u0564\u056B\u0561\u056F",
-            "translation": "\u0442\u0440\u0443\u043F"
+            "value": "դիակ",
+            "translation": "труп"
         },
         {
-            "value": "\u0564\u056B\u0574\u0561\u056F",
-            "translation": "\u043C\u0430\u0441\u043A\u0430"
+            "value": "դիմակ",
+            "translation": "маска"
         },
         {
-            "value": "\u053F\u056B\u0574\u0561",
-            "translation": "\u041A\u0438\u043C\u0430 (\u0436. \u0438\u043C\u044F)"
+            "value": "Կիմա",
+            "translation": "Кима (ж. имя)"
         },
         {
-            "value": "\u0546\u056B\u056F\u0561",
-            "translation": "\u041D\u0438\u043A\u0430 (\u0436. \u0438\u043C\u044F)"
+            "value": "Նիկա",
+            "translation": "Ника (ж. имя)"
         },
         {
-            "value": "\u0570\u0561\u057B\u0578\u0572\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
-            "translation": "\u0443\u0434\u0430\u0447\u0438"
+            "value": "հաջողություն",
+            "translation": "удачи"
         },
         {
-            "value": "\u0575\u0561\u057B\u0578\u0572",
-            "translation": "\u043F\u043E\u043A\u0430"
+            "value": "յաջող",
+            "translation": "пока"
         },
         {
-            "value": "\u0581\u057F\u0565\u057D\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
-            "translation": "\u0434\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F"
+            "value": "ցտեսություն",
+            "translation": "до свидания"
         },
         {
-            "value": "\u0574\u056B\u0576\u0579 \u0570\u0561\u0576\u0564\u056B\u057A\u0578\u0582\u0574",
-            "translation": "\u0434\u043E \u0432\u0441\u0442\u0440\u0435\u0447\u0438"
+            "value": "մինչ հանդիպում",
+            "translation": "до встречи"
         },
         {
-            "value": "\u056F\u0561\u0580\u0578\u057F",
-            "translation": "\u0442\u043E\u0441\u043A\u0430"
+            "value": "կարոտ",
+            "translation": "тоска"
         },
         {
-            "value": "\u0584\u0561\u0580\u0578\u057F",
-            "translation": "\u043A\u0430\u043C\u0435\u043D\u0438\u0441\u0442\u044B\u0439"
+            "value": "քարոտ",
+            "translation": "каменистый"
         },
         {
-            "value": "\u057F\u0561\u056F",
-            "translation": "\u043F\u043E\u0434"
+            "value": "տակ",
+            "translation": "под"
         },
         {
-            "value": "\u057F\u0561\u0584",
-            "translation": "\u0442\u0451\u043F\u043B\u044B\u0439"
+            "value": "տաք",
+            "translation": "тёплый"
         },
         {
-            "value": "\u0584\u0576\u0565\u056C",
-            "translation": "\u0441\u043F\u0430\u0442\u044C"
+            "value": "քնել",
+            "translation": "спать"
         },
         {
-            "value": "\u0563\u0576\u0565\u056C",
-            "translation": "\u0438\u0434\u0442\u0438"
+            "value": "գնել",
+            "translation": "идти"
         },
         {
-            "value": "\u0584\u0578\u0582\u0575\u0580",
-            "translation": "\u0441\u0435\u0441\u0442\u0440\u0430"
+            "value": "քույր",
+            "translation": "сестра"
         },
         {
-            "value": "\u056F\u0578\u0582\u0575\u0580",
-            "translation": "\u0441\u043B\u0435\u043F\u043E\u0439"
+            "value": "կույր",
+            "translation": "слепой"
         },
         {
-            "value": "\u0581\u0578\u0580\u0565\u0576",
-            "translation": "\u043F\u0448\u0435\u043D\u0438\u0446\u0430"
+            "value": "ցորեն",
+            "translation": "пшеница"
         },
         {
-            "value": "\u0585\u0580\u0578\u0580\u0578\u0581",
-            "translation": "\u043A\u043E\u043B\u044B\u0431\u0435\u043B\u044C"
+            "value": "օրորոց",
+            "translation": "колыбель"
         },
         {
-            "value": "\u0585\u0580",
-            "translation": "\u0434\u0435\u043D\u044C"
+            "value": "օր",
+            "translation": "день"
         },
         {
-            "value": "\u0585\u0564",
-            "translation": "\u0432\u043E\u0437\u0434\u0443\u0445"
+            "value": "օդ",
+            "translation": "воздух"
         },
         {
-            "value": "\u0585\u0563\u0578\u0582\u057F",
-            "translation": "\u043F\u043E\u043B\u044C\u0437\u0430"
+            "value": "օգուտ",
+            "translation": "польза"
         },
         {
-            "value": "\u0585\u0580\u0561\u0563\u056B\u0580",
-            "translation": "\u0434\u043D\u0435\u0432\u043D\u0438\u043A"
+            "value": "օրագիր",
+            "translation": "дневник"
         },
         {
-            "value": "\u0561\u0575\u057D\u0585\u0580",
-            "translation": "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
+            "value": "այսօր",
+            "translation": "сегодня"
         },
         {
-            "value": "\u056F\u0565\u057D\u0585\u0580",
-            "translation": "\u043F\u043E\u043B\u0434\u0435\u043D\u044C"
+            "value": "կեսօր",
+            "translation": "полдень"
         },
         {
-            "value": "\u0578\u057E",
-            "translation": "\u043A\u0442\u043E"
+            "value": "ով",
+            "translation": "кто"
         },
         {
-            "value": "\u0578\u057E\u0584\u0565\u0580",
-            "translation": "\u043A\u0442\u043E (\u043C\u043D. \u0447\u0438\u0441\u043B\u043E)"
+            "value": "ովքեր",
+            "translation": "кто (мн. число)"
         },
         {
-            "value": "\u0578\u0580\u0564\u056B",
-            "translation": "\u0441\u044B\u043D"
+            "value": "որդի",
+            "translation": "сын"
         },
         {
-            "value": "\u0576\u0578\u0580",
-            "translation": "\u043D\u043E\u0432\u044B\u0439"
+            "value": "նոր",
+            "translation": "новый"
         },
         {
-            "value": "\u0578\u0566\u0576\u056B",
-            "translation": "\u0451\u0436"
+            "value": "ոզնի",
+            "translation": "ёж"
         },
         {
-            "value": "\u0574\u0578\u057F",
-            "translation": "\u0431\u043B\u0438\u0437\u043A\u043E, \u0431\u043B\u0438\u0437\u043A\u0438\u0439, \u0443, \u043A"
+            "value": "մոտ",
+            "translation": "близко, близкий, у, к"
         },
         {
-            "value": "\u0570\u0578\u057F",
-            "translation": "\u0437\u0430\u043F\u0430\u0445"
+            "value": "հոտ",
+            "translation": "запах"
         },
         {
-            "value": "\u0574\u0565\u057F\u0580\u0578",
-            "translation": "\u043C\u0435\u0442\u0440\u043E"
+            "value": "մետրո",
+            "translation": "метро"
         },
         {
-            "value": "\u0570\u0565\u057F\u0578",
-            "translation": "\u043F\u043E\u0441\u043B\u0435"
+            "value": "հետո",
+            "translation": "после"
         },
         {
-            "value": "\u0578\u057D\u056F\u056B",
-            "translation": "\u0437\u043E\u043B\u043E\u0442\u043E"
+            "value": "ոսկի",
+            "translation": "золото"
         },
         {
-            "value": "\u0578\u0580",
-            "translation": "\u043A\u043E\u0442\u043E\u0440\u044B\u0439"
+            "value": "որ",
+            "translation": "который"
         },
         {
-            "value": "\u0578\u0580\u0584\u0561\u0576",
-            "translation": "\u0441\u043A\u043E\u043B\u044C\u043A\u043E"
+            "value": "որքան",
+            "translation": "сколько"
         },
         {
-            "value": "\u0548\u057D\u056F\u0561\u0576",
-            "translation": "\u0412\u043E\u0441\u043A\u0430\u043D (\u0438\u043C\u044F)"
+            "value": "Ոսկան",
+            "translation": "Воскан (имя)"
         },
         {
-            "value": "\u0578\u057D\u056F\u0565\u0563\u0578\u0582\u0575\u0576",
-            "translation": "\u0446\u0432\u0435\u0442 \u0437\u043E\u043B\u043E\u0442\u0430"
+            "value": "ոսկեգույն",
+            "translation": "цвет золота"
         },
         {
-            "value": "\u0578\u0580\u0578\u057E\u0570\u0565\u057F\u0565\u057E",
-            "translation": "\u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E"
+            "value": "որովհետեվ",
+            "translation": "потому что"
         },
         {
-            "value": "\u0577\u0578\u0582\u057F",
-            "translation": "\u0440\u0430\u043D\u043E"
+            "value": "շուտ",
+            "translation": "рано"
         },
         {
-            "value": "\u0578\u0582\u0577",
-            "translation": "\u043F\u043E\u0437\u0434\u043D\u043E"
+            "value": "ուշ",
+            "translation": "поздно"
         },
         {
-            "value": "\u057A\u0561\u0576\u056B\u0580",
-            "translation": "\u0441\u044B\u0440"
+            "value": "պանիր",
+            "translation": "сыр"
         },
         {
-            "value": "\u056D\u0576\u0571\u0578\u0580",
-            "translation": "\u044F\u0431\u043B\u043E\u043A\u043E"
+            "value": "խնձոր",
+            "translation": "яблоко"
         },
         {
-            "value": "\u0565\u056C\u0561\u056F",
-            "translation": "\u043A\u043B\u0443\u0431\u043D\u0438\u043A\u0430"
+            "value": "ելակ",
+            "translation": "клубника"
         },
         {
-            "value": "\u056F\u0561\u0580\u0561\u0563",
-            "translation": "\u043C\u0430\u0441\u043B\u043E"
+            "value": "կարագ",
+            "translation": "масло"
         },
         {
-            "value": "\u0571\u0578\u0582",
-            "translation": "\u044F\u0439\u0446\u043E"
+            "value": "ձու",
+            "translation": "яйцо"
         },
         {
-            "value": "\u056F\u0561\u0569",
-            "translation": "\u043C\u043E\u043B\u043E\u043A\u043E"
+            "value": "կաթ",
+            "translation": "молоко"
         },
         {
-            "value": "\u0574\u056B\u057D",
-            "translation": "\u043C\u044F\u0441\u043E"
+            "value": "միս",
+            "translation": "мясо"
         },
         {
-            "value": "\u057A\u0561\u057F\u0580\u0561\u057D\u057F\u0565\u056C",
-            "translation": "\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C"
+            "value": "պատրաստել",
+            "translation": "готовить"
         },
         {
-            "value": "\u0576\u0561\u056D\u0561\u0573\u0561\u0577\u0565\u056C",
-            "translation": "\u0437\u0430\u0432\u0442\u0440\u0430\u043A\u0430\u0442\u044C"
+            "value": "նախաճաշել",
+            "translation": "завтракать"
         },
         {
-            "value": "\u0564\u057A\u0580\u0578\u0581",
-            "translation": "\u0448\u043A\u043E\u043B\u0430"
+            "value": "դպրոց",
+            "translation": "школа"
         },
         {
-            "value": "\u057D\u0578\u057E\u0578\u0580\u0565\u056C",
-            "translation": "\u0443\u0447\u0438\u0442\u044C/\u0443\u0447\u0438\u0442\u044C\u0441\u044F"
+            "value": "սովորել",
+            "translation": "учить/учиться"
         },
         {
-            "value": "\u0573\u0561\u0577\u0565\u056C",
-            "translation": "\u043E\u0431\u0435\u0434\u0430\u0442\u044C"
+            "value": "ճաշել",
+            "translation": "обедать"
         },
         {
-            "value": "\u057D\u0580\u0573\u0561\u0580\u0561\u0576",
-            "translation": "\u043A\u0430\u0444\u0435"
+            "value": "սրճարան",
+            "translation": "кафе"
         },
         {
-            "value": "\u0563\u056B\u0577\u0565\u0580",
-            "translation": "\u043D\u043E\u0447\u044C"
+            "value": "գիշեր",
+            "translation": "ночь"
         },
         {
-            "value": "\u0563\u056B\u0576\u056B",
-            "translation": "\u0432\u0438\u043D\u043E"
+            "value": "գինի",
+            "translation": "вино"
         },
         {
-            "value": "\u0578\u0580\u057F\u0565\u0572",
-            "translation": "\u0433\u0434\u0435"
+            "value": "որտեղ",
+            "translation": "где"
         },
         {
-            "value": "\u0578\u0580\u057F\u0565\u0572\u056B\u0581",
-            "translation": "\u043E\u0442\u043A\u0443\u0434\u0430"
+            "value": "որտեղից",
+            "translation": "откуда"
         },
         {
-            "value": "\u0578\u0582\u0580",
-            "translation": "\u043A\u0443\u0434\u0430"
+            "value": "ուր",
+            "translation": "куда"
         },
         {
-            "value": "\u0574\u0578\u0582\u0580\u0561\u0562\u0561",
-            "translation": "\u0432\u0430\u0440\u0435\u043D\u044C\u0435"
+            "value": "մուրաբա",
+            "translation": "варенье"
         },
         {
-            "value": "\u057D\u0578\u0582\u0580\u0573",
-            "translation": "\u043A\u043E\u0444\u0435"
+            "value": "սուրճ",
+            "translation": "кофе"
         },
         {
-            "value": "\u0569\u0565\u0575",
-            "translation": "\u0447\u0430\u0439"
+            "value": "թեյ",
+            "translation": "чай"
         },
         {
-            "value": "\u0564\u0565",
-            "translation": "\u043D\u0443"
+            "value": "դե",
+            "translation": "ну"
         },
         {
-            "value": "\u0564\u0565\u0574",
-            "translation": "\u043F\u0440\u043E\u0442\u0438\u0432"
+            "value": "դեմ",
+            "translation": "против"
         },
         {
-            "value": "\u056F\u0565\u057D",
-            "translation": "\u043F\u043E\u043B\u043E\u0432\u0438\u043D\u0430"
+            "value": "կես",
+            "translation": "половина"
         },
         {
-            "value": "\u0574\u0565\u056F",
-            "translation": "\u043E\u0434\u0438\u043D"
+            "value": "մեկ",
+            "translation": "один"
         },
         {
-            "value": "\u0578\u0582\u057F\u0565\u056C",
-            "translation": "\u0435\u0441\u0442\u044C, \u043A\u0443\u0448\u0430\u0442\u044C"
+            "value": "ուտել",
+            "translation": "есть, кушать"
         },
         {
-            "value": "\u0564\u0576\u0565\u056C",
-            "translation": "\u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C"
+            "value": "դնել",
+            "translation": "положить"
         },
         {
-            "value": "\u0576\u057F\u0561\u0576\u0565\u056C",
-            "translation": "\u043E\u0442\u043D\u0435\u0441\u0442\u0438"
+            "value": "նտանել",
+            "translation": "отнести"
         },
         {
-            "value": "\u057F\u0578\u0582\u0576",
-            "translation": "\u0434\u043E\u043C"
+            "value": "տուն",
+            "translation": "дом"
         },
         {
-            "value": "\u056F\u056B\u0576",
-            "translation": "\u0436\u0435\u043D\u0430, \u0436\u0435\u043D\u0449\u0438\u043D\u0430"
+            "value": "կին",
+            "translation": "жена, женщина"
         },
         {
-            "value": "\u0561\u0574\u0578\u0582\u057D\u056B\u0576",
-            "translation": "\u043C\u0443\u0436"
+            "value": "ամուսին",
+            "translation": "муж"
         },
         {
-            "value": "\u0561\u0576\u056F\u0561\u056D",
-            "translation": "\u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u044B\u0439, \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E"
+            "value": "անկախ",
+            "translation": "независимый, независимо"
         },
         {
-            "value": "\u0561\u0576\u056F\u0561\u056D\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
-            "translation": "\u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u044C"
+            "value": "անկախություն",
+            "translation": "независимость"
         },
         {
-            "value": "\u0584\u057D\u0561\u0576\u0574\u0565\u056F",
-            "translation": "\u0434\u0432\u0430\u0434\u0446\u0430\u0442\u044C \u043E\u0434\u0438\u043D"
+            "value": "քսանմեկ",
+            "translation": "двадцать один"
         },
         {
-            "value": "\u0584\u057D\u0561\u0576",
-            "translation": "\u0434\u0432\u0430\u0434\u0446\u0430\u0442\u044C"
+            "value": "քսան",
+            "translation": "двадцать"
         },
         {
-            "value": "\u057D\u0565\u057A\u057F\u0565\u0574\u0562\u0565\u0580",
-            "translation": "\u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044C"
+            "value": "սեպտեմբեր",
+            "translation": "сентябрь"
         },
         {
-            "value": "\u0562\u0561\u056A\u0561\u056F",
-            "translation": "\u0447\u0430\u0448\u043A\u0430"
+            "value": "բաժակ",
+            "translation": "чашка"
         },
         {
-            "value": "\u056F\u0561\u0569\u0576\u0561\u0577\u0578\u057C",
-            "translation": "\u0442\u0432\u043E\u0440\u043E\u0433"
+            "value": "կաթնաշոռ",
+            "translation": "творог"
         },
         {
-            "value": "\u0565\u057D\u056B\u0574",
-            "translation": "\u043D\u0435 \u0437\u043D\u0430\u044E"
+            "value": "եսիմ",
+            "translation": "не знаю"
         },
         {
-            "value": "\u0577\u0561\u0562\u0561\u0569\u0568",
-            "translation": "\u0441\u0443\u0431\u0431\u043E\u0442\u0430 / \u043D\u0435\u0434\u0435\u043B\u044F"
+            "value": "շաբաթը",
+            "translation": "суббота / неделя"
         },
         {
-            "value": "\u057C\u0561\u0566\u0574\u056B\u056F",
-            "translation": "\u0432\u043E\u0438\u043D"
+            "value": "ռազմիկ",
+            "translation": "воин"
         },
         {
-            "value": "\u056C\u0565\u057C",
-            "translation": "\u0433\u043E\u0440\u0430"
+            "value": "լեռ",
+            "translation": "гора"
         },
         {
-            "value": "\u0571\u0578\u0582\u056F",
-            "translation": "\u0440\u044B\u0431\u0430"
+            "value": "ձուկ",
+            "translation": "рыба"
         },
         {
-            "value": "\u0571\u0574\u0565\u0580\u0578\u0582\u056F",
-            "translation": "\u0430\u0440\u0431\u0443\u0437"
+            "value": "ձմերուկ",
+            "translation": "арбуз"
         },
         {
-            "value": "\u0571\u0574\u0565\u057C",
-            "translation": "\u0437\u0438\u043C\u0430"
+            "value": "ձմեռ",
+            "translation": "зима"
         },
         {
-            "value": "\u0561\u0577\u0578\u0582\u0576",
-            "translation": "\u043E\u0441\u0435\u043D\u044C"
+            "value": "աշուն",
+            "translation": "осень"
         },
         {
-            "value": "\u0571\u0565\u057C\u0584",
-            "translation": "\u0440\u0443\u043A\u0430"
+            "value": "ձեռք",
+            "translation": "рука"
         },
         {
-            "value": "\u0565\u0580\u0565\u056D\u0561",
-            "translation": "\u0440\u0435\u0431\u0451\u043D\u043E\u043A"
+            "value": "երեխա",
+            "translation": "ребёнок"
         },
         {
-            "value": "\u0566\u0562\u0561\u0572\u057E\u0561\u056E",
-            "translation": "\u0437\u0430\u043D\u044F\u0442"
+            "value": "զբաղված",
+            "translation": "занят"
         },
         {
-            "value": "\u0561\u0566\u0561\u057F",
-            "translation": "\u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439"
+            "value": "ազատ",
+            "translation": "свободный"
         },
         {
-            "value": "\u0573\u0561\u0577\u0565\u056C",
-            "translation": "\u043E\u0431\u0435\u0434\u0430\u0442\u044C"
+            "value": "ճաշել",
+            "translation": "обедать"
         },
         {
-            "value": "\u0570\u0561\u0576\u0564\u056B\u057A\u0565\u056C",
-            "translation": "\u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C, \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C\u0441\u044F"
+            "value": "հանդիպել",
+            "translation": "встретить, встретиться"
         },
         {
-            "value": "\u0563\u0580\u0561\u0564\u0561\u0580\u0561\u0576",
-            "translation": "\u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430"
+            "value": "գրադարան",
+            "translation": "библиотека"
         },
         {
-            "value": "\u0585\u057F\u0561\u0580",
-            "translation": "\u0438\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0439"
+            "value": "օտար",
+            "translation": "иностранный"
         },
         {
-            "value": "\u0576\u0561\u0587",
-            "translation": "\u0442\u0430\u043A\u0436\u0435"
+            "value": "նաև",
+            "translation": "также"
         },
         {
-            "value": "\u0573\u0561\u057A\u0578\u0576\u0565\u0580\u0565\u0576",
-            "translation": "\u044F\u043F\u043E\u043D\u0441\u043A\u0438\u0439"
+            "value": "ճապոներեն",
+            "translation": "японский"
         },
         {
-            "value": "\u057B\u056B\u0574",
-            "translation": "\u0441\u043F\u043E\u0440\u0442\u0437\u0430\u043B"
+            "value": "ջիմ",
+            "translation": "спортзал"
         },
         {
-            "value": "\u057D\u0578\u057E\u0578\u0580\u0561\u0562\u0561\u0580",
-            "translation": "\u043E\u0431\u044B\u0447\u043D\u043E"
+            "value": "սովորաբար",
+            "translation": "обычно"
         },
         {
-            "value": "\u0570\u0565\u057F",
-            "translation": "\u0441"
+            "value": "հետ",
+            "translation": "с"
         },
         {
-            "value": "\u056F\u0561\u0574",
-            "translation": "\u0438\u043B\u0438"
+            "value": "կամ",
+            "translation": "или"
         },
         {
-            "value": "\u0570\u0561\u0576\u0563\u057D\u057F\u0561\u0576\u0561\u056C ",
-            "translation": "\u043E\u0442\u0434\u044B\u0445\u0430\u0442\u044C"
+            "value": "հանգստանալ",
+            "translation": "отдыхать"
         },
         {
-            "value": "\u0576\u0561\u0575\u0565\u056C",
-            "translation": "\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C"
+            "value": "նայել",
+            "translation": "смотреть"
         },
         {
-            "value": "\u056F\u0561\u0580\u0564\u0561\u056C",
-            "translation": "\u0447\u0438\u0442\u0430\u0442\u044C"
+            "value": "կարդալ",
+            "translation": "читать"
         },
         {
-            "value": "\u0566\u0561\u0580\u0569\u0576\u0565\u056C",
-            "translation": "\u043F\u0440\u043E\u0441\u043D\u0443\u0442\u044C\u0441\u044F"
+            "value": "զարթնել",
+            "translation": "проснуться"
         },
         {
-            "value": "\u0561\u0580\u0587",
-            "translation": "\u0441\u043E\u043B\u043D\u0446\u0435"
+            "value": "արև",
+            "translation": "солнце"
         },
         {
-            "value": "\u0573\u0578\u0582\u057F",
-            "translation": "\u0446\u044B\u043F\u043B\u0451\u043D\u043E\u043A"
+            "value": "ճուտ",
+            "translation": "цыплёнок"
         },
         {
-            "value": "\u0573\u0561\u0570\u056B\u0573",
-            "translation": "\u0431\u043E\u043B\u043E\u0442\u043E"
+            "value": "ճահիճ",
+            "translation": "болото"
         },
         {
-            "value": "\u0573\u0561\u0576\u0573",
-            "translation": "\u043C\u0443\u0445\u0430"
+            "value": "ճանճ",
+            "translation": "муха"
         },
         {
-            "value": "\u0573\u056F\u0578\u0582\u0576",
-            "translation": "\u0433\u0438\u0431\u043A\u0438\u0439"
+            "value": "ճկուն",
+            "translation": "гибкий"
         },
         {
-            "value": "\u0573\u0561\u0577",
-            "translation": "\u043E\u0431\u0435\u0434"
+            "value": "ճաշ",
+            "translation": "обед"
         },
         {
-            "value": "\u0573\u0565\u0580\u0574\u0561\u056F",
-            "translation": "\u0431\u0435\u043B\u044B\u0439"
+            "value": "ճերմակ",
+            "translation": "белый"
         },
         {
-            "value": "\u0573\u056C\u057E\u056C\u0561\u056C",
-            "translation": "\u0447\u0438\u0440\u0438\u043A\u0430\u0442\u044C"
+            "value": "ճլվլալ",
+            "translation": "чирикать"
         },
         {
-            "value": "\u0573\u0576\u0573\u0572\u0578\u0582\u056F",
-            "translation": "\u0432\u043E\u0440\u043E\u0431\u0435\u0439"
+            "value": "ճնճղուկ",
+            "translation": "воробей"
         },
         {
-            "value": "\u0573\u056B\u0577\u057F",
-            "translation": "\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439"
+            "value": "ճիշտ",
+            "translation": "правильный"
         },
         {
-            "value": "\u0579\u056B\u0580",
-            "translation": "\u0441\u0443\u0445\u043E\u0444\u0440\u0443\u043A\u0442\u044B"
+            "value": "չիր",
+            "translation": "сухофрукты"
         },
         {
-            "value": "\u0579\u0576\u0579\u056B\u0576",
-            "translation": "\u043D\u0435\u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
+            "value": "չնչին",
+            "translation": "незначительный"
         },
         {
-            "value": "\u0579\u0578\u0580\u057D",
-            "translation": "\u0447\u0435\u0442\u044B\u0440\u0435"
+            "value": "չորս",
+            "translation": "четыре"
         },
         {
-            "value": "\u0570\u056B\u0577\u0561\u0579\u0561\u0580",
-            "translation": "\u0437\u043B\u043E\u043F\u0430\u043C\u044F\u0442\u043D\u044B\u0439"
+            "value": "հիշաչար",
+            "translation": "злопамятный"
         },
         {
-            "value": "\u0579\u0561\u0579\u0561\u0576\u0561\u056F",
-            "translation": "\u0431\u043E\u043B\u0442\u0443\u043D"
+            "value": "չաչանակ",
+            "translation": "болтун"
         },
         {
-            "value": "\u057B\u0565\u0580\u0574",
-            "translation": "\u0442\u0451\u043F\u043B\u044B\u0439"
+            "value": "ջերմ",
+            "translation": "тёплый"
         },
         {
-            "value": "\u057B\u0578\u0582\u0580",
-            "translation": "\u0432\u043E\u0434\u0430"
+            "value": "ջուր",
+            "translation": "вода"
         },
         {
-            "value": "\u0563\u0561\u0580\u0565\u057B\u0578\u0582\u0580",
-            "translation": "\u043F\u0438\u0432\u043E"
+            "value": "գարեջուր",
+            "translation": "пиво"
         },
         {
-            "value": "\u057B\u0576\u057B\u0565\u056C",
-            "translation": "\u0441\u0442\u0435\u0440\u0435\u0442\u044C, \u0443\u0434\u0430\u043B\u0438\u0442\u044C"
+            "value": "ջնջել",
+            "translation": "стереть, удалить"
         },
         {
-            "value": "\u057B\u056B\u0576\u057B",
-            "translation": "\u0447\u0438\u0441\u0442\u044B\u0439, \u044F\u0441\u043D\u044B\u0439"
+            "value": "ջինջ",
+            "translation": "чистый, ясный"
         },
         {
-            "value": "\u0583\u0575\u0578\u0582\u0576\u056B\u056F",
-            "translation": "\u0444\u0435\u043D\u0438\u043A\u0441"
+            "value": "փյունիկ",
+            "translation": "феникс"
         },
         {
-            "value": "\u0583\u0561\u0575\u057F",
-            "translation": "\u0434\u0440\u043E\u0432\u0430"
+            "value": "փայտ",
+            "translation": "дрова"
         },
         {
-            "value": "\u0583\u0565\u0580\u056B",
-            "translation": "\u0444\u0435\u044F"
+            "value": "փերի",
+            "translation": "фея"
         },
         {
-            "value": "\u0583\u0565\u057F\u0578\u0582\u0580",
-            "translation": "\u043F\u0435\u0440\u043E"
+            "value": "փետուր",
+            "translation": "перо"
         },
         {
-            "value": "\u0565\u0583\u0565\u056C",
-            "translation": "\u0432\u0430\u0440\u0438\u0442\u044C"
+            "value": "եփել",
+            "translation": "варить"
         },
         {
-            "value": "\u0569\u0561\u0583\u0565\u056C",
-            "translation": "\u0432\u044B\u0441\u044B\u043F\u0430\u0442\u044C, \u0432\u044B\u043B\u0438\u0442\u044C"
+            "value": "թափել",
+            "translation": "высыпать, вылить"
         },
         {
-            "value": "\u0583\u0561\u0575\u056C\u0583\u0575\u0578\u0582\u0576",
-            "translation": "\u0431\u043B\u0435\u0441\u0442\u044F\u0449\u0438\u0439"
+            "value": "փայլփյուն",
+            "translation": "блестящий"
         },
         {
-            "value": "\u056D\u0578\u057F",
-            "translation": "\u0442\u0440\u0430\u0432\u0430"
+            "value": "խոտ",
+            "translation": "трава"
         },
         {
-            "value": "\u056D\u056B\u057F",
-            "translation": "\u0433\u0443\u0441\u0442\u043E\u0439"
+            "value": "խիտ",
+            "translation": "густой"
         },
         {
-            "value": "\u057E\u0561\u056D",
-            "translation": "\u0441\u0442\u0440\u0430\u0445"
+            "value": "վախ",
+            "translation": "страх"
         },
         {
-            "value": "\u057E\u0561\u056D\u0565\u0576\u0561\u056C",
-            "translation": "\u0431\u043E\u044F\u0442\u044C\u0441\u044F"
+            "value": "վախենալ",
+            "translation": "бояться"
         },
         {
-            "value": "\u0561\u0572",
-            "translation": "\u0441\u043E\u043B\u044C"
+            "value": "աղ",
+            "translation": "соль"
         },
         {
-            "value": "\u057E\u0561\u0572",
-            "translation": "\u0440\u0430\u043D\u043E"
+            "value": "վաղ",
+            "translation": "рано"
         },
         {
-            "value": "\u057E\u0561\u0572\u0568",
-            "translation": "\u0437\u0430\u0432\u0442\u0440\u0430"
+            "value": "վաղը",
+            "translation": "завтра"
         },
         {
-            "value": "\u0578\u0582\u0572\u0565\u0572",
-            "translation": "\u0443\u043C"
+            "value": "ուղեղ",
+            "translation": "ум"
         },
         {
-            "value": "\u057D\u0565\u0572\u0561\u0576",
-            "translation": "\u0441\u0442\u043E\u043B"
+            "value": "սեղան",
+            "translation": "стол"
         },
         {
-            "value": "\u056D\u0561\u0572\u0561\u056C",
-            "translation": "\u0438\u0433\u0440\u0430\u0442\u044C"
+            "value": "խաղալ",
+            "translation": "играть"
         },
         {
-            "value": "\u056D\u0561\u0572\u0578\u0572",
-            "translation": "\u0432\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
+            "value": "խաղող",
+            "translation": "виноград"
         },
         {
-            "value": "\u057F\u0565\u0572",
-            "translation": "\u043C\u0435\u0441\u0442\u043E"
+            "value": "տեղ",
+            "translation": "место"
         },
         {
-            "value": "\u0561\u0575\u057D\u057F\u0565\u0572",
-            "translation": "\u0442\u0443\u0442"
+            "value": "այստեղ",
+            "translation": "тут"
         },
         {
-            "value": "\u0561\u0574\u0565\u0576 \u057F\u0565\u0572",
-            "translation": "\u0432\u0435\u0437\u0434\u0435"
+            "value": "ամեն տեղ",
+            "translation": "везде"
         },
         {
-            "value": "\u0565\u0572\u0561\u0576\u0561\u056F",
-            "translation": "\u043F\u043E\u0433\u043E\u0434\u0430"
+            "value": "եղանակ",
+            "translation": "погода"
         },
         {
-            "value": "\u0564\u0565\u0572",
-            "translation": "\u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E"
+            "value": "դեղ",
+            "translation": "лекарство"
         },
         {
-            "value": "\u0564\u0565\u0572\u0561\u057F\u0578\u0582\u0576",
-            "translation": "\u0430\u043F\u0442\u0435\u043A\u0430"
+            "value": "դեղատուն",
+            "translation": "аптека"
         },
         {
-            "value": "\u057F\u0572\u0561",
-            "translation": "\u043C\u0430\u043B\u044C\u0447\u0438\u043A, \u043F\u0430\u0440\u0435\u043D\u044C"
+            "value": "տղա",
+            "translation": "мальчик, парень"
         },
         {
-            "value": "\u0561\u057D\u057F\u0572",
-            "translation": "\u0437\u0432\u0435\u0437\u0434\u0430"
+            "value": "աստղ",
+            "translation": "звезда"
         },
         {
-            "value": "\u0563\u056B\u057F\u0565\u0576\u0561\u056C",
-            "translation": "\u0437\u043D\u0430\u0442\u044C"
+            "value": "գիտենալ",
+            "translation": "знать"
         },
         {
-            "value": "\u0578\u0582\u0576\u0565\u0576\u0561\u056C",
-            "translation": "\u0438\u043C\u0435\u0442\u044C"
+            "value": "ունենալ",
+            "translation": "иметь"
         },
         {
-            "value": "\u0562\u0561\u0575\u0581",
-            "translation": "\u043D\u043E"
+            "value": "բայց",
+            "translation": "но"
         },
         {
-            "value": "\u0578\u0580\u0578\u057E\u0570\u0565\u057F\u0587",
-            "translation": "\u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E"
+            "value": "որովհետև",
+            "translation": "потому что"
         },
         {
-            "value": "\u056F\u0561\u0580\u0578\u0572",
-            "translation": "\u043C\u043E\u0447\u044C"
+            "value": "կարող",
+            "translation": "мочь"
         },
         {
-            "value": "\u057F\u0565\u057D\u0576\u0565\u056C",
-            "translation": "\u0432\u0438\u0434\u0435\u0442\u044C"
+            "value": "տեսնել",
+            "translation": "видеть"
         },
         {
-            "value": "\u0563\u0575\u0578\u0582\u0572",
-            "translation": "\u0434\u0435\u0440\u0435\u0432\u043D\u044F"
+            "value": "գյուղ",
+            "translation": "деревня"
         },
         {
-            "value": "\u056C\u0578\u0582\u057D\u0561\u0574\u0578\u0582\u057F",
-            "translation": "\u043E\u043A\u043D\u043E"
+            "value": "լուսամուտ",
+            "translation": "окно"
         },
         {
-            "value": "\u0562\u0561\u0581\u057E\u0565\u056C",
-            "translation": "\u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C\u0441\u044F"
+            "value": "բացվել",
+            "translation": "открываться"
         },
         {
-            "value": "\u057F\u0565\u057D\u0561\u0580\u0561\u0576",
-            "translation": "\u0432\u0438\u0434"
+            "value": "տեսարան",
+            "translation": "вид"
         },
         {
-            "value": "\u057D\u056B\u0580\u0578\u0582\u0576",
-            "translation": "\u043A\u0440\u0430\u0441\u0438\u0432\u044B\u0439"
+            "value": "սիրուն",
+            "translation": "красивый"
         },
         {
-            "value": "\u057D\u0561\u0580\u0565\u0580",
-            "translation": "\u0433\u043E\u0440\u044B"
+            "value": "սարեր",
+            "translation": "горы"
         },
         {
-            "value": "\u0570\u0575\u0578\u0582\u0580 \u0563\u0576\u0561\u056C",
-            "translation": "\u043F\u043E\u0439\u0442\u0438 \u0432 \u0433\u043E\u0441\u0442\u0438"
+            "value": "հյուր գնալ",
+            "translation": "пойти в гости"
         },
         {
-            "value": "\u0561\u057F\u0561\u0574",
-            "translation": "\u0437\u0443\u0431"
+            "value": "ատամ",
+            "translation": "зуб"
         },
         {
-            "value": "\u0584\u0561\u0575\u056C\u0565\u056C",
-            "translation": "\u0445\u043E\u0434\u0438\u0442\u044C, \u0433\u0443\u043B\u044F\u0442\u044C"
+            "value": "քայլել",
+            "translation": "ходить, гулять"
         },
         {
-            "value": "\u053D\u0576\u0564\u0580\u0578\u0582\u0574 \u0565\u0574",
-            "translation": "\u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430 (\u043F\u0440\u043E\u0441\u044C\u0431\u0430)"
+            "value": "Խնդրում եմ",
+            "translation": "пожалуйста (просьба)"
         },
         {
-            "value": "\u056D\u0576\u0564\u0580\u0565\u0574",
-            "translation": "\u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430 (\u043D\u0430 \u0441\u043F\u0430\u0441\u0438\u0431\u043E)"
+            "value": "խնդրեմ",
+            "translation": "пожалуйста (на спасибо)"
         },
         {
-            "value": "\u0564\u0565\u057C \u0578\u0579",
-            "translation": "\u0435\u0449\u0451 \u043D\u0435\u0442"
+            "value": "դեռ ոչ",
+            "translation": "ещё нет"
         },
         {
-            "value": "\u0564\u0565",
-            "translation": "\u043D\u0443"
+            "value": "դե",
+            "translation": "ну"
         },
         {
-            "value": "\u0570\u0561\u057F",
-            "translation": "\u0448\u0442\u0443\u043A\u0430"
+            "value": "հատ",
+            "translation": "штука"
         },
         {
-            "value": "\u0574\u056B \u0570\u0561\u057F",
-            "translation": "\u043E\u0434\u043D\u0430 \u0448\u0442\u0443\u043A\u0430, \u0437\u0430 \u043E\u0434\u043D\u043E\u0433\u043E (\u0432 \u0430\u0432\u0442\u043E\u0431\u0443\u0441\u0435)"
+            "value": "մի հատ",
+            "translation": "одна штука, за одного (в автобусе)"
         },
         {
-            "value": "\u056B\u0576\u0579\u0584\u0561\u0576",
-            "translation": "\u0441\u043A\u043E\u043B\u044C\u043A\u043E"
+            "value": "ինչքան",
+            "translation": "сколько"
         },
         {
-            "value": "\u056F\u0561\u057A\u056B \u0574\u0565\u057B",
-            "translation": "\u043D\u0430 \u0441\u0432\u044F\u0437\u0438"
+            "value": "կապի մեջ",
+            "translation": "на связи"
         },
         {
-            "value": "\u0561\u0574\u057A\u0561\u0574\u0561\u056E",
-            "translation": "\u043F\u0430\u0441\u043C\u0443\u0440\u043D\u043E"
+            "value": "ամպամած",
+            "translation": "пасмурно"
         },
         {
-            "value": "\u0574\u0578\u056D\u0580\u0561\u0563\u0578\u0582\u0575\u0576",
-            "translation": "\u0441\u0435\u0440\u044B\u0439"
+            "value": "մոխրագույն",
+            "translation": "серый"
         },
         {
-            "value": "\u0574\u0578\u056D\u056B\u0580",
-            "translation": "\u043F\u0435\u043F\u0435\u043B"
+            "value": "մոխիր",
+            "translation": "пепел"
         },
         {
-            "value": "\u057A\u056C\u0561\u0576\u0561\u057E\u0578\u0580\u0565\u056C",
-            "translation": "\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+            "value": "պլանավորել",
+            "translation": "планировать"
         },
         {
-            "value": "\u056F\u0561\u0580\u056F\u0561\u0576\u0564\u0561\u056F",
-            "translation": "\u043F\u0438\u0440\u043E\u0433"
+            "value": "կարկանդակ",
+            "translation": "пирог"
         },
         {
-            "value": "\u0581\u0578\u0582\u0580\u057F",
-            "translation": "\u0445\u043E\u043B\u043E\u0434\u043D\u044B\u0439"
+            "value": "ցուրտ",
+            "translation": "холодный"
         },
         {
-            "value": "\u056D\u0561\u0572",
-            "translation": "\u0438\u0433\u0440\u0430"
+            "value": "խաղ",
+            "translation": "игра"
         },
         {
-            "value": "\u056C\u057D\u0565\u056C",
-            "translation": "\u0441\u043B\u044B\u0448\u0430\u0442\u044C, \u0441\u043B\u0443\u0448\u0430\u0442\u044C"
+            "value": "լսել",
+            "translation": "слышать, слушать"
         },
         {
-            "value": "\u0576\u057E\u0561\u0563\u0565\u056C",
-            "translation": "\u0438\u0433\u0440\u0430\u0442\u044C (\u043D\u0430 \u043C\u0443\u0437. \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0435)"
+            "value": "նվագել",
+            "translation": "играть (на муз. инструменте)"
         },
         {
-            "value": "\u0577\u0578\u0582\u0576",
-            "translation": "\u0441\u043E\u0431\u0430\u043A\u0430"
+            "value": "շուն",
+            "translation": "собака"
         },
         {
-            "value": "\u0578\u0576\u0581 \u0574\u056B\u0577\u057F",
-            "translation": "\u043A\u0430\u043A \u0432\u0441\u0435\u0433\u0434\u0430"
+            "value": "ոնց միշտ",
+            "translation": "как всегда"
         },
         {
-            "value": "\u056B\u0576\u0571",
-            "translation": "\u043C\u043D\u0435"
+            "value": "ինձ",
+            "translation": "мне"
         }
     ]
     ;
