@@ -24,19 +24,7 @@ export class FlashcardComponent {
   }
 
   nextWord(): void {
-    /*
-    this.http.get('https://localhost:7073/words?limit=5').subscribe(data => {
-      this.words = data as any[];
-      const randomIndex = Math.floor(Math.random() * this.words.length);
-      this.currentWord = this.words[randomIndex];
-    });
-    */
-    // for now, just get the words from a local file (../words.ts)
-    this.words = [];
-    for (let i = 0; i < 5; i++) {
-      const randomOverallIndex = Math.floor(Math.random() * Words.length);
-      this.words.push(this.cloneWord(Words[randomOverallIndex]));
-    }
+    this.words = this.getRandomWords(5);
     const randomIndex = Math.floor(Math.random() * this.words.length);
     this.currentWord = this.words[randomIndex];
   }
@@ -58,6 +46,28 @@ export class FlashcardComponent {
 
   cloneWord(word: Word): Word {
     return { value: word.value, translation: word.translation };
+  }
+
+  getRandomWords(count: number): Word[] {
+    /*
+    this.http.get('https://localhost:7073/words?limit=5').subscribe(data => {
+      this.words = data as any[];
+      const randomIndex = Math.floor(Math.random() * this.words.length);
+      this.currentWord = this.words[randomIndex];
+    });
+    */
+    // for now, just get the words from a local file (../words.ts)
+    const result: Word[] = [];
+    let i = 0;
+    while (i < count) {
+      const randomOverallIndex = Math.floor(Math.random() * Words.length);
+      if (result.find(w => w.value === Words[randomOverallIndex].value)) {
+        continue;
+      }
+      result.push(this.cloneWord(Words[randomOverallIndex]));
+      i++;
+    }
+    return result;
   }
 }
 
