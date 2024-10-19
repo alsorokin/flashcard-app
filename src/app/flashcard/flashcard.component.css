@@ -26,7 +26,7 @@
 
 /* the flashcard */
 .flashcard-front, .flashcard-back {
-    background-color: #f1f1f1;
+    background-color: #eeeefa;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +62,7 @@ p.current-word {
 }
 
 .word-button {
-    background-color: #dddddd;
+    background-color: #e5e5fc;
     border-color: #999999;
     border-radius: 3px;
     padding: 10px;
