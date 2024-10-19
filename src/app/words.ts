@@ -1,824 +1,828 @@
 export default
-[
-    {
-        "value": "ծանօթանալ",
-        "translation": "познакомиться"
-    },
-    {
-        "value": "շատ ուրախ եմ",
-        "translation": "очень рад"
-    },
-    {
-        "value": "շատ հաճելի է",
-        "translation": "очень приятно"
-    },
-    {
-        "value": "ինձ էլ",
-        "translation": "мне тоже"
-    },
-    {
-        "value": "ես էլ",
-        "translation": "я тоже"
-    },
-    {
-        "value": "իմ",
-        "translation": "мой"
-    },
-    {
-        "value": "մի",
-        "translation": "один"
-    },
-    {
-        "value": "միս",
-        "translation": "мясо"
-    },
-    {
-        "value": "Մասիս",
-        "translation": "Арарат"
-    },
-    {
-        "value": "դու",
-        "translation": "ты"
-    },
-    {
-        "value": "դաս",
-        "translation": "урок"
-    },
-    {
-        "value": "նա",
-        "translation": "он/она"
-    },
-    {
-        "value": "Անի",
-        "translation": "Ани"
-    },
-    {
-        "value": "կա",
-        "translation": "есть, имеется"
-    },
-    {
-        "value": "նամակ",
-        "translation": "письмо"
-    },
-    {
-        "value": "դանակ",
-        "translation": "нож"
-    },
-    {
-        "value": "մամա",
-        "translation": "мама"
-    },
-    {
-        "value": "մուկ",
-        "translation": "мышь"
-    },
-    {
-        "value": "կամ",
-        "translation": "или"
-    },
-    {
-        "value": "միակ",
-        "translation": "единственный"
-    },
-    {
-        "value": "դիակ",
-        "translation": "труп"
-    },
-    {
-        "value": "դիմակ",
-        "translation": "маска"
-    },
-    {
-        "value": "Կիմա",
-        "translation": "Кима (ж. имя)"
-    },
-    {
-        "value": "Նիկա",
-        "translation": "Ника (ж. имя)"
-    },
-    {
-        "value": "հաջողություն",
-        "translation": "удачи"
-    },
-    {
-        "value": "հաջող",
-        "translation": "пока"
-    },
-    {
-        "value": "ցտեսություն",
-        "translation": "до свидания"
-    },
-    {
-        "value": "մինչ հանդիպում",
-        "translation": "до встречи"
-    },
-    {
-        "value": "կարոտ",
-        "translation": "тоска"
-    },
-    {
-        "value": "քարոտ",
-        "translation": "каменистый"
-    },
-    {
-        "value": "տակ",
-        "translation": "под"
-    },
-    {
-        "value": "տաք",
-        "translation": "тёплый"
-    },
-    {
-        "value": "քնել",
-        "translation": "спать"
-    },
-    {
-        "value": "գնել",
-        "translation": "идти"
-    },
-    {
-        "value": "քույր",
-        "translation": "сестра"
-    },
-    {
-        "value": "կույր",
-        "translation": "слепой"
-    },
-    {
-        "value": "ցորեն",
-        "translation": "пшеница"
-    },
-    {
-        "value": "օրորոց",
-        "translation": "колыбель"
-    },
-    {
-        "value": "օր",
-        "translation": "день"
-    },
-    {
-        "value": "օդ",
-        "translation": "воздух"
-    },
-    {
-        "value": "օգուտ",
-        "translation": "польза"
-    },
-    {
-        "value": "օրագիր",
-        "translation": "дневник"
-    },
-    {
-        "value": "այսօր",
-        "translation": "сегодня"
-    },
-    {
-        "value": "կեսօր",
-        "translation": "полдень"
-    },
-    {
-        "value": "ով",
-        "translation": "кто"
-    },
-    {
-        "value": "ովքեր",
-        "translation": "кто (мн. число)"
-    },
-    {
-        "value": "որդի",
-        "translation": "сын"
-    },
-    {
-        "value": "նոր",
-        "translation": "новый"
-    },
-    {
-        "value": "ոզնի",
-        "translation": "ёж"
-    },
-    {
-        "value": "մոտ",
-        "translation": "близко, близкий, у, к"
-    },
-    {
-        "value": "հոտ",
-        "translation": "запах"
-    },
-    {
-        "value": "մետրո",
-        "translation": "метро"
-    },
-    {
-        "value": "հետո",
-        "translation": "после"
-    },
-    {
-        "value": "ոսկի",
-        "translation": "золото"
-    },
-    {
-        "value": "որ",
-        "translation": "который"
-    },
-    {
-        "value": "որքան",
-        "translation": "сколько"
-    },
-    {
-        "value": "Ոսկան",
-        "translation": "Воскан (имя)"
-    },
-    {
-        "value": "ոսկեգույն",
-        "translation": "цвет золота"
-    },
-    {
-        "value": "որովհետե՞վ",
-        "translation": "потому что"
-    },
-    {
-        "value": "շուտ",
-        "translation": "рано"
-    },
-    {
-        "value": "ուշ",
-        "translation": "поздно"
-    },
-    {
-        "value": "պանիր",
-        "translation": "сыр"
-    },
-    {
-        "value": "խնձոր",
-        "translation": "яблоко"
-    },
-    {
-        "value": "ելակ",
-        "translation": "клубника"
-    },
-    {
-        "value": "կարագ",
-        "translation": "масло"
-    },
-    {
-        "value": "ձու",
-        "translation": "яйцо"
-    },
-    {
-        "value": "կաթ",
-        "translation": "молоко"
-    },
-    {
-        "value": "միս",
-        "translation": "мясо"
-    },
-    {
-        "value": "պատրաստել",
-        "translation": "готовить"
-    },
-    {
-        "value": "նախաճաշել",
-        "translation": "завтракать"
-    },
-    {
-        "value": "դպրոց",
-        "translation": "школа"
-    },
-    {
-        "value": "սովորել",
-        "translation": "учить/учиться"
-    },
-    {
-        "value": "ճաշել",
-        "translation": "обедать"
-    },
-    {
-        "value": "սրճարան",
-        "translation": "кафе"
-    },
-    {
-        "value": "գիշեր",
-        "translation": "ночь"
-    },
-    {
-        "value": "գինի",
-        "translation": "вино"
-    },
-    {
-        "value": "որտեղ",
-        "translation": "где"
-    },
-    {
-        "value": "որտեղից",
-        "translation": "откуда"
-    },
-    {
-        "value": "ուր",
-        "translation": "куда"
-    },
-    {
-        "value": "մուրաբա",
-        "translation": "варенье"
-    },
-    {
-        "value": "սուրճ",
-        "translation": "кофе"
-    },
-    {
-        "value": "թեյ",
-        "translation": "чай"
-    },
-    {
-        "value": "դե",
-        "translation": "ну"
-    },
-    {
-        "value": "դեմ",
-        "translation": "против"
-    },
-    {
-        "value": "կես",
-        "translation": "половина"
-    },
-    {
-        "value": "մեկ",
-        "translation": "один"
-    },
-    {
-        "value": "ուտել",
-        "translation": "есть, кушать"
-    },
-    {
-        "value": "դնել",
-        "translation": "положить"
-    },
-    {
-        "value": "նտանել",
-        "translation": "отнести"
-    },
-    {
-        "value": "տուն",
-        "translation": "дом"
-    },
-    {
-        "value": "կին",
-        "translation": "жена, женщина"
-    },
-    {
-        "value": "ամուսին",
-        "translation": "муж"
-    },
-    {
-        "value": "անկախ",
-        "translation": "независимый, независимо"
-    },
-    {
-        "value": "անկախություն",
-        "translation": "независимость"
-    },
-    {
-        "value": "քսանմեկ",
-        "translation": "двадцать один"
-    },
-    {
-        "value": "քսան",
-        "translation": "двадцать"
-    },
-    {
-        "value": "սեպտեմբեր",
-        "translation": "сентябрь"
-    },
-    {
-        "value": "բաժակ",
-        "translation": "чашка"
-    },
-    {
-        "value": "կաթնաշոռ",
-        "translation": "творог"
-    },
-    {
-        "value": "եսիմ",
-        "translation": "не знаю"
-    },
-    {
-        "value": "շաբաթը",
-        "translation": "суббота / неделя"
-    },
-    {
-        "value": "ռազմիկ",
-        "translation": "воин"
-    },
-    {
-        "value": "լեռ",
-        "translation": "гора"
-    },
-    {
-        "value": "ձուկ",
-        "translation": "рыба"
-    },
-    {
-        "value": "ձմերուկ",
-        "translation": "арбуз"
-    },
-    {
-        "value": "ձմեռ",
-        "translation": "зима"
-    },
-    {
-        "value": "ձեռք",
-        "translation": "рука"
-    },
-    {
-        "value": "երեխա",
-        "translation": "ребёнок"
-    },
-    {
-        "value": "զբաղված",
-        "translation": "занят"
-    },
-    {
-        "value": "ազատ",
-        "translation": "свободный"
-    },
-    {
-        "value": "ճաշել",
-        "translation": "обедать"
-    },
-    {
-        "value": "հանդիպել",
-        "translation": "встретить, встретиться"
-    },
-    {
-        "value": "գրադարան",
-        "translation": "библиотека"
-    },
-    {
-        "value": "օտար",
-        "translation": "иностранный"
-    },
-    {
-        "value": "նաև",
-        "translation": "также"
-    },
-    {
-        "value": "ճապոներեն",
-        "translation": "японский"
-    },
-    {
-        "value": "ջիմ",
-        "translation": "спортзал"
-    },
-    {
-        "value": "սովորաբար",
-        "translation": "обычно"
-    },
-    {
-        "value": "հետ",
-        "translation": "с"
-    },
-    {
-        "value": "կամ",
-        "translation": "или"
-    },
-    {
-        "value": "հանգստանալ",
-        "translation": "отдыхать"
-    },
-    {
-        "value": "նայել",
-        "translation": "смотреть"
-    },
-    {
-        "value": "կարդալ",
-        "translation": "читать"
-    },
-    {
-        "value": "զարթնել",
-        "translation": "проснуться"
-    },
-    {
-        "value": "արև",
-        "translation": "солнце"
-    },
-    {
-        "value": "ճուտ",
-        "translation": "цыплёнок"
-    },
-    {
-        "value": "ճահիճ",
-        "translation": "болото"
-    },
-    {
-        "value": "ճանճ",
-        "translation": "муха"
-    },
-    {
-        "value": "ճկուն",
-        "translation": "гибкий"
-    },
-    {
-        "value": "ճաշ",
-        "translation": "обед"
-    },
-    {
-        "value": "ճերմակ",
-        "translation": "белый"
-    },
-    {
-        "value": "ճլվլալ",
-        "translation": "чирикать"
-    },
-    {
-        "value": "ճնճղուկ",
-        "translation": "воробей"
-    },
-    {
-        "value": "ճիշտ",
-        "translation": "правильный"
-    },
-    {
-        "value": "չիր",
-        "translation": "сухофрукты"
-    },
-    {
-        "value": "չնչին",
-        "translation": "незначительный"
-    },
-    {
-        "value": "չորս",
-        "translation": "четыре"
-    },
-    {
-        "value": "հիշաչար",
-        "translation": "злопамятный"
-    },
-    {
-        "value": "չաչանակ",
-        "translation": "болтун"
-    },
-    {
-        "value": "ջերմ",
-        "translation": "тёплый"
-    },
-    {
-        "value": "ջուր",
-        "translation": "вода"
-    },
-    {
-        "value": "գարեջուր",
-        "translation": "пиво"
-    },
-    {
-        "value": "ջնջել",
-        "translation": "стереть, удалить"
-    },
-    {
-        "value": "ջինջ",
-        "translation": "чистый, ясный"
-    },
-    {
-        "value": "փյունիկ",
-        "translation": "феникс"
-    },
-    {
-        "value": "փայտ",
-        "translation": "дрова"
-    },
-    {
-        "value": "փերի",
-        "translation": "фея"
-    },
-    {
-        "value": "փետուր",
-        "translation": "перо"
-    },
-    {
-        "value": "եփել",
-        "translation": "варить"
-    },
-    {
-        "value": "թափել",
-        "translation": "высыпать, вылить"
-    },
-    {
-        "value": "փայլփյում",
-        "translation": "блестящий"
-    },
-    {
-        "value": "խոտ",
-        "translation": "трава"
-    },
-    {
-        "value": "խիտ",
-        "translation": "густой"
-    },
-    {
-        "value": "վախ",
-        "translation": "страх"
-    },
-    {
-        "value": "վախենալ",
-        "translation": "бояться"
-    },
-    {
-        "value": "աղ",
-        "translation": "соль"
-    },
-    {
-        "value": "վաղ",
-        "translation": "рано"
-    },
-    {
-        "value": "վաղը",
-        "translation": "завтра"
-    },
-    {
-        "value": "ուղեղ",
-        "translation": "ум"
-    },
-    {
-        "value": "սեղան",
-        "translation": "стол"
-    },
-    {
-        "value": "խաղալ",
-        "translation": "играть"
-    },
-    {
-        "value": "խաղող",
-        "translation": "виноград"
-    },
-    {
-        "value": "տեղ",
-        "translation": "место"
-    },
-    {
-        "value": "այստեղ",
-        "translation": "тут"
-    },
-    {
-        "value": "ամեն տեղ",
-        "translation": "везде"
-    },
-    {
-        "value": "եղանակ",
-        "translation": "погода"
-    },
-    {
-        "value": "դեղ",
-        "translation": "лекарство"
-    },
-    {
-        "value": "դեղատուն",
-        "translation": "аптека"
-    },
-    {
-        "value": "տղա",
-        "translation": "мальчик, парень"
-    },
-    {
-        "value": "աստղ",
-        "translation": "звезда"
-    },
-    {
-        "value": "գիտենալ",
-        "translation": "знать"
-    },
-    {
-        "value": "ունենալ",
-        "translation": "иметь"
-    },
-    {
-        "value": "բայց",
-        "translation": "но"
-    },
-    {
-        "value": "որովհետև",
-        "translation": "потому что"
-    },
-    {
-        "value": "կարող",
-        "translation": "мочь"
-    },
-    {
-        "value": "տեսնել",
-        "translation": "видеть"
-    },
-    {
-        "value": "գյուղ",
-        "translation": "деревня"
-    },
-    {
-        "value": "լուսամուտ",
-        "translation": "окно"
-    },
-    {
-        "value": "բացվել",
-        "translation": "открываться"
-    },
-    {
-        "value": "տեսարան",
-        "translation": "вид"
-    },
-    {
-        "value": "սիրուն",
-        "translation": "красивый"
-    },
-    {
-        "value": "սարեր",
-        "translation": "горы"
-    },
-    {
-        "value": "հյուր գնալ",
-        "translation": "пойти в гости"
-    },
-	{
-		"value": "ատամ",
-		"translation": "зуб"
-	},
-	{
-		"value": "քայլել",
-		"translation": "ходить, гулять"
-	},
-	{
-		"value": "Խնդրում եմ",
-		"translation": "пожалуйста (просьба)"
-	},
-	{
-		"value": "խնդրեմ",
-		"translation": "пожалуйста (на спасибо)"
-	},
-	{
-		"value": "դեռ ոչ",
-		"translation": "ещё нет"
-	},
-	{
-		"value": "դե",
-		"translation": "ну"
-	},
-	{
-		"value": "հատ",
-		"translation": "штука"
-	},
-	{
-		"value": "մի հատ",
-		"translation": "одна штука, за одного (в автобусе)"
-	},
-	{
-		"value": "ինչքան",
-		"translation": "сколько"
-	},
-	{
-		"value": "կապի մեջ",
-		"translation": "на связи"
-	},
-	{
-		"value": "ամպամած",
-		"translation": "пасмурно"
-	},
-	{
-		"value": "մոխրագույն",
-		"translation": "серый"
-	},
-	{
-		"value": "մոխիր",
-		"translation": "пепел"
-	},
-	{
-		"value": "պլանավորել",
-		"translation": "планировать"
-	},
-	{
-		"value": "կարկանդակ",
-		"translation": "пирог"
-	},
-	{
-		"value": "ցուրտ",
-		"translation": "холодный"
-	},
-	{
-		"value": "խաղ",
-		"translation": "игра"
-	},
-	{
-		"value": "լսել",
-		"translation": "слышать, слушать"
-	},
-	{
-		"value": "նվագել",
-		"translation": "играть (на муз. инструменте)"
-	},
-	{
-		"value": "շուն",
-		"translation": "собака"
-	},
-	{
-		"value": "ոնց միշտ",
-		"translation": "как всегда"
-	},
-	{
-		"value": "ինձ",
-		"translation": "мне"
-	}
-]
-;
+    [
+        {
+            "value": "\u056E\u0561\u0576\u0578\u0569\u0561\u0576\u0561\u056C ",
+            "translation": "\u043F\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u044C\u0441\u044F"
+        },
+        {
+            "value": "\u0577\u0561\u057F \u0578\u0582\u0580\u0561\u056D \u0565\u0574",
+            "translation": "\u043E\u0447\u0435\u043D\u044C \u0440\u0430\u0434"
+        },
+        {
+            "value": "\u0577\u0561\u057F \u0570\u0561\u0573\u0565\u056C\u056B \u0567",
+            "translation": "\u043E\u0447\u0435\u043D\u044C \u043F\u0440\u0438\u044F\u0442\u043D\u043E"
+        },
+        {
+            "value": "\u056B\u0576\u0571 \u0567\u056C",
+            "translation": "\u043C\u043D\u0435 \u0442\u043E\u0436\u0435"
+        },
+        {
+            "value": "\u0565\u057D \u0567\u056C",
+            "translation": "\u044F \u0442\u043E\u0436\u0435"
+        },
+        {
+            "value": "\u056B\u0574",
+            "translation": "\u043C\u043E\u0439"
+        },
+        {
+            "value": "\u0574\u056B",
+            "translation": "\u043E\u0434\u0438\u043D"
+        },
+        {
+            "value": "\u0574\u056B\u057D",
+            "translation": "\u043C\u044F\u0441\u043E"
+        },
+        {
+            "value": "\u0544\u0561\u057D\u056B\u057D",
+            "translation": "\u0410\u0440\u0430\u0440\u0430\u0442"
+        },
+        {
+            "value": "\u0564\u0578\u0582",
+            "translation": "\u0442\u044B"
+        },
+        {
+            "value": "\u0564\u0561\u057D",
+            "translation": "\u0443\u0440\u043E\u043A"
+        },
+        {
+            "value": "\u0576\u0561",
+            "translation": "\u043E\u043D/\u043E\u043D\u0430"
+        },
+        {
+            "value": "\u0531\u0576\u056B",
+            "translation": "\u0410\u043D\u0438"
+        },
+        {
+            "value": "\u056F\u0561",
+            "translation": "\u0435\u0441\u0442\u044C, \u0438\u043C\u0435\u0435\u0442\u0441\u044F"
+        },
+        {
+            "value": "\u0576\u0561\u0574\u0561\u056F",
+            "translation": "\u043F\u0438\u0441\u044C\u043C\u043E"
+        },
+        {
+            "value": "\u0564\u0561\u0576\u0561\u056F",
+            "translation": "\u043D\u043E\u0436"
+        },
+        {
+            "value": "\u0574\u0561\u0574\u0561",
+            "translation": "\u043C\u0430\u043C\u0430"
+        },
+        {
+            "value": "\u0574\u0578\u0582\u056F",
+            "translation": "\u043C\u044B\u0448\u044C"
+        },
+        {
+            "value": "\u056F\u0561\u0574",
+            "translation": "\u0438\u043B\u0438"
+        },
+        {
+            "value": "\u0574\u056B\u0561\u056F",
+            "translation": "\u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0564\u056B\u0561\u056F",
+            "translation": "\u0442\u0440\u0443\u043F"
+        },
+        {
+            "value": "\u0564\u056B\u0574\u0561\u056F",
+            "translation": "\u043C\u0430\u0441\u043A\u0430"
+        },
+        {
+            "value": "\u053F\u056B\u0574\u0561",
+            "translation": "\u041A\u0438\u043C\u0430 (\u0436. \u0438\u043C\u044F)"
+        },
+        {
+            "value": "\u0546\u056B\u056F\u0561",
+            "translation": "\u041D\u0438\u043A\u0430 (\u0436. \u0438\u043C\u044F)"
+        },
+        {
+            "value": "\u0570\u0561\u057B\u0578\u0572\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
+            "translation": "\u0443\u0434\u0430\u0447\u0438"
+        },
+        {
+            "value": "\u0575\u0561\u057B\u0578\u0572",
+            "translation": "\u043F\u043E\u043A\u0430"
+        },
+        {
+            "value": "\u0581\u057F\u0565\u057D\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
+            "translation": "\u0434\u043E \u0441\u0432\u0438\u0434\u0430\u043D\u0438\u044F"
+        },
+        {
+            "value": "\u0574\u056B\u0576\u0579 \u0570\u0561\u0576\u0564\u056B\u057A\u0578\u0582\u0574",
+            "translation": "\u0434\u043E \u0432\u0441\u0442\u0440\u0435\u0447\u0438"
+        },
+        {
+            "value": "\u056F\u0561\u0580\u0578\u057F",
+            "translation": "\u0442\u043E\u0441\u043A\u0430"
+        },
+        {
+            "value": "\u0584\u0561\u0580\u0578\u057F",
+            "translation": "\u043A\u0430\u043C\u0435\u043D\u0438\u0441\u0442\u044B\u0439"
+        },
+        {
+            "value": "\u057F\u0561\u056F",
+            "translation": "\u043F\u043E\u0434"
+        },
+        {
+            "value": "\u057F\u0561\u0584",
+            "translation": "\u0442\u0451\u043F\u043B\u044B\u0439"
+        },
+        {
+            "value": "\u0584\u0576\u0565\u056C",
+            "translation": "\u0441\u043F\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0563\u0576\u0565\u056C",
+            "translation": "\u0438\u0434\u0442\u0438"
+        },
+        {
+            "value": "\u0584\u0578\u0582\u0575\u0580",
+            "translation": "\u0441\u0435\u0441\u0442\u0440\u0430"
+        },
+        {
+            "value": "\u056F\u0578\u0582\u0575\u0580",
+            "translation": "\u0441\u043B\u0435\u043F\u043E\u0439"
+        },
+        {
+            "value": "\u0581\u0578\u0580\u0565\u0576",
+            "translation": "\u043F\u0448\u0435\u043D\u0438\u0446\u0430"
+        },
+        {
+            "value": "\u0585\u0580\u0578\u0580\u0578\u0581",
+            "translation": "\u043A\u043E\u043B\u044B\u0431\u0435\u043B\u044C"
+        },
+        {
+            "value": "\u0585\u0580",
+            "translation": "\u0434\u0435\u043D\u044C"
+        },
+        {
+            "value": "\u0585\u0564",
+            "translation": "\u0432\u043E\u0437\u0434\u0443\u0445"
+        },
+        {
+            "value": "\u0585\u0563\u0578\u0582\u057F",
+            "translation": "\u043F\u043E\u043B\u044C\u0437\u0430"
+        },
+        {
+            "value": "\u0585\u0580\u0561\u0563\u056B\u0580",
+            "translation": "\u0434\u043D\u0435\u0432\u043D\u0438\u043A"
+        },
+        {
+            "value": "\u0561\u0575\u057D\u0585\u0580",
+            "translation": "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
+        },
+        {
+            "value": "\u056F\u0565\u057D\u0585\u0580",
+            "translation": "\u043F\u043E\u043B\u0434\u0435\u043D\u044C"
+        },
+        {
+            "value": "\u0578\u057E",
+            "translation": "\u043A\u0442\u043E"
+        },
+        {
+            "value": "\u0578\u057E\u0584\u0565\u0580",
+            "translation": "\u043A\u0442\u043E (\u043C\u043D. \u0447\u0438\u0441\u043B\u043E)"
+        },
+        {
+            "value": "\u0578\u0580\u0564\u056B",
+            "translation": "\u0441\u044B\u043D"
+        },
+        {
+            "value": "\u0576\u0578\u0580",
+            "translation": "\u043D\u043E\u0432\u044B\u0439"
+        },
+        {
+            "value": "\u0578\u0566\u0576\u056B",
+            "translation": "\u0451\u0436"
+        },
+        {
+            "value": "\u0574\u0578\u057F",
+            "translation": "\u0431\u043B\u0438\u0437\u043A\u043E, \u0431\u043B\u0438\u0437\u043A\u0438\u0439, \u0443, \u043A"
+        },
+        {
+            "value": "\u0570\u0578\u057F",
+            "translation": "\u0437\u0430\u043F\u0430\u0445"
+        },
+        {
+            "value": "\u0574\u0565\u057F\u0580\u0578",
+            "translation": "\u043C\u0435\u0442\u0440\u043E"
+        },
+        {
+            "value": "\u0570\u0565\u057F\u0578",
+            "translation": "\u043F\u043E\u0441\u043B\u0435"
+        },
+        {
+            "value": "\u0578\u057D\u056F\u056B",
+            "translation": "\u0437\u043E\u043B\u043E\u0442\u043E"
+        },
+        {
+            "value": "\u0578\u0580",
+            "translation": "\u043A\u043E\u0442\u043E\u0440\u044B\u0439"
+        },
+        {
+            "value": "\u0578\u0580\u0584\u0561\u0576",
+            "translation": "\u0441\u043A\u043E\u043B\u044C\u043A\u043E"
+        },
+        {
+            "value": "\u0548\u057D\u056F\u0561\u0576",
+            "translation": "\u0412\u043E\u0441\u043A\u0430\u043D (\u0438\u043C\u044F)"
+        },
+        {
+            "value": "\u0578\u057D\u056F\u0565\u0563\u0578\u0582\u0575\u0576",
+            "translation": "\u0446\u0432\u0435\u0442 \u0437\u043E\u043B\u043E\u0442\u0430"
+        },
+        {
+            "value": "\u0578\u0580\u0578\u057E\u0570\u0565\u057F\u0565\u055E\u057E",
+            "translation": "\u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E"
+        },
+        {
+            "value": "\u0577\u0578\u0582\u057F",
+            "translation": "\u0440\u0430\u043D\u043E"
+        },
+        {
+            "value": "\u0578\u0582\u0577",
+            "translation": "\u043F\u043E\u0437\u0434\u043D\u043E"
+        },
+        {
+            "value": "\u057A\u0561\u0576\u056B\u0580",
+            "translation": "\u0441\u044B\u0440"
+        },
+        {
+            "value": "\u056D\u0576\u0571\u0578\u0580",
+            "translation": "\u044F\u0431\u043B\u043E\u043A\u043E"
+        },
+        {
+            "value": "\u0565\u056C\u0561\u056F",
+            "translation": "\u043A\u043B\u0443\u0431\u043D\u0438\u043A\u0430"
+        },
+        {
+            "value": "\u056F\u0561\u0580\u0561\u0563",
+            "translation": "\u043C\u0430\u0441\u043B\u043E"
+        },
+        {
+            "value": "\u0571\u0578\u0582",
+            "translation": "\u044F\u0439\u0446\u043E"
+        },
+        {
+            "value": "\u056F\u0561\u0569",
+            "translation": "\u043C\u043E\u043B\u043E\u043A\u043E"
+        },
+        {
+            "value": "\u0574\u056B\u057D",
+            "translation": "\u043C\u044F\u0441\u043E"
+        },
+        {
+            "value": "\u057A\u0561\u057F\u0580\u0561\u057D\u057F\u0565\u056C",
+            "translation": "\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C"
+        },
+        {
+            "value": "\u0576\u0561\u056D\u0561\u0573\u0561\u0577\u0565\u056C",
+            "translation": "\u0437\u0430\u0432\u0442\u0440\u0430\u043A\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0564\u057A\u0580\u0578\u0581",
+            "translation": "\u0448\u043A\u043E\u043B\u0430"
+        },
+        {
+            "value": "\u057D\u0578\u057E\u0578\u0580\u0565\u056C",
+            "translation": "\u0443\u0447\u0438\u0442\u044C/\u0443\u0447\u0438\u0442\u044C\u0441\u044F"
+        },
+        {
+            "value": "\u0573\u0561\u0577\u0565\u056C",
+            "translation": "\u043E\u0431\u0435\u0434\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u057D\u0580\u0573\u0561\u0580\u0561\u0576",
+            "translation": "\u043A\u0430\u0444\u0435"
+        },
+        {
+            "value": "\u0563\u056B\u0577\u0565\u0580",
+            "translation": "\u043D\u043E\u0447\u044C"
+        },
+        {
+            "value": "\u0563\u056B\u0576\u056B",
+            "translation": "\u0432\u0438\u043D\u043E"
+        },
+        {
+            "value": "\u0578\u0580\u057F\u0565\u0572",
+            "translation": "\u0433\u0434\u0435"
+        },
+        {
+            "value": "\u0578\u0580\u057F\u0565\u0572\u056B\u0581",
+            "translation": "\u043E\u0442\u043A\u0443\u0434\u0430"
+        },
+        {
+            "value": "\u0578\u0582\u0580",
+            "translation": "\u043A\u0443\u0434\u0430"
+        },
+        {
+            "value": "\u0574\u0578\u0582\u0580\u0561\u0562\u0561",
+            "translation": "\u0432\u0430\u0440\u0435\u043D\u044C\u0435"
+        },
+        {
+            "value": "\u057D\u0578\u0582\u0580\u0573",
+            "translation": "\u043A\u043E\u0444\u0435"
+        },
+        {
+            "value": "\u0569\u0565\u0575",
+            "translation": "\u0447\u0430\u0439"
+        },
+        {
+            "value": "\u0564\u0565",
+            "translation": "\u043D\u0443"
+        },
+        {
+            "value": "\u0564\u0565\u0574",
+            "translation": "\u043F\u0440\u043E\u0442\u0438\u0432"
+        },
+        {
+            "value": "\u056F\u0565\u057D",
+            "translation": "\u043F\u043E\u043B\u043E\u0432\u0438\u043D\u0430"
+        },
+        {
+            "value": "\u0574\u0565\u056F",
+            "translation": "\u043E\u0434\u0438\u043D"
+        },
+        {
+            "value": "\u0578\u0582\u057F\u0565\u056C",
+            "translation": "\u0435\u0441\u0442\u044C, \u043A\u0443\u0448\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0564\u0576\u0565\u056C",
+            "translation": "\u043F\u043E\u043B\u043E\u0436\u0438\u0442\u044C"
+        },
+        {
+            "value": "\u0576\u057F\u0561\u0576\u0565\u056C",
+            "translation": "\u043E\u0442\u043D\u0435\u0441\u0442\u0438"
+        },
+        {
+            "value": "\u057F\u0578\u0582\u0576",
+            "translation": "\u0434\u043E\u043C"
+        },
+        {
+            "value": "\u056F\u056B\u0576",
+            "translation": "\u0436\u0435\u043D\u0430, \u0436\u0435\u043D\u0449\u0438\u043D\u0430"
+        },
+        {
+            "value": "\u0561\u0574\u0578\u0582\u057D\u056B\u0576",
+            "translation": "\u043C\u0443\u0436"
+        },
+        {
+            "value": "\u0561\u0576\u056F\u0561\u056D",
+            "translation": "\u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u044B\u0439, \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E"
+        },
+        {
+            "value": "\u0561\u0576\u056F\u0561\u056D\u0578\u0582\u0569\u0575\u0578\u0582\u0576",
+            "translation": "\u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u044C"
+        },
+        {
+            "value": "\u0584\u057D\u0561\u0576\u0574\u0565\u056F",
+            "translation": "\u0434\u0432\u0430\u0434\u0446\u0430\u0442\u044C \u043E\u0434\u0438\u043D"
+        },
+        {
+            "value": "\u0584\u057D\u0561\u0576",
+            "translation": "\u0434\u0432\u0430\u0434\u0446\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u057D\u0565\u057A\u057F\u0565\u0574\u0562\u0565\u0580",
+            "translation": "\u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044C"
+        },
+        {
+            "value": "\u0562\u0561\u056A\u0561\u056F",
+            "translation": "\u0447\u0430\u0448\u043A\u0430"
+        },
+        {
+            "value": "\u056F\u0561\u0569\u0576\u0561\u0577\u0578\u057C",
+            "translation": "\u0442\u0432\u043E\u0440\u043E\u0433"
+        },
+        {
+            "value": "\u0565\u057D\u056B\u0574",
+            "translation": "\u043D\u0435 \u0437\u043D\u0430\u044E"
+        },
+        {
+            "value": "\u0577\u0561\u0562\u0561\u0569\u0568",
+            "translation": "\u0441\u0443\u0431\u0431\u043E\u0442\u0430 / \u043D\u0435\u0434\u0435\u043B\u044F"
+        },
+        {
+            "value": "\u057C\u0561\u0566\u0574\u056B\u056F",
+            "translation": "\u0432\u043E\u0438\u043D"
+        },
+        {
+            "value": "\u056C\u0565\u057C",
+            "translation": "\u0433\u043E\u0440\u0430"
+        },
+        {
+            "value": "\u0571\u0578\u0582\u056F",
+            "translation": "\u0440\u044B\u0431\u0430"
+        },
+        {
+            "value": "\u0571\u0574\u0565\u0580\u0578\u0582\u056F",
+            "translation": "\u0430\u0440\u0431\u0443\u0437"
+        },
+        {
+            "value": "\u0571\u0574\u0565\u057C",
+            "translation": "\u0437\u0438\u043C\u0430"
+        },
+        {
+            "value": "\u0561\u0577\u0578\u0582\u0576",
+            "translation": "\u043E\u0441\u0435\u043D\u044C"
+        },
+        {
+            "value": "\u0571\u0565\u057C\u0584",
+            "translation": "\u0440\u0443\u043A\u0430"
+        },
+        {
+            "value": "\u0565\u0580\u0565\u056D\u0561",
+            "translation": "\u0440\u0435\u0431\u0451\u043D\u043E\u043A"
+        },
+        {
+            "value": "\u0566\u0562\u0561\u0572\u057E\u0561\u056E",
+            "translation": "\u0437\u0430\u043D\u044F\u0442"
+        },
+        {
+            "value": "\u0561\u0566\u0561\u057F",
+            "translation": "\u0441\u0432\u043E\u0431\u043E\u0434\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0573\u0561\u0577\u0565\u056C",
+            "translation": "\u043E\u0431\u0435\u0434\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0570\u0561\u0576\u0564\u056B\u057A\u0565\u056C",
+            "translation": "\u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C, \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044C\u0441\u044F"
+        },
+        {
+            "value": "\u0563\u0580\u0561\u0564\u0561\u0580\u0561\u0576",
+            "translation": "\u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430"
+        },
+        {
+            "value": "\u0585\u057F\u0561\u0580",
+            "translation": "\u0438\u043D\u043E\u0441\u0442\u0440\u0430\u043D\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0576\u0561\u0587",
+            "translation": "\u0442\u0430\u043A\u0436\u0435"
+        },
+        {
+            "value": "\u0573\u0561\u057A\u0578\u0576\u0565\u0580\u0565\u0576",
+            "translation": "\u044F\u043F\u043E\u043D\u0441\u043A\u0438\u0439"
+        },
+        {
+            "value": "\u057B\u056B\u0574",
+            "translation": "\u0441\u043F\u043E\u0440\u0442\u0437\u0430\u043B"
+        },
+        {
+            "value": "\u057D\u0578\u057E\u0578\u0580\u0561\u0562\u0561\u0580",
+            "translation": "\u043E\u0431\u044B\u0447\u043D\u043E"
+        },
+        {
+            "value": "\u0570\u0565\u057F",
+            "translation": "\u0441"
+        },
+        {
+            "value": "\u056F\u0561\u0574",
+            "translation": "\u0438\u043B\u0438"
+        },
+        {
+            "value": "\u0570\u0561\u0576\u0563\u057D\u057F\u0561\u0576\u0561\u056C ",
+            "translation": "\u043E\u0442\u0434\u044B\u0445\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0576\u0561\u0575\u0565\u056C",
+            "translation": "\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C"
+        },
+        {
+            "value": "\u056F\u0561\u0580\u0564\u0561\u056C",
+            "translation": "\u0447\u0438\u0442\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0566\u0561\u0580\u0569\u0576\u0565\u056C",
+            "translation": "\u043F\u0440\u043E\u0441\u043D\u0443\u0442\u044C\u0441\u044F"
+        },
+        {
+            "value": "\u0561\u0580\u0587",
+            "translation": "\u0441\u043E\u043B\u043D\u0446\u0435"
+        },
+        {
+            "value": "\u0573\u0578\u0582\u057F",
+            "translation": "\u0446\u044B\u043F\u043B\u0451\u043D\u043E\u043A"
+        },
+        {
+            "value": "\u0573\u0561\u0570\u056B\u0573",
+            "translation": "\u0431\u043E\u043B\u043E\u0442\u043E"
+        },
+        {
+            "value": "\u0573\u0561\u0576\u0573",
+            "translation": "\u043C\u0443\u0445\u0430"
+        },
+        {
+            "value": "\u0573\u056F\u0578\u0582\u0576",
+            "translation": "\u0433\u0438\u0431\u043A\u0438\u0439"
+        },
+        {
+            "value": "\u0573\u0561\u0577",
+            "translation": "\u043E\u0431\u0435\u0434"
+        },
+        {
+            "value": "\u0573\u0565\u0580\u0574\u0561\u056F",
+            "translation": "\u0431\u0435\u043B\u044B\u0439"
+        },
+        {
+            "value": "\u0573\u056C\u057E\u056C\u0561\u056C",
+            "translation": "\u0447\u0438\u0440\u0438\u043A\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0573\u0576\u0573\u0572\u0578\u0582\u056F",
+            "translation": "\u0432\u043E\u0440\u043E\u0431\u0435\u0439"
+        },
+        {
+            "value": "\u0573\u056B\u0577\u057F",
+            "translation": "\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0579\u056B\u0580",
+            "translation": "\u0441\u0443\u0445\u043E\u0444\u0440\u0443\u043A\u0442\u044B"
+        },
+        {
+            "value": "\u0579\u0576\u0579\u056B\u0576",
+            "translation": "\u043D\u0435\u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0579\u0578\u0580\u057D",
+            "translation": "\u0447\u0435\u0442\u044B\u0440\u0435"
+        },
+        {
+            "value": "\u0570\u056B\u0577\u0561\u0579\u0561\u0580",
+            "translation": "\u0437\u043B\u043E\u043F\u0430\u043C\u044F\u0442\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0579\u0561\u0579\u0561\u0576\u0561\u056F",
+            "translation": "\u0431\u043E\u043B\u0442\u0443\u043D"
+        },
+        {
+            "value": "\u057B\u0565\u0580\u0574",
+            "translation": "\u0442\u0451\u043F\u043B\u044B\u0439"
+        },
+        {
+            "value": "\u057B\u0578\u0582\u0580",
+            "translation": "\u0432\u043E\u0434\u0430"
+        },
+        {
+            "value": "\u0563\u0561\u0580\u0565\u057B\u0578\u0582\u0580",
+            "translation": "\u043F\u0438\u0432\u043E"
+        },
+        {
+            "value": "\u057B\u0576\u057B\u0565\u056C",
+            "translation": "\u0441\u0442\u0435\u0440\u0435\u0442\u044C, \u0443\u0434\u0430\u043B\u0438\u0442\u044C"
+        },
+        {
+            "value": "\u057B\u056B\u0576\u057B",
+            "translation": "\u0447\u0438\u0441\u0442\u044B\u0439, \u044F\u0441\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u0583\u0575\u0578\u0582\u0576\u056B\u056F",
+            "translation": "\u0444\u0435\u043D\u0438\u043A\u0441"
+        },
+        {
+            "value": "\u0583\u0561\u0575\u057F",
+            "translation": "\u0434\u0440\u043E\u0432\u0430"
+        },
+        {
+            "value": "\u0583\u0565\u0580\u056B",
+            "translation": "\u0444\u0435\u044F"
+        },
+        {
+            "value": "\u0583\u0565\u057F\u0578\u0582\u0580",
+            "translation": "\u043F\u0435\u0440\u043E"
+        },
+        {
+            "value": "\u0565\u0583\u0565\u056C",
+            "translation": "\u0432\u0430\u0440\u0438\u0442\u044C"
+        },
+        {
+            "value": "\u0569\u0561\u0583\u0565\u056C",
+            "translation": "\u0432\u044B\u0441\u044B\u043F\u0430\u0442\u044C, \u0432\u044B\u043B\u0438\u0442\u044C"
+        },
+        {
+            "value": "\u0583\u0561\u0575\u056C\u0583\u0575\u0578\u0582\u0576",
+            "translation": "\u0431\u043B\u0435\u0441\u0442\u044F\u0449\u0438\u0439"
+        },
+        {
+            "value": "\u056D\u0578\u057F",
+            "translation": "\u0442\u0440\u0430\u0432\u0430"
+        },
+        {
+            "value": "\u056D\u056B\u057F",
+            "translation": "\u0433\u0443\u0441\u0442\u043E\u0439"
+        },
+        {
+            "value": "\u057E\u0561\u056D",
+            "translation": "\u0441\u0442\u0440\u0430\u0445"
+        },
+        {
+            "value": "\u057E\u0561\u056D\u0565\u0576\u0561\u056C",
+            "translation": "\u0431\u043E\u044F\u0442\u044C\u0441\u044F"
+        },
+        {
+            "value": "\u0561\u0572",
+            "translation": "\u0441\u043E\u043B\u044C"
+        },
+        {
+            "value": "\u057E\u0561\u0572",
+            "translation": "\u0440\u0430\u043D\u043E"
+        },
+        {
+            "value": "\u057E\u0561\u0572\u0568",
+            "translation": "\u0437\u0430\u0432\u0442\u0440\u0430"
+        },
+        {
+            "value": "\u0578\u0582\u0572\u0565\u0572",
+            "translation": "\u0443\u043C"
+        },
+        {
+            "value": "\u057D\u0565\u0572\u0561\u0576",
+            "translation": "\u0441\u0442\u043E\u043B"
+        },
+        {
+            "value": "\u056D\u0561\u0572\u0561\u056C",
+            "translation": "\u0438\u0433\u0440\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u056D\u0561\u0572\u0578\u0572",
+            "translation": "\u0432\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
+        },
+        {
+            "value": "\u057F\u0565\u0572",
+            "translation": "\u043C\u0435\u0441\u0442\u043E"
+        },
+        {
+            "value": "\u0561\u0575\u057D\u057F\u0565\u0572",
+            "translation": "\u0442\u0443\u0442"
+        },
+        {
+            "value": "\u0561\u0574\u0565\u0576 \u057F\u0565\u0572",
+            "translation": "\u0432\u0435\u0437\u0434\u0435"
+        },
+        {
+            "value": "\u0565\u0572\u0561\u0576\u0561\u056F",
+            "translation": "\u043F\u043E\u0433\u043E\u0434\u0430"
+        },
+        {
+            "value": "\u0564\u0565\u0572",
+            "translation": "\u043B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u043E"
+        },
+        {
+            "value": "\u0564\u0565\u0572\u0561\u057F\u0578\u0582\u0576",
+            "translation": "\u0430\u043F\u0442\u0435\u043A\u0430"
+        },
+        {
+            "value": "\u057F\u0572\u0561",
+            "translation": "\u043C\u0430\u043B\u044C\u0447\u0438\u043A, \u043F\u0430\u0440\u0435\u043D\u044C"
+        },
+        {
+            "value": "\u0561\u057D\u057F\u0572",
+            "translation": "\u0437\u0432\u0435\u0437\u0434\u0430"
+        },
+        {
+            "value": "\u0563\u056B\u057F\u0565\u0576\u0561\u056C",
+            "translation": "\u0437\u043D\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0578\u0582\u0576\u0565\u0576\u0561\u056C",
+            "translation": "\u0438\u043C\u0435\u0442\u044C"
+        },
+        {
+            "value": "\u0562\u0561\u0575\u0581",
+            "translation": "\u043D\u043E"
+        },
+        {
+            "value": "\u0578\u0580\u0578\u057E\u0570\u0565\u057F\u0587",
+            "translation": "\u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E"
+        },
+        {
+            "value": "\u056F\u0561\u0580\u0578\u0572",
+            "translation": "\u043C\u043E\u0447\u044C"
+        },
+        {
+            "value": "\u057F\u0565\u057D\u0576\u0565\u056C",
+            "translation": "\u0432\u0438\u0434\u0435\u0442\u044C"
+        },
+        {
+            "value": "\u0563\u0575\u0578\u0582\u0572",
+            "translation": "\u0434\u0435\u0440\u0435\u0432\u043D\u044F"
+        },
+        {
+            "value": "\u056C\u0578\u0582\u057D\u0561\u0574\u0578\u0582\u057F",
+            "translation": "\u043E\u043A\u043D\u043E"
+        },
+        {
+            "value": "\u0562\u0561\u0581\u057E\u0565\u056C",
+            "translation": "\u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C\u0441\u044F"
+        },
+        {
+            "value": "\u057F\u0565\u057D\u0561\u0580\u0561\u0576",
+            "translation": "\u0432\u0438\u0434"
+        },
+        {
+            "value": "\u057D\u056B\u0580\u0578\u0582\u0576",
+            "translation": "\u043A\u0440\u0430\u0441\u0438\u0432\u044B\u0439"
+        },
+        {
+            "value": "\u057D\u0561\u0580\u0565\u0580",
+            "translation": "\u0433\u043E\u0440\u044B"
+        },
+        {
+            "value": "\u0570\u0575\u0578\u0582\u0580 \u0563\u0576\u0561\u056C",
+            "translation": "\u043F\u043E\u0439\u0442\u0438 \u0432 \u0433\u043E\u0441\u0442\u0438"
+        },
+        {
+            "value": "\u0561\u057F\u0561\u0574",
+            "translation": "\u0437\u0443\u0431"
+        },
+        {
+            "value": "\u0584\u0561\u0575\u056C\u0565\u056C",
+            "translation": "\u0445\u043E\u0434\u0438\u0442\u044C, \u0433\u0443\u043B\u044F\u0442\u044C"
+        },
+        {
+            "value": "\u053D\u0576\u0564\u0580\u0578\u0582\u0574 \u0565\u0574",
+            "translation": "\u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430 (\u043F\u0440\u043E\u0441\u044C\u0431\u0430)"
+        },
+        {
+            "value": "\u056D\u0576\u0564\u0580\u0565\u0574",
+            "translation": "\u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430 (\u043D\u0430 \u0441\u043F\u0430\u0441\u0438\u0431\u043E)"
+        },
+        {
+            "value": "\u0564\u0565\u057C \u0578\u0579",
+            "translation": "\u0435\u0449\u0451 \u043D\u0435\u0442"
+        },
+        {
+            "value": "\u0564\u0565",
+            "translation": "\u043D\u0443"
+        },
+        {
+            "value": "\u0570\u0561\u057F",
+            "translation": "\u0448\u0442\u0443\u043A\u0430"
+        },
+        {
+            "value": "\u0574\u056B \u0570\u0561\u057F",
+            "translation": "\u043E\u0434\u043D\u0430 \u0448\u0442\u0443\u043A\u0430, \u0437\u0430 \u043E\u0434\u043D\u043E\u0433\u043E (\u0432 \u0430\u0432\u0442\u043E\u0431\u0443\u0441\u0435)"
+        },
+        {
+            "value": "\u056B\u0576\u0579\u0584\u0561\u0576",
+            "translation": "\u0441\u043A\u043E\u043B\u044C\u043A\u043E"
+        },
+        {
+            "value": "\u056F\u0561\u057A\u056B \u0574\u0565\u057B",
+            "translation": "\u043D\u0430 \u0441\u0432\u044F\u0437\u0438"
+        },
+        {
+            "value": "\u0561\u0574\u057A\u0561\u0574\u0561\u056E",
+            "translation": "\u043F\u0430\u0441\u043C\u0443\u0440\u043D\u043E"
+        },
+        {
+            "value": "\u0574\u0578\u056D\u0580\u0561\u0563\u0578\u0582\u0575\u0576",
+            "translation": "\u0441\u0435\u0440\u044B\u0439"
+        },
+        {
+            "value": "\u0574\u0578\u056D\u056B\u0580",
+            "translation": "\u043F\u0435\u043F\u0435\u043B"
+        },
+        {
+            "value": "\u057A\u056C\u0561\u0576\u0561\u057E\u0578\u0580\u0565\u056C",
+            "translation": "\u043F\u043B\u0430\u043D\u0438\u0440\u043E\u0432\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u056F\u0561\u0580\u056F\u0561\u0576\u0564\u0561\u056F",
+            "translation": "\u043F\u0438\u0440\u043E\u0433"
+        },
+        {
+            "value": "\u0581\u0578\u0582\u0580\u057F",
+            "translation": "\u0445\u043E\u043B\u043E\u0434\u043D\u044B\u0439"
+        },
+        {
+            "value": "\u056D\u0561\u0572",
+            "translation": "\u0438\u0433\u0440\u0430"
+        },
+        {
+            "value": "\u056C\u057D\u0565\u056C",
+            "translation": "\u0441\u043B\u044B\u0448\u0430\u0442\u044C, \u0441\u043B\u0443\u0448\u0430\u0442\u044C"
+        },
+        {
+            "value": "\u0576\u057E\u0561\u0563\u0565\u056C",
+            "translation": "\u0438\u0433\u0440\u0430\u0442\u044C (\u043D\u0430 \u043C\u0443\u0437. \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442\u0435)"
+        },
+        {
+            "value": "\u0577\u0578\u0582\u0576",
+            "translation": "\u0441\u043E\u0431\u0430\u043A\u0430"
+        },
+        {
+            "value": "\u0578\u0576\u0581 \u0574\u056B\u0577\u057F",
+            "translation": "\u043A\u0430\u043A \u0432\u0441\u0435\u0433\u0434\u0430"
+        },
+        {
+            "value": "\u056B\u0576\u0571",
+            "translation": "\u043C\u043D\u0435"
+        }
+    ]
+    ;
