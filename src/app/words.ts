@@ -233,7 +233,7 @@ export default
             "translation": "\u0446\u0432\u0435\u0442 \u0437\u043E\u043B\u043E\u0442\u0430"
         },
         {
-            "value": "\u0578\u0580\u0578\u057E\u0570\u0565\u057F\u0565\u055E\u057E",
+            "value": "\u0578\u0580\u0578\u057E\u0570\u0565\u057F\u0565\u057E",
             "translation": "\u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E"
         },
         {
