@@ -2,7 +2,7 @@
     <div *ngIf="currentWord" class="flashcard-container">
         <p class="current-word">{{ currentWord.value }}</p>
         <div class="translations-container">
-            <button class="word-button" *ngFor="let word of words" (click)="checkAnswer($event, word.translation)">
+            <button class="word-button" *ngFor="let word of currentOptions" (click)="checkAnswer($event, word.translation)">
                 {{ word.translation }}
             </button>
         </div>

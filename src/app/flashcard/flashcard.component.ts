@@ -11,7 +11,7 @@ import Words from '../words';
   styleUrl: './flashcard.component.css'
 })
 export class FlashcardComponent {
-  words: Word[] = [];
+  currentOptions: Word[] = [];
   currentWord: Word;
   nextWordTimeout: ReturnType<typeof setTimeout> | null = null;
 
@@ -24,9 +24,9 @@ export class FlashcardComponent {
   }
 
   nextWord(): void {
-    this.words = this.getRandomWords(5);
-    const randomIndex = Math.floor(Math.random() * this.words.length);
-    this.currentWord = this.words[randomIndex];
+    this.currentOptions = this.getRandomWords(5);
+    const randomIndex = Math.floor(Math.random() * this.currentOptions.length);
+    this.currentWord = this.currentOptions[randomIndex];
   }
 
   checkAnswer(evt:MouseEvent, selectedTranslation: string): void {
@@ -61,7 +61,8 @@ export class FlashcardComponent {
     let i = 0;
     while (i < count) {
       const randomOverallIndex = Math.floor(Math.random() * Words.length);
-      if (result.find(w => w.value === Words[randomOverallIndex].value)) {
+      if (result.find(w => w.value === Words[randomOverallIndex].value) ||
+          Words[randomOverallIndex].value === this.currentWord.value) {
         continue;
       }
       result.push(this.cloneWord(Words[randomOverallIndex]));
