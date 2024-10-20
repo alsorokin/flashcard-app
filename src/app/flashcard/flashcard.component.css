@@ -4,7 +4,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 96vw;
+    width: 98vw;
     height: 96vh;
     perspective: 1000px; /* This gives the 3D effect */
 }
