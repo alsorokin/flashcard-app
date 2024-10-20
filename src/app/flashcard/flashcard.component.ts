@@ -60,9 +60,9 @@ export class FlashcardComponent {
     this.backWord = this.backOptions[randomIndex];
   }
 
-  checkAnswer(evt:MouseEvent, selectedTranslation: string): void {
+  checkAnswer(evt:MouseEvent, selectedWord: Word): void {
     const button = evt.target as HTMLButtonElement;
-    if (selectedTranslation === this.getCurrentWord().translation) {
+    if (selectedWord.value === this.getCurrentWord().value) {
       button.classList.add('correct');
       if (this.goNextTimeout == null) {
         this.goNextTimeout = setTimeout(() => {
@@ -95,12 +95,13 @@ export class FlashcardComponent {
     const result: Word[] = [];
     let i = 0;
     while (i < count) {
-      const randomOverallIndex = Math.floor(Math.random() * Words.length);
-      if (result.find(w => w.value === Words[randomOverallIndex].value) ||
-          Words[randomOverallIndex].value === this.frontWord.value) {
+      const random_i = Math.floor(Math.random() * Words.length);
+      if (result.find(w => w.value === Words[random_i].value) ||
+          result.find(w => w.translation === Words[random_i].translation) ||
+          Words[random_i].value === this.frontWord.value) {
         continue;
       }
-      result.push(this.cloneWord(Words[randomOverallIndex]));
+      result.push(this.cloneWord(Words[random_i]));
       i++;
     }
     return result;
