@@ -353,10 +353,6 @@ export default
             "translation": "положить"
         },
         {
-            "value": "նտանել",
-            "translation": "сомневаться"
-        },
-        {
             "value": "տուն",
             "translation": "дом"
         },
