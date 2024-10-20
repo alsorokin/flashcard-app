@@ -133,7 +133,7 @@ export default
             "translation": "спать"
         },
         {
-            "value": "գնել",
+            "value": "գնալ",
             "translation": "идти"
         },
         {
@@ -354,7 +354,7 @@ export default
         },
         {
             "value": "նտանել",
-            "translation": "отнести"
+            "translation": "сомневаться"
         },
         {
             "value": "տուն",
@@ -478,7 +478,7 @@ export default
         },
         {
             "value": "հետ",
-            "translation": "с"
+            "translation": "с (послелог)"
         },
         {
             "value": "կամ",
@@ -778,7 +778,7 @@ export default
         },
         {
             "value": "ամպամած",
-            "translation": "пасмурно"
+            "translation": "пасмурный"
         },
         {
             "value": "մոխրագույն",
@@ -823,6 +823,406 @@ export default
         {
             "value": "ինձ",
             "translation": "мне"
+        },
+        {
+            "value": "ուտելիք",
+            "translation": "еда"
+        },
+        {
+            "value": "բրինձ",
+            "translation": "рис"
+        },
+        {
+            "value": "ապուր",
+            "translation": "суп"
+        },
+        {
+            "value": "հյութ",
+            "translation": "сок"
+        },
+        {
+            "value": "հնդկաձավար",
+            "translation": "гречка"
+        },
+        {
+            "value": "աղցան",
+            "translation": "салат"
+        },
+        {
+            "value": "ձվածեղ",
+            "translation": "омлет"
+        },
+        {
+            "value": "գնել",
+            "translation": "купить"
+        },
+        {
+            "value": "վճարել",
+            "translation": "платить"
+        },
+        {
+            "value": "քարտով",
+            "translation": "картой (платить)"
+        },
+        {
+            "value": "կանխիկ",
+            "translation": "наличными"
+        },
+        {
+            "value": "փող",
+            "translation": "деньги"
+        },
+        {
+            "value": "ի՞նչ արժի",
+            "translation": "сколько стоит?"
+        },
+        {
+            "value": "ինչքա՞ն եմ վճարում",
+            "translation": "сколько должен?"
+        },
+        {
+            "value": "իհարկե",
+            "translation": "конечно"
+        },
+        {
+            "value": "համ",
+            "translation": "вкус"
+        },
+        {
+            "value": "համով է",
+            "translation": "вкусный"
+        },
+        {
+            "value": "էլի՞ ինչ-որ բան",
+            "translation": "ещё что-нибудь?"
+        },
+        {
+            "value": "թարմ",
+            "translation": "свежий"
+        },
+        {
+            "value": "վերջ",
+            "translation": "всё (вот и всё)"
+        },
+        {
+            "value": "ձեր մանրը",
+            "translation": "ваша сдача"
+        },
+        {
+            "value": "շնորհակալություն",
+            "translation": "спасибо"
+        },
+        {
+            "value": "գնորդը",
+            "translation": "покупатель"
+        },
+        {
+            "value": "գալ",
+            "translation": "прийти"
+        },
+        {
+            "value": "եկել",
+            "translation": "пришёл"
+        },
+        {
+            "value": "կերել",
+            "translation": "поел"
+        },
+        {
+            "value": "տալ",
+            "translation": "давать"
+        },
+        {
+            "value": "տվել",
+            "translation": "дал"
+        },
+        {
+            "value": "տեսել",
+            "translation": "увидел"
+        },
+        {
+            "value": "դրել",
+            "translation": "положил"
+        },
+        {
+            "value": "տանել",
+            "translation": "нести"
+        },
+        {
+            "value": "տարել",
+            "translation": "отнёс"
+        },
+        {
+            "value": "անել",
+            "translation": "делать"
+        },
+        {
+            "value": "արել",
+            "translation": "сделал"
+        },
+        {
+            "value": "արդեն",
+            "translation": "уже"
+        },
+        {
+            "value": "ձմռանը",
+            "translation": "зимой"
+        },
+        {
+            "value": "տոնել",
+            "translation": "праздновать"
+        },
+        {
+            "value": "գրել",
+            "translation": "писать"
+        },
+        {
+            "value": "նկարել",
+            "translation": "рисовать / фотографировать / снимать"
+        },
+        {
+            "value": "երգ",
+            "translation": "песня"
+        },
+        {
+            "value": "երգ լսել",
+            "translation": "слушать музыку/песню"
+        },
+        {
+            "value": "աշխատել",
+            "translation": "работать"
+        },
+        {
+            "value": "նվագել",
+            "translation": "играть на муз. инструменте"
+        },
+        {
+            "value": "գիրք",
+            "translation": "книга"
+        },
+        {
+            "value": "երաժիշտ",
+            "translation": "музыкант"
+        },
+        {
+            "value": "կիթառ",
+            "translation": "гитара"
+        },
+        {
+            "value": "այգի",
+            "translation": "парк"
+        },
+        {
+            "value": "հեռախոս",
+            "translation": "телефон"
+        },
+        {
+            "value": "ուսուցիչ",
+            "translation": "учитель"
+        },
+        {
+            "value": "գրող",
+            "translation": "писатель"
+        },
+        {
+            "value": "դերասան",
+            "translation": "актёр"
+        },
+        {
+            "value": "բժիշկ",
+            "translation": "врач"
+        },
+        {
+            "value": "հիվանդանոց",
+            "translation": "больница"
+        },
+        {
+            "value": "նկարիչ",
+            "translation": "художник"
+        },
+        {
+            "value": "դեռ",
+            "translation": "ещё (пока что)"
+        },
+        {
+            "value": "համերգ",
+            "translation": "концерт"
+        },
+        {
+            "value": "ինձ հետ",
+            "translation": "со мной"
+        },
+        {
+            "value": "սիրով",
+            "translation": "с удовольствием"
+        },
+        {
+            "value": "հրապարակ",
+            "translation": "площадь"
+        },
+        {
+            "value": "միասին",
+            "translation": "вместе"
+        },
+        {
+            "value": "ջութակ",
+            "translation": "скрипка"
+        },
+        {
+            "value": "անձրև",
+            "translation": "дождь"
+        },
+        {
+            "value": "սառն",
+            "translation": "прохладный"
+        },
+        {
+            "value": "հավես չունեմ",
+            "translation": "нет желания"
+        },
+        {
+            "value": "տրամադրություն չունեմ",
+            "translation": "нет настроения"
+        },
+        {
+            "value": "ոչ մի տեղ",
+            "translation": "нигде"
+        },
+        {
+            "value": "ոչ մի բան",
+            "translation": "ничего"
+        },
+        {
+            "value": "պառկել",
+            "translation": "лежать"
+        },
+        {
+            "value": "մտածել",
+            "translation": "думать"
+        },
+        {
+            "value": "երեկ",
+            "translation": "вчера"
+        },
+        {
+            "value": "եթե",
+            "translation": "если"
+        },
+        {
+            "value": "օֆիս",
+            "translation": "офис"
+        },
+        {
+            "value": "համար",
+            "translation": "для (послелог)"
+        },
+        {
+            "value": "մեր",
+            "translation": "наш"
+        },
+        {
+            "value": "քո",
+            "translation": "твой"
+        },
+        {
+            "value": "ձեր",
+            "translation": "ваш"
+        },
+        {
+            "value": "նրա",
+            "translation": "(чей?) его"
+        },
+        {
+            "value": "նրանց",
+            "translation": "(чей/кого/кому?) их/им"
+        },
+        {
+            "value": "քեզ",
+            "translation": "тебя/тебе"
+        },
+        {
+            "value": "նրան",
+            "translation": "его/ему"
+        },
+        {
+            "value": "մեզ",
+            "translation": "нас/нам"
+        },
+        {
+            "value": "ձեզ",
+            "translation": "вас/вам"
+        },
+        {
+            "value": "սև",
+            "translation": "чёрный"
+        },
+        {
+            "value": "սպիտակ",
+            "translation": "белый"
+        },
+        {
+            "value": "կանաչ",
+            "translation": "зелёный"
+        },
+        {
+            "value": "դեղին",
+            "translation": "жёлтый"
+        },
+        {
+            "value": "կապույտ",
+            "translation": "синий"
+        },
+        {
+            "value": "կարմիր",
+            "translation": "красный"
+        },
+        {
+            "value": "նարնջագույն",
+            "translation": "оранжевый"
+        },
+        {
+            "value": "վարդագույն",
+            "translation": "розовый"
+        },
+        {
+            "value": "մանուշակագույն",
+            "translation": "фиолетовый"
+        },
+        {
+            "value": "շագանակագույն",
+            "translation": "коричневый"
+        },
+        {
+            "value": "երկնագույն",
+            "translation": "голубой"
+        },
+        {
+            "value": "նարինջ",
+            "translation": "апельсин"
+        },
+        {
+            "value": "վարդ",
+            "translation": "роза"
+        },
+        {
+            "value": "մանուշակ",
+            "translation": "фиалка"
+        },
+        {
+            "value": "շագանակ",
+            "translation": "каштан"
+        },
+        {
+            "value": "երկինք",
+            "translation": "небо"
+        },
+        {
+            "value": "արծաթ",
+            "translation": "серебро"
+        },
+        {
+            "value": "արծաթագույն",
+            "translation": "цвет серебра"
         }
     ]
     ;
