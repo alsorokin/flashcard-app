@@ -17,6 +17,8 @@ export class FlashcardComponent {
   backWord: Word;
   goNextTimeout: ReturnType<typeof setTimeout> | null = null;
   isFlipped:boolean = false;
+  // TODO: redo the whole words thing. make them a hash map or something
+  errors: Map<string, number> = new Map();
 
   getCurrentWord(): Word {
     return this.isFlipped ? this.backWord : this.frontWord;
@@ -49,19 +51,52 @@ export class FlashcardComponent {
   }
 
   refreshFront(): void {
-    this.frontOptions = this.getRandomWords(5);
-    const randomIndex = Math.floor(Math.random() * this.frontOptions.length);
-    this.frontWord = this.frontOptions[randomIndex];
+    const randomWords = this.getRandomWordsOrError(5);
+    this.frontOptions = randomWords.options;
+    this.frontWord = randomWords.word;
   }
 
   refreshBack(): void {
-    this.backOptions = this.getRandomWords(5);
-    const randomIndex = Math.floor(Math.random() * this.backOptions.length);
-    this.backWord = this.backOptions[randomIndex];
+    const randomWords = this.getRandomWordsOrError(5);
+    this.backOptions = randomWords.options;
+    this.backWord = randomWords.word;
+  }
+
+  getRandomWordsOrError(count: number): { options: Word[], word: Word } {
+    const options = this.getRandomWords(count);
+    const randomIndex = Math.floor(Math.random() * options.length);
+    let word;
+    if (this.shouldGetErrorWord()) {
+      word = this.cloneWord(Words.find(w => w.value === this.getTopErrorValueUnsafe())!);
+      options[randomIndex] = word;
+      if (this.errors.get(word.value)! <= 1) {
+        this.errors.delete(word.value);
+      } else {
+        this.errors.set(word.value, this.errors.get(word.value)! - 1);
+      }
+    } else {
+      word = options[randomIndex];
+    }
+    return { options, word: word };
+  }
+
+  shouldGetErrorWord(): boolean {
+    if (this.errors.size === 0) {
+      return false;
+    }
+    const topErrorValue = this.getTopErrorValueUnsafe();
+    return this.frontWord.value !== topErrorValue &&
+           this.backWord.value !== topErrorValue &&
+           Math.random() < 0.5;
+  }
+
+  getTopErrorValueUnsafe(): string {
+    return this.errors.keys().next().value!;
   }
 
   checkAnswer(evt:MouseEvent, selectedWord: Word): void {
     const button = evt.target as HTMLButtonElement;
+    const currentWord = this.getCurrentWord();
     if (selectedWord.value === this.getCurrentWord().value) {
       button.classList.add('correct');
       if (this.goNextTimeout == null) {
@@ -73,6 +108,11 @@ export class FlashcardComponent {
       }
     } else {
       button.classList.add('incorrect');
+      if (this.errors.has(currentWord.value)) {
+        this.errors.set(currentWord.value, this.errors.get(currentWord.value)! + 1);
+      } else {
+        this.errors.set(currentWord.value, 1);
+      }
     }
   }
 
