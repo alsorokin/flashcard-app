@@ -1,11 +1,11 @@
 /* container for the whole component */
 .parent-container {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 98vw;
-    height: 96vh;
+    width: 99vw;
+    height: 99vh;
     perspective: 1000px; /* This gives the 3D effect */
 }
 
@@ -14,8 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95vw;
-    height: 95vh;
+    width: 99vw;
+    height: 99vh;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s;
