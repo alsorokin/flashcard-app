@@ -1,5 +1,6 @@
 /* container for the whole component */
 .parent-container {
+    background-color: rgb(255, 255, 255);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +27,7 @@
 
 /* the flashcard */
 .flashcard-front, .flashcard-back {
-    background-color: #eeeefa;
+    background-color: #cbdee6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,8 +63,8 @@ p.current-word {
 }
 
 .word-button {
-    background-color: #e5e5fc;
-    border-color: #999999;
+    background-color: #fcfcfc;
+    border-color: #a4cee5;
     border-radius: 3px;
     padding: 10px;
     font-size: 16px;
@@ -72,13 +73,14 @@ p.current-word {
 }
 
 .word-button:hover {
-    background-color: #8db4fd;
+    background-color: #f1d6f7;
 }
 
 .word-button.correct {
-    background-color: #5eff5e;
+    background-color: #84d495;
 }
 
 .word-button.incorrect {
-    background-color: #ff4d4d;
+    background-color: #f76c6c;
+    text-decoration: line-through;
 }
