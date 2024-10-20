@@ -27,6 +27,7 @@
 
 /* the flashcard */
 .flashcard-front, .flashcard-back {
+    padding: 20px;
     background-color: #cbdee6;
     display: flex;
     flex-direction: column;
