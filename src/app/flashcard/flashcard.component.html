@@ -3,7 +3,8 @@
         <div class="flashcard-front">
             <p class="current-word">{{ frontWord.value }}</p>
             <div class="translations-container">
-                <button class="word-button" *ngFor="let word of frontOptions" (click)="checkAnswer($event, word)">
+                <button type="button" class="word-button" *ngFor="let word of frontOptions" (click)="checkAnswer($event, word)"
+                    [attr.tabindex]="isFlipped ? -1 : 0">
                     {{ word.translation }}
                 </button>
             </div>
@@ -11,7 +12,8 @@
         <div class="flashcard-back">
             <p class="current-word">{{ backWord.value }}</p>
             <div class="translations-container">
-                <button class="word-button" *ngFor="let word of backOptions" (click)="checkAnswer($event, word)">
+                <button type="button" class="word-button" *ngFor="let word of backOptions" (click)="checkAnswer($event, word)"
+                    [attr.tabindex]="isFlipped ? 0 : -1">
                     {{ word.translation }}
                 </button>
             </div>
