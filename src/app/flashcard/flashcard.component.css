@@ -63,6 +63,7 @@ p.current-word {
 }
 
 .word-button {
+    color: black;
     background-color: #fcfcfc;
     border-color: #a4cee5;
     border-radius: 3px;
@@ -70,6 +71,7 @@ p.current-word {
     font-size: 16px;
     cursor: pointer;
     white-space: nowrap;
+    text-wrap: wrap;
 }
 
 .word-button:hover {
