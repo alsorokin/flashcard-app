@@ -909,7 +909,7 @@ export default
             "translation": "спасибо"
         },
         {
-            "value": "գնորդը",
+            "value": "գնորդ",
             "translation": "покупатель"
         },
         {
