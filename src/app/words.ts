@@ -397,7 +397,7 @@ export default
             "translation": "не знаю"
         },
         {
-            "value": "շաբաթը",
+            "value": "շաբաթ",
             "translation": "суббота / неделя"
         },
         {
