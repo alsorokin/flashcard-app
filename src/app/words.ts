@@ -898,7 +898,7 @@ export default
         },
         {
             "value": "վերջ",
-            "translation": "всё (вот и всё)"
+            "translation": "всё / конец"
         },
         {
             "value": "ձեր մանրը",
