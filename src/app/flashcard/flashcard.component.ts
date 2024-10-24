@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import Words from '../words';
+import { Word, words } from '../words';
 
 @Component({
   selector: 'app-flashcard',
@@ -17,7 +17,6 @@ export class FlashcardComponent {
   backWord: Word;
   goNextTimeout: ReturnType<typeof setTimeout> | null = null;
   isFlipped:boolean = false;
-  // TODO: redo the whole words thing. make them a hash map or something
   errors: Map<string, number> = new Map();
 
   getCurrentWord(): Word {
@@ -29,8 +28,8 @@ export class FlashcardComponent {
   }
 
   constructor(private http: HttpClient) {
-    this.frontWord = { value: 'բարև', translation: 'привет' };
-    this.backWord = { value: 'բարև', translation: 'привет' };
+    this.frontWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting' ] };
+    this.backWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting '] };
   }
 
   ngOnInit(): void {
@@ -67,7 +66,7 @@ export class FlashcardComponent {
     const randomIndex = Math.floor(Math.random() * options.length);
     let word;
     if (this.shouldGetErrorWord()) {
-      word = this.cloneWord(Words.find(w => w.value === this.getTopErrorValueUnsafe())!);
+      word = this.cloneWord(words.find(w => w.value === this.getTopErrorValueUnsafe())!);
       options[randomIndex] = word;
       if (this.errors.get(word.value)! <= 1) {
         this.errors.delete(word.value);
@@ -117,7 +116,7 @@ export class FlashcardComponent {
   }
 
   cloneWord(word: Word): Word {
-    return { value: word.value, translation: word.translation };
+    return { ...word };
   }
 
   getRandomWords(count: number): Word[] {
@@ -129,26 +128,21 @@ export class FlashcardComponent {
     });
     */
     // for now, just get the words from a local file (../words.ts)
-    if (count >= Words.length) {
-      return Words.map(w => this.cloneWord(w));
+    if (count >= words.length) {
+      return words.map(w => this.cloneWord(w));
     }
     const result: Word[] = [];
     let i = 0;
     while (i < count) {
-      const random_i = Math.floor(Math.random() * Words.length);
-      if (result.find(w => w.value === Words[random_i].value) ||
-          result.find(w => w.translation === Words[random_i].translation) ||
-          Words[random_i].value === this.frontWord.value) {
+      const random_i = Math.floor(Math.random() * words.length);
+      if (result.find(w => w.value === words[random_i].value) ||
+          result.find(w => w.translation === words[random_i].translation) ||
+          words[random_i].value === this.frontWord.value) {
         continue;
       }
-      result.push(this.cloneWord(Words[random_i]));
+      result.push(this.cloneWord(words[random_i]));
       i++;
     }
     return result;
   }
-}
-
-interface Word {
-  value: string;
-  translation: string;
 }

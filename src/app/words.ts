@@ -1,1224 +1,2376 @@
-export default
+export interface Word {
+    value: string;
+    translation: string;
+    tags: string[];
+};
+
+export const words: Word[] =
     [
         {
             "value": "ծանոթանալ",
-            "translation": "познакомиться"
+            "translation": "познакомиться",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "շատ ուրախ եմ",
-            "translation": "очень рад"
+            "translation": "очень рад",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "շատ հաճելի է",
-            "translation": "очень приятно"
+            "translation": "очень приятно",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "ինձ էլ",
-            "translation": "мне тоже"
+            "translation": "мне тоже",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "ես էլ",
-            "translation": "я тоже"
+            "translation": "я тоже",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "իմ",
-            "translation": "мой"
+            "translation": "мой",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "մի",
-            "translation": "один"
+            "translation": "один",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "միս",
-            "translation": "мясо"
+            "translation": "мясо",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "Մասիս",
-            "translation": "Арарат"
+            "translation": "Арарат",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "դու",
-            "translation": "ты"
+            "translation": "ты",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "դաս",
-            "translation": "урок"
+            "translation": "урок",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "նա",
-            "translation": "он/она"
+            "translation": "он/она",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "Անի",
-            "translation": "Ани"
+            "translation": "Ани",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "կա",
-            "translation": "есть, имеется"
+            "translation": "есть, имеется",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "նամակ",
-            "translation": "письмо"
+            "translation": "письмо",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "դանակ",
-            "translation": "нож"
+            "translation": "нож",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "մամա",
-            "translation": "мама"
+            "translation": "мама",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "մուկ",
-            "translation": "мышь"
+            "translation": "мышь",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "կամ",
-            "translation": "или"
+            "translation": "или",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "միակ",
-            "translation": "единственный"
+            "translation": "единственный",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "դիակ",
-            "translation": "труп"
+            "translation": "труп",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "դիմակ",
-            "translation": "маска"
+            "translation": "маска",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "Կիմա",
-            "translation": "Кима (ж. имя)"
+            "translation": "Кима (ж. имя)",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "Նիկա",
-            "translation": "Ника (ж. имя)"
+            "translation": "Ника (ж. имя)",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "հաջողություն",
-            "translation": "удачи"
+            "translation": "удачи",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "հաջող",
-            "translation": "пока"
+            "translation": "пока",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "ցտեսություն",
-            "translation": "до свидания"
+            "translation": "до свидания",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "մինչ հանդիպում",
-            "translation": "до встречи"
+            "translation": "до встречи",
+            "tags": [
+                "lesson_01"
+            ]
         },
         {
             "value": "կարոտ",
-            "translation": "тоска"
+            "translation": "тоска",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "քարոտ",
-            "translation": "каменистый"
+            "translation": "каменистый",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "տակ",
-            "translation": "под"
+            "translation": "под",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "տաք",
-            "translation": "тёплый"
+            "translation": "тёплый",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "քնել",
-            "translation": "спать"
+            "translation": "спать",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "գնալ",
-            "translation": "идти"
+            "translation": "идти",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "քույր",
-            "translation": "сестра"
+            "translation": "сестра",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "կույր",
-            "translation": "слепой"
+            "translation": "слепой",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "ցորեն",
-            "translation": "пшеница"
+            "translation": "пшеница",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "օրորոց",
-            "translation": "колыбель"
+            "translation": "колыбель",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "օր",
-            "translation": "день"
+            "translation": "день",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "օդ",
-            "translation": "воздух"
+            "translation": "воздух",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "օգուտ",
-            "translation": "польза"
+            "translation": "польза",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "օրագիր",
-            "translation": "дневник"
+            "translation": "дневник",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "այսօր",
-            "translation": "сегодня"
+            "translation": "сегодня",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "կեսօր",
-            "translation": "полдень"
+            "translation": "полдень",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "ով",
-            "translation": "кто"
+            "translation": "кто",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "ովքեր",
-            "translation": "кто (мн. число)"
+            "translation": "кто (мн. число)",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "որդի",
-            "translation": "сын"
+            "translation": "сын",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "նոր",
-            "translation": "новый"
+            "translation": "новый",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "ոզնի",
-            "translation": "ёж"
+            "translation": "ёж",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "մոտ",
-            "translation": "близко, близкий, у, к"
+            "translation": "близко, близкий, у, к",
+            "tags": [
+                "lesson_02"
+            ]
         },
         {
             "value": "հոտ",
-            "translation": "запах"
+            "translation": "запах",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "մետրո",
-            "translation": "метро"
+            "translation": "метро",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "հետո",
-            "translation": "после"
+            "translation": "после",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ոսկի",
-            "translation": "золото"
+            "translation": "золото",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "որ",
-            "translation": "который"
+            "translation": "который",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "որքան",
-            "translation": "сколько"
+            "translation": "сколько",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "Ոսկան",
-            "translation": "Воскан (имя)"
+            "translation": "Воскан (имя)",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ոսկեգույն",
-            "translation": "цвет золота"
+            "translation": "цвет золота",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "որովհետեվ",
-            "translation": "потому что"
+            "translation": "потому что",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "շուտ",
-            "translation": "рано"
+            "translation": "рано",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ուշ",
-            "translation": "поздно"
+            "translation": "поздно",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "պանիր",
-            "translation": "сыр"
+            "translation": "сыр",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "խնձոր",
-            "translation": "яблоко"
+            "translation": "яблоко",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ելակ",
-            "translation": "клубника"
+            "translation": "клубника",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "կարագ",
-            "translation": "масло"
+            "translation": "масло",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ձու",
-            "translation": "яйцо"
+            "translation": "яйцо",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "կաթ",
-            "translation": "молоко"
+            "translation": "молоко",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "միս",
-            "translation": "мясо"
+            "translation": "мясо",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "պատրաստել",
-            "translation": "готовить"
+            "translation": "готовить",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "նախաճաշել",
-            "translation": "завтракать"
+            "translation": "завтракать",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "դպրոց",
-            "translation": "школа"
+            "translation": "школа",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "սովորել",
-            "translation": "учить/учиться"
+            "translation": "учить/учиться",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ճաշել",
-            "translation": "обедать"
+            "translation": "обедать",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "սրճարան",
-            "translation": "кафе"
+            "translation": "кафе",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "գիշեր",
-            "translation": "ночь"
+            "translation": "ночь",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "գինի",
-            "translation": "вино"
+            "translation": "вино",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "որտեղ",
-            "translation": "где"
+            "translation": "где",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "որտեղից",
-            "translation": "откуда"
+            "translation": "откуда",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ուր",
-            "translation": "куда"
+            "translation": "куда",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "մուրաբա",
-            "translation": "варенье"
+            "translation": "варенье",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "սուրճ",
-            "translation": "кофе"
+            "translation": "кофе",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "թեյ",
-            "translation": "чай"
+            "translation": "чай",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "դե",
-            "translation": "ну"
+            "translation": "ну",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "դեմ",
-            "translation": "против"
+            "translation": "против",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "կես",
-            "translation": "половина"
+            "translation": "половина",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "մեկ",
-            "translation": "один"
+            "translation": "один",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ուտել",
-            "translation": "есть, кушать"
+            "translation": "есть, кушать",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "դնել",
-            "translation": "положить"
+            "translation": "положить",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "տուն",
-            "translation": "дом"
+            "translation": "дом",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "կին",
-            "translation": "жена, женщина"
+            "translation": "жена, женщина",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "ամուսին",
-            "translation": "муж"
+            "translation": "муж",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "անկախ",
-            "translation": "независимый, независимо"
+            "translation": "независимый, независимо",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "անկախություն",
-            "translation": "независимость"
+            "translation": "независимость",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "քսանմեկ",
-            "translation": "двадцать один"
+            "translation": "двадцать один",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "քսան",
-            "translation": "двадцать"
+            "translation": "двадцать",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "սեպտեմբեր",
-            "translation": "сентябрь"
+            "translation": "сентябрь",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "բաժակ",
-            "translation": "чашка"
+            "translation": "чашка",
+            "tags": [
+                "lesson_03"
+            ]
         },
         {
             "value": "կաթնաշոռ",
-            "translation": "творог"
+            "translation": "творог",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "եսիմ",
-            "translation": "не знаю"
+            "translation": "не знаю",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
-            "value": "շաբաթ",
-            "translation": "суббота / неделя"
+            "value": "շաբաթը",
+            "translation": "суббота / неделя",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ռազմիկ",
-            "translation": "воин"
+            "translation": "воин",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "լեռ",
-            "translation": "гора"
+            "translation": "гора",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ձուկ",
-            "translation": "рыба"
+            "translation": "рыба",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ձմերուկ",
-            "translation": "арбуз"
+            "translation": "арбуз",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ձմեռ",
-            "translation": "зима"
+            "translation": "зима",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "աշուն",
-            "translation": "осень"
+            "translation": "осень",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ձեռք",
-            "translation": "рука"
+            "translation": "рука",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "երեխա",
-            "translation": "ребёнок"
+            "translation": "ребёнок",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "զբաղված",
-            "translation": "занят"
+            "translation": "занят",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ազատ",
-            "translation": "свободный"
+            "translation": "свободный",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճաշել",
-            "translation": "обедать"
+            "translation": "обедать",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "հանդիպել",
-            "translation": "встретить, встретиться"
+            "translation": "встретить, встретиться",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "գրադարան",
-            "translation": "библиотека"
+            "translation": "библиотека",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "օտար",
-            "translation": "иностранный"
+            "translation": "иностранный",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "նաև",
-            "translation": "также"
+            "translation": "также",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճապոներեն",
-            "translation": "японский"
+            "translation": "японский",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ջիմ",
-            "translation": "спортзал"
+            "translation": "спортзал",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "սովորաբար",
-            "translation": "обычно"
+            "translation": "обычно",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "հետ",
-            "translation": "с (послелог)"
+            "translation": "с (послелог)",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "կամ",
-            "translation": "или"
+            "translation": "или",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "հանգստանալ",
-            "translation": "отдыхать"
+            "translation": "отдыхать",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "նայել",
-            "translation": "смотреть"
+            "translation": "смотреть",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "կարդալ",
-            "translation": "читать"
+            "translation": "читать",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "զարթնել",
-            "translation": "проснуться"
+            "translation": "проснуться",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "արև",
-            "translation": "солнце"
+            "translation": "солнце",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճուտ",
-            "translation": "цыплёнок"
+            "translation": "цыплёнок",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճահիճ",
-            "translation": "болото"
+            "translation": "болото",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճանճ",
-            "translation": "муха"
+            "translation": "муха",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճկուն",
-            "translation": "гибкий"
+            "translation": "гибкий",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճաշ",
-            "translation": "обед"
+            "translation": "обед",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճերմակ",
-            "translation": "белый"
+            "translation": "белый",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճլվլալ",
-            "translation": "чирикать"
+            "translation": "чирикать",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճնճղուկ",
-            "translation": "воробей"
+            "translation": "воробей",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ճիշտ",
-            "translation": "правильный"
+            "translation": "правильный",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "չիր",
-            "translation": "сухофрукты"
+            "translation": "сухофрукты",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "չնչին",
-            "translation": "незначительный"
+            "translation": "незначительный",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "չորս",
-            "translation": "четыре"
+            "translation": "четыре",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "հիշաչար",
-            "translation": "злопамятный"
+            "translation": "злопамятный",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "չաչանակ",
-            "translation": "болтун"
+            "translation": "болтун",
+            "tags": [
+                "lesson_04"
+            ]
         },
         {
             "value": "ջերմ",
-            "translation": "тёплый"
+            "translation": "тёплый",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ջուր",
-            "translation": "вода"
+            "translation": "вода",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "գարեջուր",
-            "translation": "пиво"
+            "translation": "пиво",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ջնջել",
-            "translation": "стереть, удалить"
+            "translation": "стереть, удалить",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ջինջ",
-            "translation": "чистый, ясный"
+            "translation": "чистый, ясный",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "փյունիկ",
-            "translation": "феникс"
+            "translation": "феникс",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "փայտ",
-            "translation": "дрова"
+            "translation": "дрова",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "փերի",
-            "translation": "фея"
+            "translation": "фея",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "փետուր",
-            "translation": "перо"
+            "translation": "перо",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "եփել",
-            "translation": "варить"
+            "translation": "варить",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "թափել",
-            "translation": "высыпать, вылить"
+            "translation": "высыпать, вылить",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "փայլփյուն",
-            "translation": "блестящий"
+            "translation": "блестящий",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "խոտ",
-            "translation": "трава"
+            "translation": "трава",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "խիտ",
-            "translation": "густой"
+            "translation": "густой",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "վախ",
-            "translation": "страх"
+            "translation": "страх",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "վախենալ",
-            "translation": "бояться"
+            "translation": "бояться",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "աղ",
-            "translation": "соль"
+            "translation": "соль",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "վաղ",
-            "translation": "рано"
+            "translation": "рано",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "վաղը",
-            "translation": "завтра"
+            "translation": "завтра",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ուղեղ",
-            "translation": "ум"
+            "translation": "ум",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "սեղան",
-            "translation": "стол"
+            "translation": "стол",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "խաղալ",
-            "translation": "играть"
+            "translation": "играть",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "խաղող",
-            "translation": "виноград"
+            "translation": "виноград",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "տեղ",
-            "translation": "место"
+            "translation": "место",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "այստեղ",
-            "translation": "тут"
+            "translation": "тут",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ամեն տեղ",
-            "translation": "везде"
+            "translation": "везде",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "եղանակ",
-            "translation": "погода"
+            "translation": "погода",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "դեղ",
-            "translation": "лекарство"
+            "translation": "лекарство",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "դեղատուն",
-            "translation": "аптека"
+            "translation": "аптека",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "տղա",
-            "translation": "мальчик, парень"
+            "translation": "мальчик, парень",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "աստղ",
-            "translation": "звезда"
+            "translation": "звезда",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "գիտենալ",
-            "translation": "знать"
+            "translation": "знать",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ունենալ",
-            "translation": "иметь"
+            "translation": "иметь",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "բայց",
-            "translation": "но"
+            "translation": "но",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "որովհետև",
-            "translation": "потому что"
+            "translation": "потому что",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "կարող",
-            "translation": "мочь"
+            "translation": "мочь",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "տեսնել",
-            "translation": "видеть"
+            "translation": "видеть",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "գյուղ",
-            "translation": "деревня"
+            "translation": "деревня",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "լուսամուտ",
-            "translation": "окно"
+            "translation": "окно",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "բացվել",
-            "translation": "открываться"
+            "translation": "открываться",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "տեսարան",
-            "translation": "вид"
+            "translation": "вид",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "սիրուն",
-            "translation": "красивый"
+            "translation": "красивый",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "սարեր",
-            "translation": "горы"
+            "translation": "горы",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "հյուր գնալ",
-            "translation": "пойти в гости"
+            "translation": "пойти в гости",
+            "tags": [
+                "lesson_05"
+            ]
         },
         {
             "value": "ատամ",
-            "translation": "зуб"
+            "translation": "зуб",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "քայլել",
-            "translation": "ходить, гулять"
+            "translation": "ходить, гулять",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
-            "value": "Խնդրում եմ",
-            "translation": "пожалуйста (просьба)"
+            "value": "խնդրում եմ",
+            "translation": "пожалуйста (просьба)",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "խնդրեմ",
-            "translation": "пожалуйста (на спасибо)"
+            "translation": "пожалуйста (на спасибо)",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "դեռ ոչ",
-            "translation": "ещё нет"
+            "translation": "ещё нет",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "դե",
-            "translation": "ну"
+            "translation": "ну",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "հատ",
-            "translation": "штука"
+            "translation": "штука",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "մի հատ",
-            "translation": "одна штука, за одного (в автобусе)"
+            "translation": "одна штука, за одного (в автобусе)",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "ինչքան",
-            "translation": "сколько"
+            "translation": "сколько",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "կապի մեջ",
-            "translation": "на связи"
+            "translation": "на связи",
+            "tags": [
+                "lesson_06"
+            ]
         },
         {
             "value": "ամպամած",
-            "translation": "пасмурный"
+            "translation": "пасмурный",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "մոխրագույն",
-            "translation": "серый"
+            "translation": "серый",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "մոխիր",
-            "translation": "пепел"
+            "translation": "пепел",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "պլանավորել",
-            "translation": "планировать"
+            "translation": "планировать",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "կարկանդակ",
-            "translation": "пирог"
+            "translation": "пирог",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "ցուրտ",
-            "translation": "холодный"
+            "translation": "холодный",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "խաղ",
-            "translation": "игра"
+            "translation": "игра",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "լսել",
-            "translation": "слышать, слушать"
+            "translation": "слышать, слушать",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "նվագել",
-            "translation": "играть (на муз. инструменте)"
+            "translation": "играть (на муз. инструменте)",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "շուն",
-            "translation": "собака"
+            "translation": "собака",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "ոնց միշտ",
-            "translation": "как всегда"
+            "translation": "как всегда",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "ինձ",
-            "translation": "мне"
+            "translation": "мне",
+            "tags": [
+                "lesson_07"
+            ]
         },
         {
             "value": "ուտելիք",
-            "translation": "еда"
+            "translation": "еда",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "բրինձ",
-            "translation": "рис"
+            "translation": "рис",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "ապուր",
-            "translation": "суп"
+            "translation": "суп",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "հյութ",
-            "translation": "сок"
+            "translation": "сок",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "հնդկաձավար",
-            "translation": "гречка"
+            "translation": "гречка",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "աղցան",
-            "translation": "салат"
+            "translation": "салат",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "ձվածեղ",
-            "translation": "омлет"
+            "translation": "омлет",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "գնել",
-            "translation": "купить"
+            "translation": "купить",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "վճարել",
-            "translation": "платить"
+            "translation": "платить",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "քարտով",
-            "translation": "картой (платить)"
+            "translation": "картой (платить)",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "կանխիկ",
-            "translation": "наличными"
+            "translation": "наличными",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "փող",
-            "translation": "деньги"
+            "translation": "деньги",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "ի՞նչ արժի",
-            "translation": "сколько стоит?"
+            "translation": "сколько стоит?",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "ինչքա՞ն եմ վճարում",
-            "translation": "сколько должен?"
+            "translation": "сколько должен?",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "իհարկե",
-            "translation": "конечно"
+            "translation": "конечно",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "համ",
-            "translation": "вкус"
+            "translation": "вкус",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "համով է",
-            "translation": "вкусный"
+            "translation": "вкусный",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "էլի՞ ինչ-որ բան",
-            "translation": "ещё что-нибудь?"
+            "translation": "ещё что-нибудь?",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "թարմ",
-            "translation": "свежий"
+            "translation": "свежий",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "վերջ",
-            "translation": "всё / конец"
+            "translation": "всё / конец",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "ձեր մանրը",
-            "translation": "ваша сдача"
+            "translation": "ваша сдача",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "շնորհակալություն",
-            "translation": "спасибо"
+            "translation": "спасибо",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "գնորդ",
-            "translation": "покупатель"
+            "translation": "покупатель",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "գալ",
-            "translation": "прийти"
+            "translation": "прийти",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "եկել",
-            "translation": "пришёл"
+            "translation": "пришёл",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "կերել",
-            "translation": "поел"
+            "translation": "поел",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "տալ",
-            "translation": "давать"
+            "translation": "давать",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "տվել",
-            "translation": "дал"
+            "translation": "дал",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "տեսել",
-            "translation": "увидел"
+            "translation": "увидел",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "դրել",
-            "translation": "положил"
+            "translation": "положил",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "տանել",
-            "translation": "нести"
+            "translation": "нести",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "տարել",
-            "translation": "отнёс"
+            "translation": "отнёс",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "անել",
-            "translation": "делать"
+            "translation": "делать",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "արել",
-            "translation": "сделал"
+            "translation": "сделал",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "արդեն",
-            "translation": "уже"
+            "translation": "уже",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "ձմռանը",
-            "translation": "зимой"
+            "translation": "зимой",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "տոնել",
-            "translation": "праздновать"
+            "translation": "праздновать",
+            "tags": [
+                "lesson_08"
+            ]
         },
         {
             "value": "գրել",
-            "translation": "писать"
+            "translation": "писать",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "նկարել",
-            "translation": "рисовать / фотографировать / снимать"
+            "translation": "рисовать / фотографировать / снимать",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "երգ",
-            "translation": "песня"
+            "translation": "песня",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "երգ լսել",
-            "translation": "слушать музыку/песню"
+            "translation": "слушать музыку/песню",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "աշխատել",
-            "translation": "работать"
+            "translation": "работать",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "նվագել",
-            "translation": "играть на муз. инструменте"
+            "translation": "играть на муз. инструменте",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "գիրք",
-            "translation": "книга"
+            "translation": "книга",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "երաժիշտ",
-            "translation": "музыкант"
+            "translation": "музыкант",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "կիթառ",
-            "translation": "гитара"
+            "translation": "гитара",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "այգի",
-            "translation": "парк"
+            "translation": "парк",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "հեռախոս",
-            "translation": "телефон"
+            "translation": "телефон",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "ուսուցիչ",
-            "translation": "учитель"
+            "translation": "учитель",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "գրող",
-            "translation": "писатель"
+            "translation": "писатель",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "դերասան",
-            "translation": "актёр"
+            "translation": "актёр",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "բժիշկ",
-            "translation": "врач"
+            "translation": "врач",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "հիվանդանոց",
-            "translation": "больница"
+            "translation": "больница",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "նկարիչ",
-            "translation": "художник"
+            "translation": "художник",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "դեռ",
-            "translation": "ещё (пока что)"
+            "translation": "ещё (пока что)",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "համերգ",
-            "translation": "концерт"
+            "translation": "концерт",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "ինձ հետ",
-            "translation": "со мной"
+            "translation": "со мной",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "սիրով",
-            "translation": "с удовольствием"
+            "translation": "с удовольствием",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "հրապարակ",
-            "translation": "площадь"
+            "translation": "площадь",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "միասին",
-            "translation": "вместе"
+            "translation": "вместе",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "ջութակ",
-            "translation": "скрипка"
+            "translation": "скрипка",
+            "tags": [
+                "lesson_09"
+            ]
         },
         {
             "value": "անձրև",
-            "translation": "дождь"
+            "translation": "дождь",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "սառն",
-            "translation": "прохладный"
+            "translation": "прохладный",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "հավես չունեմ",
-            "translation": "нет желания"
+            "translation": "нет желания",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "տրամադրություն չունեմ",
-            "translation": "нет настроения"
+            "translation": "нет настроения",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "ոչ մի տեղ",
-            "translation": "нигде"
+            "translation": "нигде",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "ոչ մի բան",
-            "translation": "ничего"
+            "translation": "ничего",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "պառկել",
-            "translation": "лежать"
+            "translation": "лежать",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "մտածել",
-            "translation": "думать"
+            "translation": "думать",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "երեկ",
-            "translation": "вчера"
+            "translation": "вчера",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "եթե",
-            "translation": "если"
+            "translation": "если",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "օֆիս",
-            "translation": "офис"
+            "translation": "офис",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "համար",
-            "translation": "для (послелог)"
+            "translation": "для (послелог)",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "մեր",
-            "translation": "наш"
+            "translation": "наш",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "քո",
-            "translation": "твой"
+            "translation": "твой",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "ձեր",
-            "translation": "ваш"
+            "translation": "ваш",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "նրա",
-            "translation": "(чей?) его"
+            "translation": "(чей?) его",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "նրանց",
-            "translation": "(чей/кого/кому?) их/им"
+            "translation": "(чей/кого/кому?) их/им",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "քեզ",
-            "translation": "тебя/тебе"
+            "translation": "тебя/тебе",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "նրան",
-            "translation": "его/ему"
+            "translation": "его/ему",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "մեզ",
-            "translation": "нас/нам"
+            "translation": "нас/нам",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "ձեզ",
-            "translation": "вас/вам"
+            "translation": "вас/вам",
+            "tags": [
+                "lesson_10"
+            ]
         },
         {
             "value": "սև",
-            "translation": "чёрный"
+            "translation": "чёрный",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "սպիտակ",
-            "translation": "белый"
+            "translation": "белый",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "կանաչ",
-            "translation": "зелёный"
+            "translation": "зелёный",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "դեղին",
-            "translation": "жёлтый"
+            "translation": "жёлтый",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "կապույտ",
-            "translation": "синий"
+            "translation": "синий",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "կարմիր",
-            "translation": "красный"
+            "translation": "красный",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "նարնջագույն",
-            "translation": "оранжевый"
+            "translation": "оранжевый",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "վարդագույն",
-            "translation": "розовый"
+            "translation": "розовый",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "մանուշակագույն",
-            "translation": "фиолетовый"
+            "translation": "фиолетовый",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "շագանակագույն",
-            "translation": "коричневый"
+            "translation": "коричневый",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "երկնագույն",
-            "translation": "голубой"
+            "translation": "голубой",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "նարինջ",
-            "translation": "апельсин"
+            "translation": "апельсин",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "վարդ",
-            "translation": "роза"
+            "translation": "роза",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "մանուշակ",
-            "translation": "фиалка"
+            "translation": "фиалка",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "շագանակ",
-            "translation": "каштан"
+            "translation": "каштан",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "երկինք",
-            "translation": "небо"
+            "translation": "небо",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "արծաթ",
-            "translation": "серебро"
+            "translation": "серебро",
+            "tags": [
+                "lesson_11"
+            ]
         },
         {
             "value": "արծաթագույն",
-            "translation": "цвет серебра"
+            "translation": "цвет серебра",
+            "tags": [
+                "lesson_11"
+            ]
+        },
+        {
+            "value": "արևոտ",
+            "translation": "солнечно",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "խոսել",
+            "translation": "говорить",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "ասել",
+            "translation": "сказать",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "մնացածը",
+            "translation": "остальное",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "հենց նոր",
+            "translation": "только что",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "ինչ",
+            "translation": "что",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "ինչու",
+            "translation": "почему",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "թանգարան",
+            "translation": "музей",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "մութ",
+            "translation": "тёмный",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "գազար",
+            "translation": "морковь",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "գազարագույն",
+            "translation": "цвет моркови",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "մարդ",
+            "translation": "человек",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "ծիածան",
+            "translation": "радуга",
+            "tags": [
+                "lesson_12"
+            ]
+        },
+        {
+            "value": "ընթրել",
+            "translation": "ужинать",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "հաց",
+            "translation": "хлеб",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "լոլիկ",
+            "translation": "помидор",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "բանջարեղեն",
+            "translation": "овощи",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "միրք",
+            "translation": "фрукты",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "երշիկ",
+            "translation": "колбаса",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "նրբերշիկ",
+            "translation": "сосиска",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "թթվասեր",
+            "translation": "сметана",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "խոհանոց",
+            "translation": "кухня",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "օղի",
+            "translation": "водка",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "շաքար",
+            "translation": "сахар",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "միշտ",
+            "translation": "всегда",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "երբ",
+            "translation": "когда",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "ամիս",
+            "translation": "месяц",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "ծառ",
+            "translation": "дерево",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "ծնունդ",
+            "translation": "рождение",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "տոն",
+            "translation": "праздник",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "ընթրիք",
+            "translation": "ужин",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "մեկ-մեկ",
+            "translation": "иногда",
+            "tags": [
+                "lesson_13"
+            ]
+        },
+        {
+            "value": "քաղաք",
+            "translation": "город",
+            "tags": [
+                "lesson_13"
+            ]
         }
     ]
     ;
