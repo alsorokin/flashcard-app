@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Word, words } from '../words';
+import { Word, words, getRandomWords } from '../words';
 
 @Component({
   selector: 'app-flashcard',
@@ -62,11 +62,11 @@ export class FlashcardComponent {
   }
 
   getRandomWordsOrError(count: number): { options: Word[], word: Word } {
-    const options = this.getRandomWords(count);
+    const options = getRandomWords(count);
     const randomIndex = Math.floor(Math.random() * options.length);
     let word;
     if (this.shouldGetErrorWord()) {
-      word = this.cloneWord(words.find(w => w.value === this.getTopErrorValueUnsafe())!);
+      word = {...(words.find(w => w.value === this.getTopErrorValueUnsafe())!)};
       options[randomIndex] = word;
       if (this.errors.get(word.value)! <= 1) {
         this.errors.delete(word.value);
@@ -113,36 +113,5 @@ export class FlashcardComponent {
         this.errors.set(currentWord.value, 1);
       }
     }
-  }
-
-  cloneWord(word: Word): Word {
-    return { ...word };
-  }
-
-  getRandomWords(count: number): Word[] {
-    /*
-    this.http.get('https://localhost:7073/words?limit=5').subscribe(data => {
-      this.words = data as any[];
-      const randomIndex = Math.floor(Math.random() * this.words.length);
-      this.currentWord = this.words[randomIndex];
-    });
-    */
-    // for now, just get the words from a local file (../words.ts)
-    if (count >= words.length) {
-      return words.map(w => this.cloneWord(w));
-    }
-    const result: Word[] = [];
-    let i = 0;
-    while (i < count) {
-      const random_i = Math.floor(Math.random() * words.length);
-      if (result.find(w => w.value === words[random_i].value) ||
-          result.find(w => w.translation === words[random_i].translation) ||
-          words[random_i].value === this.frontWord.value) {
-        continue;
-      }
-      result.push(this.cloneWord(words[random_i]));
-      i++;
-    }
-    return result;
   }
 }

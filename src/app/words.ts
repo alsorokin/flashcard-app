@@ -4,6 +4,64 @@ export interface Word {
     tags: string[];
 };
 
+/**
+ * Get a random word from the list of words.
+ * 
+ * @param count {number} The number of random words to get.
+ * @param tags {string[]} An array of tags to filter the words by.
+ * @param ignored {string[]} An array of words to ignore.
+ * @returns {Word[]} An array of random words.
+ */
+export function getRandomWords(count: number, tags: string[] = [], ignored: string[] = []): Word[] {
+    if (count === undefined || count === null || count <= 0) {
+        return [];
+    }
+    const filteredWords: Word[] = [];
+    if (!tags || tags.length === 0) {
+        filteredWords.push(...words);
+    } else {
+        words.forEach(w => {
+            if (w.tags.some(t => tags.includes(t))) {
+                filteredWords.push(w);
+            }
+        });
+    }
+    if (count >= filteredWords.length) {
+        return filteredWords.map(w => { return { ...w } });
+    }
+    const result: Word[] = [];
+    let i = 0;
+    while (i < count) {
+        const random_i = Math.floor(Math.random() * filteredWords.length);
+        if (result.find(w => w.value === filteredWords[random_i].value) ||
+            result.find(w => w.translation === filteredWords[random_i].translation) ||
+            ignored.find(w => w === filteredWords[random_i].value)) {
+            continue;
+        }
+        result.push({ ...filteredWords[random_i] });
+        i++;
+    }
+    return result;
+}
+
+/**
+ * An array of all words with their translations and associated tags.
+ * 
+ * @constant
+ * @type {Word[]}
+ * 
+ * @property {string} value - The word in the original language.
+ * @property {string} translation - The translation of the word.
+ * @property {string[]} tags - Tags associated with the word, indicating the lesson or category it belongs to.
+ * 
+ * @example
+ * // Example word object
+ * {
+ *   "value": "ծանոթանալ",
+ *   "translation": "познакомиться",
+ *   "tags": ["lesson_01"]
+ * }
+ */
 export const words: Word[] =
     [
         {
