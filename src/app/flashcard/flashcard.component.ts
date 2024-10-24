@@ -62,7 +62,7 @@ export class FlashcardComponent {
   }
 
   getRandomWordsOrError(count: number): { options: Word[], word: Word } {
-    const options = getRandomWords(count);
+    const options = getRandomWords(count, [], [this.frontWord.value, this.backWord.value]);
     const randomIndex = Math.floor(Math.random() * options.length);
     let word;
     if (this.shouldGetErrorWord()) {

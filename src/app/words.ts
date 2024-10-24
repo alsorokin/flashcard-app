@@ -16,7 +16,7 @@ export function getRandomWords(count: number, tags: string[] = [], ignored: stri
     if (count === undefined || count === null || count <= 0) {
         return [];
     }
-    const filteredWords: Word[] = [];
+    let filteredWords: Word[] = [];
     if (!tags || tags.length === 0) {
         filteredWords.push(...words);
     } else {
@@ -26,6 +26,9 @@ export function getRandomWords(count: number, tags: string[] = [], ignored: stri
             }
         });
     }
+    if (ignored && ignored.length > 0) {
+        filteredWords = filteredWords.filter(w => !ignored.includes(w.value));
+    }
     if (count >= filteredWords.length) {
         return filteredWords.map(w => { return { ...w } });
     }
@@ -34,8 +37,7 @@ export function getRandomWords(count: number, tags: string[] = [], ignored: stri
     while (i < count) {
         const random_i = Math.floor(Math.random() * filteredWords.length);
         if (result.find(w => w.value === filteredWords[random_i].value) ||
-            result.find(w => w.translation === filteredWords[random_i].translation) ||
-            ignored.find(w => w === filteredWords[random_i].value)) {
+            result.find(w => w.translation === filteredWords[random_i].translation)) {
             continue;
         }
         result.push({ ...filteredWords[random_i] });
