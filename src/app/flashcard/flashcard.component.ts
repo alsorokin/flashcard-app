@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
 import { Word, words, getRandomWords } from '../words';
 
 @Component({
@@ -27,7 +26,7 @@ export class FlashcardComponent {
     return this.isFlipped ? this.frontOptions : this.backOptions;
   }
 
-  constructor(private http: HttpClient) {
+  constructor() {
     this.frontWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting' ] };
     this.backWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting '] };
   }

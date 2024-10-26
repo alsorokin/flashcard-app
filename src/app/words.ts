@@ -47,6 +47,17 @@ export function getRandomWords(count: number, tags: string[] = [], ignored: stri
 }
 
 /**
+ * Get all tags associated with the words.
+ * 
+ * @returns {Array<string>} An array of all tags associated with the words.
+ */
+export function getAllTags(): string[] {
+    const tags = new Set<string>();
+    words.forEach(w => w.tags.forEach(t => tags.add(t)));
+    return Array.from(tags);
+}
+
+/**
  * An array of all words with their translations and associated tags.
  * 
  * @constant
