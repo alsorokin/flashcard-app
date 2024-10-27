@@ -1,23 +1,35 @@
 import { Component } from '@angular/core';
-import { getAllTags } from '../words';
+import { getAllTags, WordCollection } from '../words';
 import { CommonModule } from '@angular/common';
+import { WordsService, CollectionChangeEvent } from '../words.service';
 
 @Component({
   selector: 'app-settings',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './settings.component.html',
-  styleUrl: './settings.component.css'
+  styleUrl: './settings.component.css',
+  providers: [WordsService]
 })
 export class SettingsComponent {
   isCollapsed: boolean = true;
-  wordCollections: string[];
+  wordCollections: WordCollection[];
 
-  constructor() {
-    this.wordCollections = getAllTags();
+  constructor(private wordsService: WordsService) {
+    this.wordCollections = wordsService.getWordCollections();
+    wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
+      const collection = this.wordCollections.find(c => c.name === event.name);
+      if (collection) {
+        collection.selected = event.selected;
+      }
+    });
   }
 
   toggleCollapse(): void {
     this.isCollapsed = !this.isCollapsed;
+  }
+
+  toggleCollectionSelected(event: Event, collection: WordCollection): void {
+    this.wordsService.setCollectionSelected(collection.name, (event.target as HTMLInputElement).checked);
   }
 }

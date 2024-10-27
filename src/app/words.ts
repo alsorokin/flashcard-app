@@ -4,6 +4,11 @@ export interface Word {
     tags: string[];
 };
 
+export interface WordCollection {
+    name: string;
+    selected: boolean;
+}
+
 /**
  * Get a random word from the list of words.
  * 

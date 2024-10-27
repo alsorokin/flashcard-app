@@ -4,8 +4,8 @@
     </div>
     <div class="settings" [class]="{'collapsed': isCollapsed}">
         <span *ngFor="let collection of wordCollections">
-            <input type="checkbox" [id]="collection + '_checkbox'" />
-            <label [htmlFor]="collection + '_checkbox'" >{{ collection }}</label>
+            <input type="checkbox" [id]="collection.name + '_checkbox'" (change)="toggleCollectionSelected($event, collection)" [checked]="collection.selected" />
+            <label [htmlFor]="collection.name + '_checkbox'" >{{ collection.name }}</label>
         </span>
     </div>
 </div>
