@@ -1,6 +1,11 @@
-<div class="settings-wrapper">
+<div class="settings-wrapper" [class]="{'collapsed': isCollapsed}">
     <div class="button-wrapper">
         <button class="settings-button" type="button" (click)="toggleCollapse()">⚙</button>
     </div>
-    <div class="settings" [class]="{'collapsed': isCollapsed}"></div>
+    <div class="settings" [class]="{'collapsed': isCollapsed}">
+        <span *ngFor="let collection of wordCollections">
+            <input type="checkbox" [id]="collection + '_checkbox'" />
+            <label [htmlFor]="collection + '_checkbox'" >{{ collection }}</label>
+        </span>
+    </div>
 </div>
