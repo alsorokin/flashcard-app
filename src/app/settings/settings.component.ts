@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
-import { getAllTags, WordCollection } from '../words';
 import { CommonModule } from '@angular/common';
-import { WordsService, CollectionChangeEvent } from '../words.service';
+import { WordsService, WordCollection, CollectionChangeEvent } from '../words.service';
 
 @Component({
   selector: 'app-settings',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './settings.component.html',
-  styleUrl: './settings.component.css',
-  providers: [WordsService]
+  styleUrl: './settings.component.css'
 })
 export class SettingsComponent {
   isCollapsed: boolean = true;

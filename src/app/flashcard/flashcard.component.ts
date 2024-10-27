@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Word, words, getRandomWords } from '../words';
+import { Word } from '../words';
+import { WordsService, CollectionChangeEvent } from '../words.service';
 
 @Component({
   selector: 'app-flashcard',
@@ -10,6 +11,7 @@ import { Word, words, getRandomWords } from '../words';
   styleUrl: './flashcard.component.css'
 })
 export class FlashcardComponent {
+  words: Word[];
   frontOptions: Word[] = [];
   frontWord: Word;
   backOptions: Word[] = [];
@@ -26,12 +28,20 @@ export class FlashcardComponent {
     return this.isFlipped ? this.frontOptions : this.backOptions;
   }
 
-  constructor() {
+  constructor(private wordsService: WordsService) {
     this.frontWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting' ] };
     this.backWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting '] };
+    this.words = [];
   }
 
   ngOnInit(): void {
+    this.words = this.wordsService.getWords();
+    this.wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
+      this.wordsService.updateWords(this.words, event);
+      this.refreshFront();
+      this.refreshBack();
+      this.errors.clear();
+    });
     this.refreshFront();
     this.refreshBack();
   }
@@ -61,11 +71,14 @@ export class FlashcardComponent {
   }
 
   getRandomWordsOrError(count: number): { options: Word[], word: Word } {
-    const options = getRandomWords(count, [], [this.frontWord.value, this.backWord.value]);
+    if (this.words.length === 0) {
+      return { options: [], word: { value: 'Нажмите на ⚙ и выберите категорию', translation: '', tags: [] } };
+    }
+    const options = this.wordsService.getRandomWords(this.words, count, [this.frontWord.value, this.backWord.value]);
     const randomIndex = Math.floor(Math.random() * options.length);
     let word;
     if (this.shouldGetErrorWord()) {
-      word = {...(words.find(w => w.value === this.getTopErrorValueUnsafe())!)};
+      word = {...(this.words.find(w => w.value === this.getTopErrorValueUnsafe())!)};
       options[randomIndex] = word;
       if (this.errors.get(word.value)! <= 1) {
         this.errors.delete(word.value);
