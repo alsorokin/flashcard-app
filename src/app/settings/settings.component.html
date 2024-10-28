@@ -3,10 +3,9 @@
         <button class="settings-button" type="button" (click)="toggleCollapse()">⚙</button>
     </div>
     <div class="settings" [class]="{'collapsed': isCollapsed}">
-        <span *ngFor="let collection of wordCollections">
+        <label *ngFor="let collection of wordCollections" [htmlFor]="collection.htmlId + '_checkbox'">
             <input type="checkbox" [id]="collection.htmlId + '_checkbox'"
-                (change)="toggleCollectionSelected($event, collection)" [checked]="collection.selected" />
-            <label [htmlFor]="collection.htmlId + '_checkbox'">{{ collection.name }}</label>
-        </span>
+                (change)="toggleCollectionSelected($event, collection)" [checked]="collection.selected" /> {{ collection.name }}
+        </label>
     </div>
 </div>

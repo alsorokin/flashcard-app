@@ -27,11 +27,10 @@ export class WordsService {
 
   constructor() {
     const tags = getAllTags();
-    let currentIdCount = 0;
     this.wordCollections = tags.map(tag => {
       return {
         name: tag,
-        htmlId: 'collection-' + currentIdCount++,
+        htmlId: tag.replaceAll(' ', '_'),
         selected: true,
       };
     });
