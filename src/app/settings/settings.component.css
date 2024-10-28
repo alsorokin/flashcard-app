@@ -1,0 +1,62 @@
+div.settings-wrapper {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: right;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #cbdee6;
+}
+
+div.settings-wrapper.collapsed {
+    border-style: hidden;
+    background-color: transparent;
+}
+
+div.button-wrapper {
+    display: inline-block;
+    background: transparent;
+}
+
+button.settings-button {
+    float: right;
+    color: black;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    background: transparent;
+}
+
+div.settings {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+div.settings.collapsed {
+    display: none;
+}
+
+div.settings input {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+div.settings label {
+    display: block;
+    font-size: 16px;
+    padding-left: 15px;
+    text-indent: -15px;
+}

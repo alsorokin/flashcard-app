@@ -1,1224 +1,2364 @@
-export default
+export interface Word {
+    value: string;
+    translation: string;
+    tags: string[];
+};
+
+/**
+ * Get all tags associated with the words.
+ * 
+ * @returns {Array<string>} An array of all tags associated with the words.
+ */
+export function getAllTags(): string[] {
+    const tags = new Set<string>();
+    words.forEach(w => w.tags.forEach(t => tags.add(t)));
+    return Array.from(tags);
+}
+
+/**
+ * Get all words.
+ * 
+ * @returns {Word[]} An array of all words.
+ */
+export function getAllWords(): Word[] {
+    return words.map(w => { return { ...w } });
+}
+
+/**
+ * Get all words that have the specified tag.
+ * 
+ * @param tag {string} The tag to filter the words by.
+ * @returns {Word[]} An array of words that have the specified tag.
+ */
+export function getWordsByTag(tag: string): Word[] {
+    return words.filter(w => w.tags.includes(tag)).map(w => { return { ...w } });
+}
+
+const words: Word[] =
     [
         {
             "value": "ծանոթանալ",
-            "translation": "познакомиться"
+            "translation": "познакомиться",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "շատ ուրախ եմ",
-            "translation": "очень рад"
+            "translation": "очень рад",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "շատ հաճելի է",
-            "translation": "очень приятно"
+            "translation": "очень приятно",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "ինձ էլ",
-            "translation": "мне тоже"
+            "translation": "мне тоже",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "ես էլ",
-            "translation": "я тоже"
+            "translation": "я тоже",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "իմ",
-            "translation": "мой"
+            "translation": "мой",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "մի",
-            "translation": "один"
+            "translation": "один",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "միս",
-            "translation": "мясо"
-        },
-        {
-            "value": "Մասիս",
-            "translation": "Арарат"
+            "translation": "мясо",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "դու",
-            "translation": "ты"
+            "translation": "мясо",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "դաս",
-            "translation": "урок"
+            "translation": "урок",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "նա",
-            "translation": "он/она"
-        },
-        {
-            "value": "Անի",
-            "translation": "Ани"
+            "translation": "он/она",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "կա",
-            "translation": "есть, имеется"
+            "translation": "есть, имеется",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "նամակ",
-            "translation": "письмо"
+            "translation": "письмо",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "դանակ",
-            "translation": "нож"
+            "translation": "нож",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "մամա",
-            "translation": "мама"
+            "translation": "мама",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "մուկ",
-            "translation": "мышь"
+            "translation": "мышь",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "կամ",
-            "translation": "или"
+            "translation": "или",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "միակ",
-            "translation": "единственный"
+            "translation": "единственный",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "դիակ",
-            "translation": "труп"
+            "translation": "труп",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "դիմակ",
-            "translation": "маска"
-        },
-        {
-            "value": "Կիմա",
-            "translation": "Кима (ж. имя)"
-        },
-        {
-            "value": "Նիկա",
-            "translation": "Ника (ж. имя)"
+            "translation": "маска",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "հաջողություն",
-            "translation": "удачи"
+            "translation": "удачи",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "հաջող",
-            "translation": "пока"
+            "translation": "пока",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "ցտեսություն",
-            "translation": "до свидания"
+            "translation": "до свидания",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "մինչ հանդիպում",
-            "translation": "до встречи"
+            "translation": "до встречи",
+            "tags": [
+                "Урок 1"
+            ]
         },
         {
             "value": "կարոտ",
-            "translation": "тоска"
+            "translation": "тоска",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "քարոտ",
-            "translation": "каменистый"
+            "translation": "каменистый",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "տակ",
-            "translation": "под"
+            "translation": "под",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "տաք",
-            "translation": "тёплый"
+            "translation": "тёплый",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "քնել",
-            "translation": "спать"
+            "translation": "спать",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "գնալ",
-            "translation": "идти"
+            "translation": "идти",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "քույր",
-            "translation": "сестра"
+            "translation": "сестра",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "կույր",
-            "translation": "слепой"
+            "translation": "слепой",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "ցորեն",
-            "translation": "пшеница"
+            "translation": "пшеница",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "օրորոց",
-            "translation": "колыбель"
+            "translation": "колыбель",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "օր",
-            "translation": "день"
+            "translation": "день",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "օդ",
-            "translation": "воздух"
+            "translation": "воздух",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "օգուտ",
-            "translation": "польза"
+            "translation": "польза",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "օրագիր",
-            "translation": "дневник"
+            "translation": "дневник",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "այսօր",
-            "translation": "сегодня"
+            "translation": "сегодня",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "կեսօր",
-            "translation": "полдень"
+            "translation": "полдень",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "ով",
-            "translation": "кто"
+            "translation": "кто",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "ովքեր",
-            "translation": "кто (мн. число)"
+            "translation": "кто (мн. число)",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "որդի",
-            "translation": "сын"
+            "translation": "сын",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "նոր",
-            "translation": "новый"
+            "translation": "новый",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "ոզնի",
-            "translation": "ёж"
+            "translation": "ёж",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "մոտ",
-            "translation": "близко, близкий, у, к"
+            "translation": "близко, близкий, у, к",
+            "tags": [
+                "Урок 2"
+            ]
         },
         {
             "value": "հոտ",
-            "translation": "запах"
+            "translation": "запах",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "մետրո",
-            "translation": "метро"
+            "translation": "метро",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "հետո",
-            "translation": "после"
+            "translation": "после",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ոսկի",
-            "translation": "золото"
+            "translation": "золото",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "որ",
-            "translation": "который"
+            "translation": "который",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "որքան",
-            "translation": "сколько"
-        },
-        {
-            "value": "Ոսկան",
-            "translation": "Воскан (имя)"
+            "translation": "сколько",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ոսկեգույն",
-            "translation": "цвет золота"
+            "translation": "цвет золота",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "որովհետեվ",
-            "translation": "потому что"
+            "translation": "потому что",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "շուտ",
-            "translation": "рано"
+            "translation": "рано",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ուշ",
-            "translation": "поздно"
+            "translation": "поздно",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "պանիր",
-            "translation": "сыр"
+            "translation": "сыр",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "խնձոր",
-            "translation": "яблоко"
+            "translation": "яблоко",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ելակ",
-            "translation": "клубника"
+            "translation": "клубника",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "կարագ",
-            "translation": "масло"
+            "translation": "масло",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ձու",
-            "translation": "яйцо"
+            "translation": "яйцо",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "կաթ",
-            "translation": "молоко"
+            "translation": "молоко",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "միս",
-            "translation": "мясо"
+            "translation": "мясо",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "պատրաստել",
-            "translation": "готовить"
+            "translation": "готовить",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "նախաճաշել",
-            "translation": "завтракать"
+            "translation": "завтракать",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "դպրոց",
-            "translation": "школа"
+            "translation": "школа",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "սովորել",
-            "translation": "учить/учиться"
+            "translation": "учить/учиться",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ճաշել",
-            "translation": "обедать"
+            "translation": "обедать",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "սրճարան",
-            "translation": "кафе"
+            "translation": "кафе",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "գիշեր",
-            "translation": "ночь"
+            "translation": "ночь",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "գինի",
-            "translation": "вино"
+            "translation": "вино",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "որտեղ",
-            "translation": "где"
+            "translation": "где",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "որտեղից",
-            "translation": "откуда"
+            "translation": "откуда",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ուր",
-            "translation": "куда"
+            "translation": "куда",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "մուրաբա",
-            "translation": "варенье"
+            "translation": "варенье",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "սուրճ",
-            "translation": "кофе"
+            "translation": "кофе",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "թեյ",
-            "translation": "чай"
+            "translation": "чай",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "դե",
-            "translation": "ну"
+            "translation": "ну",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "դեմ",
-            "translation": "против"
+            "translation": "против",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "կես",
-            "translation": "половина"
+            "translation": "половина",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "մեկ",
-            "translation": "один"
+            "translation": "один",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ուտել",
-            "translation": "есть, кушать"
+            "translation": "есть, кушать",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "դնել",
-            "translation": "положить"
+            "translation": "положить",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "տուն",
-            "translation": "дом"
+            "translation": "дом",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "կին",
-            "translation": "жена, женщина"
+            "translation": "жена, женщина",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "ամուսին",
-            "translation": "муж"
+            "translation": "муж",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "անկախ",
-            "translation": "независимый, независимо"
+            "translation": "независимый, независимо",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "անկախություն",
-            "translation": "независимость"
+            "translation": "независимость",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "քսանմեկ",
-            "translation": "двадцать один"
+            "translation": "двадцать один",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "քսան",
-            "translation": "двадцать"
+            "translation": "двадцать",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "սեպտեմբեր",
-            "translation": "сентябрь"
+            "translation": "сентябрь",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "բաժակ",
-            "translation": "чашка"
+            "translation": "чашка",
+            "tags": [
+                "Урок 3"
+            ]
         },
         {
             "value": "կաթնաշոռ",
-            "translation": "творог"
+            "translation": "творог",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "եսիմ",
-            "translation": "не знаю"
+            "translation": "не знаю",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
-            "value": "շաբաթ",
-            "translation": "суббота / неделя"
+            "value": "շաբաթը",
+            "translation": "суббота / неделя",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ռազմիկ",
-            "translation": "воин"
+            "translation": "воин",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "լեռ",
-            "translation": "гора"
+            "translation": "гора",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ձուկ",
-            "translation": "рыба"
+            "translation": "рыба",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ձմերուկ",
-            "translation": "арбуз"
+            "translation": "арбуз",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ձմեռ",
-            "translation": "зима"
+            "translation": "зима",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "աշուն",
-            "translation": "осень"
+            "translation": "осень",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ձեռք",
-            "translation": "рука"
+            "translation": "рука",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "երեխա",
-            "translation": "ребёнок"
+            "translation": "ребёнок",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "զբաղված",
-            "translation": "занят"
+            "translation": "занят",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ազատ",
-            "translation": "свободный"
+            "translation": "свободный",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճաշել",
-            "translation": "обедать"
+            "translation": "обедать",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "հանդիպել",
-            "translation": "встретить, встретиться"
+            "translation": "встретить, встретиться",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "գրադարան",
-            "translation": "библиотека"
+            "translation": "библиотека",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "օտար",
-            "translation": "иностранный"
+            "translation": "иностранный",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "նաև",
-            "translation": "также"
+            "translation": "также",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճապոներեն",
-            "translation": "японский"
+            "translation": "японский",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ջիմ",
-            "translation": "спортзал"
+            "translation": "спортзал",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "սովորաբար",
-            "translation": "обычно"
+            "translation": "обычно",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "հետ",
-            "translation": "с (послелог)"
+            "translation": "с (послелог)",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "կամ",
-            "translation": "или"
+            "translation": "или",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "հանգստանալ",
-            "translation": "отдыхать"
+            "translation": "отдыхать",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "նայել",
-            "translation": "смотреть"
+            "translation": "смотреть",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "կարդալ",
-            "translation": "читать"
+            "translation": "читать",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "զարթնել",
-            "translation": "проснуться"
+            "translation": "проснуться",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "արև",
-            "translation": "солнце"
+            "translation": "солнце",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճուտ",
-            "translation": "цыплёнок"
+            "translation": "цыплёнок",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճահիճ",
-            "translation": "болото"
+            "translation": "болото",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճանճ",
-            "translation": "муха"
+            "translation": "муха",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճկուն",
-            "translation": "гибкий"
+            "translation": "гибкий",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճաշ",
-            "translation": "обед"
+            "translation": "обед",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճերմակ",
-            "translation": "белый"
+            "translation": "белый",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճլվլալ",
-            "translation": "чирикать"
+            "translation": "чирикать",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճնճղուկ",
-            "translation": "воробей"
+            "translation": "воробей",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ճիշտ",
-            "translation": "правильный"
+            "translation": "правильный",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "չիր",
-            "translation": "сухофрукты"
+            "translation": "сухофрукты",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "չնչին",
-            "translation": "незначительный"
+            "translation": "незначительный",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "չորս",
-            "translation": "четыре"
+            "translation": "четыре",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "հիշաչար",
-            "translation": "злопамятный"
+            "translation": "злопамятный",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "չաչանակ",
-            "translation": "болтун"
+            "translation": "болтун",
+            "tags": [
+                "Урок 4"
+            ]
         },
         {
             "value": "ջերմ",
-            "translation": "тёплый"
+            "translation": "тёплый",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ջուր",
-            "translation": "вода"
+            "translation": "вода",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "գարեջուր",
-            "translation": "пиво"
+            "translation": "пиво",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ջնջել",
-            "translation": "стереть, удалить"
+            "translation": "стереть, удалить",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ջինջ",
-            "translation": "чистый, ясный"
+            "translation": "чистый, ясный",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "փյունիկ",
-            "translation": "феникс"
+            "translation": "феникс",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "փայտ",
-            "translation": "дрова"
+            "translation": "дрова",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "փերի",
-            "translation": "фея"
+            "translation": "фея",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "փետուր",
-            "translation": "перо"
+            "translation": "перо",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "եփել",
-            "translation": "варить"
+            "translation": "варить",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "թափել",
-            "translation": "высыпать, вылить"
+            "translation": "высыпать, вылить",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "փայլփյուն",
-            "translation": "блестящий"
+            "translation": "блестящий",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "խոտ",
-            "translation": "трава"
+            "translation": "трава",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "խիտ",
-            "translation": "густой"
+            "translation": "густой",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "վախ",
-            "translation": "страх"
+            "translation": "страх",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "վախենալ",
-            "translation": "бояться"
+            "translation": "бояться",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "աղ",
-            "translation": "соль"
+            "translation": "соль",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "վաղ",
-            "translation": "рано"
+            "translation": "рано",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "վաղը",
-            "translation": "завтра"
+            "translation": "завтра",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ուղեղ",
-            "translation": "ум"
+            "translation": "ум",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "սեղան",
-            "translation": "стол"
+            "translation": "стол",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "խաղալ",
-            "translation": "играть"
+            "translation": "играть",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "խաղող",
-            "translation": "виноград"
+            "translation": "виноград",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "տեղ",
-            "translation": "место"
+            "translation": "место",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "այստեղ",
-            "translation": "тут"
+            "translation": "тут",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ամեն տեղ",
-            "translation": "везде"
+            "translation": "везде",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "եղանակ",
-            "translation": "погода"
+            "translation": "погода",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "դեղ",
-            "translation": "лекарство"
+            "translation": "лекарство",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "դեղատուն",
-            "translation": "аптека"
+            "translation": "аптека",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "տղա",
-            "translation": "мальчик, парень"
+            "translation": "мальчик, парень",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "աստղ",
-            "translation": "звезда"
+            "translation": "звезда",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "գիտենալ",
-            "translation": "знать"
+            "translation": "знать",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ունենալ",
-            "translation": "иметь"
+            "translation": "иметь",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "բայց",
-            "translation": "но"
+            "translation": "но",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "որովհետև",
-            "translation": "потому что"
+            "translation": "потому что",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "կարող",
-            "translation": "мочь"
+            "translation": "мочь",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "տեսնել",
-            "translation": "видеть"
+            "translation": "видеть",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "գյուղ",
-            "translation": "деревня"
+            "translation": "деревня",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "լուսամուտ",
-            "translation": "окно"
+            "translation": "окно",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "բացվել",
-            "translation": "открываться"
+            "translation": "открываться",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "տեսարան",
-            "translation": "вид"
+            "translation": "вид",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "սիրուն",
-            "translation": "красивый"
+            "translation": "красивый",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "սարեր",
-            "translation": "горы"
+            "translation": "горы",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "հյուր գնալ",
-            "translation": "пойти в гости"
+            "translation": "пойти в гости",
+            "tags": [
+                "Урок 5"
+            ]
         },
         {
             "value": "ատամ",
-            "translation": "зуб"
+            "translation": "зуб",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "քայլել",
-            "translation": "ходить, гулять"
+            "translation": "ходить, гулять",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
-            "value": "Խնդրում եմ",
-            "translation": "пожалуйста (просьба)"
+            "value": "խնդրում եմ",
+            "translation": "пожалуйста (просьба)",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "խնդրեմ",
-            "translation": "пожалуйста (на спасибо)"
+            "translation": "пожалуйста (на спасибо)",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "դեռ ոչ",
-            "translation": "ещё нет"
+            "translation": "ещё нет",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "դե",
-            "translation": "ну"
+            "translation": "ну",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "հատ",
-            "translation": "штука"
+            "translation": "штука",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "մի հատ",
-            "translation": "одна штука, за одного (в автобусе)"
+            "translation": "одна штука, за одного (в автобусе)",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "ինչքան",
-            "translation": "сколько"
+            "translation": "сколько",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "կապի մեջ",
-            "translation": "на связи"
+            "translation": "на связи",
+            "tags": [
+                "Урок 6"
+            ]
         },
         {
             "value": "ամպամած",
-            "translation": "пасмурный"
+            "translation": "пасмурный",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "մոխրագույն",
-            "translation": "серый"
+            "translation": "серый",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "մոխիր",
-            "translation": "пепел"
+            "translation": "пепел",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "պլանավորել",
-            "translation": "планировать"
+            "translation": "планировать",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "կարկանդակ",
-            "translation": "пирог"
+            "translation": "пирог",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "ցուրտ",
-            "translation": "холодный"
+            "translation": "холодный",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "խաղ",
-            "translation": "игра"
+            "translation": "игра",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "լսել",
-            "translation": "слышать, слушать"
+            "translation": "слышать, слушать",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "նվագել",
-            "translation": "играть (на муз. инструменте)"
+            "translation": "играть (на муз. инструменте)",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "շուն",
-            "translation": "собака"
+            "translation": "собака",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "ոնց միշտ",
-            "translation": "как всегда"
+            "translation": "как всегда",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "ինձ",
-            "translation": "мне"
+            "translation": "мне",
+            "tags": [
+                "Урок 7"
+            ]
         },
         {
             "value": "ուտելիք",
-            "translation": "еда"
+            "translation": "еда",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "բրինձ",
-            "translation": "рис"
+            "translation": "рис",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "ապուր",
-            "translation": "суп"
+            "translation": "суп",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "հյութ",
-            "translation": "сок"
+            "translation": "сок",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "հնդկաձավար",
-            "translation": "гречка"
+            "translation": "гречка",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "աղցան",
-            "translation": "салат"
+            "translation": "салат",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "ձվածեղ",
-            "translation": "омлет"
+            "translation": "омлет",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "գնել",
-            "translation": "купить"
+            "translation": "купить",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "վճարել",
-            "translation": "платить"
+            "translation": "платить",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "քարտով",
-            "translation": "картой (платить)"
+            "translation": "картой (платить)",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "կանխիկ",
-            "translation": "наличными"
+            "translation": "наличными",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "փող",
-            "translation": "деньги"
+            "translation": "деньги",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "ի՞նչ արժի",
-            "translation": "сколько стоит?"
+            "translation": "сколько стоит?",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "ինչքա՞ն եմ վճարում",
-            "translation": "сколько должен?"
+            "translation": "сколько должен?",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "իհարկե",
-            "translation": "конечно"
+            "translation": "конечно",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "համ",
-            "translation": "вкус"
+            "translation": "вкус",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "համով է",
-            "translation": "вкусный"
+            "translation": "вкусный",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "էլի՞ ինչ-որ բան",
-            "translation": "ещё что-нибудь?"
+            "translation": "ещё что-нибудь?",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "թարմ",
-            "translation": "свежий"
+            "translation": "свежий",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "վերջ",
-            "translation": "всё / конец"
+            "translation": "всё / конец",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "ձեր մանրը",
-            "translation": "ваша сдача"
+            "translation": "ваша сдача",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "շնորհակալություն",
-            "translation": "спасибо"
+            "translation": "спасибо",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "գնորդ",
-            "translation": "покупатель"
+            "translation": "покупатель",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "գալ",
-            "translation": "прийти"
+            "translation": "прийти",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "եկել",
-            "translation": "пришёл"
+            "translation": "пришёл",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "կերել",
-            "translation": "поел"
+            "translation": "поел",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "տալ",
-            "translation": "давать"
+            "translation": "давать",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "տվել",
-            "translation": "дал"
+            "translation": "дал",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "տեսել",
-            "translation": "увидел"
+            "translation": "увидел",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "դրել",
-            "translation": "положил"
+            "translation": "положил",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "տանել",
-            "translation": "нести"
+            "translation": "нести",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "տարել",
-            "translation": "отнёс"
+            "translation": "отнёс",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "անել",
-            "translation": "делать"
+            "translation": "делать",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "արել",
-            "translation": "сделал"
+            "translation": "сделал",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "արդեն",
-            "translation": "уже"
+            "translation": "уже",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "ձմռանը",
-            "translation": "зимой"
+            "translation": "зимой",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "տոնել",
-            "translation": "праздновать"
+            "translation": "праздновать",
+            "tags": [
+                "Урок 8"
+            ]
         },
         {
             "value": "գրել",
-            "translation": "писать"
+            "translation": "писать",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "նկարել",
-            "translation": "рисовать / фотографировать / снимать"
+            "translation": "рисовать / фотографировать / снимать",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "երգ",
-            "translation": "песня"
+            "translation": "песня",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "երգ լսել",
-            "translation": "слушать музыку/песню"
+            "translation": "слушать музыку/песню",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "աշխատել",
-            "translation": "работать"
+            "translation": "работать",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "նվագել",
-            "translation": "играть на муз. инструменте"
+            "translation": "играть на муз. инструменте",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "գիրք",
-            "translation": "книга"
+            "translation": "книга",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "երաժիշտ",
-            "translation": "музыкант"
+            "translation": "музыкант",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "կիթառ",
-            "translation": "гитара"
+            "translation": "гитара",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "այգի",
-            "translation": "парк"
+            "translation": "парк",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "հեռախոս",
-            "translation": "телефон"
+            "translation": "телефон",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "ուսուցիչ",
-            "translation": "учитель"
+            "translation": "учитель",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "գրող",
-            "translation": "писатель"
+            "translation": "писатель",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "դերասան",
-            "translation": "актёр"
+            "translation": "актёр",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "բժիշկ",
-            "translation": "врач"
+            "translation": "врач",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "հիվանդանոց",
-            "translation": "больница"
+            "translation": "больница",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "նկարիչ",
-            "translation": "художник"
+            "translation": "художник",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "դեռ",
-            "translation": "ещё (пока что)"
+            "translation": "ещё (пока что)",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "համերգ",
-            "translation": "концерт"
+            "translation": "концерт",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "ինձ հետ",
-            "translation": "со мной"
+            "translation": "со мной",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "սիրով",
-            "translation": "с удовольствием"
+            "translation": "с удовольствием",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "հրապարակ",
-            "translation": "площадь"
+            "translation": "площадь",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "միասին",
-            "translation": "вместе"
+            "translation": "вместе",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "ջութակ",
-            "translation": "скрипка"
+            "translation": "скрипка",
+            "tags": [
+                "Урок 9"
+            ]
         },
         {
             "value": "անձրև",
-            "translation": "дождь"
+            "translation": "дождь",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "սառն",
-            "translation": "прохладный"
+            "translation": "прохладный",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "հավես չունեմ",
-            "translation": "нет желания"
+            "translation": "нет желания",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "տրամադրություն չունեմ",
-            "translation": "нет настроения"
+            "translation": "нет настроения",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "ոչ մի տեղ",
-            "translation": "нигде"
+            "translation": "нигде",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "ոչ մի բան",
-            "translation": "ничего"
+            "translation": "ничего",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "պառկել",
-            "translation": "лежать"
+            "translation": "лежать",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "մտածել",
-            "translation": "думать"
+            "translation": "думать",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "երեկ",
-            "translation": "вчера"
+            "translation": "вчера",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "եթե",
-            "translation": "если"
+            "translation": "если",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "օֆիս",
-            "translation": "офис"
+            "translation": "офис",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "համար",
-            "translation": "для (послелог)"
+            "translation": "для (послелог)",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "մեր",
-            "translation": "наш"
+            "translation": "наш",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "քո",
-            "translation": "твой"
+            "translation": "твой",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "ձեր",
-            "translation": "ваш"
+            "translation": "ваш",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "նրա",
-            "translation": "(чей?) его"
+            "translation": "(чей?) его",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "նրանց",
-            "translation": "(чей/кого/кому?) их/им"
+            "translation": "(чей/кого/кому?) их/им",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "քեզ",
-            "translation": "тебя/тебе"
+            "translation": "тебя/тебе",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "նրան",
-            "translation": "его/ему"
+            "translation": "его/ему",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "մեզ",
-            "translation": "нас/нам"
+            "translation": "нас/нам",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "ձեզ",
-            "translation": "вас/вам"
+            "translation": "вас/вам",
+            "tags": [
+                "Урок 10"
+            ]
         },
         {
             "value": "սև",
-            "translation": "чёрный"
+            "translation": "чёрный",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "սպիտակ",
-            "translation": "белый"
+            "translation": "белый",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "կանաչ",
-            "translation": "зелёный"
+            "translation": "зелёный",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "դեղին",
-            "translation": "жёлтый"
+            "translation": "жёлтый",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "կապույտ",
-            "translation": "синий"
+            "translation": "синий",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "կարմիր",
-            "translation": "красный"
+            "translation": "красный",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "նարնջագույն",
-            "translation": "оранжевый"
+            "translation": "оранжевый",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "վարդագույն",
-            "translation": "розовый"
+            "translation": "розовый",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "մանուշակագույն",
-            "translation": "фиолетовый"
+            "translation": "фиолетовый",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "շագանակագույն",
-            "translation": "коричневый"
+            "translation": "коричневый",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "երկնագույն",
-            "translation": "голубой"
+            "translation": "голубой",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "նարինջ",
-            "translation": "апельсин"
+            "translation": "апельсин",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "վարդ",
-            "translation": "роза"
+            "translation": "роза",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "մանուշակ",
-            "translation": "фиалка"
+            "translation": "фиалка",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "շագանակ",
-            "translation": "каштан"
+            "translation": "каштан",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "երկինք",
-            "translation": "небо"
+            "translation": "небо",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "արծաթ",
-            "translation": "серебро"
+            "translation": "серебро",
+            "tags": [
+                "Урок 11"
+            ]
         },
         {
             "value": "արծաթագույն",
-            "translation": "цвет серебра"
+            "translation": "цвет серебра",
+            "tags": [
+                "Урок 11"
+            ]
+        },
+        {
+            "value": "արևոտ",
+            "translation": "солнечно",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "խոսել",
+            "translation": "говорить",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "ասել",
+            "translation": "сказать",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "մնացածը",
+            "translation": "остальное",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "հենց նոր",
+            "translation": "только что",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "ինչ",
+            "translation": "что",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "ինչու",
+            "translation": "почему",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "թանգարան",
+            "translation": "музей",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "մութ",
+            "translation": "тёмный",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "գազար",
+            "translation": "морковь",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "մարդ",
+            "translation": "человек",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "ծիածան",
+            "translation": "радуга",
+            "tags": [
+                "Урок 12"
+            ]
+        },
+        {
+            "value": "ընթրել",
+            "translation": "ужинать",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "հաց",
+            "translation": "хлеб",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "լոլիկ",
+            "translation": "помидор",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "բանջարեղեն",
+            "translation": "овощи",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "միրք",
+            "translation": "фрукты",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "երշիկ",
+            "translation": "колбаса",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "նրբերշիկ",
+            "translation": "сосиска",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "թթվասեր",
+            "translation": "сметана",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "խոհանոց",
+            "translation": "кухня",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "օղի",
+            "translation": "водка",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "շաքար",
+            "translation": "сахар",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "միշտ",
+            "translation": "всегда",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "երբ",
+            "translation": "когда",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "ամիս",
+            "translation": "месяц",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "ծառ",
+            "translation": "дерево",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "ծնունդ",
+            "translation": "рождение",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "տոն",
+            "translation": "праздник",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "ընթրիք",
+            "translation": "ужин",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "մեկ-մեկ",
+            "translation": "иногда",
+            "tags": [
+                "Урок 13"
+            ]
+        },
+        {
+            "value": "քաղաք",
+            "translation": "город",
+            "tags": [
+                "Урок 13"
+            ]
         }
     ]
     ;
