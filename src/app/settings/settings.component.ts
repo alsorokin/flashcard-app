@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WordsService, WordCollection, CollectionChangeEvent } from '../words.service';
 
@@ -13,7 +13,7 @@ export class SettingsComponent {
   isCollapsed: boolean = true;
   wordCollections: WordCollection[];
 
-  constructor(private wordsService: WordsService) {
+  constructor(private wordsService: WordsService, private eRef: ElementRef) {
     this.wordCollections = wordsService.getWordCollections();
     wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
       const collection = this.wordCollections.find(c => c.name === event.name);
@@ -29,5 +29,12 @@ export class SettingsComponent {
 
   toggleCollectionSelected(event: Event, collection: WordCollection): void {
     this.wordsService.setCollectionSelected(collection.name, (event.target as HTMLInputElement).checked);
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClick(event: Event): void {
+    if (!this.eRef.nativeElement.contains(event.target)) {
+      this.isCollapsed = true;
+    }
   }
 }
