@@ -27,11 +27,13 @@ export class WordsService {
 
   constructor() {
     const tags = getAllTags();
+    const savedCollections = this.loadCollectionsFromLocalStorage();
     this.wordCollections = tags.map(tag => {
+      const savedCollection = savedCollections.find(collection => collection.name === tag);
       return {
         name: tag,
         htmlId: tag.replaceAll(' ', '_'),
-        selected: true,
+        selected: savedCollection ? savedCollection.selected : true,
       };
     });
   }
@@ -45,6 +47,7 @@ export class WordsService {
     const collection = this.wordCollections.find(collection => collection.name === name);
     if (collection) {
       collection.selected = selected;
+      this.saveCollectionsToLocalStorage();
       this.collectionsChanged.next({ name: name, selected: selected });
     }
   }
@@ -68,6 +71,15 @@ export class WordsService {
         }
       }
     }
+  }
+
+  private loadCollectionsFromLocalStorage(): WordCollection[] {
+    const collections = localStorage.getItem('wordCollections');
+    return collections ? JSON.parse(collections) : [];
+  }
+
+  private saveCollectionsToLocalStorage(): void {
+    localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
   }
 
   /**
