@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Word } from '../words';
 import { WordsService, CollectionChangeEvent } from '../words.service';
+import keybindings from '../keybindings';
 
 @Component({
   selector: 'app-flashcard',
@@ -123,6 +124,25 @@ export class FlashcardComponent {
         this.errors.set(currentWord.value, this.errors.get(currentWord.value)! + 1);
       } else {
         this.errors.set(currentWord.value, 1);
+      }
+    }
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyDown(event: KeyboardEvent): void {
+    const key = event.key;
+    if (keybindings.has(key)) {
+      const option = keybindings.get(key)!;
+      if (option.startsWith('option')) {
+        const optionIndex = parseInt(option.split(' ')[1]) - 1;
+        if (optionIndex < this.getCurrentOptions().length) {
+          const buttons = document.querySelectorAll('.word-button');
+          const visibleButtons = Array.from(buttons).filter(button => button.getAttribute('tabindex') === '0');
+          const button = visibleButtons[optionIndex] as HTMLButtonElement;
+          if (button) {
+            button.focus();
+          }
+        }
       }
     }
   }
