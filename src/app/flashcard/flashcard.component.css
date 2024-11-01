@@ -42,6 +42,7 @@
     overflow: auto;
     position: absolute;
     backface-visibility: hidden;
+    outline: none;
 }
 
 .flashcard-back {

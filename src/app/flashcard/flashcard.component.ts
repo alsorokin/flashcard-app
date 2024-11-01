@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Word } from '../words';
 import { WordsService, CollectionChangeEvent } from '../words.service';
@@ -11,7 +11,7 @@ import keybindings from '../keybindings';
   templateUrl: './flashcard.component.html',
   styleUrl: './flashcard.component.css'
 })
-export class FlashcardComponent {
+export class FlashcardComponent implements AfterViewInit {
   words: Word[];
   frontOptions: Word[] = [];
   frontWord: Word;
@@ -20,6 +20,9 @@ export class FlashcardComponent {
   goNextTimeout: ReturnType<typeof setTimeout> | null = null;
   isFlipped:boolean = false;
   errors: Map<string, number> = new Map();
+
+  @ViewChild('flashcardBackContainer') flashcardBackContainer!: ElementRef;
+  @ViewChild('flashcardFrontContainer') flashcardFrontContainer!: ElementRef;
 
   getCurrentWord(): Word {
     return this.isFlipped ? this.backWord : this.frontWord;
@@ -42,21 +45,37 @@ export class FlashcardComponent {
       this.refreshFront();
       this.refreshBack();
       this.errors.clear();
+      this.isFlipped = false;
+      this.focusFrontContainer();
     });
     this.refreshFront();
     this.refreshBack();
+  }
+
+  ngAfterViewInit(): void {
+    this.focusFrontContainer();
   }
 
   goNext(): void {
     if (this.isFlipped) {
       setTimeout(() => {
         this.refreshFront();
+        this.focusBackContainer();
       }, 500);
     } else {
       setTimeout(() => {
         this.refreshBack();
+        this.focusFrontContainer();
       }, 500);
     }
+  }
+
+  focusFrontContainer(): void {
+    this.flashcardFrontContainer.nativeElement.focus();
+  }
+
+  focusBackContainer(): void {
+    this.flashcardBackContainer.nativeElement.focus();
   }
 
   refreshFront(): void {

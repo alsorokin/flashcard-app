@@ -1,6 +1,6 @@
 <div class="parent-container" [ngClass]="{'flipped': isFlipped}">
     <div *ngIf="frontWord" class="flashcard-container">
-        <div class="flashcard-front">
+        <div class="flashcard-front" [attr.tabindex]="isFlipped ? -1 : 0" #flashcardFrontContainer>
             <p class="current-word">{{ frontWord.value }}</p>
             <div class="translations-container">
                 <button type="button" class="word-button" *ngFor="let word of frontOptions" (click)="checkAnswer($event, word)"
@@ -9,7 +9,7 @@
                 </button>
             </div>
         </div>
-        <div class="flashcard-back">
+        <div class="flashcard-back" [attr.tabindex]="isFlipped ? 0 : -1" #flashcardBackContainer>
             <p class="current-word">{{ backWord.value }}</p>
             <div class="translations-container">
                 <button type="button" class="word-button" *ngFor="let word of backOptions" (click)="checkAnswer($event, word)"
