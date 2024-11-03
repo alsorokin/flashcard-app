@@ -17,12 +17,14 @@
     width: 99vw;
     height: 99vh;
     position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
 }
 
-.parent-container.flipped .flashcard-container {
+.parent-container.flipped .flashcard-container .flashcard-front {
     transform: rotateY(180deg);
+}
+
+.parent-container.flipped .flashcard-container .flashcard-back {
+    transform: rotateY(0deg);
 }
 
 /* the flashcard */
@@ -43,6 +45,8 @@
     position: absolute;
     backface-visibility: hidden;
     outline: none;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
 }
 
 .flashcard-back {
