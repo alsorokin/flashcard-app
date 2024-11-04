@@ -1,20 +1,20 @@
 <div class="parent-container" [ngClass]="{'flipped': isFlipped}">
     <div *ngIf="frontWord" class="flashcard-container">
         <div class="flashcard-front" [attr.tabindex]="isFlipped ? -1 : 0" #flashcardFrontContainer>
-            <p class="current-word">{{ frontWord.value }}</p>
+            <p class="current-word">{{ frontGameMode == GameMode.Flashcard ? frontWord.value : frontWord.translation }}</p>
             <div class="translations-container">
                 <button type="button" class="word-button" *ngFor="let word of frontOptions" (click)="checkAnswer($event, word)"
                     [attr.tabindex]="isFlipped ? -1 : 0">
-                    {{ word.translation }}
+                    {{ frontGameMode == GameMode.Flashcard ? word.translation : word.value }}
                 </button>
             </div>
         </div>
         <div class="flashcard-back" [attr.tabindex]="isFlipped ? 0 : -1" #flashcardBackContainer>
-            <p class="current-word">{{ backWord.value }}</p>
+            <p class="current-word">{{ backGameMode == GameMode.Flashcard ? backWord.value : backWord.translation }}</p>
             <div class="translations-container">
                 <button type="button" class="word-button" *ngFor="let word of backOptions" (click)="checkAnswer($event, word)"
                     [attr.tabindex]="isFlipped ? 0 : -1">
-                    {{ word.translation }}
+                    {{ backGameMode == GameMode.Flashcard ? word.translation : word.value }}
                 </button>
             </div>
         </div>
