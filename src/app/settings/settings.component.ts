@@ -1,6 +1,7 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WordsService, WordCollection, CollectionChangeEvent } from '../words.service';
+import { SettingsService } from '../settings.service';
 
 @Component({
   selector: 'app-settings',
@@ -12,8 +13,11 @@ import { WordsService, WordCollection, CollectionChangeEvent } from '../words.se
 export class SettingsComponent {
   isCollapsed: boolean = true;
   wordCollections: WordCollection[];
+  flippedModeEnabled: boolean = true;
 
-  constructor(private wordsService: WordsService, private eRef: ElementRef) {
+  constructor(private wordsService: WordsService,
+              private settingsService: SettingsService,
+              private eRef: ElementRef) {
     this.wordCollections = wordsService.getWordCollections();
     wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
       const collection = this.wordCollections.find(c => c.name === event.name);
@@ -21,6 +25,7 @@ export class SettingsComponent {
         collection.selected = event.selected;
       }
     });
+    this.flippedModeEnabled = settingsService.flippedModeEnabled;
   }
 
   toggleCollapse(): void {
@@ -29,6 +34,12 @@ export class SettingsComponent {
 
   toggleCollectionSelected(event: Event, collection: WordCollection): void {
     this.wordsService.setCollectionSelected(collection.name, (event.target as HTMLInputElement).checked);
+  }
+
+  toggleFlippedMode(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.settingsService.flippedModeEnabled = target.checked;
+    this.flippedModeEnabled = target.checked;
   }
 
   @HostListener('document:click', ['$event'])
