@@ -6,7 +6,6 @@
     align-items: center;
     width: 99vw;
     height: 99vh;
-    perspective: 1000px; /* This gives the 3D effect */
 }
 
 /* container for the flashcard */

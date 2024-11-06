@@ -3,6 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Word } from '../words';
 import { WordsService, CollectionChangeEvent } from '../words.service';
 import keybindings from '../keybindings';
+import { SettingsService } from '../settings.service';
+
+enum GameMode {
+  Flashcard,
+  ReverseFlashcard,
+}
 
 @Component({
   selector: 'app-flashcard',
@@ -12,14 +18,17 @@ import keybindings from '../keybindings';
   styleUrl: './flashcard.component.css'
 })
 export class FlashcardComponent implements AfterViewInit {
-  words: Word[];
+  GameMode = GameMode;
+  words: Word[] = [];
   frontOptions: Word[] = [];
-  frontWord: Word;
+  frontWord: Word = { value: 'բարև', translation: 'привет', tags: [ 'greeting' ] };
   backOptions: Word[] = [];
-  backWord: Word;
+  backWord: Word = { value: 'բարև', translation: 'привет', tags: [ 'greeting '] };
   goNextTimeout: ReturnType<typeof setTimeout> | null = null;
   isFlipped:boolean = false;
   errors: Map<string, number> = new Map();
+  frontGameMode: GameMode = GameMode.Flashcard;
+  backGameMode: GameMode = GameMode.ReverseFlashcard;
 
   @ViewChild('flashcardBackContainer') flashcardBackContainer!: ElementRef;
   @ViewChild('flashcardFrontContainer') flashcardFrontContainer!: ElementRef;
@@ -32,31 +41,29 @@ export class FlashcardComponent implements AfterViewInit {
     return this.isFlipped ? this.frontOptions : this.backOptions;
   }
 
-  constructor(private wordsService: WordsService) {
-    this.frontWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting' ] };
-    this.backWord = { value: 'բարև', translation: 'привет', tags: [ 'greeting '] };
-    this.words = [];
-  }
+  constructor(private wordsService: WordsService,
+              private settingsService: SettingsService,
+  ) { }
 
   ngOnInit(): void {
     this.words = this.wordsService.getWords();
-    this.wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
-      this.wordsService.updateWords(this.words, event);
-      this.refreshFront();
-      this.refreshBack();
-      this.errors.clear();
-      this.isFlipped = false;
-      this.focusFrontContainer();
-    });
     this.refreshFront();
     this.refreshBack();
+
+    this.wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
+      this.wordsService.updateWords(this.words, event);
+      this.refreshAll();
+    });
+
+    this.settingsService.flippedModeChanged$.subscribe(this.refreshAll.bind(this));
   }
 
   ngAfterViewInit(): void {
     this.focusFrontContainer();
   }
 
-  goNext(): void {
+  private goNext(): void {
+    this.isFlipped = !this.isFlipped;
     if (this.isFlipped) {
       setTimeout(() => {
         this.refreshFront();
@@ -70,27 +77,45 @@ export class FlashcardComponent implements AfterViewInit {
     }
   }
 
-  focusFrontContainer(): void {
+  private focusFrontContainer(): void {
     this.flashcardFrontContainer.nativeElement.focus();
   }
 
-  focusBackContainer(): void {
+  private focusBackContainer(): void {
     this.flashcardBackContainer.nativeElement.focus();
   }
 
-  refreshFront(): void {
+  private refreshAll(): void {
+    this.refreshFront();
+    this.refreshBack();
+    this.errors.clear();
+    this.isFlipped = false;
+    this.focusFrontContainer();
+  }
+
+  private refreshFront(): void {
     const randomWords = this.getRandomWordsOrError(5);
     this.frontOptions = randomWords.options;
     this.frontWord = randomWords.word;
+    if (this.settingsService.flippedModeEnabled) {
+      this.frontGameMode = Math.random() < 0.5 ? GameMode.Flashcard : GameMode.ReverseFlashcard;
+    } else {
+      this.frontGameMode = GameMode.Flashcard;
+    }
   }
 
-  refreshBack(): void {
+  private refreshBack(): void {
     const randomWords = this.getRandomWordsOrError(5);
     this.backOptions = randomWords.options;
     this.backWord = randomWords.word;
+    if (this.settingsService.flippedModeEnabled) {
+      this.backGameMode = Math.random() < 0.5 ? GameMode.Flashcard : GameMode.ReverseFlashcard;
+    } else {
+      this.backGameMode = GameMode.Flashcard;
+    }
   }
 
-  getRandomWordsOrError(count: number): { options: Word[], word: Word } {
+  private getRandomWordsOrError(count: number): { options: Word[], word: Word } {
     if (this.words.length === 0) {
       return { options: [], word: { value: 'Нажмите на ⚙ и выберите категорию', translation: '', tags: [] } };
     }
@@ -111,7 +136,7 @@ export class FlashcardComponent implements AfterViewInit {
     return { options, word: word };
   }
 
-  shouldGetErrorWord(): boolean {
+  private shouldGetErrorWord(): boolean {
     if (this.errors.size === 0) {
       return false;
     }
@@ -121,18 +146,18 @@ export class FlashcardComponent implements AfterViewInit {
            Math.random() < 0.5;
   }
 
-  getTopErrorValueUnsafe(): string {
+  private getTopErrorValueUnsafe(): string {
     return this.errors.keys().next().value!;
   }
 
   checkAnswer(evt:MouseEvent, selectedWord: Word): void {
+    // TODO: make it declarative?
     const button = evt.target as HTMLButtonElement;
     const currentWord = this.getCurrentWord();
     if (selectedWord.value === this.getCurrentWord().value) {
       button.classList.add('correct');
       if (this.goNextTimeout == null) {
         this.goNextTimeout = setTimeout(() => {
-          this.isFlipped = !this.isFlipped;
           this.goNext();
           this.goNextTimeout = null;
         }, 1000);
