@@ -611,6 +611,13 @@ const words: Word[] =
             ]
         },
         {
+            "value": "խմել",
+            "translation": "пить",
+            "tags": [
+                "Урок 3"
+            ]
+        },
+        {
             "value": "դնել",
             "translation": "положить",
             "tags": [
@@ -1864,6 +1871,13 @@ const words: Word[] =
             ]
         },
         {
+            "value": "վերելակ",
+            "translation": "лифт",
+            "tags": [
+                "Урок 9"
+            ]
+        },
+        {
             "value": "անձրև",
             "translation": "дождь",
             "tags": [
@@ -2702,6 +2716,97 @@ const words: Word[] =
             "tags": [
                 "Урок 15"
             ]
-        }
+        },
+        {
+            "value": "երևի",
+            "translation": "видимо, должно быть",
+            "tags": [
+                "Урок 15"
+            ]
+        },
+        {
+            "value": "բառ",
+            "translation": "слово",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "կտեսնեմ",
+            "translation": "увижу",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "թարգմանել",
+            "translation": "переводить",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "ուշանալ",
+            "translation": "опаздывать",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "այնտեղ",
+            "translation": "там",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "խորոված",
+            "translation": "шашлык",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "լողանալ",
+            "translation": "купаться",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "լվացվել",
+            "translation": "умываться",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "համալսարան",
+            "translation": "университет",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "զբոսնել",
+            "translation": "гулять",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "ընտանիք",
+            "translation": "семья",
+            "tags": [
+                "Урок 16"
+            ]
+        },
+        {
+            "value": "ստուգել",
+            "translation": "проверять",
+            "tags": [
+                "Урок 16"
+            ]
+        },
     ]
     ;
