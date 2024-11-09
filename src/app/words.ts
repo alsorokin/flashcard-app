@@ -79,13 +79,6 @@ const words: Word[] =
             ]
         },
         {
-            "value": "մի",
-            "translation": "один",
-            "tags": [
-                "Урок 1"
-            ]
-        },
-        {
             "value": "միս",
             "translation": "мясо",
             "tags": [
@@ -94,7 +87,7 @@ const words: Word[] =
         },
         {
             "value": "դու",
-            "translation": "мясо",
+            "translation": "ты",
             "tags": [
                 "Урок 1"
             ]
@@ -2932,6 +2925,216 @@ const words: Word[] =
             "translation": "поезд",
             "tags": [
                 "Урок 17"
+            ]
+        },
+        {
+            "value": "մի",
+            "translation": "один",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "մեկ",
+            "translation": "один",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "երկու",
+            "translation": "два",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "երեք",
+            "translation": "три",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "չորս",
+            "translation": "четыре",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "հինգ",
+            "translation": "пять",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "վեց",
+            "translation": "шесть",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "յոթ",
+            "translation": "семь",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "ութ",
+            "translation": "восемь",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "ինը",
+            "translation": "девять",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "տաս",
+            "translation": "десять",
+            "tags": [
+                "Числительные"
+            ]
+        },
+        {
+            "value": "կիրակի",
+            "translation": "воскресенье",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "երկուշաբթի",
+            "translation": "понедельник",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "երեքշաբթի",
+            "translation": "вторник",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "չորեքշաբթի",
+            "translation": "среда",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "հինգշաբթի",
+            "translation": "четверг",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "ուրբաթ",
+            "translation": "пятница",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "շաբաթ",
+            "translation": "суббота / неделя",
+            "tags": [
+                "Дни недели"
+            ]
+        },
+        {
+            "value": "հունվար",
+            "translation": "январь",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "փետրվար",
+            "translation": "февраль",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "մարտ",
+            "translation": "март",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "ապրիլ",
+            "translation": "апрель",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "մայիս",
+            "translation": "май",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "հունիս",
+            "translation": "июнь",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "հուլիս",
+            "translation": "июль",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "օգոստոս",
+            "translation": "август",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "սեպտեմբեր",
+            "translation": "сентябрь",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "հոկտեմբեր",
+            "translation": "октябрь",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "նոյեմբեր",
+            "translation": "ноябрь",
+            "tags": [
+                "Месяцы"
+            ]
+        },
+        {
+            "value": "դեկտեմբեր",
+            "translation": "декабрь",
+            "tags": [
+                "Месяцы"
             ]
         }
     ]
