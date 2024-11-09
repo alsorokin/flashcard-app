@@ -77,6 +77,7 @@ p.current-word {
     cursor: pointer;
     white-space: nowrap;
     text-wrap: wrap;
+    user-select: none;
 }
 
 .word-button:hover {

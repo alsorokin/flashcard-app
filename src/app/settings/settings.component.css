@@ -59,4 +59,5 @@ div.settings label {
     font-size: 16px;
     padding-left: 15px;
     text-indent: -15px;
+    user-select: none;
 }
