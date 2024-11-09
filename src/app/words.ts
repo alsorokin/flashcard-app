@@ -37,7 +37,7 @@ export function getWordsByTag(tag: string): Word[] {
 const words: Word[] =
     [
         {
-            "value": "ծանոթանալ",
+            "value": "ծանոթանալ ",
             "translation": "познакомиться",
             "tags": [
                 "Урок 1"
@@ -842,7 +842,7 @@ const words: Word[] =
             ]
         },
         {
-            "value": "հանգստանալ",
+            "value": "հանգստանալ ",
             "translation": "отдыхать",
             "tags": [
                 "Урок 4"
@@ -1885,7 +1885,7 @@ const words: Word[] =
             ]
         },
         {
-            "value": "հավես չունեմ",
+            "value": "հավես չունեմ ",
             "translation": "нет желания",
             "tags": [
                 "Урок 10"
@@ -2923,6 +2923,48 @@ const words: Word[] =
         {
             "value": "գնացք",
             "translation": "поезд",
+            "tags": [
+                "Урок 17"
+            ]
+        },
+        {
+            "value": "մաղթել",
+            "translation": "желать (кому-то)",
+            "tags": [
+                "Урок 17"
+            ]
+        },
+        {
+            "value": "ցանկանալ",
+            "translation": "желать (себе или кому-то)",
+            "tags": [
+                "Урок 17"
+            ]
+        },
+        {
+            "value": "երջանկություն",
+            "translation": "счастье",
+            "tags": [
+                "Урок 17"
+            ]
+        },
+        {
+            "value": "ամենայն բարիք",
+            "translation": "всего самого наилучшего",
+            "tags": [
+                "Урок 17"
+            ]
+        },
+        {
+            "value": "բարիք",
+            "translation": "добро",
+            "tags": [
+                "Урок 17"
+            ]
+        },
+        {
+            "value": "համբույր",
+            "translation": "поцелуй",
             "tags": [
                 "Урок 17"
             ]
