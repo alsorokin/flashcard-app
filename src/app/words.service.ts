@@ -101,20 +101,38 @@ export class WordsService {
     if (ignored && ignored.length > 0) {
       filteredWords = filteredWords.filter(w => !ignored.includes(w.value));
     }
+    filteredWords = this.scrambleAndFilterOutSynonyms(filteredWords);
     if (count >= filteredWords.length) {
       return filteredWords.map(w => { return { ...w } });
     }
     const result: Word[] = [];
     let i = 0;
-    while (i < count) {
+    while (i < count && filteredWords.length > 0) {
       const random_i = Math.floor(Math.random() * filteredWords.length);
-      if (result.find(w => w.value === filteredWords[random_i].value) ||
-        result.find(w => w.translation === filteredWords[random_i].translation)) {
-        continue;
-      }
       result.push({ ...filteredWords[random_i] });
+      filteredWords.splice(random_i, 1);
       i++;
     }
+    return result;
+  }
+
+  private scrambleAndFilterOutSynonyms(words: Word[]): Word[] {
+    const result: Word[] = [];
+
+    const values = new Set<string>();
+    const translations = new Set<string>();
+    const wordsCopy = [...words];
+    while (wordsCopy.length > 0) {
+      const random_i = Math.floor(Math.random() * wordsCopy.length);
+      const word = wordsCopy[random_i];
+      if (!values.has(word.value) && !translations.has(word.translation)) {
+        result.push({ ...word });
+        values.add(word.value);
+        translations.add(word.translation);
+      }
+      wordsCopy.splice(random_i, 1);
+    }
+
     return result;
   }
 }
