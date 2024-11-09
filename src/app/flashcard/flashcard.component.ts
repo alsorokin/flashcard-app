@@ -121,10 +121,12 @@ export class FlashcardComponent implements AfterViewInit {
     }
     const options = this.wordsService.getRandomWords(this.words, count, [this.frontWord.value, this.backWord.value]);
     const randomIndex = Math.floor(Math.random() * options.length);
-    let word;
+    let word : Word;
     if (this.shouldGetErrorWord()) {
       word = {...(this.words.find(w => w.value === this.getTopErrorValueUnsafe())!)};
-      options[randomIndex] = word;
+      if (!options.find(w => w.translation === word.translation)) {
+        options[randomIndex] = word;
+      }
       if (this.errors.get(word.value)! <= 1) {
         this.errors.delete(word.value);
       } else {
