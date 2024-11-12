@@ -3096,13 +3096,6 @@ const words: Word[] =
             ]
         },
         {
-            "value": "կանել",
-            "translation": "делать",
-            "tags": [
-                "Урок 18"
-            ]
-        },
-        {
             "value": "մի",
             "translation": "один",
             "tags": [
