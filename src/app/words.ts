@@ -716,6 +716,13 @@ const words: Word[] =
             ]
         },
         {
+            "value": "սար",
+            "translation": "гора",
+            "tags": [
+                "Урок 4"
+            ]
+        },
+        {
             "value": "ձուկ",
             "translation": "рыба",
             "tags": [
@@ -2967,6 +2974,132 @@ const words: Word[] =
             "translation": "поцелуй",
             "tags": [
                 "Урок 17"
+            ]
+        },
+        {
+            "value": "զրուցել",
+            "translation": "беседовать",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "գործ",
+            "translation": "дело, работа",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "հետաքրքիր",
+            "translation": "интересный",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "արշավ",
+            "translation": "поход",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "ոստիկան",
+            "translation": "полицейский",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "ու վերջ",
+            "translation": "и всё",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "ումով",
+            "translation": "кем",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "ինչով",
+            "translation": "чем",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "գրիչ",
+            "translation": "ручка",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "մատիտ",
+            "translation": "карандаш",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "հաճույք",
+            "translation": "удовольствие",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "հաճույքով",
+            "translation": "с удовольствием",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "ժամանակ",
+            "translation": "время",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "ինչքան",
+            "translation": "сколько",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "հպարտանալ",
+            "translation": "гордиться",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "հիանալ",
+            "translation": "восхищаться",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "պարզ",
+            "translation": "ясный, понятный",
+            "tags": [
+                "Урок 18"
+            ]
+        },
+        {
+            "value": "կանել",
+            "translation": "делать",
+            "tags": [
+                "Урок 18"
             ]
         },
         {
