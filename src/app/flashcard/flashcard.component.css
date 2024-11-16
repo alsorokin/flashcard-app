@@ -92,3 +92,10 @@ p.current-word {
     background-color: #f76c6c;
     text-decoration: line-through;
 }
+
+button.audioButton {
+    border-width: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}

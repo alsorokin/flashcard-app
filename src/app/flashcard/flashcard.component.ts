@@ -68,11 +68,13 @@ export class FlashcardComponent implements AfterViewInit {
       setTimeout(() => {
         this.refreshFront();
         this.focusBackContainer();
+        this.playSound();
       }, 500);
     } else {
       setTimeout(() => {
         this.refreshBack();
         this.focusFrontContainer();
+        this.playSound();
       }, 500);
     }
   }
@@ -172,6 +174,24 @@ export class FlashcardComponent implements AfterViewInit {
         this.errors.set(currentWord.value, 1);
       }
     }
+  }
+
+  playSound(): void {
+    if (this.isFlipped) {
+      if (this.backGameMode !== GameMode.Flashcard) {
+        return;
+      }
+    } else {
+      if (this.frontGameMode !== GameMode.Flashcard) {
+        return;
+      }
+    }
+    if (!this.getCurrentWord().audioFileName) {
+      return;
+    }
+    const audioUrl = `audio/${this.getCurrentWord().audioFileName}`;
+    const audio = new Audio(audioUrl);
+    audio.play();
   }
 
   @HostListener('document:keydown', ['$event'])
