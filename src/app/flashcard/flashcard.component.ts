@@ -119,7 +119,7 @@ export class FlashcardComponent implements AfterViewInit {
 
   private getRandomWordsOrError(count: number): { options: Word[], word: Word } {
     if (this.words.length === 0) {
-      return { options: [], word: { value: 'Нажмите на ⚙ и выберите категорию', translation: '', tags: [] } };
+      return { options: [], word: { value: 'Нажмите на ⚙ и выберите категорию', translation: 'Нажмите на ⚙ и выберите категорию', tags: [] } };
     }
     const options = this.wordsService.getRandomWords(this.words, count, [this.frontWord.value, this.backWord.value]);
     const randomIndex = Math.floor(Math.random() * options.length);
