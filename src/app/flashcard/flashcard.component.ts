@@ -68,13 +68,17 @@ export class FlashcardComponent implements AfterViewInit {
       setTimeout(() => {
         this.refreshFront();
         this.focusBackContainer();
-        this.playSound();
+        if (this.settingsService.autoPlayEnabled) {
+          this.playSound();
+        }
       }, 500);
     } else {
       setTimeout(() => {
         this.refreshBack();
         this.focusFrontContainer();
-        this.playSound();
+        if (this.settingsService.autoPlayEnabled) {
+          this.playSound();
+        }
       }, 500);
     }
   }
@@ -155,7 +159,7 @@ export class FlashcardComponent implements AfterViewInit {
   }
 
   checkAnswer(evt:MouseEvent, selectedWord: Word): void {
-    // TODO: make it declarative?
+    // TODO: make it declarative
     const button = evt.target as HTMLButtonElement;
     const currentWord = this.getCurrentWord();
     if (selectedWord.value === this.getCurrentWord().value) {

@@ -14,6 +14,7 @@ export class SettingsComponent {
   isCollapsed: boolean = true;
   wordCollections: WordCollection[];
   flippedModeEnabled: boolean = true;
+  autoPlayEnabled: boolean = true;
 
   constructor(private wordsService: WordsService,
               private settingsService: SettingsService,
@@ -26,6 +27,7 @@ export class SettingsComponent {
       }
     });
     this.flippedModeEnabled = settingsService.flippedModeEnabled;
+    this.autoPlayEnabled = settingsService.autoPlayEnabled;
   }
 
   toggleCollapse(): void {
@@ -40,6 +42,12 @@ export class SettingsComponent {
     const target = event.target as HTMLInputElement;
     this.settingsService.flippedModeEnabled = target.checked;
     this.flippedModeEnabled = target.checked;
+  }
+
+  toggleAutoPlay(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.settingsService.autoPlayEnabled = target.checked;
+    this.autoPlayEnabled = target.checked;
   }
 
   @HostListener('document:click', ['$event'])

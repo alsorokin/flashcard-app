@@ -4,7 +4,10 @@
     </div>
     <div class="settings" [class]="{'collapsed': isCollapsed}">
         <label htmlFor="flipped-mode">
-            <input type="checkbox" id="flipped-mode" (change)="toggleFlippedMode($event)" [checked]="flippedModeEnabled" /> Включить перевёртышей
+            <input type="checkbox" id="flipped-mode" (change)="toggleFlippedMode($event)" [checked]="flippedModeEnabled" /> Перевёртыши
+        </label>
+        <label htmlFor="auto-play">
+            <input type="checkbox" id="auto-play" (change)="toggleAutoPlay($event)" [checked]="autoPlayEnabled" /> Автопроизнесение слов
         </label>
         <hr>
         <label *ngFor="let collection of wordCollections" [htmlFor]="collection.htmlId + '_checkbox'">
