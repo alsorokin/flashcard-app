@@ -2278,13 +2278,6 @@
     ]
   },
   {
-    "value": "խոհանոց",
-    "translation": "кухня",
-    "tags": [
-      "Урок 13"
-    ]
-  },
-  {
     "value": "օղի",
     "translation": "водка",
     "tags": [
@@ -3321,6 +3314,220 @@
     "translation": "девочка, девушка, дочь",
     "tags": [
       "Урок 19"
+    ]
+  },
+  {
+    "value": "աման",
+    "translation": "тарелка, сосуд",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "բարձ",
+    "translation": "подушка",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մեղու",
+    "translation": "пчела",
+    "tags": [
+      "Урок 20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մեղու.wav.ogg"
+  },
+  {
+    "value": "մի քանի ամիսը մեկ",
+    "translation": "раз в несколько месяцев",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մինչև",
+    "translation": "до",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "սովորականի պես",
+    "translation": "по-прежнему",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "տոնածառ",
+    "translation": "рождественская ёлка",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մնալ",
+    "translation": "оставаться",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "տղամարդ",
+    "translation": "мужчина",
+    "tags": [
+      "Урок 20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-տղամարդ.wav.mp3"
+  },
+  {
+    "value": "տղամարդիկ",
+    "translation": "мужчины",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "կանայք",
+    "translation": "женщины",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մարդիկ",
+    "translation": "люди",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մատ",
+    "translation": "палец",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "թոռ",
+    "translation": "внук",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մկնիկ",
+    "translation": "мышка",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "մատանի",
+    "translation": "кольцо",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "ինչի",
+    "translation": "чего, зачем",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "առաքել",
+    "translation": "отправлять, доставлять",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "սոված",
+    "translation": "голодный",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "բնակարան",
+    "translation": "квартира",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "նախասենյակ",
+    "translation": "прихожая",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "լոգարան",
+    "translation": "ванная комната",
+    "tags": [
+      "Урок 20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Yevgenya_Shamshyan_(Vahagn_Petrosyan)-լոգարան.wav.ogg"
+  },
+  {
+    "value": "լոգասենյակ",
+    "translation": "ванная комната",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "ննջարան",
+    "translation": "спальня",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "ննջասենյակ",
+    "translation": "спальня",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "պատշգամբ",
+    "translation": "балкон, веранда",
+    "tags": [
+      "Урок 20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-պատշգամբ.wav.ogg"
+  },
+  {
+    "value": "խոհանոց",
+    "translation": "кухня",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "բաց",
+    "translation": "открытый",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "փակ",
+    "translation": "закрытый",
+    "tags": [
+      "Урок 20"
+    ]
+  },
+  {
+    "value": "այգեգործ",
+    "translation": "садовник",
+    "tags": [
+      "Урок 20"
     ]
   },
   {
