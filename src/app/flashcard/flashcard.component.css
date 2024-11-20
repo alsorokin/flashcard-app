@@ -88,9 +88,22 @@ p.current-word {
     background-color: #84d495;
 }
 
+.word-button.incorrect span.translation-text {
+    text-decoration: line-through;
+}
+
+.word-button span.translation-hint {
+    display: none;
+}
+
+.word-button.incorrect span.translation-hint {
+    display: block;
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
 .word-button.incorrect {
     background-color: #f76c6c;
-    text-decoration: line-through;
 }
 
 button.audioButton {

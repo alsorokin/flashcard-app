@@ -10,6 +10,11 @@ enum GameMode {
   ReverseFlashcard,
 }
 
+interface WordOption {
+  word: Word;
+  isCorrect: boolean | undefined;
+}
+
 @Component({
   selector: 'app-flashcard',
   standalone: true,
@@ -20,9 +25,9 @@ enum GameMode {
 export class FlashcardComponent implements AfterViewInit {
   GameMode = GameMode;
   words: Word[] = [];
-  frontOptions: Word[] = [];
+  frontOptions: WordOption[] = [];
   frontWord: Word = { value: 'բարև', translation: 'привет', tags: [ 'greeting' ] };
-  backOptions: Word[] = [];
+  backOptions: WordOption[] = [];
   backWord: Word = { value: 'բարև', translation: 'привет', tags: [ 'greeting '] };
   goNextTimeout: ReturnType<typeof setTimeout> | null = null;
   isFlipped:boolean = false;
@@ -37,7 +42,7 @@ export class FlashcardComponent implements AfterViewInit {
     return this.isFlipped ? this.backWord : this.frontWord;
   }
 
-  getCurrentOptions(): Word[] {
+  getCurrentOptions(): WordOption[] {
     return this.isFlipped ? this.frontOptions : this.backOptions;
   }
 
@@ -121,17 +126,19 @@ export class FlashcardComponent implements AfterViewInit {
     }
   }
 
-  private getRandomWordsOrError(count: number): { options: Word[], word: Word } {
+  private getRandomWordsOrError(count: number): { options: WordOption[], word: Word } {
     if (this.words.length === 0) {
       return { options: [], word: { value: 'Нажмите на ⚙ и выберите категорию', translation: 'Нажмите на ⚙ и выберите категорию', tags: [] } };
     }
-    const options = this.wordsService.getRandomWords(this.words, count, [this.frontWord.value, this.backWord.value]);
+    const options = this.wordsService
+      .getRandomWords(this.words, count, [this.frontWord.value, this.backWord.value])
+      .map(word => ({ word, isCorrect: undefined }));
     const randomIndex = Math.floor(Math.random() * options.length);
     let word : Word;
     if (this.shouldGetErrorWord()) {
       word = {...(this.words.find(w => w.value === this.getTopErrorValueUnsafe())!)};
-      if (!options.find(w => w.translation === word.translation)) {
-        options[randomIndex] = word;
+      if (!options.find(w => w.word.translation === word.translation)) {
+        options[randomIndex] = { word: word, isCorrect: undefined };
       }
       if (this.errors.get(word.value)! <= 1) {
         this.errors.delete(word.value);
@@ -139,7 +146,7 @@ export class FlashcardComponent implements AfterViewInit {
         this.errors.set(word.value, this.errors.get(word.value)! - 1);
       }
     } else {
-      word = options[randomIndex];
+      word = options[randomIndex].word;
     }
     return { options, word: word };
   }
@@ -158,12 +165,10 @@ export class FlashcardComponent implements AfterViewInit {
     return this.errors.keys().next().value!;
   }
 
-  checkAnswer(evt:MouseEvent, selectedWord: Word): void {
-    // TODO: make it declarative
-    const button = evt.target as HTMLButtonElement;
+  checkAnswer(selectedOption: WordOption): void {
     const currentWord = this.getCurrentWord();
-    if (selectedWord.value === this.getCurrentWord().value) {
-      button.classList.add('correct');
+    if (selectedOption.word.value === this.getCurrentWord().value) {
+      selectedOption.isCorrect = true;
       if (this.goNextTimeout == null) {
         this.goNextTimeout = setTimeout(() => {
           this.goNext();
@@ -171,7 +176,7 @@ export class FlashcardComponent implements AfterViewInit {
         }, 1000);
       }
     } else {
-      button.classList.add('incorrect');
+      selectedOption.isCorrect = false;
       if (this.errors.has(currentWord.value)) {
         this.errors.set(currentWord.value, this.errors.get(currentWord.value)! + 1);
       } else {

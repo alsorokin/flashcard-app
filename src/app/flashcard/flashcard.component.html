@@ -9,9 +9,11 @@
                 </button>
             </p>
             <div class="translations-container">
-                <button type="button" class="word-button" *ngFor="let word of frontOptions" (click)="checkAnswer($event, word)"
-                    [attr.tabindex]="isFlipped ? -1 : 0">
-                    {{ frontGameMode == GameMode.Flashcard ? word.translation : word.value }}
+                <button type="button" class="word-button" *ngFor="let wordOption of frontOptions" (click)="checkAnswer(wordOption)"
+                    [attr.tabindex]="isFlipped ? -1 : 0" [ngClass]="{'correct': wordOption.isCorrect, 'incorrect': wordOption.isCorrect === false}">
+                    <span class="translation-text">{{ frontGameMode == GameMode.Flashcard ? wordOption.word.translation : wordOption.word.value }}</span>
+                    <br>
+                    <span class="translation-hint">{{ frontGameMode == GameMode.Flashcard ? wordOption.word.value : wordOption.word.translation }}</span>
                 </button>
             </div>
         </div>
@@ -24,9 +26,11 @@
                 </button>
             </p>
             <div class="translations-container">
-                <button type="button" class="word-button" *ngFor="let word of backOptions" (click)="checkAnswer($event, word)"
-                    [attr.tabindex]="isFlipped ? 0 : -1">
-                    {{ backGameMode == GameMode.Flashcard ? word.translation : word.value }}
+                <button type="button" class="word-button" *ngFor="let wordOption of backOptions" (click)="checkAnswer(wordOption)"
+                    [attr.tabindex]="isFlipped ? 0 : -1" [ngClass]="{'correct': wordOption.isCorrect, 'incorrect': wordOption.isCorrect === false}">
+                    <span class="translation-text">{{ backGameMode == GameMode.Flashcard ? wordOption.word.translation : wordOption.word.value }}</span>
+                    <br>
+                    <span class="translation-hint">{{ backGameMode == GameMode.Flashcard ? wordOption.word.value : wordOption.word.translation }}</span>
                 </button>
             </div>
         </div>
