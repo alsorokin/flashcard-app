@@ -24,6 +24,7 @@ describe('WordsService', () => {
     words.forEach(word => {
       if (word.audioFileName) {
         const filePresent = fs.existsSync(`public/audio/${word.audioFileName}`);
+        expect(filePresent).toBe(true);
       }
     });
   });

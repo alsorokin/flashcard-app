@@ -4,49 +4,56 @@
     "translation": "познакомиться",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_ծանոթանալ.ogg"
   },
   {
     "value": "շատ ուրախ եմ",
     "translation": "очень рад",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_շատ ուրախ եմ.ogg"
   },
   {
     "value": "շատ հաճելի է",
     "translation": "очень приятно",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_շատ հաճելի է.ogg"
   },
   {
     "value": "ինձ էլ",
     "translation": "мне тоже",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_ինձ էլ.ogg"
   },
   {
     "value": "ես էլ",
     "translation": "я тоже",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_ես էլ.ogg"
   },
   {
     "value": "իմ",
     "translation": "мой",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_իմ.ogg"
   },
   {
     "value": "միս",
     "translation": "мясо",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_միս.ogg"
   },
   {
     "value": "դու",
@@ -61,7 +68,8 @@
     "translation": "урок",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_դաս.ogg"
   },
   {
     "value": "նա",
@@ -76,7 +84,8 @@
     "translation": "есть, имеется",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_կա.ogg"
   },
   {
     "value": "նամակ",
@@ -91,7 +100,8 @@
     "translation": "нож",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_դանակ.ogg"
   },
   {
     "value": "մամա",
@@ -114,7 +124,8 @@
     "translation": "или",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_կամ.ogg"
   },
   {
     "value": "միակ",
@@ -129,28 +140,32 @@
     "translation": "труп",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_դիակ.ogg"
   },
   {
     "value": "դիմակ",
     "translation": "маска",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_դիմակ.ogg"
   },
   {
     "value": "հաջողություն",
     "translation": "удачи",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_հաջողություն.ogg"
   },
   {
     "value": "հաջող",
     "translation": "пока",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_հաջող.ogg"
   },
   {
     "value": "ցտեսություն",
@@ -165,56 +180,64 @@
     "translation": "до встречи",
     "tags": [
       "Урок 1"
-    ]
+    ],
+    "audioFileName": "anyuta_մինչ հանդիպում.ogg"
   },
   {
     "value": "կարոտ",
     "translation": "тоска",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_կարոտ.ogg"
   },
   {
     "value": "քարոտ",
     "translation": "каменистый",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_քարոտ.ogg"
   },
   {
     "value": "տակ",
     "translation": "под",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_տակ.ogg"
   },
   {
     "value": "տաք",
     "translation": "тёплый",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_տաք.ogg"
   },
   {
     "value": "քնել",
     "translation": "спать",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_քնել.ogg"
   },
   {
     "value": "գնալ",
     "translation": "идти",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_գնալ.ogg"
   },
   {
     "value": "քույր",
     "translation": "сестра",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_քույր.ogg"
   },
   {
     "value": "կույր",
@@ -229,42 +252,48 @@
     "translation": "пшеница",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_ցորեն.ogg"
   },
   {
     "value": "օրորոց",
     "translation": "колыбель",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_օրորոց.ogg"
   },
   {
     "value": "օր",
     "translation": "день",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_օր.ogg"
   },
   {
     "value": "օդ",
     "translation": "воздух",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_օդ.ogg"
   },
   {
     "value": "օգուտ",
     "translation": "польза",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_օգուտ.ogg"
   },
   {
     "value": "օրագիր",
     "translation": "дневник",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_օրագիր.ogg"
   },
   {
     "value": "այս",
@@ -278,7 +307,8 @@
     "translation": "сегодня",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_այսօր.ogg"
   },
   {
     "value": "կեսօր",
@@ -293,28 +323,32 @@
     "translation": "кто",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_ով.ogg"
   },
   {
     "value": "ովքեր",
     "translation": "кто (мн. число)",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_ովքեր.ogg"
   },
   {
     "value": "որդի",
     "translation": "сын",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_որդի.ogg"
   },
   {
     "value": "նոր",
     "translation": "новый",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_նոր.ogg"
   },
   {
     "value": "ոզնի",
@@ -329,7 +363,8 @@
     "translation": "близко, близкий, у, к",
     "tags": [
       "Урок 2"
-    ]
+    ],
+    "audioFileName": "anyuta_մոտ.ogg"
   },
   {
     "value": "հոտ",
