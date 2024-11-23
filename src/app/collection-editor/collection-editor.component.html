@@ -1,11 +1,15 @@
 <div class="collections-table-container">
     <table class="collections-table">
         <tr>
+            <th>#</th>
             <th>Слово</th>
             <th>Перевод</th>
             <th>Коллекции</th>
         </tr>
         <tr *ngFor="let word of allWords; let i = index">
+            <td>
+                <span>{{i + 1}}</span>
+            </td>
             <td>
                 <span>{{word.value}}</span>
             </td>
