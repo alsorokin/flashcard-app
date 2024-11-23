@@ -58,6 +58,12 @@ export class WordsService {
     });
   }
 
+  /**
+   * Add/remove words to the provided array based on the collection change event.
+   * 
+   * @param words {Word[]} The list of words to update.
+   * @param collectionChangeEvent {CollectionChangeEvent} The collection change event.
+   */
   updateWords(words: Word[], collectionChangeEvent: CollectionChangeEvent): void {
     if (collectionChangeEvent.selected) {
       const newWords = getWordsByTag(collectionChangeEvent.name)
@@ -83,7 +89,7 @@ export class WordsService {
   }
 
   /**
-   * Get a random word from the list of words.
+   * Get a number of random words from the provided array.
    * 
    * @param count {number} The number of random words to get.
    * @param tags {string[]} An array of tags to filter the words by.

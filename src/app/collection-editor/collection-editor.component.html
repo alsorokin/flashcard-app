@@ -1,1 +1,20 @@
-<p>collection-editor works!</p>
+<div class="collections-table-container">
+    <table class="collections-table">
+        <tr>
+            <th>Слово</th>
+            <th>Перевод</th>
+            <th>Коллекции</th>
+        </tr>
+        <tr *ngFor="let word of allWords; let i = index">
+            <td>
+                <span>{{word.value}}</span>
+            </td>
+            <td>
+                <span>{{word.translation}}</span>
+            </td>
+            <td>
+                <span>{{word.tags.join(', ')}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
