@@ -1,0 +1,20 @@
+<div [formGroup]="parentForm">
+    <table formArrayName="words">
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Meaning</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
+                <td>
+                    <input type="text" id="text-{{ i }}" formControlName="value" />
+                </td>
+                <td>
+                    <input type="text" id="meaning-{{ i }}" formControlName="translation" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

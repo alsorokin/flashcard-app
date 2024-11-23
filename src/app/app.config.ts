@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { routes } from './app.routes';
 
@@ -16,5 +17,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(MatSelectModule),
     importProvidersFrom(MatFormFieldModule),
     importProvidersFrom(FormsModule),
+    importProvidersFrom(ReactiveFormsModule),
   ]
 };
