@@ -60,8 +60,6 @@ export class WordsService {
   /**
    * Get all words, including base and custom words.
    * If a custom word has the same value as a base word, the custom word will be returned.
-   * 
-   * @returns {Word[]} An array of all words, including base and custom words.
    */
   getAllWords(): Word[] {
     const allWords = getBaseWords();
@@ -77,8 +75,21 @@ export class WordsService {
     return allWords;
   }
 
+  /**
+   * Get all words with the provided tag, including base and custom words.
+   */
   getAllWordsByTag(tag: string): Word[] {
-    return this.getAllWords().filter(word => word.tags.includes(tag));
+    const allWordsByTag = getBaseWordsByTag(tag);
+    const customWords = this.getCustomWords().filter(w => w.tags.includes(tag));
+    for (const customWord of customWords) {
+      const i = allWordsByTag.findIndex(w => w.value === customWord.value);
+      if (i !== -1) {
+        allWordsByTag.splice(i, 1);
+      }
+    }
+    allWordsByTag.push(...customWords);
+
+    return allWordsByTag;
   }
 
   /**
@@ -176,7 +187,10 @@ export class WordsService {
   private _customWords: Word[] | null = null;
 
   getCustomWords(): Word[] {
-    return this._customWords ?? (this._customWords = this.loadCustomWordsFromLocalStorage());
+    if (this._customWords === null) {
+      this._customWords = this.loadCustomWordsFromLocalStorage();
+    }
+    return this._customWords.map(w => ({ ...w }));
   }
 
   getCustomTags(): string[] {
