@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Word, getAllTags, getAllWords, getWordsByTag } from './words';
+import { Word, getBaseTags, getBaseWords, getBaseWordsByTag } from './words';
 import { Subject, Observable } from 'rxjs';
 
 export interface CollectionChangeEvent {
@@ -14,7 +14,7 @@ export interface WordCollection {
 }
 
 /**
- * Service for managing word collections and hold the state of the selected collections.
+ * Service for managing words and word collections and hold the state of the selected collections.
  */
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,9 @@ export class WordsService {
   collectionsChanged$: Observable<CollectionChangeEvent> = this.collectionsChanged.asObservable();
 
   constructor() {
-    const tags = getAllTags();
+    const baseTags = getBaseTags();
+    const customTags = this.getCustomTags();
+    const tags = [...baseTags, ...customTags];
     const savedCollections = this.loadCollectionsFromLocalStorage();
     this.wordCollections = tags.map(tag => {
       const savedCollection = savedCollections.find(collection => collection.name === tag);
@@ -38,6 +40,7 @@ export class WordsService {
     });
   }
 
+  //#region Collections
   getWordCollections(): WordCollection[] {
     // Return a copy of the collections to prevent the original array from being modified.
     return this.wordCollections.map(collection => ({ ...collection }));
@@ -51,9 +54,38 @@ export class WordsService {
       this.collectionsChanged.next({ name: name, selected: selected });
     }
   }
+  //#endregion
 
-  getWords(): Word[] {
-    return getAllWords().filter(word => {
+  //#region Words
+  /**
+   * Get all words, including base and custom words.
+   * If a custom word has the same value as a base word, the custom word will be returned.
+   * 
+   * @returns {Word[]} An array of all words, including base and custom words.
+   */
+  getAllWords(): Word[] {
+    const allWords = getBaseWords();
+    const customWords = this.getCustomWords();
+    for (const customWord of customWords) {
+      const i = allWords.findIndex(w => w.value === customWord.value);
+      if (i !== -1) {
+        allWords.splice(i, 1);
+      }
+    }
+    allWords.push(...customWords);
+
+    return allWords;
+  }
+
+  getAllWordsByTag(tag: string): Word[] {
+    return this.getAllWords().filter(word => word.tags.includes(tag));
+  }
+
+  /**
+   * Get the words in the selected collections.
+   */
+  getSelectedWords(): Word[] {
+    return this.getAllWords().filter(word => {
       return this.wordCollections.find(collection => collection.selected && word.tags.includes(collection.name));
     });
   }
@@ -61,31 +93,22 @@ export class WordsService {
   /**
    * Add/remove words to the provided array based on the collection change event.
    * 
-   * @param words {Word[]} The list of words to update.
+   * @param wordsToUpdate {Word[]} The list of words to update.
    * @param collectionChangeEvent {CollectionChangeEvent} The collection change event.
    */
-  updateWords(words: Word[], collectionChangeEvent: CollectionChangeEvent): void {
+  refreshWordsByEvent(wordsToUpdate: Word[], collectionChangeEvent: CollectionChangeEvent): void {
     if (collectionChangeEvent.selected) {
-      const newWords = getWordsByTag(collectionChangeEvent.name)
-        .filter(word => words.findIndex(w => w.value === word.value) === -1);
-      words.push(...newWords);
+      const newWords = this.getAllWordsByTag(collectionChangeEvent.name)
+        .filter(word => wordsToUpdate.findIndex(w => w.value === word.value) === -1);
+      wordsToUpdate.push(...newWords);
     } else {
-      for (let i = words.length - 1; i >= 0; i--) {
-        const word = words[i];
+      for (let i = wordsToUpdate.length - 1; i >= 0; i--) {
+        const word = wordsToUpdate[i];
         if (word.tags.includes(collectionChangeEvent.name)) {
-          words.splice(i, 1);
+          wordsToUpdate.splice(i, 1);
         }
       }
     }
-  }
-
-  private loadCollectionsFromLocalStorage(): WordCollection[] {
-    const collections = localStorage.getItem('wordCollections');
-    return collections ? JSON.parse(collections) : [];
-  }
-
-  private saveCollectionsToLocalStorage(): void {
-    localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
   }
 
   /**
@@ -122,10 +145,6 @@ export class WordsService {
     return result;
   }
 
-  updateWord(word: Partial<Word>): void {
-    console.log(`Not yet implemented: updateWord(${word.value})`);
-  }
-
   private scrambleAndFilterOutSynonyms(words: Word[]): Word[] {
     const result: Word[] = [];
 
@@ -145,4 +164,64 @@ export class WordsService {
 
     return result;
   }
+  //#endregion
+
+  //#region Base Words
+  getBaseWords(): Word[] {
+    return getBaseWords();
+  }
+  //#endregion
+
+  //#region Custom Words
+  private _customWords: Word[] | null = null;
+
+  getCustomWords(): Word[] {
+    return this._customWords ?? (this._customWords = this.loadCustomWordsFromLocalStorage());
+  }
+
+  getCustomTags(): string[] {
+    const tags = new Set<string>();
+    this.getCustomWords().forEach(w => w.tags.forEach(t => tags.add(t)));
+    return Array.from(tags);
+  }
+
+  updateWord(word: Partial<Word>): void {
+    if (!word.value) {
+      return;
+    }
+    const customWords = this.getCustomWords();
+    const i = customWords.findIndex(w => w.value === word.value);
+    if (i !== -1) {
+      customWords[i] = { ...customWords[i], ...word };
+    } else {
+      customWords.push(word as Word);
+    }
+    this.setCustomWords(customWords);
+  }
+
+  private setCustomWords(words: Word[]): void {
+    this._customWords = words;
+    this.saveCustomWordsToLocalStorage(words);
+  }
+  //#endregion
+
+  //#region Local Storage
+  private loadCollectionsFromLocalStorage(): WordCollection[] {
+    const collections = localStorage.getItem('wordCollections');
+    return collections ? JSON.parse(collections) : [];
+  }
+
+  private saveCollectionsToLocalStorage(): void {
+    localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
+  }
+
+  private loadCustomWordsFromLocalStorage(): Word[] {
+    const customWords = localStorage.getItem('customWords');
+    return customWords ? JSON.parse(customWords) : [];
+  }
+
+  private saveCustomWordsToLocalStorage(words: Word[]): void {
+    localStorage.setItem('customWords', JSON.stringify(words));
+  }
+  //#endregion
 }

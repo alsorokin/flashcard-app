@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WordCollection, WordsService } from '../words.service';
-import { Word, getAllWords } from '../words';
+import { Word, getBaseWords } from '../words';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +20,7 @@ export class CollectionEditorComponent {
   constructor(private wordsService: WordsService) { }
 
   ngOnInit() {
-    this.allWords = getAllWords();
+    this.allWords = getBaseWords();
     this.allCollections = this.wordsService.getWordCollections();
   }
 

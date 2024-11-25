@@ -51,12 +51,12 @@ export class FlashcardComponent implements AfterViewInit {
   ) { }
 
   ngOnInit(): void {
-    this.words = this.wordsService.getWords();
+    this.words = this.wordsService.getSelectedWords();
     this.refreshFront();
     this.refreshBack();
 
     this.wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
-      this.wordsService.updateWords(this.words, event);
+      this.wordsService.refreshWordsByEvent(this.words, event);
       this.refreshAll();
     });
 

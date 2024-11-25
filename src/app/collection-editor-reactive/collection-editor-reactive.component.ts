@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, ReactiveFormsModule } from '@angular/forms';
-import { Word, getAllWords } from '../words';
+import { Word } from '../words';
 import { WordCollection, WordsService } from '../words.service';
 import { CommonModule } from '@angular/common';
 
@@ -26,7 +26,7 @@ export class CollectionEditorReactiveComponent {
   }
 
   constructor(private wordsService: WordsService) {
-    this.allWords = getAllWords();
+    this.allWords = wordsService.getAllWords();
     this.allCollections = wordsService.getWordCollections();
   }
 
