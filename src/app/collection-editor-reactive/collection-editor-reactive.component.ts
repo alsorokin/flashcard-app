@@ -18,13 +18,7 @@ export class CollectionEditorReactiveComponent {
   allCollections: WordCollection[] = [];
 
   parentForm = this.formBuilder.group({
-    words: this.formBuilder.array([
-      this.formBuilder.group({
-        value: 'Բարեվ',
-        translation: 'Привет',
-        tags: ['Урок 1']
-      })
-    ])
+    words: this.formBuilder.array([])
   });
 
   get wordsFormArray(): FormArray {
@@ -39,11 +33,24 @@ export class CollectionEditorReactiveComponent {
   ngOnInit() {
     this.wordsFormArray.clear();
     this.allWords.forEach(word => {
-      this.wordsFormArray.push(this.formBuilder.group({
+      const wordFormGroup = this.formBuilder.group({
         value: [word.value],
         translation: [word.translation],
-        tags: [word.tags]
-      }));
+        tags: this.formBuilder.array(word.tags.map(tag => new FormControl(tag))),
+      });
+      this.wordsFormArray.push(wordFormGroup);
+
+      wordFormGroup.valueChanges.subscribe(value => {
+        if (!value.value || !value.translation || !value.tags) {
+          return;
+        }
+        const changedWord: Word = {
+          value: value.value,
+          translation: value.translation,
+          tags: value.tags as string[],
+        };
+        this.wordsService.updateWord(changedWord);
+      });
     });
   }
 }

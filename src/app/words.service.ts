@@ -122,6 +122,10 @@ export class WordsService {
     return result;
   }
 
+  updateWord(word: Partial<Word>): void {
+    console.log(`Not yet implemented: updateWord(${word.value})`);
+  }
+
   private scrambleAndFilterOutSynonyms(words: Word[]): Word[] {
     const result: Word[] = [];
 
