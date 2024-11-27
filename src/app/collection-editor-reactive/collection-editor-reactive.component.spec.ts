@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CollectionEditorReactiveComponent } from './collection-editor-reactive.component';
 
@@ -8,7 +10,7 @@ describe('CollectionEditorReactiveComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CollectionEditorReactiveComponent]
+      imports: [CollectionEditorReactiveComponent, BrowserAnimationsModule, CommonModule],
     })
     .compileComponents();
 

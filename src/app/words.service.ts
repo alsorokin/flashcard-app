@@ -28,7 +28,12 @@ export class WordsService {
   constructor() {
     const baseTags = getBaseTags();
     const customTags = this.getCustomTags();
-    const tags = [...baseTags, ...customTags];
+    const tags = baseTags;
+    customTags.forEach(tag => {
+      if (!tags.includes(tag)) {
+        tags.push(tag);
+      }
+    });
     const savedCollections = this.loadCollectionsFromLocalStorage();
     this.wordCollections = tags.map(tag => {
       const savedCollection = savedCollections.find(collection => collection.name === tag);

@@ -1,13 +1,15 @@
 import { Component, inject } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Word } from '../words';
 import { WordCollection, WordsService } from '../words.service';
 import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 @Component({
   selector: 'app-collection-editor-reactive',
   standalone: true,
-  imports: [ ReactiveFormsModule, CommonModule ],
+  imports: [ ReactiveFormsModule, CommonModule, MatFormFieldModule, MatSelectModule ],
   templateUrl: './collection-editor-reactive.component.html',
   styleUrl: './collection-editor-reactive.component.css'
 })
@@ -36,7 +38,7 @@ export class CollectionEditorReactiveComponent {
       const wordFormGroup = this.formBuilder.group({
         value: [word.value],
         translation: [word.translation],
-        tags: this.formBuilder.array(word.tags.map(tag => new FormControl(tag))),
+        tags: [word.tags],
       });
       this.wordsFormArray.push(wordFormGroup);
 

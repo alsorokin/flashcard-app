@@ -1,20 +1,33 @@
 <div [formGroup]="parentForm">
-    <table formArrayName="words">
-        <thead>
-            <tr>
-                <th>Word</th>
-                <th>Meaning</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
-                <td>
-                    <input type="text" id="text-{{ i }}" formControlName="value" />
-                </td>
-                <td>
-                    <input type="text" id="meaning-{{ i }}" formControlName="translation" />
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <table formArrayName="words">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Слово</th>
+        <th>Перевод</th>
+        <th>Наборы</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
+        <td>{{ i + 1 }}</td>
+        <td>
+          <span class="word-value">{{ word.value.value }}</span>
+        </td>
+        <td>
+          <input class="word-translation" type="text" id="meaning-{{ i }}" formControlName="translation" />
+        </td>
+        <td>
+          <mat-form-field appearance="fill" id="collections-form-field-{{ i }}">
+            <mat-label>Коллекции</mat-label>
+            <mat-select multiple formControlName="tags">
+              <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
+                {{collection.name}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
