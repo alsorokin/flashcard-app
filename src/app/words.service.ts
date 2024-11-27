@@ -87,7 +87,7 @@ export class WordsService {
       if (i === -1) {
         allWords.push(customWord);
       } else {
-        allWords[i] = customWord;
+        allWords[i] = { ...customWord, audioFileName: allWords[i].audioFileName };
       }
     }
     return allWords;

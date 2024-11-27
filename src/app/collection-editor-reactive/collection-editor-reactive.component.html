@@ -1,31 +1,57 @@
 <div [formGroup]="parentForm">
-  <table formArrayName="words">
+  <table>
     <thead>
       <tr>
         <th>#</th>
         <th>Слово</th>
         <th>Перевод</th>
         <th>Наборы</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
-        <td>{{ i + 1 }}</td>
+      <ng-container formArrayName="words">
+        <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
+          <td>{{ i + 1 }}</td>
+          <td>
+            <span class="word-value">{{ word.value.value }}</span>
+          </td>
+          <td>
+            <input class="word-translation" type="text" id="meaning-{{ i }}" formControlName="translation" />
+          </td>
+          <td>
+            <mat-form-field appearance="fill" id="collections-form-field-{{ i }}">
+              <mat-label>Коллекции</mat-label>
+              <mat-select multiple formControlName="tags">
+                <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
+                  {{collection.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </td>
+          <td></td>
+        </tr>
+      </ng-container>
+      <tr>
+        <td></td>
         <td>
-          <span class="word-value">{{ word.value.value }}</span>
+          <input type="text" formControlName="newWordValue" />
         </td>
         <td>
-          <input class="word-translation" type="text" id="meaning-{{ i }}" formControlName="translation" />
+          <input type="text" formControlName="newWordTranslation" />
         </td>
         <td>
-          <mat-form-field appearance="fill" id="collections-form-field-{{ i }}">
+          <mat-form-field appearance="fill">
             <mat-label>Коллекции</mat-label>
-            <mat-select multiple formControlName="tags">
+            <mat-select multiple formControlName="newWordTags">
               <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
                 {{collection.name}}
               </mat-option>
             </mat-select>
           </mat-form-field>
+        </td>
+        <td>
+          <button mat-raised-button color="primary" (click)="addWord()">Добавить</button>
         </td>
       </tr>
     </tbody>
