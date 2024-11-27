@@ -62,34 +62,30 @@ export class WordsService {
    * If a custom word has the same value as a base word, the custom word will be returned.
    */
   getAllWords(): Word[] {
-    const allWords = getBaseWords();
-    const customWords = this.getCustomWords();
-    for (const customWord of customWords) {
-      const i = allWords.findIndex(w => w.value === customWord.value);
-      if (i !== -1) {
-        allWords.splice(i, 1);
-      }
-    }
-    allWords.push(...customWords);
-
-    return allWords;
+    return this.mergeWords(getBaseWords(), this.getCustomWords());
   }
 
   /**
    * Get all words with the provided tag, including base and custom words.
    */
   getAllWordsByTag(tag: string): Word[] {
-    const allWordsByTag = getBaseWordsByTag(tag);
-    const customWords = this.getCustomWords().filter(w => w.tags.includes(tag));
+    return this.mergeWords(getBaseWordsByTag(tag), this.getCustomWords().filter(w => w.tags.includes(tag)));
+  }
+
+  /**
+   * Merge base words and custom words, giving precedence to custom words.
+   */
+  private mergeWords(baseWords: Word[], customWords: Word[]): Word[] {
+    const allWords = [...baseWords];
     for (const customWord of customWords) {
-      const i = allWordsByTag.findIndex(w => w.value === customWord.value);
-      if (i !== -1) {
-        allWordsByTag.splice(i, 1);
+      const i = allWords.findIndex(w => w.value === customWord.value);
+      if (i === -1) {
+        allWords.push(customWord);
+      } else {
+        allWords[i] = customWord;
       }
     }
-    allWordsByTag.push(...customWords);
-
-    return allWordsByTag;
+    return allWords;
   }
 
   /**
