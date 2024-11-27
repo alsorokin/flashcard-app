@@ -79,7 +79,7 @@ export class CollectionEditorReactiveComponent {
 
     const oldWord = this.allWords.find(word => word.value === newWordValue);
     if (oldWord) {
-      const userAgrees = confirm(`Word "${newWordValue}" already exists. Do you want to update it?`);
+      const userAgrees = confirm(`Уже есть слово "${newWordValue}". Хотите его обновить?`);
       if (!userAgrees) {
         return
       }
