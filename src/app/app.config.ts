@@ -6,6 +6,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { routes } from './app.routes';
 
@@ -18,5 +19,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(MatFormFieldModule),
     importProvidersFrom(FormsModule),
     importProvidersFrom(ReactiveFormsModule),
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ]
 };
