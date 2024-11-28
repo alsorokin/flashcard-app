@@ -14,5 +14,7 @@
             <input type="checkbox" [id]="collection.htmlId + '_checkbox'"
                 (change)="toggleCollectionSelected($event, collection)" [checked]="collection.selected" /> {{ collection.name }}
         </label>
+        <hr>
+        <a href="edit">Редактор слов</a>
     </div>
 </div>

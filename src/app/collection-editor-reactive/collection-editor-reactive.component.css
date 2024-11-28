@@ -1,0 +1,67 @@
+div.collections-table-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    flex-direction: column;
+}
+
+table {
+    border-width: 1px;
+    border-color: #bdbdbd;
+    border-style: solid;
+    font-size: 19px;
+    width: 100%; /* Ensure the table takes full width */
+    table-layout: fixed; /* Ensure columns take up the specified width */
+}
+
+table th, table td {
+    border-width: 1px;
+    border-color: #bdbdbd;
+    border-style: solid;
+    padding: 5px;
+}
+
+table.collections-table th.number-col {
+    width: 5%;
+}
+
+table.collections-table th.word-col {
+    width: 35%;
+}
+
+table.collections-table th.collections-col {
+    width: 60%;
+}
+
+table input {
+    max-width: 95%;
+    font-size: 19px;
+}
+
+table button {
+    font-size: 19px;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    background-color: forestgreen;
+    color: white;
+    cursor: pointer;
+}
+
+a.back-link {
+    font-size: 19px;
+    color: blue;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    table.collections-table th, table.collections-table td {
+        font-size: 16px;
+    }
+    .hide-on-small-screens {
+        display: none;
+    }
+}

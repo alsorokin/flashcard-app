@@ -4,9 +4,9 @@ import * as wordsModule from './words';
 import { jest } from '@jest/globals';
 
 jest.mock('./words', () => ({
-  getAllTags: jest.fn(),
-  getWordsByTag: jest.fn(),
-  getAllWords: jest.fn(),
+  getBaseTags: jest.fn(),
+  getBaseWordsByTag: jest.fn(),
+  getBaseWords: jest.fn(),
 }));
 
 describe('WordsService', () => {
@@ -15,7 +15,7 @@ describe('WordsService', () => {
   beforeEach(() => {
     // Mock setup before TestBed configuration
     const mockTags = ['tag1', 'tag2'];
-    (wordsModule.getAllTags as jest.Mock).mockReturnValue(mockTags);
+    (wordsModule.getBaseTags as jest.Mock).mockReturnValue(mockTags);
 
     TestBed.configureTestingModule({});
     service = TestBed.inject(WordsService);
@@ -48,11 +48,11 @@ describe('WordsService', () => {
       { value: 'word1', translation: 'translation1', tags: ['tag1'] },
       { value: 'word2', translation: 'translation2', tags: ['tag2'] },
     ];
-    (wordsModule.getAllWords as jest.Mock).mockReturnValue(mockWords);
+    (wordsModule.getBaseWords as jest.Mock).mockReturnValue(mockWords);
 
     service.setCollectionSelected('tag1', true);
     service.setCollectionSelected('tag2', false);
-    const words = service.getWords();
+    const words = service.getSelectedWords();
 
     expect(words.length).toBe(1);
     expect(words[0].value).toBe('word1');
@@ -66,9 +66,9 @@ describe('WordsService', () => {
       { value: 'word1', translation: 'translation1', tags: ['tag1'] },
       { value: 'word3', translation: 'translation3', tags: ['tag1'] },
     ];
-    (wordsModule.getWordsByTag as jest.Mock).mockReturnValue(mockWordsByTag);
+    (wordsModule.getBaseWordsByTag as jest.Mock).mockReturnValue(mockWordsByTag);
 
-    service.updateWords(words, { name: 'tag1', selected: true });
+    service.refreshWordsByEvent(words, { name: 'tag1', selected: true });
 
     expect(words.length).toBe(3);
     expect(words.find(w => w.value === 'word3')).toBeTruthy();
@@ -84,9 +84,9 @@ describe('WordsService', () => {
       { value: 'word1', translation: 'translation1', tags: ['tag1'] },
       { value: 'word3', translation: 'translation3', tags: ['tag1'] },
     ];
-    (wordsModule.getWordsByTag as jest.Mock).mockReturnValue(mockWordsByTag);
+    (wordsModule.getBaseWordsByTag as jest.Mock).mockReturnValue(mockWordsByTag);
 
-    service.updateWords(words, { name: 'tag1', selected: false });
+    service.refreshWordsByEvent(words, { name: 'tag1', selected: false });
 
     expect(words.length).toBe(1);
     expect(words[0].value).toBe('word2');

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Word, getAllTags, getAllWords, getWordsByTag } from './words';
+import { Word, getBaseTags, getBaseWords, getBaseWordsByTag } from './words';
 import { Subject, Observable } from 'rxjs';
 
 export interface CollectionChangeEvent {
@@ -14,7 +14,7 @@ export interface WordCollection {
 }
 
 /**
- * Service for managing word collections and hold the state of the selected collections.
+ * Service for managing words and word collections and hold the state of the selected collections.
  */
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,14 @@ export class WordsService {
   collectionsChanged$: Observable<CollectionChangeEvent> = this.collectionsChanged.asObservable();
 
   constructor() {
-    const tags = getAllTags();
+    const baseTags = getBaseTags();
+    const customTags = this.getCustomTags();
+    const tags = baseTags;
+    customTags.forEach(tag => {
+      if (!tags.includes(tag)) {
+        tags.push(tag);
+      }
+    });
     const savedCollections = this.loadCollectionsFromLocalStorage();
     this.wordCollections = tags.map(tag => {
       const savedCollection = savedCollections.find(collection => collection.name === tag);
@@ -38,6 +45,7 @@ export class WordsService {
     });
   }
 
+  //#region Collections
   getWordCollections(): WordCollection[] {
     // Return a copy of the collections to prevent the original array from being modified.
     return this.wordCollections.map(collection => ({ ...collection }));
@@ -51,39 +59,72 @@ export class WordsService {
       this.collectionsChanged.next({ name: name, selected: selected });
     }
   }
+  //#endregion
 
-  getWords(): Word[] {
-    return getAllWords().filter(word => {
+  //#region Words
+  /**
+   * Get all words, including base and custom words.
+   * If a custom word has the same value as a base word, the custom word will be returned.
+   */
+  getAllWords(): Word[] {
+    return this.mergeWords(getBaseWords(), this.getCustomWords());
+  }
+
+  /**
+   * Get all words with the provided tag, including base and custom words.
+   */
+  getAllWordsByTag(tag: string): Word[] {
+    return this.mergeWords(getBaseWordsByTag(tag), this.getCustomWords().filter(w => w.tags.includes(tag)));
+  }
+
+  /**
+   * Merge base words and custom words, giving precedence to custom words.
+   */
+  private mergeWords(baseWords: Word[], customWords: Word[]): Word[] {
+    const allWords = [...baseWords];
+    for (const customWord of customWords) {
+      const i = allWords.findIndex(w => w.value === customWord.value);
+      if (i === -1) {
+        allWords.push(customWord);
+      } else {
+        allWords[i] = { ...customWord, audioFileName: allWords[i].audioFileName };
+      }
+    }
+    return allWords;
+  }
+
+  /**
+   * Get the words in the selected collections.
+   */
+  getSelectedWords(): Word[] {
+    return this.getAllWords().filter(word => {
       return this.wordCollections.find(collection => collection.selected && word.tags.includes(collection.name));
     });
   }
 
-  updateWords(words: Word[], collectionChangeEvent: CollectionChangeEvent): void {
+  /**
+   * Add/remove words to the provided array based on the collection change event.
+   * 
+   * @param wordsToUpdate {Word[]} The list of words to update.
+   * @param collectionChangeEvent {CollectionChangeEvent} The collection change event.
+   */
+  refreshWordsByEvent(wordsToUpdate: Word[], collectionChangeEvent: CollectionChangeEvent): void {
     if (collectionChangeEvent.selected) {
-      const newWords = getWordsByTag(collectionChangeEvent.name)
-        .filter(word => words.findIndex(w => w.value === word.value) === -1);
-      words.push(...newWords);
+      const newWords = this.getAllWordsByTag(collectionChangeEvent.name)
+        .filter(word => wordsToUpdate.findIndex(w => w.value === word.value) === -1);
+      wordsToUpdate.push(...newWords);
     } else {
-      for (let i = words.length - 1; i >= 0; i--) {
-        const word = words[i];
+      for (let i = wordsToUpdate.length - 1; i >= 0; i--) {
+        const word = wordsToUpdate[i];
         if (word.tags.includes(collectionChangeEvent.name)) {
-          words.splice(i, 1);
+          wordsToUpdate.splice(i, 1);
         }
       }
     }
   }
 
-  private loadCollectionsFromLocalStorage(): WordCollection[] {
-    const collections = localStorage.getItem('wordCollections');
-    return collections ? JSON.parse(collections) : [];
-  }
-
-  private saveCollectionsToLocalStorage(): void {
-    localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
-  }
-
   /**
-   * Get a random word from the list of words.
+   * Get a number of random words from the provided array.
    * 
    * @param count {number} The number of random words to get.
    * @param tags {string[]} An array of tags to filter the words by.
@@ -135,4 +176,80 @@ export class WordsService {
 
     return result;
   }
+  //#endregion
+
+  //#region Base Words
+  getBaseWords(): Word[] {
+    return getBaseWords();
+  }
+  //#endregion
+
+  //#region Custom Words
+  private _customWords: Word[] | null = null;
+
+  getCustomWords(): Word[] {
+    if (this._customWords === null) {
+      this._customWords = this.loadCustomWordsFromLocalStorage();
+    }
+    return this._customWords.map(w => ({ ...w }));
+  }
+
+  getCustomTags(): string[] {
+    const tags = new Set<string>();
+    this.getCustomWords().forEach(w => w.tags.forEach(t => tags.add(t)));
+    return Array.from(tags);
+  }
+
+  updateWord(word: Partial<Word>): void {
+    if (!word.value) {
+      return;
+    }
+    const customWords = this.getCustomWords();
+    const i = customWords.findIndex(w => w.value === word.value);
+    if (i !== -1) {
+      customWords[i] = { ...customWords[i], ...word };
+    } else {
+      customWords.push(word as Word);
+    }
+    this.setCustomWords(customWords);
+
+    // create new collections from new word's tags
+    if (word.tags) {
+      word.tags.forEach(tag => {
+        if (!this.wordCollections.find(collection => collection.name === tag)) {
+          this.wordCollections.push({
+            name: tag,
+            htmlId: tag.replaceAll(' ', '_'),
+            selected: true,
+          });
+        }
+      });
+    }
+  }
+
+  private setCustomWords(words: Word[]): void {
+    this._customWords = words;
+    this.saveCustomWordsToLocalStorage(words);
+  }
+  //#endregion
+
+  //#region Local Storage
+  private loadCollectionsFromLocalStorage(): WordCollection[] {
+    const collections = localStorage.getItem('wordCollections');
+    return collections ? JSON.parse(collections) : [];
+  }
+
+  private saveCollectionsToLocalStorage(): void {
+    localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
+  }
+
+  private loadCustomWordsFromLocalStorage(): Word[] {
+    const customWords = localStorage.getItem('customWords');
+    return customWords ? JSON.parse(customWords) : [];
+  }
+
+  private saveCustomWordsToLocalStorage(words: Word[]): void {
+    localStorage.setItem('customWords', JSON.stringify(words));
+  }
+  //#endregion
 }

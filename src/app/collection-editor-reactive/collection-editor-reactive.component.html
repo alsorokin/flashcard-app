@@ -1,0 +1,59 @@
+<div class="collections-table-container" [formGroup]="parentForm">
+  <a href="" class="back-link">Назад</a>
+  <hr>
+  <table class="collections-table">
+    <thead>
+      <tr>
+        <th class="number-col hide-on-small-screens">#</th>
+        <th class="word-col">Слово/Перевод</th>
+        <th class="collections-col">Наборы</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container formArrayName="words">
+        <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
+          <td class="hide-on-small-screens">{{ i + 1 }}</td>
+          <td>
+            <span class="word-value">{{ word.value.value }}</span>
+            <br/>
+            <input class="word-translation" type="text" id="meaning-{{ i }}" formControlName="translation" />
+          </td>
+          <td>
+            <mat-select multiple formControlName="tags" placeholder="Выберите набор">
+              <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
+                {{collection.name}}
+              </mat-option>
+            </mat-select>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <table>
+    <thead></thead>
+    <tbody>
+      <tr>
+        <td>
+          <input type="text" formControlName="newWordValue" placeholder="Новое слово" inputmode="text" lang="hy" />
+          <br/>
+          <input type="text" formControlName="newWordTranslation" placeholder="Перевод" inputmode="text" lang="ru" />
+        </td>
+        <td>
+          <mat-select multiple formControlName="newWordTags" placeholder="Выберите набор">
+            <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
+              {{collection.name}}
+            </mat-option>
+          </mat-select>
+          <br/>
+          <button mat-raised-button color="primary" (click)="addWord()">Добавить слово</button>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="text" formControlName="newCollectionName" placeholder="Новый набор" inputmode="text" lang="ru" /></td>
+        <td><button mat-raised-button color="primary" (click)="addCollection()">Добавить набор</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <a href="" class="back-link">Назад</a>
+</div>
