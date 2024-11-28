@@ -24,6 +24,7 @@ export class CollectionEditorReactiveComponent {
     newWordValue: [''],
     newWordTranslation: [''],
     newWordTags: [''],
+    newCollectionName: [''],
   });
 
   get wordsFormArray(): FormArray {
@@ -71,11 +72,14 @@ export class CollectionEditorReactiveComponent {
     }
     const newWordValue = newWordValueControl.value;
     const newWordTranslation = newWordTranslationControl.value;
-    const newWordTagsValue = newWordTagsControl.value;
-    if (!newWordValue || !newWordTranslation || !Array.isArray(newWordTagsValue)) {
+    let newWordTagsValue = newWordTagsControl.value;
+    if (!newWordValue || !newWordTranslation) {
       return;
     }
-    const newWordTags = newWordTagsValue as string[];
+    let newWordTags: string[] = [];
+    if (Array.isArray(newWordTagsValue)) {
+      newWordTags = newWordTagsValue as string[];
+    }
 
     const oldWord = this.allWords.find(word => word.value === newWordValue);
     if (oldWord) {
@@ -121,5 +125,30 @@ export class CollectionEditorReactiveComponent {
     newWordValueControl.setValue('');
     newWordTranslationControl.setValue('');
     newWordTagsControl.setValue('');
+  }
+
+  addCollection() {
+    const newCollectionNameControl = this.parentForm.get('newCollectionName');
+    if (newCollectionNameControl === null) {
+      return;
+    }
+    const newCollectionName = newCollectionNameControl.value;
+    if (!newCollectionName) {
+      return;
+    }
+
+    const oldCollection = this.allCollections.find(collection =>
+      collection.name.toLowerCase() === newCollectionName.toLowerCase());
+    if (oldCollection) {
+      alert(`Уже есть набор "${oldCollection.name}".`);
+      return;
+    }
+
+    const newCollection: WordCollection = {
+      name: newCollectionName,
+      htmlId: newCollectionName.toLowerCase().replace(/ /g, '_'),
+      selected: false,
+    };
+    this.allCollections.push(newCollection);
   }
 }

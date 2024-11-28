@@ -212,6 +212,19 @@ export class WordsService {
       customWords.push(word as Word);
     }
     this.setCustomWords(customWords);
+
+    // create new collections from new word's tags
+    if (word.tags) {
+      word.tags.forEach(tag => {
+        if (!this.wordCollections.find(collection => collection.name === tag)) {
+          this.wordCollections.push({
+            name: tag,
+            htmlId: tag.replaceAll(' ', '_'),
+            selected: true,
+          });
+        }
+      });
+    }
   }
 
   private setCustomWords(words: Word[]): void {
