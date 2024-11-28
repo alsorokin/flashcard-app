@@ -50,6 +50,13 @@ table button {
     cursor: pointer;
 }
 
+a.back-link {
+    font-size: 19px;
+    color: blue;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
 @media (max-width: 600px) {
     table.collections-table th, table.collections-table td {
         font-size: 16px;

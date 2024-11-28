@@ -1,4 +1,6 @@
 <div class="collections-table-container" [formGroup]="parentForm">
+  <a href="" class="back-link">Назад</a>
+  <hr>
   <table class="collections-table">
     <thead>
       <tr>
@@ -28,6 +30,7 @@
     </tbody>
   </table>
   <table>
+    <thead></thead>
     <tbody>
       <tr>
         <td>
@@ -36,7 +39,7 @@
           <input type="text" formControlName="newWordTranslation" placeholder="Перевод" inputmode="text" lang="ru" />
         </td>
         <td>
-          <mat-select disableRipple multiple formControlName="newWordTags" placeholder="Выберите набор">
+          <mat-select multiple formControlName="newWordTags" placeholder="Выберите набор">
             <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
               {{collection.name}}
             </mat-option>
@@ -51,4 +54,6 @@
       </tr>
     </tbody>
   </table>
+  <hr>
+  <a href="" class="back-link">Назад</a>
 </div>
