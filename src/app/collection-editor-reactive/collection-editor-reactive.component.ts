@@ -18,6 +18,10 @@ export class CollectionEditorReactiveComponent {
 
   allWords: Word[] = [];
   allCollections: WordCollection[] = [];
+  paginatedWords: { group: FormGroup, index: number }[] = [];
+  currentPage = 0;
+  pageSize = 10;
+  totalPages = 0;
 
   parentForm = this.formBuilder.group({
     words: this.formBuilder.array([]),
@@ -38,7 +42,7 @@ export class CollectionEditorReactiveComponent {
 
   ngOnInit() {
     this.wordsFormArray.clear();
-    this.allWords.forEach(word => {
+    this.allWords.forEach((word, index) => {
       const wordFormGroup = this.formBuilder.group({
         value: [word.value],
         translation: [word.translation],
@@ -59,6 +63,45 @@ export class CollectionEditorReactiveComponent {
         this.wordsService.updateWord(changedWord);
       });
     });
+    this.totalPages = Math.ceil(this.wordsFormArray.length / this.pageSize);
+    this.updatePaginatedWords(0, this.pageSize);
+  }
+
+  updatePaginatedWords(startIndex: number, endIndex: number) {
+    this.paginatedWords = this.wordsFormArray.controls.slice(startIndex, endIndex).map((group, index) => ({
+      group: group as FormGroup,
+      index: startIndex + index
+    }));
+  }
+
+  goToFirstPage() {
+    this.currentPage = 0;
+    this.updatePaginatedWords(0, this.pageSize);
+  }
+
+  goToPreviousPage() {
+    if (this.currentPage > 0) {
+      this.currentPage--;
+      const startIndex = this.currentPage * this.pageSize;
+      const endIndex = startIndex + this.pageSize;
+      this.updatePaginatedWords(startIndex, endIndex);
+    }
+  }
+
+  goToNextPage() {
+    if (this.currentPage < this.totalPages - 1) {
+      this.currentPage++;
+      const startIndex = this.currentPage * this.pageSize;
+      const endIndex = startIndex + this.pageSize;
+      this.updatePaginatedWords(startIndex, endIndex);
+    }
+  }
+
+  goToLastPage() {
+    this.currentPage = this.totalPages - 1;
+    const startIndex = this.currentPage * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    this.updatePaginatedWords(startIndex, endIndex);
   }
 
   addWord() {

@@ -75,6 +75,24 @@ a.back-link {
     margin-left: 20px;
 }
 
+.custom-paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.custom-paginator button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.custom-paginator span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
 @media (max-width: 600px) {
     table th, table td {
         font-size: 16px;

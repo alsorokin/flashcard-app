@@ -12,12 +12,12 @@
       </thead>
       <tbody>
         <ng-container formArrayName="words">
-          <tr *ngFor="let word of wordsFormArray.controls; let i = index" [formGroupName]="i">
-            <td class="hide-on-small-screens">{{ i + 1 }}</td>
+          <tr *ngFor="let word of paginatedWords; let i = index" [formGroupName]="word.index">
+            <td class="hide-on-small-screens">{{ i + 1 + currentPage * pageSize }}</td>
             <td>
-              <span class="word-value">{{ word.value.value }}</span>
+              <span class="word-value">{{ word.group.value.value }}</span>
               <br/>
-              <input class="word-translation" type="text" id="meaning-{{ i }}" formControlName="translation" />
+              <input class="word-translation" type="text" id="meaning-{{ word.index }}" formControlName="translation" />
             </td>
             <td>
               <mat-select multiple formControlName="tags" placeholder="Выберите набор">
@@ -30,6 +30,13 @@
         </ng-container>
       </tbody>
     </table>
+    <div class="custom-paginator">
+      <button (click)="goToFirstPage()" [disabled]="currentPage === 0">&lt;&lt;</button>
+      <button (click)="goToPreviousPage()" [disabled]="currentPage === 0">&lt;</button>
+      <span>Page {{ currentPage + 1 }} of {{ totalPages }}</span>
+      <button (click)="goToNextPage()" [disabled]="currentPage >= totalPages - 1">&gt;</button>
+      <button (click)="goToLastPage()" [disabled]="currentPage >= totalPages - 1">&gt;&gt;</button>
+    </div>
     <hr>
     <table class="word-form">
       <thead>
