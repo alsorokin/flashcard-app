@@ -59,6 +59,16 @@ export class WordsService {
       this.collectionsChanged.next({ name: name, selected: selected });
     }
   }
+
+  setAllCollectionsSelected(selected: boolean): void {
+    this.wordCollections.forEach(collection => {
+      collection.selected = selected;
+    });
+    this.saveCollectionsToLocalStorage();
+    this.wordCollections.forEach(collection => {
+      this.collectionsChanged.next({ name: collection.name, selected: selected });
+    });
+  }
   //#endregion
 
   //#region Words

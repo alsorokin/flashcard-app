@@ -50,6 +50,11 @@ export class SettingsComponent {
     this.autoPlayEnabled = target.checked;
   }
 
+  toggleAll(on: boolean): void {
+    this.wordCollections.forEach(c => c.selected = on);
+    this.wordsService.setAllCollectionsSelected(on);
+  }
+
   @HostListener('document:click', ['$event'])
   onClick(event: Event): void {
     if (!this.eRef.nativeElement.contains(event.target)) {

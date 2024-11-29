@@ -61,3 +61,11 @@ div.settings label {
     text-indent: -15px;
     user-select: none;
 }
+
+div.collection-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
