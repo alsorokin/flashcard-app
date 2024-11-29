@@ -1,7 +1,5 @@
 <div class="root-container">
   <div class="collections-table-container" [formGroup]="parentForm">
-    <a href="#" class="back-link">Назад</a>
-    <hr>
     <table class="collections-table">
       <thead>
         <tr>
@@ -33,7 +31,7 @@
     <div class="custom-paginator">
       <button (click)="goToFirstPage()" [disabled]="currentPage === 0">&lt;&lt;</button>
       <button (click)="goToPreviousPage()" [disabled]="currentPage === 0">&lt;</button>
-      <span>Page {{ currentPage + 1 }} of {{ totalPages }}</span>
+      <span>Страница {{ currentPage + 1 }} / {{ totalPages }}</span>
       <button (click)="goToNextPage()" [disabled]="currentPage >= totalPages - 1">&gt;</button>
       <button (click)="goToLastPage()" [disabled]="currentPage >= totalPages - 1">&gt;&gt;</button>
     </div>
@@ -69,6 +67,9 @@
       </tbody>
     </table>
     <hr>
-    <a href="#" class="back-link">Назад</a>
+    <div class="footer">
+      <span>Всего слов: {{ totalWords }}</span>
+      <a href="#" class="back-link">Назад</a>
+    </div>
   </div>
 </div>

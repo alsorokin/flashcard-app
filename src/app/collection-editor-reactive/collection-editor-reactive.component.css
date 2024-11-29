@@ -6,7 +6,6 @@ div.root-container {
 div.collections-table-container {
     margin-top: 20px;
     max-width: 800px;
-    overflow-x: auto; /* Enable horizontal scrolling */
     flex-direction: column;
 }
 
@@ -15,8 +14,8 @@ table.collections-table {
     border-color: #bdbdbd;
     border-style: solid;
     font-size: 19px;
-    width: 100%; /* Ensure the table takes full width */
-    table-layout: fixed; /* Ensure columns take up the specified width */
+    width: 100%;
+    table-layout: fixed;
 }
 
 table.collections-table th, table.collections-table td {
@@ -57,7 +56,7 @@ table.word-form {
     width: 100%;
     max-width: 800px;
     font-size: 19px;
-    table-layout: fixed; /* Ensure columns take up the specified width */
+    table-layout: fixed;
 }
 
 table.word-form th.first {
@@ -100,4 +99,18 @@ a.back-link {
     .hide-on-small-screens {
         display: none;
     }
+    div.collections-table-container {
+        margin-top: 0;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer .back-link {
+    margin-left: auto;
 }

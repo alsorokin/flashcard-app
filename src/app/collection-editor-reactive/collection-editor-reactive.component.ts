@@ -23,6 +23,10 @@ export class CollectionEditorReactiveComponent {
   pageSize = 10;
   totalPages = 0;
 
+  get totalWords(): number {
+    return this.wordsFormArray.length;
+  }
+
   parentForm = this.formBuilder.group({
     words: this.formBuilder.array([]),
     newWordValue: [''],
@@ -82,23 +86,23 @@ export class CollectionEditorReactiveComponent {
   goToPreviousPage() {
     if (this.currentPage > 0) {
       this.currentPage--;
-      const startIndex = this.currentPage * this.pageSize;
-      const endIndex = startIndex + this.pageSize;
-      this.updatePaginatedWords(startIndex, endIndex);
+      this.refreshPage();
     }
   }
 
   goToNextPage() {
     if (this.currentPage < this.totalPages - 1) {
       this.currentPage++;
-      const startIndex = this.currentPage * this.pageSize;
-      const endIndex = startIndex + this.pageSize;
-      this.updatePaginatedWords(startIndex, endIndex);
+      this.refreshPage();
     }
   }
 
   goToLastPage() {
     this.currentPage = this.totalPages - 1;
+    this.refreshPage();
+  }
+
+  refreshPage() {
     const startIndex = this.currentPage * this.pageSize;
     const endIndex = startIndex + this.pageSize;
     this.updatePaginatedWords(startIndex, endIndex);
@@ -139,6 +143,7 @@ export class CollectionEditorReactiveComponent {
         tags: [oldWord.tags],
       }));
       this.clearNewWordControls();
+      this.refreshPage();
       return;
     }
 
@@ -154,6 +159,7 @@ export class CollectionEditorReactiveComponent {
       tags: [newWord.tags],
     }));
     this.clearNewWordControls();
+    this.refreshPage();
   }
 
   private clearNewWordControls() {
