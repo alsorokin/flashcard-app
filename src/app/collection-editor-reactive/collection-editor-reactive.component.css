@@ -1,13 +1,16 @@
-div.collections-table-container {
-    margin-top: 20px;
-    width: 100%;
+div.root-container {
     display: flex;
     justify-content: center;
+}
+
+div.collections-table-container {
+    margin-top: 20px;
+    max-width: 800px;
     overflow-x: auto; /* Enable horizontal scrolling */
     flex-direction: column;
 }
 
-table {
+table.collections-table {
     border-width: 1px;
     border-color: #bdbdbd;
     border-style: solid;
@@ -16,7 +19,7 @@ table {
     table-layout: fixed; /* Ensure columns take up the specified width */
 }
 
-table th, table td {
+table.collections-table th, table.collections-table td {
     border-width: 1px;
     border-color: #bdbdbd;
     border-style: solid;
@@ -28,11 +31,11 @@ table.collections-table th.number-col {
 }
 
 table.collections-table th.word-col {
-    width: 35%;
+    width: 45%;
 }
 
 table.collections-table th.collections-col {
-    width: 60%;
+    width: 50%;
 }
 
 table input {
@@ -50,6 +53,21 @@ table button {
     cursor: pointer;
 }
 
+table.word-form {
+    width: 100%;
+    max-width: 800px;
+    font-size: 19px;
+    table-layout: fixed; /* Ensure columns take up the specified width */
+}
+
+table.word-form th.first {
+    width: 50%;
+}
+
+table.word-form th.second {
+    width: 50%;
+}
+
 a.back-link {
     font-size: 19px;
     color: blue;
@@ -58,7 +76,7 @@ a.back-link {
 }
 
 @media (max-width: 600px) {
-    table.collections-table th, table.collections-table td {
+    table th, table td {
         font-size: 16px;
     }
     .hide-on-small-screens {
