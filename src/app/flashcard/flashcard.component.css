@@ -71,7 +71,7 @@ p.current-word {
     color: black;
     background-color: #fcfcfc;
     border-color: #a4cee5;
-    border-radius: 3px;
+    border-radius: 7px;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;

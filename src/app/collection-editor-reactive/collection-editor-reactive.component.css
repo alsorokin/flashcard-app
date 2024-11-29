@@ -11,7 +11,7 @@ div.collections-table-container {
 
 table.collections-table {
     border-width: 1px;
-    border-color: #bdbdbd;
+    border-color: #a4cee5;
     border-style: solid;
     font-size: 19px;
     width: 100%;
@@ -20,7 +20,7 @@ table.collections-table {
 
 table.collections-table th, table.collections-table td {
     border-width: 1px;
-    border-color: #bdbdbd;
+    border-color: #a4cee5;
     border-style: solid;
     padding: 5px;
 }
@@ -37,34 +37,25 @@ table.collections-table th.collections-col {
     width: 50%;
 }
 
-table input {
+input {
     max-width: 95%;
     font-size: 19px;
 }
 
-table button {
+button {
     font-size: 19px;
     padding: 5px;
     margin: 0;
-    border: none;
-    background-color: forestgreen;
-    color: white;
+    color: black;
+    background-color: #cbdee6;
+    border-color: #a4cee5;
+    border-radius: 7px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-table.word-form {
-    width: 100%;
-    max-width: 800px;
-    font-size: 19px;
-    table-layout: fixed;
-}
-
-table.word-form th.first {
-    width: 50%;
-}
-
-table.word-form th.second {
-    width: 50%;
+button:hover {
+    background-color: #f1d6f7;
 }
 
 a.back-link {
@@ -106,11 +97,36 @@ a.back-link {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 10px;
 }
 
 .footer .back-link {
     margin-left: auto;
+}
+
+.word-form {
+    width: 100%;
+    max-width: 800px;
+    font-size: 19px;
+}
+
+.word-form .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.word-form .column {
+    width: 48%;
+}
+
+.word-form input, .word-form mat-select, .word-form button {
+    width: 100%;
+    font-size: 19px;
+}
+
+.word-form input {
+    margin-top: 5px;
 }

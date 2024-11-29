@@ -137,11 +137,10 @@ export class CollectionEditorReactiveComponent {
       oldWord.translation = newWordTranslation;
       oldWord.tags = [ ...newWordTags ];
       this.wordsService.updateWord(oldWord);
-      this.wordsFormArray.controls.push(this.formBuilder.group({
-        value: [oldWord.value],
-        translation: [oldWord.translation],
-        tags: [oldWord.tags],
-      }));
+      const oldWordControl = this.wordsFormArray.controls.find(control => control.value.value === oldWord.value);
+      if (oldWordControl) {
+        oldWordControl.setValue(oldWord);
+      }
       this.clearNewWordControls();
       this.refreshPage();
       return;
