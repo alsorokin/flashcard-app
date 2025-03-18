@@ -15,7 +15,7 @@ describe('WordsService', () => {
   });
 
   it('should return some words by tag', () => {
-    const words = wordsModule.getBaseWordsByTag('Урок 1');
+    const words = wordsModule.getBaseWordsByTag('Уроки 1-5');
     expect(words.length).toBeGreaterThan(0);
   });
 
