@@ -1,0 +1,6873 @@
+[
+  {
+    "value": "ծանոթանալ",
+    "translation": "познакомиться",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_ծանոթանալ.ogg"
+  },
+  {
+    "value": "շատ ուրախ եմ",
+    "translation": "очень рад",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_շատ ուրախ եմ.ogg"
+  },
+  {
+    "value": "շատ հաճելի է",
+    "translation": "очень приятно",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_շատ հաճելի է.ogg"
+  },
+  {
+    "value": "ինձ էլ",
+    "translation": "мне тоже",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_ինձ էլ.ogg"
+  },
+  {
+    "value": "ես էլ",
+    "translation": "я тоже",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_ես էլ.ogg"
+  },
+  {
+    "value": "իմ",
+    "translation": "мой",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_իմ.ogg"
+  },
+  {
+    "value": "միս",
+    "translation": "мясо",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_միս.ogg"
+  },
+  {
+    "value": "դու",
+    "translation": "ты",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-դու.wav.ogg"
+  },
+  {
+    "value": "դաս",
+    "translation": "урок",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_դաս.ogg"
+  },
+  {
+    "value": "նա",
+    "translation": "он/она",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-նա.wav.ogg"
+  },
+  {
+    "value": "կա",
+    "translation": "есть, имеется",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_կա.ogg"
+  },
+  {
+    "value": "նամակ",
+    "translation": "письмо",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-նամակ.wav.ogg"
+  },
+  {
+    "value": "դանակ",
+    "translation": "нож",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_դանակ.ogg"
+  },
+  {
+    "value": "մամա",
+    "translation": "мама",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մամա.wav.ogg"
+  },
+  {
+    "value": "մուկ",
+    "translation": "мышь",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մուկ.wav.ogg"
+  },
+  {
+    "value": "կամ",
+    "translation": "или",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_կամ.ogg"
+  },
+  {
+    "value": "միակ",
+    "translation": "единственный",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-միակ.wav.ogg"
+  },
+  {
+    "value": "դիակ",
+    "translation": "труп",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_դիակ.ogg"
+  },
+  {
+    "value": "դիմակ",
+    "translation": "маска",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_դիմակ.ogg"
+  },
+  {
+    "value": "հաջողություն",
+    "translation": "удачи",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_հաջողություն.ogg"
+  },
+  {
+    "value": "հաջող",
+    "translation": "пока",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_հաջող.ogg"
+  },
+  {
+    "value": "ցտեսություն",
+    "translation": "до свидания",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ցտեսություն.wav.ogg"
+  },
+  {
+    "value": "մինչ հանդիպում",
+    "translation": "до встречи",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_մինչ հանդիպում.ogg"
+  },
+  {
+    "value": "կարոտ",
+    "translation": "тоска",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_կարոտ.ogg"
+  },
+  {
+    "value": "քարոտ",
+    "translation": "каменистый",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_քարոտ.ogg"
+  },
+  {
+    "value": "տակ",
+    "translation": "под",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_տակ.ogg"
+  },
+  {
+    "value": "տաք",
+    "translation": "тёплый",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_տաք.ogg"
+  },
+  {
+    "value": "քնել",
+    "translation": "спать",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_քնել.ogg"
+  },
+  {
+    "value": "գնալ",
+    "translation": "идти",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_գնալ.ogg"
+  },
+  {
+    "value": "քույր",
+    "translation": "сестра",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_քույր.ogg"
+  },
+  {
+    "value": "կույր",
+    "translation": "слепой",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կույր.wav.mp3"
+  },
+  {
+    "value": "ցորեն",
+    "translation": "пшеница",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_ցորեն.ogg"
+  },
+  {
+    "value": "օրորոց",
+    "translation": "колыбель",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_օրորոց.ogg"
+  },
+  {
+    "value": "օր",
+    "translation": "день",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_օր.ogg"
+  },
+  {
+    "value": "օդ",
+    "translation": "воздух",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_օդ.ogg"
+  },
+  {
+    "value": "օգուտ",
+    "translation": "польза",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_օգուտ.ogg"
+  },
+  {
+    "value": "օրագիր",
+    "translation": "дневник",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_օրագիր.ogg"
+  },
+  {
+    "value": "այս",
+    "translation": "этот",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "այսօր",
+    "translation": "сегодня",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_այսօր.ogg"
+  },
+  {
+    "value": "կեսօր",
+    "translation": "полдень",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կեսօր.wav.ogg"
+  },
+  {
+    "value": "ով",
+    "translation": "кто",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_ով.ogg"
+  },
+  {
+    "value": "ովքեր",
+    "translation": "кто (мн. число)",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_ովքեր.ogg"
+  },
+  {
+    "value": "որդի",
+    "translation": "сын",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_որդի.ogg"
+  },
+  {
+    "value": "նոր",
+    "translation": "новый",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_նոր.ogg"
+  },
+  {
+    "value": "ոզնի",
+    "translation": "ёж",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ոզնի.wav.ogg"
+  },
+  {
+    "value": "մոտ",
+    "translation": "близко, близкий, у, к",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "anyuta_մոտ.ogg"
+  },
+  {
+    "value": "հոտ",
+    "translation": "запах",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "մետրո",
+    "translation": "метро",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "հետո",
+    "translation": "после",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ոսկի",
+    "translation": "золото",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "որ",
+    "translation": "который",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "որքան",
+    "translation": "сколько (неисчисляемое)",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ոսկեգույն",
+    "translation": "цвет золота",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "որովհետեվ",
+    "translation": "потому что",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "շուտ",
+    "translation": "рано",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ուշ",
+    "translation": "поздно",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "պանիր",
+    "translation": "сыр",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "խնձոր",
+    "translation": "яблоко",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-խնձոր.wav.ogg"
+  },
+  {
+    "value": "ելակ",
+    "translation": "клубника",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կարագ",
+    "translation": "масло",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կարագ.wav.ogg"
+  },
+  {
+    "value": "ձու",
+    "translation": "яйцо",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կաթ",
+    "translation": "молоко",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "միս",
+    "translation": "мясо",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-միս.wav.ogg"
+  },
+  {
+    "value": "պատրաստել",
+    "translation": "готовить",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "նախաճաշել",
+    "translation": "завтракать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "դպրոց",
+    "translation": "школа",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սովորել",
+    "translation": "учить/учиться",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-սովորել.wav.ogg"
+  },
+  {
+    "value": "ճաշել",
+    "translation": "обедать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սրճարան",
+    "translation": "кафе",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "գիշեր",
+    "translation": "ночь",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "գինի",
+    "translation": "вино",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "որտեղ",
+    "translation": "где",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "որտեղից",
+    "translation": "откуда",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ուր",
+    "translation": "куда",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "մուրաբա",
+    "translation": "варенье",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սուրճ",
+    "translation": "кофе",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-սուրճ.wav.ogg"
+  },
+  {
+    "value": "թեյ",
+    "translation": "чай",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "դե",
+    "translation": "ну",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "դեմ",
+    "translation": "против, перед",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կես",
+    "translation": "половина",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "մեկ",
+    "translation": "один",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ուտել",
+    "translation": "есть, кушать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "խմել",
+    "translation": "пить",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-խմել.wav.ogg"
+  },
+  {
+    "value": "դնել",
+    "translation": "положить",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "տուն",
+    "translation": "дом",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կին",
+    "translation": "жена, женщина",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կին.wav.ogg"
+  },
+  {
+    "value": "ամուսին",
+    "translation": "муж",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "անկախ",
+    "translation": "независимый, независимо",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "անկախություն",
+    "translation": "независимость",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "քսանմեկ",
+    "translation": "двадцать один",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "բաժակ",
+    "translation": "чашка",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կաթնաշոռ",
+    "translation": "творог",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "եսիմ",
+    "translation": "не знаю",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "շաբաթը",
+    "translation": "суббота / неделя",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ռազմիկ",
+    "translation": "воин",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "լեռ",
+    "translation": "гора",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-լեռ.wav.ogg"
+  },
+  {
+    "value": "սար",
+    "translation": "гора",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ձուկ",
+    "translation": "рыба",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ձմերուկ",
+    "translation": "арбуз",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ձմեռ",
+    "translation": "зима",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "աշուն",
+    "translation": "осень",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ձեռք",
+    "translation": "рука",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "զբաղված",
+    "translation": "занят",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ազատ",
+    "translation": "свободный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճաշել",
+    "translation": "обедать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "հանդիպել",
+    "translation": "встретить, встретиться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "գրադարան",
+    "translation": "библиотека",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "օտար",
+    "translation": "иностранный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "նաև",
+    "translation": "также",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճապոներեն",
+    "translation": "японский",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ջիմ",
+    "translation": "спортзал",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սովորաբար",
+    "translation": "обычно",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "հետ",
+    "translation": "с (послелог)",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կամ",
+    "translation": "или",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "հանգստանալ",
+    "translation": "отдыхать, успокоиться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "նայել",
+    "translation": "смотреть",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կարդալ",
+    "translation": "читать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "զարթնել",
+    "translation": "просыпаться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "արև",
+    "translation": "солнце",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճուտ",
+    "translation": "цыплёнок",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ճուտ.wav.mp3"
+  },
+  {
+    "value": "ճահիճ",
+    "translation": "болото",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճանճ",
+    "translation": "муха",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճկուն",
+    "translation": "гибкий",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճաշ",
+    "translation": "обед",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճերմակ",
+    "translation": "белый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճլվլալ",
+    "translation": "чирикать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ճնճղուկ",
+    "translation": "воробей",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ճնճղուկ.wav.ogg"
+  },
+  {
+    "value": "ճիշտ",
+    "translation": "правильный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "չիր",
+    "translation": "сухофрукты",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "չնչին",
+    "translation": "незначительный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "հիշաչար",
+    "translation": "злопамятный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "չաչանակ",
+    "translation": "болтун",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ջերմ",
+    "translation": "тёплый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ջուր",
+    "translation": "вода",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ջուր.wav.ogg"
+  },
+  {
+    "value": "գարեջուր",
+    "translation": "пиво",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-գարեջուր.wav.ogg"
+  },
+  {
+    "value": "ջնջել",
+    "translation": "стереть, удалить",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ջինջ",
+    "translation": "чистый, ясный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "փյունիկ",
+    "translation": "феникс",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "փայտ",
+    "translation": "дрова",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "փերի",
+    "translation": "фея",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "փետուր",
+    "translation": "перо",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "եփել",
+    "translation": "варить",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-եփել.wav.ogg"
+  },
+  {
+    "value": "թափել",
+    "translation": "высыпать, вылить",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "փայլփյուն",
+    "translation": "блестящий",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "խոտ",
+    "translation": "трава",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-խոտ.wav.ogg"
+  },
+  {
+    "value": "խիտ",
+    "translation": "густой",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "վախ",
+    "translation": "страх",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-վախ.wav.ogg"
+  },
+  {
+    "value": "վախենալ",
+    "translation": "бояться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "աղ",
+    "translation": "соль",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "վաղ",
+    "translation": "рано",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "վաղը",
+    "translation": "завтра",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-վաղը.wav.ogg"
+  },
+  {
+    "value": "ուղեղ",
+    "translation": "ум",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սեղան",
+    "translation": "стол",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "խաղալ",
+    "translation": "играть",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "խաղող",
+    "translation": "виноград",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "տեղ",
+    "translation": "место",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "այստեղ",
+    "translation": "тут",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ամեն տեղ",
+    "translation": "везде",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "եղանակ",
+    "translation": "погода",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "դեղ",
+    "translation": "лекарство",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "դեղատուն",
+    "translation": "аптека",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-դեղատուն.wav.ogg"
+  },
+  {
+    "value": "տղա",
+    "translation": "мальчик, парень",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "աստղ",
+    "translation": "звезда",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "գիտենալ",
+    "translation": "знать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ունենալ",
+    "translation": "иметь",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "բայց",
+    "translation": "но",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "որովհետև",
+    "translation": "потому что",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "կարող",
+    "translation": "мочь",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "տեսնել",
+    "translation": "видеть",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "գյուղ",
+    "translation": "деревня",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "լուսամուտ",
+    "translation": "окно",
+    "tags": [
+      "Уроки 1-5"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-լուսամուտ.wav.ogg"
+  },
+  {
+    "value": "բացվել",
+    "translation": "открываться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "տեսարան",
+    "translation": "вид",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սիրուն",
+    "translation": "красивый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "սարեր",
+    "translation": "горы",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "հյուր գնալ",
+    "translation": "пойти в гости",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ատամ",
+    "translation": "зуб",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "քայլել",
+    "translation": "ходить, гулять",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "խնդրում եմ",
+    "translation": "пожалуйста (просьба)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "խնդրեմ",
+    "translation": "пожалуйста (на спасибо)",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Yevgenya_Shamshyan_(Vahagn_Petrosyan)-խնդրեմ.wav.ogg"
+  },
+  {
+    "value": "դեռ ոչ",
+    "translation": "ещё нет",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "դե",
+    "translation": "ну",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "հատ",
+    "translation": "штука",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "մի հատ",
+    "translation": "одна штука, за одного (в автобусе)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ինչքան",
+    "translation": "сколько (неисчисляемое)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "կապի մեջ",
+    "translation": "на связи",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ամպամած",
+    "translation": "пасмурный",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "մոխրագույն",
+    "translation": "серый",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մոխրագույն.wav.mp3"
+  },
+  {
+    "value": "մոխիր",
+    "translation": "пепел",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մոխիր.wav.ogg"
+  },
+  {
+    "value": "պլանավորել",
+    "translation": "планировать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "կարկանդակ",
+    "translation": "пирог",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ցուրտ",
+    "translation": "холодный",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "խաղ",
+    "translation": "игра",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "լսել",
+    "translation": "слышать, слушать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "նվագել",
+    "translation": "играть (на муз. инструменте)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "շուն",
+    "translation": "собака",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ոնց միշտ",
+    "translation": "как всегда",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ինձ",
+    "translation": "мне",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ինձ.wav.ogg"
+  },
+  {
+    "value": "ուտելիք",
+    "translation": "еда",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ուտելիք.wav.ogg"
+  },
+  {
+    "value": "բրինձ",
+    "translation": "рис",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ապուր",
+    "translation": "суп",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "հյութ",
+    "translation": "сок",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "հնդկաձավար",
+    "translation": "гречка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "աղցան",
+    "translation": "салат",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ձվածեղ",
+    "translation": "омлет",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "գնել",
+    "translation": "купить",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-գնել.wav.ogg"
+  },
+  {
+    "value": "վճարել",
+    "translation": "платить",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "քարտով",
+    "translation": "картой (платить)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "կանխիկ",
+    "translation": "наличные",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "փող",
+    "translation": "деньги",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ի՞նչ արժի",
+    "translation": "сколько стоит?",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ինչքա՞ն եմ վճարում",
+    "translation": "сколько должен?",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "իհարկե",
+    "translation": "конечно",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "համ",
+    "translation": "вкус",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "համով է",
+    "translation": "вкусный",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "էլի՞ ինչ-որ բան",
+    "translation": "ещё что-нибудь?",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "թարմ",
+    "translation": "свежий",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "վերջ",
+    "translation": "всё / конец",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "մանրը",
+    "translation": "сдача",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "շնորհակալություն",
+    "translation": "спасибо",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "գնորդ",
+    "translation": "покупатель",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "գալ",
+    "translation": "прийти",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "եկել",
+    "translation": "пришёл",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "կերել",
+    "translation": "поел",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տալ",
+    "translation": "давать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տվել",
+    "translation": "дал",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տեսել",
+    "translation": "увидел",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "դրել",
+    "translation": "положить, приложить",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տանել",
+    "translation": "нести",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տարել",
+    "translation": "отнёс",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "անել",
+    "translation": "делать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "արել",
+    "translation": "сделал",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "արդեն",
+    "translation": "уже",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ձմռանը",
+    "translation": "зимой",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տոնել",
+    "translation": "праздновать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "գրել",
+    "translation": "писать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "նկարել",
+    "translation": "рисовать / фотографировать / снимать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "երգ",
+    "translation": "песня",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "երգ լսել",
+    "translation": "слушать музыку/песню",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "աշխատել",
+    "translation": "работать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "նվագել",
+    "translation": "играть на муз. инструменте",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "գիրք",
+    "translation": "книга",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "երաժիշտ",
+    "translation": "музыкант",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "կիթառ",
+    "translation": "гитара",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կիթառ.wav.ogg"
+  },
+  {
+    "value": "այգի",
+    "translation": "парк",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-այգի.wav.ogg"
+  },
+  {
+    "value": "հեռախոս",
+    "translation": "телефон",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հեռախոս.wav.ogg"
+  },
+  {
+    "value": "ուսուցիչ",
+    "translation": "учитель",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ուսուցիչ.wav.ogg"
+  },
+  {
+    "value": "գրող",
+    "translation": "писатель",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-գրող.wav.ogg"
+  },
+  {
+    "value": "դերասան",
+    "translation": "актёр",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "բժիշկ",
+    "translation": "врач",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "հիվանդանոց",
+    "translation": "больница",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հիվանդանոց.wav.ogg"
+  },
+  {
+    "value": "նկարիչ",
+    "translation": "художник",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "դեռ",
+    "translation": "ещё (пока что)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "համերգ",
+    "translation": "концерт",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ինձ հետ",
+    "translation": "со мной",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "սիրով",
+    "translation": "с удовольствием",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "հրապարակ",
+    "translation": "площадь",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "միասին",
+    "translation": "вместе",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ջութակ",
+    "translation": "скрипка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "վերելակ",
+    "translation": "лифт",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "անձրև",
+    "translation": "дождь",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "սառը",
+    "translation": "прохладный",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "հավես չունեմ",
+    "translation": "нет желания",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "տրամադրություն չունեմ",
+    "translation": "нет настроения",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ոչ մի տեղ",
+    "translation": "нигде",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ոչ մի բան",
+    "translation": "ничего",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "պառկել",
+    "translation": "лежать, ложиться",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "մտածել",
+    "translation": "думать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "երեկ",
+    "translation": "вчера",
+    "tags": [
+      "Уроки 6-10"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երեկ.wav.ogg"
+  },
+  {
+    "value": "եթե",
+    "translation": "если",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "օֆիս",
+    "translation": "офис",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "համար",
+    "translation": "для (послелог)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "մեր",
+    "translation": "наш",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "քո",
+    "translation": "твой",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ձեր",
+    "translation": "ваш",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "նրա",
+    "translation": "(чей?) его",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "նրանց",
+    "translation": "(чей/кого/кому?) их/им",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "քեզ",
+    "translation": "тебя/тебе",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "նրան",
+    "translation": "его/ему",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "մեզ",
+    "translation": "нас/нам",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ձեզ",
+    "translation": "вас/вам",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "սև",
+    "translation": "чёрный",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "սպիտակ",
+    "translation": "белый",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "կանաչ",
+    "translation": "зелёный",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "դեղին",
+    "translation": "жёлтый",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "կապույտ",
+    "translation": "синий",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կապույտ.wav.ogg"
+  },
+  {
+    "value": "կարմիր",
+    "translation": "красный",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կարմիր.wav.ogg"
+  },
+  {
+    "value": "նարնջագույն",
+    "translation": "оранжевый",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-նարնջագույն.wav.ogg"
+  },
+  {
+    "value": "վարդագույն",
+    "translation": "розовый",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-վարդագույն.wav.mp3"
+  },
+  {
+    "value": "մանուշակագույն",
+    "translation": "фиолетовый",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "շագանակագույն",
+    "translation": "коричневый",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-շագանակագույն.wav.ogg"
+  },
+  {
+    "value": "երկնագույն",
+    "translation": "голубой",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "նարինջ",
+    "translation": "апельсин",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-նարինջ.wav.ogg"
+  },
+  {
+    "value": "վարդ",
+    "translation": "роза",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "մանուշակ",
+    "translation": "фиалка",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մանուշակ.wav.ogg"
+  },
+  {
+    "value": "շագանակ",
+    "translation": "каштан",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "երկինք",
+    "translation": "небо",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "արծաթ",
+    "translation": "серебро",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "արծաթագույն",
+    "translation": "цвет серебра",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ոսկի",
+    "translation": "золото",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ոսկեգույն",
+    "translation": "золотой/золотистый",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ասել",
+    "translation": "сказать",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "մնացածը",
+    "translation": "остальное",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հենց նոր",
+    "translation": "только что",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ինչ",
+    "translation": "что",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ինչու",
+    "translation": "почему",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "թանգարան",
+    "translation": "музей",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-թանգարան.wav.ogg"
+  },
+  {
+    "value": "մութ",
+    "translation": "тёмный",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "գազար",
+    "translation": "морковь",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-գազար.wav.ogg"
+  },
+  {
+    "value": "մարդ",
+    "translation": "человек",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ծիածան",
+    "translation": "радуга",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ընթրել",
+    "translation": "ужинать",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հաց",
+    "translation": "хлеб",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "լոլիկ",
+    "translation": "помидор",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-լոլիկ.wav.ogg"
+  },
+  {
+    "value": "բանջարեղեն",
+    "translation": "овощи",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "միրգ",
+    "translation": "фрукт",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "երշիկ",
+    "translation": "колбаса",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երշիկ.wav.ogg"
+  },
+  {
+    "value": "նրբերշիկ",
+    "translation": "сосиска",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "թթվասեր",
+    "translation": "сметана",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "օղի",
+    "translation": "водка",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-օղի.wav.ogg"
+  },
+  {
+    "value": "շաքար",
+    "translation": "сахар",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-շաքար.wav.ogg"
+  },
+  {
+    "value": "միշտ",
+    "translation": "всегда",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-միշտ.wav.ogg"
+  },
+  {
+    "value": "երբ",
+    "translation": "когда",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ամիս",
+    "translation": "месяц",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ծառ",
+    "translation": "дерево",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ծնունդ",
+    "translation": "рождение",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ծնունդ.wav.ogg"
+  },
+  {
+    "value": "տոն",
+    "translation": "праздник",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ընթրիք",
+    "translation": "ужин",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Yevgenya_Shamshyan_(Vahagn_Petrosyan)-ընթրիք.wav.ogg"
+  },
+  {
+    "value": "մեկ-մեկ",
+    "translation": "иногда",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "քաղաք",
+    "translation": "город",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "շիլա",
+    "translation": "каша",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "աստիճան",
+    "translation": "лестница, градус",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հավ",
+    "translation": "курица",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "մեքենա",
+    "translation": "машина",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մեքենա.wav.ogg"
+  },
+  {
+    "value": "ինչ-որ բան",
+    "translation": "что-нибудь",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "չաղ",
+    "translation": "толстый, тучный",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "արջ",
+    "translation": "медведь",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հիվանդ",
+    "translation": "больной",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հիվանդ.wav.ogg"
+  },
+  {
+    "value": "մայրաքաղաք",
+    "translation": "столица",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մայրաքաղաք.wav.ogg"
+  },
+  {
+    "value": "ո՞վ է",
+    "translation": "кто это?",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ու՞մ եք ուզում",
+    "translation": "кого спрашиваете?",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "սխալ եք զանգել",
+    "translation": "вы ошиблись номером",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ճիշտ է",
+    "translation": "верно, точно",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հարմար",
+    "translation": "удобный, подходящий",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հարմար չէ",
+    "translation": "не удобно (говорить)",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "կզանգեմ",
+    "translation": "позвоню",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "կխոսենք",
+    "translation": "поговорим (ещё)",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "լու՞րջ",
+    "translation": "серьёзно?",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "չի լսվում",
+    "translation": "не слышно",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "եղավ",
+    "translation": "понятно",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "դե լավ, կապի մեջ",
+    "translation": "ладно, на связи",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "շուտ լավացիր",
+    "translation": "поскорее поправляйся",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "սենյակ",
+    "translation": "комната",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-սենյակ.wav.ogg"
+  },
+  {
+    "value": "սպասել",
+    "translation": "ждать",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "կազմել",
+    "translation": "составить",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ցուցակ",
+    "translation": "список",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "առաջին",
+    "translation": "первый, сначала",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "կաթնամթերք",
+    "translation": "молочные продукты",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "մթերք",
+    "translation": "продукты",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ծովամթերք",
+    "translation": "морепродукты",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "մսամթերք",
+    "translation": "мясные продукты",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ծով",
+    "translation": "море",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "խոզ",
+    "translation": "свинья",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-խոզ.wav.mp3"
+  },
+  {
+    "value": "կաթնաշոռ",
+    "translation": "творог",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հասցե",
+    "translation": "адрес",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "փողոց",
+    "translation": "улица",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "առանց",
+    "translation": "без",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "պատմություն",
+    "translation": "история, рассказ",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-պատմություն.wav.ogg"
+  },
+  {
+    "value": "պատ",
+    "translation": "стена",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "պատմել",
+    "translation": "рассказывать",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "մոտենալ",
+    "translation": "давать, отдать",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "հավատալ",
+    "translation": "верить",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հավատալ.wav.mp3"
+  },
+  {
+    "value": "մասին",
+    "translation": "о, про",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ամառ",
+    "translation": "лето",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ժամացույց",
+    "translation": "часы",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ընկերուհի",
+    "translation": "подруга, девушка",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "ընկեր",
+    "translation": "друг, парень",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "բոլոր",
+    "translation": "все",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "վաճառող",
+    "translation": "продавец",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "օգնել",
+    "translation": "помогать",
+    "tags": [
+      "Уроки 11-15"
+    ]
+  },
+  {
+    "value": "երևի",
+    "translation": "видимо, должно быть",
+    "tags": [
+      "Уроки 11-15"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Emptyfear-երևի.wav.ogg"
+  },
+  {
+    "value": "բառ",
+    "translation": "слово",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "կտեսնեմ",
+    "translation": "увижу",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "թարգմանել",
+    "translation": "переводить",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-թարգմանել.wav.ogg"
+  },
+  {
+    "value": "ուշանալ",
+    "translation": "опаздывать",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "այնտեղ",
+    "translation": "там",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "խորոված",
+    "translation": "шашлык",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "լողանալ",
+    "translation": "купаться",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "լվացվել",
+    "translation": "умываться",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "համալսարան",
+    "translation": "университет",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-համալսարան.wav.ogg"
+  },
+  {
+    "value": "զբոսնել",
+    "translation": "гулять",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ընտանիք",
+    "translation": "семья",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ստուգել",
+    "translation": "проверять",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "խումբ",
+    "translation": "группа",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բլիթներ",
+    "translation": "блины, пончики",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "առողջություն",
+    "translation": "здоровье",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ուշադիր",
+    "translation": "внимательно",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "սիրտ",
+    "translation": "сердце",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "արի",
+    "translation": "иди",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "սեր",
+    "translation": "любовь, пенка",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-սեր.wav.ogg"
+  },
+  {
+    "value": "հավաքել",
+    "translation": "собирать, убирать",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "տետր",
+    "translation": "тетрадь",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "տվել",
+    "translation": "отдал",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "վերցրել",
+    "translation": "взял",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "վերցնել",
+    "translation": "взять",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բանալի",
+    "translation": "ключ",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բացել",
+    "translation": "открыть",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "նեղանալ",
+    "translation": "обижаться",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "իմանալ",
+    "translation": "узнать",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ուշանալ",
+    "translation": "опаздывать",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "գնացք",
+    "translation": "поезд",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-գնացք.wav.ogg"
+  },
+  {
+    "value": "մաղթել",
+    "translation": "желать (кому-то)",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ցանկանալ",
+    "translation": "желать (себе или кому-то)",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "երջանկություն",
+    "translation": "счастье",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երջանկություն.wav.mp3"
+  },
+  {
+    "value": "ամենայն բարիք",
+    "translation": "всего самого наилучшего",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բարիք",
+    "translation": "добро",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "համբույր",
+    "translation": "поцелуй",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-համբույր.wav.ogg"
+  },
+  {
+    "value": "զրուցել",
+    "translation": "беседовать",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "գործ",
+    "translation": "дело, работа",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "հետաքրքիր",
+    "translation": "интересный",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "արշավ",
+    "translation": "поход",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ոստիկան",
+    "translation": "полицейский",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ոստիկան.wav.ogg"
+  },
+  {
+    "value": "ոստիկանություն",
+    "translation": "полиция",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ոստիկանություն.wav.ogg"
+  },
+  {
+    "value": "ու վերջ",
+    "translation": "и всё",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ումով",
+    "translation": "кем",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ինչով",
+    "translation": "чем",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "գրիչ",
+    "translation": "ручка",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մատիտ",
+    "translation": "карандаш",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մատիտ.wav.ogg"
+  },
+  {
+    "value": "հաճույք",
+    "translation": "удовольствие",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "հաճույքով",
+    "translation": "с удовольствием",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ժամանակ",
+    "translation": "время",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "հպարտանալ",
+    "translation": "гордиться",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "հիանալ",
+    "translation": "восхищаться",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "պարզ",
+    "translation": "ясный, понятный",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "տանձ",
+    "translation": "груша",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-տանձ.wav.ogg"
+  },
+  {
+    "value": "ինչպես",
+    "translation": "как",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ոտք",
+    "translation": "нога",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ոտքով",
+    "translation": "пешком",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ընտանիքի անդամ",
+    "translation": "член семьи",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ծնող",
+    "translation": "родитель",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ծնող.wav.ogg"
+  },
+  {
+    "value": "երեխա",
+    "translation": "ребёнок",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երեխա.wav.ogg"
+  },
+  {
+    "value": "տատիկ",
+    "translation": "бабушка",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "պապիկ",
+    "translation": "дедушка",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բարեկամ",
+    "translation": "близкий друг, родственник",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "հորեղբայր",
+    "translation": "дядя со стороны папы",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հորեղբայր.wav.ogg"
+  },
+  {
+    "value": "մորեղբայր",
+    "translation": "дядя со стороны мамы",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "հորաքույր",
+    "translation": "тётя со стороны папы",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հորաքույր.wav.ogg"
+  },
+  {
+    "value": "մորաքույր",
+    "translation": "тётя со стороны мамы",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մորաքույր.wav.ogg"
+  },
+  {
+    "value": "զարմիկ",
+    "translation": "племянник",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "զարմուհի",
+    "translation": "племянница",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "դուռ",
+    "translation": "дверь",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մեծ",
+    "translation": "большой",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "փոքր",
+    "translation": "маленький",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-փոքր.wav.ogg"
+  },
+  {
+    "value": "հարազատ",
+    "translation": "родной",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ամուսնացած",
+    "translation": "женат / замужем",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ծուխ",
+    "translation": "дым",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ծուխ.wav.ogg"
+  },
+  {
+    "value": "ծխել",
+    "translation": "курить",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ավանակ",
+    "translation": "осёл",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "քար",
+    "translation": "камень",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բու",
+    "translation": "сова",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "աթոռ",
+    "translation": "стул",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "լիճ",
+    "translation": "озеро",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-լիճ.wav.ogg"
+  },
+  {
+    "value": "գետ",
+    "translation": "река",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "աղջիկ",
+    "translation": "девочка, девушка, дочь",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "աման",
+    "translation": "тарелка, сосуд",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բարձ",
+    "translation": "подушка",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մեղու",
+    "translation": "пчела",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մեղու.wav.ogg"
+  },
+  {
+    "value": "մի քանի ամիսը մեկ",
+    "translation": "раз в несколько месяцев",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մինչև",
+    "translation": "до",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "սովորականի պես",
+    "translation": "по-прежнему",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "տոնածառ",
+    "translation": "рождественская ёлка",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մնալ",
+    "translation": "оставаться",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "տղամարդ",
+    "translation": "мужчина",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-տղամարդ.wav.mp3"
+  },
+  {
+    "value": "տղամարդիկ",
+    "translation": "мужчины",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "կանայք",
+    "translation": "женщины",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մարդիկ",
+    "translation": "люди",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մատ",
+    "translation": "палец",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "թոռ",
+    "translation": "внук",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մկնիկ",
+    "translation": "мышка",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "մատանի",
+    "translation": "кольцо",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ինչի",
+    "translation": "чего, зачем",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "առաքել",
+    "translation": "отправлять, доставлять",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "սոված",
+    "translation": "голодный",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բնակարան",
+    "translation": "квартира",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "նախասենյակ",
+    "translation": "прихожая",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "լոգարան",
+    "translation": "ванная комната",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Yevgenya_Shamshyan_(Vahagn_Petrosyan)-լոգարան.wav.ogg"
+  },
+  {
+    "value": "լոգասենյակ",
+    "translation": "ванная комната",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ննջարան",
+    "translation": "спальня",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ննջասենյակ",
+    "translation": "спальня",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "պատշգամբ",
+    "translation": "балкон, веранда",
+    "tags": [
+      "Уроки 16-20"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-պատշգամբ.wav.ogg"
+  },
+  {
+    "value": "խոհանոց",
+    "translation": "кухня",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "բաց",
+    "translation": "открытый",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "փակ",
+    "translation": "закрытый",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ննջել",
+    "translation": "спать",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "այգեգործ",
+    "translation": "садовник",
+    "tags": [
+      "Уроки 16-20"
+    ]
+  },
+  {
+    "value": "ծաղիկ",
+    "translation": "цветок",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մի քիչ",
+    "translation": "немного",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "արթնանալ",
+    "translation": "просыпаться",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "շենք",
+    "translation": "здание",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հարկ",
+    "translation": "этаж",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "լուսամուտ",
+    "translation": "окно",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "պատուհան",
+    "translation": "окно",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սեղան",
+    "translation": "стол",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բազմոց",
+    "translation": "диван",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բազկաթոռ",
+    "translation": "кресло",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հայելի",
+    "translation": "зеркало",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մահճակալ",
+    "translation": "кровать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "պահարան",
+    "translation": "шкаф",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "դարակ",
+    "translation": "полка",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սառնարան",
+    "translation": "холодильник",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "գազօջախ",
+    "translation": "газовая плита",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սալօջախ",
+    "translation": "электрическая плита",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "լվացքի մեքենա",
+    "translation": "стиральная машина",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "լվացարան",
+    "translation": "умывальник",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մուտք",
+    "translation": "вход, въезд",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բազուկ",
+    "translation": "рука, свёкла",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հեռուստացույց",
+    "translation": "телевизор",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մարդաշատ",
+    "translation": "многолюдный",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "անվանել",
+    "translation": "называть",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կառուցել",
+    "translation": "строить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "տարազ",
+    "translation": "костюм",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սազել",
+    "translation": "одеваться",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "դեսպանատուն",
+    "translation": "посольство",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "անձնագիր",
+    "translation": "паспорт",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ստանալ",
+    "translation": "получить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ներկայացում",
+    "translation": "представление",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բարձ",
+    "translation": "подушка",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "վերմակ",
+    "translation": "одеяло",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "գորգ",
+    "translation": "ковёр",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մի քանի",
+    "translation": "несколько",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սրբիչ",
+    "translation": "полотенце",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "դժվար",
+    "translation": "трудный, тяжёлый",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "երկիր",
+    "translation": "страна / земной шар",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "աշխարհ",
+    "translation": "мир, земной шар",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "պետություն",
+    "translation": "государство",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ազգ",
+    "translation": "нация",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ազգություն",
+    "translation": "национальность",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մշակույթ",
+    "translation": "культура",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հանրապետություն",
+    "translation": "республика",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "անուն",
+    "translation": "имя",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ազգանուն",
+    "translation": "фамилия",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հայրանուն",
+    "translation": "отчество",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "քաղաքացի",
+    "translation": "гражданин",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "քաղաքացիություն",
+    "translation": "гражданство",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "օտար",
+    "translation": "чужой, иностранный",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ճամփորդել",
+    "translation": "путешествовать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կարծել",
+    "translation": "думать, считать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "անցած",
+    "translation": "прошедший",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սկսել",
+    "translation": "начать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ձյուն",
+    "translation": "снег",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հայրենիք",
+    "translation": "родина",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "Սուրբ Ծնունդ",
+    "translation": "Рождество",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "Ամանոր",
+    "translation": "Новый Год",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "Ձմեռ պապ",
+    "translation": "Дед Мороз",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ձնեմարդ",
+    "translation": "снеговик",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հագուստ",
+    "translation": "одежда",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սառել",
+    "translation": "замёрзнуть, простудиться",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մրսել",
+    "translation": "замёрзнуть, простудиться",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "սահնակ",
+    "translation": "сани",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "արձակուրդ",
+    "translation": "отпуск, каникулы",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "զարդարել",
+    "translation": "украсить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "նվեր",
+    "translation": "подарок",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "պետք",
+    "translation": "нужда, нужный",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "Ձյունանուշ",
+    "translation": "Снегурочка",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "եղնիկ",
+    "translation": "олень, лань",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կապ",
+    "translation": "связь",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մորուք",
+    "translation": "борода",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բերել",
+    "translation": "приносить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "աչք",
+    "translation": "глаз, зрение",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կյանք",
+    "translation": "жизнь",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "աստված",
+    "translation": "бог",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "իրար",
+    "translation": "друг другу",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ուտեստ",
+    "translation": "блюдо",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կենաց",
+    "translation": "тост",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հին",
+    "translation": "старый",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բարձրացնել",
+    "translation": "поднять",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "իսկական",
+    "translation": "настоящий",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "նվիրել",
+    "translation": "дарить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "պատվեր",
+    "translation": "заказ",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "պատվիրել",
+    "translation": "заказать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ամրագրել",
+    "translation": "забронировать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հաշիվ",
+    "translation": "счёт",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կարելի",
+    "translation": "возможный",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ներել",
+    "translation": "прощать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հանգիստ",
+    "translation": "покой, спокойный",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "թողնել",
+    "translation": "оставить, отпустить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "կարևոր",
+    "translation": "важный",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "եթե",
+    "translation": "если",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մենակ",
+    "translation": "одинокий, в одиночку",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հեռու",
+    "translation": "далеко",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "քիչ",
+    "translation": "мало",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "առողջարար",
+    "translation": "полезный для здоровья",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "հետևել",
+    "translation": "следить",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "լինել",
+    "translation": "быть",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "և սա և դա",
+    "translation": "и то и другое",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "գավաթ",
+    "translation": "бокал",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "նստել",
+    "translation": "сидеть, садиться",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "միանալ",
+    "translation": "присоединяться",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "ընտրել",
+    "translation": "выбрать",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "մատաղ",
+    "translation": "жертвоприношение",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "բոյ",
+    "translation": "рост",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "թեյավճար",
+    "translation": "чаевые",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "թույն",
+    "translation": "яд, супер (разг.)",
+    "tags": [
+      "Уроки 21-25"
+    ]
+  },
+  {
+    "value": "անուշ",
+    "translation": "сладкий",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "քաղցր",
+    "translation": "сладкий",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "անուշ լինի",
+    "translation": "на здоровье, приятного аппетита",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "բարի ախորժակ",
+    "translation": "приятного аппетита",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ախորժակ",
+    "translation": "аппетит",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ուղարկել",
+    "translation": "отправить",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "տոնավաճառ",
+    "translation": "ярмарка",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "գլխավոր",
+    "translation": "главный",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "գլուխ",
+    "translation": "голова",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մատուցող",
+    "translation": "официант",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "դիմաց",
+    "translation": "перед",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ճանապարհ",
+    "translation": "дорога",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "գոռալ",
+    "translation": "кричать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "չէ որ",
+    "translation": "ведь",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "այնքան",
+    "translation": "столько",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "գեղեցիկ",
+    "translation": "красивый",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "թիթեռ",
+    "translation": "бабочка",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "բալ",
+    "translation": "вишня",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "բալիկ",
+    "translation": "деточка",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ծերություն",
+    "translation": "старость",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "կորցնել",
+    "translation": "терять",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "քուն",
+    "translation": "сон (процесс)",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "երազ",
+    "translation": "сон (сновидение)",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "խեղճ",
+    "translation": "жалкий, бедный",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "միթե",
+    "translation": "неужели",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ծերուկ",
+    "translation": "старик",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "շուրջ",
+    "translation": "вокруг",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "կախվել",
+    "translation": "виснуть",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "հայտնվել",
+    "translation": "появляться",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "գտնել",
+    "translation": "найти",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "վաճառել",
+    "translation": "продавать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մասամբ",
+    "translation": "частично",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "երկար",
+    "translation": "длинный, долгий",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մի հատ էլ",
+    "translation": "ещё одно",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "երկուսս էլ",
+    "translation": "мы оба",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ձեզ էլ",
+    "translation": "вам тоже",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մի անգամ էլ",
+    "translation": "ещё раз",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "համ էլ",
+    "translation": "также, заодно",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "լավ էլի",
+    "translation": "хватит, перестань",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "բողոքել",
+    "translation": "жаловаться",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "երևում է",
+    "translation": "кажется",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "երևալ",
+    "translation": "виднеться, казаться",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ավելի",
+    "translation": "более",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "կորչել",
+    "translation": "пропадать, теряться",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "հասցնել",
+    "translation": "поспевать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "փնտրել",
+    "translation": "искать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ընտիր",
+    "translation": "отборный, супер (разг.)",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "սխալ",
+    "translation": "ошибка",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մեկնել",
+    "translation": "уехать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "համեմատել",
+    "translation": "сравнивать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ցույց տալ",
+    "translation": "показывать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "օրացույց",
+    "translation": "календарь",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "հեռուստացույց",
+    "translation": "телевизор",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "կողմնացույց",
+    "translation": "компас",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մտապահել",
+    "translation": "запоминать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "վայրկյան",
+    "translation": "секунда",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ակնթարթ",
+    "translation": "мгновение, миг",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "վաղը չէ մյուս օրը",
+    "translation": "послезавтра",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "երեկ չէ առաջին օրը",
+    "translation": "позавчера",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "անց",
+    "translation": "после",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "պակաս",
+    "translation": "без",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ութոտնուկ",
+    "translation": "осьминог",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "անցնել",
+    "translation": "проходить",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "վարսահարդար",
+    "translation": "парикмахер",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "վարսավիրանոց",
+    "translation": "парикмахерская",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ռիսկ անել",
+    "translation": "решиться, рискнуть",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "խորհուրդ տալ",
+    "translation": "рекомендовать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ցերեկ",
+    "translation": "день",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "կենսագրություն",
+    "translation": "биография",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ծնվել",
+    "translation": "родиться",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ընդունվել",
+    "translation": "поступить (в университет)",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ավարտել",
+    "translation": "окончить",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "այժմ",
+    "translation": "в настоящее время",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "դասավանդել",
+    "translation": "преподавать",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "հիշել",
+    "translation": "помнить",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "թանկ",
+    "translation": "дорогой",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "սակայն",
+    "translation": "но, однако",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "նորից",
+    "translation": "вновь",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "տեղափոխվել",
+    "translation": "перемещаться, переселяться",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "ուրիշ",
+    "translation": "другой",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "թվականին",
+    "translation": "в году",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "թվականից",
+    "translation": "с года",
+    "tags": [
+      "Уроки 26-30"
+    ]
+  },
+  {
+    "value": "մեկուկես",
+    "translation": "полтора",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "գործիչ",
+    "translation": "деятель",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "գործարան",
+    "translation": "завод",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "պաղպաղակ",
+    "translation": "мороженое",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "պետական",
+    "translation": "государственный",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "գրականություն",
+    "translation": "литература",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "թարգմանություն",
+    "translation": "перевод",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "գին",
+    "translation": "цена",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "արժեք",
+    "translation": "стоимость",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "էժան",
+    "translation": "дешёвый",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "մատչելի",
+    "translation": "доступный, дешёвый",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "զեղչ",
+    "translation": "скидка",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "առնել",
+    "translation": "взять, купить",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "շուկա",
+    "translation": "рынок",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "տնտեսություն",
+    "translation": "хозяйство / экономика",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "բա ոնց",
+    "translation": "а как же",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "քանի",
+    "translation": "сколько (исчисляемое)",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "քանակ",
+    "translation": "количество",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "ինչքան",
+    "translation": "сколько (неисчисляемое)",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հանկարծ",
+    "translation": "вдруг",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "միանգամից",
+    "translation": "сразу",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "վերջապես",
+    "translation": "наконец",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "կանգառ",
+    "translation": "остановка (транспорта)",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "կանգ",
+    "translation": "остановка, приостановка",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "փորձել",
+    "translation": "попробовать",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "գործընկեր",
+    "translation": "коллега",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "միացնել",
+    "translation": "включить",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "վերջացնել",
+    "translation": "заканчивать",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հիշեցնել",
+    "translation": "напоминать",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հարցնել",
+    "translation": "спросить",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "խնդրել",
+    "translation": "просить",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "պատասխան",
+    "translation": "ответ",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "երիտասարդ",
+    "translation": "молодой, молодой человек",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "պառավ",
+    "translation": "старый, старуха",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "գրղեցիկ",
+    "translation": "красивый (лит.)",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "ուժեղ",
+    "translation": "сильный",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "մաս",
+    "translation": "часть",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "բարձր",
+    "translation": "высокий",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "վառ",
+    "translation": "яркий",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "բարձրահասակ",
+    "translation": "высокого роста",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հարմար",
+    "translation": "удобный",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "խելացի",
+    "translation": "умный",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "լայն",
+    "translation": "широкий",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "օրինակ",
+    "translation": "пример, экземпляр",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "ստացվել",
+    "translation": "получаться",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "անցել",
+    "translation": "пройти",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հաստատվել",
+    "translation": "подтверждаться",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "բաց թողնել",
+    "translation": "пропустить, упустить, отпустить",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "պարապմունք",
+    "translation": "занятие",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "տառ",
+    "translation": "буква",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "լռել",
+    "translation": "молчать",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "մարզվել",
+    "translation": "тренироваться",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հասկանալ",
+    "translation": "понимать",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "մոռանալ",
+    "translation": "забыть",
+    "tags": [
+      "Уроки 31-35"
+    ]
+  },
+  {
+    "value": "հստակ",
+    "translation": "чёткий, точный",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ատամնաբույժ",
+    "translation": "стоматолог",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "բանակ",
+    "translation": "армия",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "զինված ուժեր",
+    "translation": "вооружённые силы",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "զինվոր",
+    "translation": "солдат",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դրոշ",
+    "translation": "флаг",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "նշվել",
+    "translation": "отмечаться, праздноваться",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դեմ չեմ",
+    "translation": "я не против",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "լուծվող սուրճ",
+    "translation": "растворимый кофе",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "նույն",
+    "translation": "тот же, такой же",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հագնել",
+    "translation": "надевать, носить",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "սառչել",
+    "translation": "мёрзнуть",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "մտնել",
+    "translation": "войти",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "մեռնել",
+    "translation": "умирать",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "խառը",
+    "translation": "смешанный",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ավելացնել",
+    "translation": "добавить",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "զամբյուղ",
+    "translation": "корзина",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "շոր",
+    "translation": "платье, одежда, наряд",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ընկնել",
+    "translation": "упасть, попасть",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հասնել",
+    "translation": "достичь, дойти",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հջնել",
+    "translation": "спуститься",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ցավ",
+    "translation": "боль",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "խանդել",
+    "translation": "ревновать",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ջան",
+    "translation": "душа / тело",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "վերարկու",
+    "translation": "пальто",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "շալվար",
+    "translation": "штаны",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "գլխարկ",
+    "translation": "шапка",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "գուլպաներ",
+    "translation": "носки",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "սվիտեր",
+    "translation": "свитер",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "շարֆ",
+    "translation": "шарф",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "կոշիկ",
+    "translation": "обувь",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ամբողջ",
+    "translation": "весь",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "նայած",
+    "translation": "смотря, по-разному",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "թիմ",
+    "translation": "команда",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ձայն",
+    "translation": "звук, голос",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հետազոտություն",
+    "translation": "исследование",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հատկություն",
+    "translation": "свойство",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ամեն դեպքում",
+    "translation": "в любом случае",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դատարկ",
+    "translation": "пустой",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ստամոքս",
+    "translation": "желудок",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "կատվի կեր",
+    "translation": "кошачий корм",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հատկապես",
+    "translation": "особенно",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դրսում",
+    "translation": "на улице, снаружи",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հոդված",
+    "translation": "статья",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "սահնակ",
+    "translation": "сани",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դեպք",
+    "translation": "случай",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "այս դեպքում",
+    "translation": "в таком случае",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "պայուսակ",
+    "translation": "сумка",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "արագ",
+    "translation": "быстро",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հավաքվել",
+    "translation": "собираться",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ցուցակ կազմել",
+    "translation": "составить список",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "երաժշտություն",
+    "translation": "музыка",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "որպես",
+    "translation": "в качестве",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "զարթուցիչ",
+    "translation": "будильник",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "վեր կենալ",
+    "translation": "вставать",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "այդպես",
+    "translation": "так",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "համարյա",
+    "translation": "почти",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "տոմսարկղ",
+    "translation": "билетная касса",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դրամարկղ",
+    "translation": "касса",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "այլ",
+    "translation": "другой, прочий",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հավատալ",
+    "translation": "верить",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "միջոցառում",
+    "translation": "мероприятие",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "ժամանակացույց",
+    "translation": "расписание",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "վայր",
+    "translation": "место",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "մոտակա",
+    "translation": "ближайший",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "դառնալ",
+    "translation": "превращаться, становиться",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "պատմել",
+    "translation": "рассказывать",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "մոռանալ",
+    "translation": "забывать",
+    "tags": [
+      "Уроки 36-40"
+    ]
+  },
+  {
+    "value": "հարմարվել",
+    "translation": "приспосабливаться, привыкать",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "կամաց-կամաց",
+    "translation": "потихоньку",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հավաքել",
+    "translation": "собирать",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "խանգարել",
+    "translation": "мешать",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ճամպրուկ",
+    "translation": "чемодан",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "տեղավորել",
+    "translation": "помещать",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "խնդիր",
+    "translation": "просьба, проблема",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "տան մարդ",
+    "translation": "домосед",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "դրսի մարդ",
+    "translation": "человек, который любит гулять",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ցածր",
+    "translation": "низкий, тихо",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "բարձր",
+    "translation": "громко",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "չապը",
+    "translation": "размер",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ջերմաստիճանը",
+    "translation": "температура",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "շուշուտ",
+    "translation": "часто",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հաճախ",
+    "translation": "часто",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "վարդակակաչ",
+    "translation": "тюльпан",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "կակաչ",
+    "translation": "тюльпан / мак",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հավելված",
+    "translation": "приложение",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "անվճար",
+    "translation": "бесплатный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "համաձայն",
+    "translation": "согласный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հայտնի",
+    "translation": "известный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հյուրասեր",
+    "translation": "гостеприимный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "գառ",
+    "translation": "ягнёнок",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հրաշալի",
+    "translation": "чудесный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ընտրանի",
+    "translation": "отборный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "մաճառ",
+    "translation": "новое вино",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "գոլորշի",
+    "translation": "пар, дым",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ընտրություն",
+    "translation": "выбор",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "մեկ էլ",
+    "translation": "ещё",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "այդքան",
+    "translation": "столько, так много",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "միգուցե",
+    "translation": "может быть",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "գուցե",
+    "translation": "может быть",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "չէ՝ չէ",
+    "translation": "нет так нет",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "զգալ",
+    "translation": "чувствовать",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "դեմք",
+    "translation": "лицо",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "մազ",
+    "translation": "волос",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "վառ",
+    "translation": "яркий",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ազդել",
+    "translation": "влиять",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "արձակուրդ",
+    "translation": "отпуск",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "նուշ",
+    "translation": "миндаль",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "նշենի",
+    "translation": "миндальное дерево",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "վայրի",
+    "translation": "дикий",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "դաշտային",
+    "translation": "полевой",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "դաշտ",
+    "translation": "поле",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "մանուկ",
+    "translation": "младенец",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հագնվել",
+    "translation": "одеваться",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "կոկորդ",
+    "translation": "горло",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "փոր",
+    "translation": "живот",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "մեջք",
+    "translation": "спина",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ճնշում",
+    "translation": "давление",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "չափել",
+    "translation": "измерять",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "առողջ",
+    "translation": "здоровый",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ցավել",
+    "translation": "болеть, вызывать боль",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "հազալ",
+    "translation": "кашлять",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ջերմություն",
+    "translation": "температура, жар",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "տաքություն",
+    "translation": "температура, жар",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "կռացնել",
+    "translation": "наклонять",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "բռնվել",
+    "translation": "задерживаться, попадаться / заложило, затекло",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "ահավոր",
+    "translation": "ужасный",
+    "tags": [
+      "Уроки 41-45"
+    ]
+  },
+  {
+    "value": "արդար",
+    "translation": "справедливый, честный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "խառնել",
+    "translation": "смешивать",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "առողջանալ",
+    "translation": "выздоравливать",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "վերնաշապիկ",
+    "translation": "рубашка",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինք",
+    "translation": "сам",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքս",
+    "translation": "я сам",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքդ",
+    "translation": "ты сам",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքը",
+    "translation": "он сам",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքներս",
+    "translation": "мы сами",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքներդ",
+    "translation": "вы сами",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքները",
+    "translation": "они сами",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "բուժել",
+    "translation": "лечить",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "բուժվել",
+    "translation": "лечиться",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "լավանալ",
+    "translation": "поправляться",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "քսուք",
+    "translation": "мазь",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "քիթ",
+    "translation": "нос",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ականջ",
+    "translation": "ухо",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "սուր",
+    "translation": "острый / меч",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ծակ",
+    "translation": "отверстие",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "հնարավոր",
+    "translation": "возможный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ձանձրալի",
+    "translation": "скучный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "դժգոհ",
+    "translation": "недовольный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "գոհ",
+    "translation": "довольный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ակնոց",
+    "translation": "очки",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "կասկածելի",
+    "translation": "подозрительный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "լուրջ",
+    "translation": "серьёзный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ապուշ",
+    "translation": "дурень",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "զբաղվել",
+    "translation": "заниматься",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "խաղալիք",
+    "translation": "игрушка",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "զգույշ",
+    "translation": "осторожный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "արձակուրդ",
+    "translation": "отпуск, каникулы",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "վարսակի ալյուր",
+    "translation": "овсянка",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ուրախություն",
+    "translation": "радость",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "տխրություն",
+    "translation": "грусть",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "զզվանք",
+    "translation": "отвращение",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "զարմանք",
+    "translation": "удивление",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "վաղ",
+    "translation": "страх",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "բարկություն",
+    "translation": "злость",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "դրական",
+    "translation": "положительный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "բացասական",
+    "translation": "отрицательный",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "ինքնաթիռ",
+    "translation": "самолёт",
+    "tags": [
+      "Уроки 46-50"
+    ]
+  },
+  {
+    "value": "մի",
+    "translation": "один",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Veravi95-մի.wav.ogg"
+  },
+  {
+    "value": "մեկ",
+    "translation": "один",
+    "tags": [
+      "Числительные"
+    ]
+  },
+  {
+    "value": "երկու",
+    "translation": "два",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երկու.wav.ogg"
+  },
+  {
+    "value": "երեք",
+    "translation": "три",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երեք.wav.ogg"
+  },
+  {
+    "value": "չորս",
+    "translation": "четыре",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-չորս.wav.ogg"
+  },
+  {
+    "value": "հինգ",
+    "translation": "пять",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հինգ.wav.ogg"
+  },
+  {
+    "value": "վեց",
+    "translation": "шесть",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-վեց.wav.ogg"
+  },
+  {
+    "value": "յոթ",
+    "translation": "семь",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-յոթ.wav.ogg"
+  },
+  {
+    "value": "ութ",
+    "translation": "восемь",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ութ.wav.ogg"
+  },
+  {
+    "value": "ինը",
+    "translation": "девять",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ինը.wav.ogg"
+  },
+  {
+    "value": "տասը",
+    "translation": "десять",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-տասը.wav.ogg"
+  },
+  {
+    "value": "քսան",
+    "translation": "двадцать",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-քսան.wav.ogg"
+  },
+  {
+    "value": "երեսուն",
+    "translation": "тридцать",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երեսուն.wav.ogg"
+  },
+  {
+    "value": "քառասուն",
+    "translation": "сорок",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-քառասուն.wav.ogg"
+  },
+  {
+    "value": "հիսուն",
+    "translation": "пятьдесят",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հիսուն.wav.ogg"
+  },
+  {
+    "value": "վաթսուն",
+    "translation": "шестьдесят",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-վաթսուն.wav.mp3"
+  },
+  {
+    "value": "յոթանասուն",
+    "translation": "семьдесят",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-յոթանասուն.wav.ogg"
+  },
+  {
+    "value": "ութսուն",
+    "translation": "восемьдесят",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ութսուն.wav.ogg"
+  },
+  {
+    "value": "իննսուն",
+    "translation": "девяносто",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-իննսուն.wav.ogg"
+  },
+  {
+    "value": "հարյուր",
+    "translation": "сто",
+    "tags": [
+      "Числительные"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հարյուր.wav.ogg"
+  },
+  {
+    "value": "հազար",
+    "translation": "тысяча",
+    "tags": [
+      "Числительные"
+    ]
+  },
+  {
+    "value": "կիրակի",
+    "translation": "воскресенье",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-կիրակի.wav.ogg"
+  },
+  {
+    "value": "երկուշաբթի",
+    "translation": "понедельник",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երկուշաբթի.wav.ogg"
+  },
+  {
+    "value": "երեքշաբթի",
+    "translation": "вторник",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-երեքշաբթի.wav.ogg"
+  },
+  {
+    "value": "չորեքշաբթի",
+    "translation": "среда",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-չորեքշաբթի.wav.ogg"
+  },
+  {
+    "value": "հինգշաբթի",
+    "translation": "четверг",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հինգշաբթի.wav.ogg"
+  },
+  {
+    "value": "ուրբաթ",
+    "translation": "пятница",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-ուրբաթ.wav.ogg"
+  },
+  {
+    "value": "շաբաթ",
+    "translation": "суббота / неделя",
+    "tags": [
+      "Дни недели"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-շաբաթ.wav.ogg"
+  },
+  {
+    "value": "հունվար",
+    "translation": "январь",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հունվար.wav.ogg"
+  },
+  {
+    "value": "փետրվար",
+    "translation": "февраль",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-փետրվար.wav.ogg"
+  },
+  {
+    "value": "մարտ",
+    "translation": "март",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մարտ.wav.ogg"
+  },
+  {
+    "value": "ապրիլ",
+    "translation": "апрель",
+    "tags": [
+      "Месяцы"
+    ]
+  },
+  {
+    "value": "մայիս",
+    "translation": "май",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-մայիս.wav.ogg"
+  },
+  {
+    "value": "հունիս",
+    "translation": "июнь",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հունիս.wav.ogg"
+  },
+  {
+    "value": "հուլիս",
+    "translation": "июль",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-հուլիս.wav.ogg"
+  },
+  {
+    "value": "օգոստոս",
+    "translation": "август",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-օգոստոս.wav.ogg"
+  },
+  {
+    "value": "սեպտեմբեր",
+    "translation": "сентябрь",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-սեպտեմբեր.wav.ogg"
+  },
+  {
+    "value": "հոկտեմբեր",
+    "translation": "октябрь",
+    "tags": [
+      "Месяцы"
+    ]
+  },
+  {
+    "value": "նոյեմբեր",
+    "translation": "ноябрь",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-նոյեմբեր.wav.ogg"
+  },
+  {
+    "value": "դեկտեմբեր",
+    "translation": "декабрь",
+    "tags": [
+      "Месяцы"
+    ],
+    "audioFileName": "LL-Q8785_(hye)-Vahagn_Petrosyan-դեկտեմբեր.wav.ogg"
+  },
+  {
+    "value": "առաջին",
+    "translation": "первый",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "երկրորդ",
+    "translation": "второй",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "երրորդ",
+    "translation": "третий",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "չորրորդ",
+    "translation": "четвёртый",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "հինգերորդ",
+    "translation": "пятый",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "վեցերորդ",
+    "translation": "шестой",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "յոթերորդ",
+    "translation": "седьмой",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "ութերորդ",
+    "translation": "восьмой",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "իններորդ",
+    "translation": "девятый",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "տասերորդ",
+    "translation": "десятый",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "հարյուրերորդ",
+    "translation": "сотый",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  },
+  {
+    "value": "հազարերորդ",
+    "translation": "тысячный",
+    "tags": [
+      "Порядковые числительные"
+    ]
+  }
+]
