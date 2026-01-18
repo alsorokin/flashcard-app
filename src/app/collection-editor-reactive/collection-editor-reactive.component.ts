@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormArray, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Word } from '../words';
 import { WordCollection, WordsService } from '../words.service';
+import { SettingsService } from '../settings.service';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
@@ -38,14 +39,26 @@ export class CollectionEditorReactiveComponent {
     return this.parentForm.get('words') as FormArray;
   }
 
-  constructor(private wordsService: WordsService) {
-    this.allWords = wordsService.getAllWords();
-    this.allCollections = wordsService.getWordCollections();
+  constructor(private wordsService: WordsService,
+              private settingsService: SettingsService) {}
+
+  async ngOnInit() {
+    await this.wordsService.ensureInitialized();
+    this.reloadFromService();
+    this.wordsService.collectionsState$.subscribe(collections => {
+      this.allCollections = collections;
+    });
+    this.settingsService.languagePairChanged$.subscribe(async () => {
+      await this.wordsService.ensureInitialized();
+      this.reloadFromService();
+    });
   }
 
-  ngOnInit() {
+  private reloadFromService(): void {
+    this.allWords = this.wordsService.getAllWords();
+    this.allCollections = this.wordsService.getWordCollections();
     this.wordsFormArray.clear();
-    this.allWords.forEach((word, index) => {
+    this.allWords.forEach((word) => {
       const wordFormGroup = this.formBuilder.group({
         value: [word.value],
         translation: [word.translation],

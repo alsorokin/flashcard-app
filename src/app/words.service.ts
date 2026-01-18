@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Word, getBaseTags, getBaseWords, getBaseWordsByTag } from './words';
-import { Subject, Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable, Subject, firstValueFrom } from 'rxjs';
+import { DEFAULT_LANGUAGE_PAIR_CODE, LanguagePair, LanguagePairCode, Word, collectTags, getLanguagePair } from './words';
+import { SettingsService } from './settings.service';
 
 export interface CollectionChangeEvent {
   name: string;
@@ -14,77 +16,98 @@ export interface WordCollection {
 }
 
 /**
- * Service for managing words and word collections and hold the state of the selected collections.
+ * Service for managing words, language pairs, and user collections.
  */
 @Injectable({
   providedIn: 'root'
 })
 export class WordsService {
-  private wordCollections: WordCollection[];
-  private collectionsChanged: Subject<CollectionChangeEvent> = new Subject<CollectionChangeEvent>();
-
+  private wordCollections: WordCollection[] = [];
+  private collectionsChanged = new Subject<CollectionChangeEvent>();
   collectionsChanged$: Observable<CollectionChangeEvent> = this.collectionsChanged.asObservable();
 
-  constructor() {
-    const baseTags = getBaseTags();
-    const customTags = this.getCustomTags();
-    const tags = baseTags;
-    customTags.forEach(tag => {
-      if (!tags.includes(tag)) {
-        tags.push(tag);
-      }
+  private collectionsState = new BehaviorSubject<WordCollection[]>([]);
+  collectionsState$ = this.collectionsState.asObservable();
+
+  private selectedWords = new BehaviorSubject<Word[]>([]);
+  selectedWords$ = this.selectedWords.asObservable();
+
+  private languagePairState = new BehaviorSubject<LanguagePair>(getLanguagePair(DEFAULT_LANGUAGE_PAIR_CODE));
+  languagePair$ = this.languagePairState.asObservable();
+
+  get currentLanguagePair(): LanguagePair {
+    return this.currentPair;
+  }
+
+  private baseWordsByPair = new Map<LanguagePairCode, Word[]>();
+  private customWordsByPair = new Map<LanguagePairCode, Word[]>();
+  private currentPair: LanguagePair = getLanguagePair(DEFAULT_LANGUAGE_PAIR_CODE);
+  private loadQueue: Promise<void> = Promise.resolve();
+
+  constructor(private http: HttpClient, private settingsService: SettingsService) {
+    this.currentPair = getLanguagePair(this.settingsService.languagePairCode);
+    this.enqueueLoad(this.currentPair, true);
+    this.settingsService.languagePairChanged$.subscribe(code => {
+      const nextPair = getLanguagePair(code);
+      this.enqueueLoad(nextPair, false);
     });
-    const savedCollections = this.loadCollectionsFromLocalStorage();
-    this.wordCollections = tags.map(tag => {
-      const savedCollection = savedCollections.find(collection => collection.name === tag);
-      return {
-        name: tag,
-        htmlId: tag.replaceAll(' ', '_'),
-        selected: savedCollection ? savedCollection.selected : true,
-      };
-    });
+  }
+
+  /**
+   * Ensure the initial (or latest) language pair has been loaded.
+   */
+  ensureInitialized(): Promise<void> {
+    return this.loadQueue;
   }
 
   //#region Collections
   getWordCollections(): WordCollection[] {
-    // Return a copy of the collections to prevent the original array from being modified.
     return this.wordCollections.map(collection => ({ ...collection }));
   }
 
   setCollectionSelected(name: string, selected: boolean): void {
     const collection = this.wordCollections.find(collection => collection.name === name);
-    if (collection) {
-      collection.selected = selected;
-      this.saveCollectionsToLocalStorage();
-      this.collectionsChanged.next({ name: name, selected: selected });
+    if (!collection) {
+      return;
     }
+    collection.selected = selected;
+    this.saveCollectionsToLocalStorage(this.currentPair.code);
+    this.collectionsChanged.next({ name, selected });
+    this.emitCollectionsState();
+    this.refreshSelectedWords();
   }
 
   setAllCollectionsSelected(selected: boolean): void {
     this.wordCollections.forEach(collection => {
       collection.selected = selected;
     });
-    this.saveCollectionsToLocalStorage();
+    this.saveCollectionsToLocalStorage(this.currentPair.code);
     this.wordCollections.forEach(collection => {
-      this.collectionsChanged.next({ name: collection.name, selected: selected });
+      this.collectionsChanged.next({ name: collection.name, selected });
     });
+    this.emitCollectionsState();
+    this.refreshSelectedWords();
   }
   //#endregion
 
   //#region Words
   /**
    * Get all words, including base and custom words.
-   * If a custom word has the same value as a base word, the custom word will be returned.
+   * If a custom word has the same value as a base word, the custom word will take precedence.
    */
   getAllWords(): Word[] {
-    return this.mergeWords(getBaseWords(), this.getCustomWords());
+    const baseWords = this.getBaseWords();
+    return this.mergeWords(baseWords, this.getCustomWords());
   }
 
   /**
    * Get all words with the provided tag, including base and custom words.
    */
   getAllWordsByTag(tag: string): Word[] {
-    return this.mergeWords(getBaseWordsByTag(tag), this.getCustomWords().filter(w => w.tags.includes(tag)));
+    return this.mergeWords(
+      this.getBaseWordsByTag(tag),
+      this.getCustomWords().filter(w => w.tags.includes(tag))
+    );
   }
 
   /**
@@ -107,9 +130,9 @@ export class WordsService {
    * Get the words in the selected collections.
    */
   getSelectedWords(): Word[] {
-    return this.getAllWords().filter(word => {
-      return this.wordCollections.find(collection => collection.selected && word.tags.includes(collection.name));
-    });
+    return this.getAllWords().filter(word =>
+      this.wordCollections.find(collection => collection.selected && word.tags.includes(collection.name))
+    );
   }
 
   /**
@@ -154,14 +177,14 @@ export class WordsService {
     }
     filteredWords = this.scrambleAndFilterOutSynonyms(filteredWords);
     if (count >= filteredWords.length) {
-      return filteredWords.map(w => { return { ...w } });
+      return filteredWords.map(w => ({ ...w }));
     }
     const result: Word[] = [];
     let i = 0;
     while (i < count && filteredWords.length > 0) {
-      const random_i = Math.floor(Math.random() * filteredWords.length);
-      result.push({ ...filteredWords[random_i] });
-      filteredWords.splice(random_i, 1);
+      const randomIndex = Math.floor(Math.random() * filteredWords.length);
+      result.push({ ...filteredWords[randomIndex] });
+      filteredWords.splice(randomIndex, 1);
       i++;
     }
     return result;
@@ -169,39 +192,37 @@ export class WordsService {
 
   private scrambleAndFilterOutSynonyms(words: Word[]): Word[] {
     const result: Word[] = [];
-
     const values = new Set<string>();
     const translations = new Set<string>();
     const wordsCopy = [...words];
     while (wordsCopy.length > 0) {
-      const random_i = Math.floor(Math.random() * wordsCopy.length);
-      const word = wordsCopy[random_i];
+      const randomIndex = Math.floor(Math.random() * wordsCopy.length);
+      const word = wordsCopy[randomIndex];
       if (!values.has(word.value) && !translations.has(word.translation)) {
         result.push({ ...word });
         values.add(word.value);
         translations.add(word.translation);
       }
-      wordsCopy.splice(random_i, 1);
+      wordsCopy.splice(randomIndex, 1);
     }
-
     return result;
   }
   //#endregion
 
   //#region Base Words
   getBaseWords(): Word[] {
-    return getBaseWords();
+    const words = this.baseWordsByPair.get(this.currentPair.code) ?? [];
+    return words.map(w => ({ ...w }));
+  }
+
+  getBaseWordsByTag(tag: string): Word[] {
+    return this.getBaseWords().filter(w => w.tags.includes(tag));
   }
   //#endregion
 
   //#region Custom Words
-  private _customWords: Word[] | null = null;
-
   getCustomWords(): Word[] {
-    if (this._customWords === null) {
-      this._customWords = this.loadCustomWordsFromLocalStorage();
-    }
-    return this._customWords.map(w => ({ ...w }));
+    return this.getCustomWordsForPair(this.currentPair.code).map(w => ({ ...w }));
   }
 
   getCustomTags(): string[] {
@@ -210,20 +231,26 @@ export class WordsService {
     return Array.from(tags);
   }
 
+  private getCustomTagsForPair(pairCode: LanguagePairCode): string[] {
+    const tags = new Set<string>();
+    this.getCustomWordsForPair(pairCode).forEach(w => w.tags.forEach(t => tags.add(t)));
+    return Array.from(tags);
+  }
+
   updateWord(word: Partial<Word>): void {
     if (!word.value) {
       return;
     }
-    const customWords = this.getCustomWords();
-    const i = customWords.findIndex(w => w.value === word.value);
-    if (i !== -1) {
-      customWords[i] = { ...customWords[i], ...word };
+    const pairCode = this.currentPair.code;
+    const customWords = this.getCustomWordsForPair(pairCode);
+    const index = customWords.findIndex(w => w.value === word.value);
+    if (index !== -1) {
+      customWords[index] = { ...customWords[index], ...word } as Word;
     } else {
       customWords.push(word as Word);
     }
-    this.setCustomWords(customWords);
+    this.setCustomWords(pairCode, customWords);
 
-    // create new collections from new word's tags
     if (word.tags) {
       word.tags.forEach(tag => {
         if (!this.wordCollections.find(collection => collection.name === tag)) {
@@ -234,32 +261,127 @@ export class WordsService {
           });
         }
       });
+      this.saveCollectionsToLocalStorage(pairCode);
+      this.emitCollectionsState();
     }
+    this.refreshSelectedWords();
+  }
+  //#endregion
+
+  //#region Language pair loading
+  private enqueueLoad(pair: LanguagePair, isInitial: boolean): void {
+    this.loadQueue = this.loadQueue.then(() => this.loadLanguagePair(pair, isInitial));
   }
 
-  private setCustomWords(words: Word[]): void {
-    this._customWords = words;
-    this.saveCustomWordsToLocalStorage(words);
+  private async loadLanguagePair(pair: LanguagePair, isInitial: boolean): Promise<void> {
+    const baseWords = await this.getBaseWordsForPair(pair);
+    this.currentPair = pair;
+    const baseTags = collectTags(baseWords);
+    const customTags = this.getCustomTagsForPair(pair.code);
+    const allTags = [...baseTags];
+    customTags.forEach(tag => {
+      if (!allTags.includes(tag)) {
+        allTags.push(tag);
+      }
+    });
+    const savedCollections = this.loadCollectionsFromLocalStorage(pair.code, isInitial);
+    this.wordCollections = allTags.map(tag => {
+      const savedCollection = savedCollections.find(collection => collection.name === tag);
+      return {
+        name: tag,
+        htmlId: tag.replaceAll(' ', '_'),
+        selected: savedCollection ? savedCollection.selected : true,
+      };
+    });
+    this.saveCollectionsToLocalStorage(pair.code);
+    this.emitCollectionsState();
+    this.languagePairState.next(pair);
+    this.refreshSelectedWords();
+  }
+
+  private async getBaseWordsForPair(pair: LanguagePair): Promise<Word[]> {
+    if (this.baseWordsByPair.has(pair.code)) {
+      return this.baseWordsByPair.get(pair.code)!;
+    }
+    const words = await firstValueFrom(this.http.get<Word[]>(pair.dataPath));
+    this.baseWordsByPair.set(pair.code, words);
+    return words;
   }
   //#endregion
 
   //#region Local Storage
-  private loadCollectionsFromLocalStorage(): WordCollection[] {
-    const collections = localStorage.getItem('wordCollections');
-    return collections ? JSON.parse(collections) : [];
+  private getCollectionsKey(pairCode: LanguagePairCode): string {
+    return `wordCollections:${pairCode}`;
   }
 
-  private saveCollectionsToLocalStorage(): void {
-    localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
+  private getCustomWordsKey(pairCode: LanguagePairCode): string {
+    return `customWords:${pairCode}`;
   }
 
-  private loadCustomWordsFromLocalStorage(): Word[] {
-    const customWords = localStorage.getItem('customWords');
-    return customWords ? JSON.parse(customWords) : [];
+  private loadCollectionsFromLocalStorage(pairCode: LanguagePairCode, allowLegacy = false): WordCollection[] {
+    const byPair = localStorage.getItem(this.getCollectionsKey(pairCode));
+    if (byPair) {
+      return JSON.parse(byPair);
+    }
+    if (allowLegacy && pairCode === DEFAULT_LANGUAGE_PAIR_CODE) {
+      const legacy = localStorage.getItem('wordCollections');
+      if (legacy) {
+        const parsed = JSON.parse(legacy);
+        localStorage.setItem(this.getCollectionsKey(pairCode), legacy);
+        return parsed;
+      }
+    }
+    return [];
   }
 
-  private saveCustomWordsToLocalStorage(words: Word[]): void {
-    localStorage.setItem('customWords', JSON.stringify(words));
+  private saveCollectionsToLocalStorage(pairCode: LanguagePairCode): void {
+    localStorage.setItem(this.getCollectionsKey(pairCode), JSON.stringify(this.wordCollections));
+    if (pairCode === DEFAULT_LANGUAGE_PAIR_CODE) {
+      localStorage.setItem('wordCollections', JSON.stringify(this.wordCollections));
+    }
+  }
+
+  private getCustomWordsForPair(pairCode: LanguagePairCode): Word[] {
+    if (!this.customWordsByPair.has(pairCode)) {
+      this.customWordsByPair.set(pairCode, this.loadCustomWordsFromLocalStorage(pairCode));
+    }
+    return this.customWordsByPair.get(pairCode) ?? [];
+  }
+
+  private setCustomWords(pairCode: LanguagePairCode, words: Word[]): void {
+    this.customWordsByPair.set(pairCode, words);
+    this.saveCustomWordsToLocalStorage(pairCode, words);
+  }
+
+  private loadCustomWordsFromLocalStorage(pairCode: LanguagePairCode): Word[] {
+    const byPair = localStorage.getItem(this.getCustomWordsKey(pairCode));
+    if (byPair) {
+      return JSON.parse(byPair);
+    }
+    if (pairCode === DEFAULT_LANGUAGE_PAIR_CODE) {
+      const legacy = localStorage.getItem('customWords');
+      if (legacy) {
+        localStorage.setItem(this.getCustomWordsKey(pairCode), legacy);
+        return JSON.parse(legacy);
+      }
+    }
+    return [];
+  }
+
+  private saveCustomWordsToLocalStorage(pairCode: LanguagePairCode, words: Word[]): void {
+    const payload = JSON.stringify(words);
+    localStorage.setItem(this.getCustomWordsKey(pairCode), payload);
+    if (pairCode === DEFAULT_LANGUAGE_PAIR_CODE) {
+      localStorage.setItem('customWords', payload);
+    }
   }
   //#endregion
+
+  private emitCollectionsState(): void {
+    this.collectionsState.next(this.getWordCollections());
+  }
+
+  private refreshSelectedWords(): void {
+    this.selectedWords.next(this.getSelectedWords());
+  }
 }
