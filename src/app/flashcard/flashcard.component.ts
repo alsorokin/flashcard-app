@@ -1,7 +1,7 @@
 import { Component, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Word } from '../words';
-import { WordsService, CollectionChangeEvent } from '../words.service';
+import { LanguagePair, Word } from '../words';
+import { WordsService } from '../words.service';
 import keybindings from '../keybindings';
 import { SettingsService } from '../settings.service';
 
@@ -33,6 +33,7 @@ export class FlashcardComponent implements AfterViewInit {
   errors: Map<string, number> = new Map();
   frontGameMode: GameMode = GameMode.Flashcard;
   backGameMode: GameMode = GameMode.ReverseFlashcard;
+  currentPair: LanguagePair;
 
   @ViewChild('flashcardBackContainer') flashcardBackContainer!: ElementRef;
   @ViewChild('flashcardFrontContainer') flashcardFrontContainer!: ElementRef;
@@ -47,18 +48,21 @@ export class FlashcardComponent implements AfterViewInit {
 
   constructor(private wordsService: WordsService,
               private settingsService: SettingsService,
-  ) { }
+  ) {
+    this.currentPair = this.wordsService.currentLanguagePair;
+  }
 
-  ngOnInit(): void {
-    this.words = this.wordsService.getSelectedWords();
-    this.refreshFront();
-    this.refreshBack();
-
-    this.wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
-      this.wordsService.refreshWordsByEvent(this.words, event);
+  async ngOnInit(): Promise<void> {
+    await this.wordsService.ensureInitialized();
+    this.currentPair = this.wordsService.currentLanguagePair;
+    this.wordsService.languagePair$.subscribe(pair => {
+      this.currentPair = pair;
       this.refreshAll();
     });
-
+    this.wordsService.selectedWords$.subscribe(words => {
+      this.words = words;
+      this.refreshAll();
+    });
     this.settingsService.flippedModeChanged$.subscribe(this.refreshAll.bind(this));
   }
 
@@ -163,6 +167,29 @@ export class FlashcardComponent implements AfterViewInit {
 
   private getTopErrorValueUnsafe(): string {
     return this.errors.keys().next().value!;
+  }
+
+  private resolvePromptAndAnswer(mode: GameMode): { prompt: 'value' | 'translation'; answer: 'value' | 'translation' } {
+    const prompt = this.currentPair.promptSide === 'translation'
+      ? (mode === GameMode.Flashcard ? 'translation' : 'value')
+      : (mode === GameMode.Flashcard ? 'value' : 'translation');
+    const answer = prompt === 'value' ? 'translation' : 'value';
+    return { prompt, answer };
+  }
+
+  getPromptText(word: Word, mode: GameMode): string {
+    const { prompt } = this.resolvePromptAndAnswer(mode);
+    return word[prompt];
+  }
+
+  getOptionText(word: Word, mode: GameMode): string {
+    const { answer } = this.resolvePromptAndAnswer(mode);
+    return word[answer];
+  }
+
+  getOptionHint(word: Word, mode: GameMode): string {
+    const { prompt } = this.resolvePromptAndAnswer(mode);
+    return word[prompt];
   }
 
   checkAnswer(selectedOption: WordOption): void {

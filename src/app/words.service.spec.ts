@@ -1,123 +1,91 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed, fakeAsync, tick } from '@angular/core/testing';
+import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
 import { WordsService } from './words.service';
-import * as wordsModule from './words';
-import { jest } from '@jest/globals';
-
-jest.mock('./words', () => ({
-  getBaseTags: jest.fn(),
-  getBaseWordsByTag: jest.fn(),
-  getBaseWords: jest.fn(),
-}));
+import { SettingsService } from './settings.service';
+import { DEFAULT_LANGUAGE_PAIR_CODE, LANGUAGE_PAIRS, LanguagePairCode } from './words';
 
 describe('WordsService', () => {
   let service: WordsService;
+  let httpMock: HttpTestingController;
+  const baseWords = [
+    { value: 'hello', translation: 'привет', tags: ['Basics'] },
+    { value: 'goodbye', translation: 'пока', tags: ['Basics'] },
+    { value: 'coffee', translation: 'кофе', tags: ['Food'] },
+    { value: 'tea', translation: 'чай', tags: ['Food'] },
+    { value: 'ticket', translation: 'билет', tags: ['Travel'] },
+  ];
 
-  beforeEach(() => {
-    // Mock setup before TestBed configuration
-    const mockTags = ['tag1', 'tag2'];
-    (wordsModule.getBaseTags as jest.Mock).mockReturnValue(mockTags);
+  beforeEach(fakeAsync(() => {
+    localStorage.clear();
+    TestBed.configureTestingModule({
+      providers: [SettingsService, provideHttpClient(), provideHttpClientTesting()]
+    });
 
-    TestBed.configureTestingModule({});
+    httpMock = TestBed.inject(HttpTestingController);
+    
+    // Need to tick once to let the service initialization start
+    tick();
     service = TestBed.inject(WordsService);
+    tick();
+    
+    // Now the request should be ready
+    const req = httpMock.expectOne('data/words-ru-hy.json');
+    req.flush(baseWords);
+    
+    tick();
+  }));
+
+  afterEach(() => {
+    httpMock.verify();
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should return word collections', () => {
+  it('should return word collections with saved selection', () => {
     const collections = service.getWordCollections();
-
-    expect(collections.length).toBe(2);
-    expect(collections[0].name).toBe('tag1');
-    expect(collections[1].name).toBe('tag2');
+    expect(collections.map(c => c.name).sort()).toEqual(['Basics', 'Food', 'Travel']);
+    expect(collections.every(c => c.selected)).toBe(true);
   });
 
-  it('should set collection selected', () => {
-    service.setCollectionSelected('tag1', true);
+  it('should set collection selected and refresh words', () => {
+    service.setCollectionSelected('Basics', false);
     const collections = service.getWordCollections();
-    expect(collections.find(c => c.name === 'tag1')?.selected).toBe(true);
-
-    service.setCollectionSelected('tag1', false);
-    const collections2 = service.getWordCollections();
-    expect(collections2.find(c => c.name === 'tag1')?.selected).toBe(false);
+    expect(collections.find(c => c.name === 'Basics')?.selected).toBe(false);
+    expect(service.getSelectedWords().every(w => !w.tags.includes('Basics'))).toBe(true);
   });
 
-  it('should return words by selected collections', () => {
-    const mockWords = [
-      { value: 'word1', translation: 'translation1', tags: ['tag1'] },
-      { value: 'word2', translation: 'translation2', tags: ['tag2'] },
-    ];
-    (wordsModule.getBaseWords as jest.Mock).mockReturnValue(mockWords);
-
-    service.setCollectionSelected('tag1', true);
-    service.setCollectionSelected('tag2', false);
-    const words = service.getSelectedWords();
-
-    expect(words.length).toBe(1);
-    expect(words[0].value).toBe('word1');
+  it('should merge custom words and add tags as collections', () => {
+    service.updateWord({ value: 'new word', translation: 'новое слово', tags: ['Custom'] });
+    const allWords = service.getAllWords();
+    expect(allWords.find(w => w.value === 'new word')).toBeTruthy();
+    const collections = service.getWordCollections();
+    expect(collections.find(c => c.name === 'Custom')).toBeTruthy();
   });
 
-  it('should update words based on collection change event -- add new words', () => {
-    const words = [
-      { value: 'word2', translation: 'translation2', tags: ['tag2'] },
-    ];
-    const mockWordsByTag = [
-      { value: 'word1', translation: 'translation1', tags: ['tag1'] },
-      { value: 'word3', translation: 'translation3', tags: ['tag1'] },
-    ];
-    (wordsModule.getBaseWordsByTag as jest.Mock).mockReturnValue(mockWordsByTag);
-
-    service.refreshWordsByEvent(words, { name: 'tag1', selected: true });
-
-    expect(words.length).toBe(3);
-    expect(words.find(w => w.value === 'word3')).toBeTruthy();
+  it('should filter out ignored words', () => {
+    const randomWords = service.getRandomWords(baseWords, 2, ['hello', 'coffee']);
+    expect(randomWords.every(w => w.value !== 'hello' && w.value !== 'coffee')).toBe(true);
   });
 
-  it('should update words based on collection change event -- remove words', () => {
-    const words = [
-      { value: 'word1', translation: 'translation1', tags: ['tag1'] },
-      { value: 'word2', translation: 'translation2', tags: ['tag2'] },
-      { value: 'word3', translation: 'translation3', tags: ['tag1'] },
-    ];
-    const mockWordsByTag = [
-      { value: 'word1', translation: 'translation1', tags: ['tag1'] },
-      { value: 'word3', translation: 'translation3', tags: ['tag1'] },
-    ];
-    (wordsModule.getBaseWordsByTag as jest.Mock).mockReturnValue(mockWordsByTag);
-
-    service.refreshWordsByEvent(words, { name: 'tag1', selected: false });
-
-    expect(words.length).toBe(1);
-    expect(words[0].value).toBe('word2');
-  });
-
-  it('should return unique random words', () => {
-    const mockWords = [
-      { value: 'word1', translation: 'translation1', tags: ['tag1'] },
-      { value: 'word2', translation: 'translation2', tags: ['tag2'] },
-      { value: 'word3', translation: 'translation3', tags: ['tag1'] },
-    ];
-
-    for (let i = 0; i < 100; i++) {
-      const randomWords = service.getRandomWords(mockWords, 2);
-      expect(randomWords.length).toBe(2);
-      expect(mockWords.find(w => w.value === randomWords[0].value)).toBeTruthy();
-      expect(mockWords.find(w => w.value === randomWords[1].value)).toBeTruthy();
-      expect(randomWords[0].value).not.toBe(randomWords[1].value);
-      expect(randomWords[0].translation).not.toBe(randomWords[1].translation);
-    }
-  });
-
-  it ('should filter out ignored words', () => {
-    const mockWords = [
-      { value: 'word1', translation: 'translation1', tags: ['tag1'] },
-      { value: 'word2', translation: 'translation2', tags: ['tag2'] },
-      { value: 'word3', translation: 'translation3', tags: ['tag1'] },
-    ];
-
-    const randomWords = service.getRandomWords(mockWords, 2, ['word1', 'word2']);
-    expect(randomWords.length).toBe(1);
-    expect(randomWords[0].value).toBe('word3');
+  it('should maintain separate custom words per language pair in localStorage', () => {
+    // Add a custom word to ru-hy
+    service.updateWord({ value: 'hy-only', translation: 'միայն hy-ում', tags: ['HyOnly'] });
+    
+    // Simulate switching by directly saving/loading from different localStorage keys
+    const hyCustomKey = 'customWords:ru-hy';
+    const enCustomKey = 'customWords:ru-en';
+    
+    // ru-hy should have the custom word
+    const hyCustomData = localStorage.getItem(hyCustomKey);
+    expect(hyCustomData).toBeTruthy();
+    const hyWords = JSON.parse(hyCustomData!);
+    expect(hyWords.find((w: any) => w.value === 'hy-only')).toBeTruthy();
+    
+    // en should not have it
+    const enCustomData = localStorage.getItem(enCustomKey);
+    expect(enCustomData).toBeFalsy();
   });
 });

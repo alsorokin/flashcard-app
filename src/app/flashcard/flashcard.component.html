@@ -3,7 +3,7 @@
     <div class="flashcard-container">
       <div class="flashcard-front" [attr.tabindex]="isFlipped ? -1 : 0" #flashcardFrontContainer>
         <p class="current-word">
-          {{ frontGameMode == GameMode.Flashcard ? frontWord.value : frontWord.translation }}
+          {{ getPromptText(frontWord, frontGameMode) }}
           @if (frontGameMode == GameMode.Flashcard && frontWord.audioFileName) {
             <button class="audioButton" type="button" (click)="playSound()"
               >
@@ -15,16 +15,16 @@
           @for (wordOption of frontOptions; track wordOption) {
             <button type="button" class="word-button" (click)="checkAnswer(wordOption)"
               [attr.tabindex]="isFlipped ? -1 : 0" [ngClass]="{'correct': wordOption.isCorrect, 'incorrect': wordOption.isCorrect === false}">
-              <span class="translation-text">{{ frontGameMode == GameMode.Flashcard ? wordOption.word.translation : wordOption.word.value }}</span>
+              <span class="translation-text">{{ getOptionText(wordOption.word, frontGameMode) }}</span>
               <br>
-                <span class="translation-hint">{{ frontGameMode == GameMode.Flashcard ? wordOption.word.value : wordOption.word.translation }}</span>
+                <span class="translation-hint">{{ getOptionHint(wordOption.word, frontGameMode) }}</span>
               </button>
             }
           </div>
         </div>
         <div class="flashcard-back" [attr.tabindex]="isFlipped ? 0 : -1" #flashcardBackContainer>
           <p class="current-word">
-            {{ backGameMode == GameMode.Flashcard ? backWord.value : backWord.translation }}
+            {{ getPromptText(backWord, backGameMode) }}
             @if (backGameMode == GameMode.Flashcard && backWord.audioFileName) {
               <button class="audioButton" type="button" (click)="playSound()"
                 >
@@ -36,9 +36,9 @@
             @for (wordOption of backOptions; track wordOption) {
               <button type="button" class="word-button" (click)="checkAnswer(wordOption)"
                 [attr.tabindex]="isFlipped ? 0 : -1" [ngClass]="{'correct': wordOption.isCorrect, 'incorrect': wordOption.isCorrect === false}">
-                <span class="translation-text">{{ backGameMode == GameMode.Flashcard ? wordOption.word.translation : wordOption.word.value }}</span>
+                <span class="translation-text">{{ getOptionText(wordOption.word, backGameMode) }}</span>
                 <br>
-                  <span class="translation-hint">{{ backGameMode == GameMode.Flashcard ? wordOption.word.value : wordOption.word.translation }}</span>
+                  <span class="translation-hint">{{ getOptionHint(wordOption.word, backGameMode) }}</span>
                 </button>
               }
             </div>

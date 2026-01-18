@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Subject, Observable } from 'rxjs';
+import { Subject } from 'rxjs';
+import { DEFAULT_LANGUAGE_PAIR_CODE, LanguagePairCode, getLanguagePair } from './words';
 
 @Injectable({
   providedIn: 'root'
@@ -31,6 +32,21 @@ export class SettingsService {
   get autoPlayEnabled(): boolean {
     return this._autoPlayEnabled;
   }
+
+  // language pair
+  private _languagePairCode: LanguagePairCode = DEFAULT_LANGUAGE_PAIR_CODE;
+  private languagePairChanged = new Subject<LanguagePairCode>();
+  languagePairChanged$ = this.languagePairChanged.asObservable();
+
+  set languagePairCode(value: LanguagePairCode) {
+    this._languagePairCode = getLanguagePair(value).code;
+    this.saveSettingsToLocalStorage();
+    this.languagePairChanged.next(this._languagePairCode);
+  }
+
+  get languagePairCode(): LanguagePairCode {
+    return this._languagePairCode;
+  }
   
   constructor() {
     this.loadSettingsFromLocalStorage();
@@ -40,12 +56,14 @@ export class SettingsService {
     const settings = JSON.parse(localStorage.getItem('settings') || '{}');
     this._flippedModeEnabled = settings.flippedModeEnabled ?? this._flippedModeEnabled;
     this._autoPlayEnabled = settings.autoPlayEnabled ?? this._autoPlayEnabled;
+    this._languagePairCode = getLanguagePair(settings.languagePairCode).code;
   }
 
   private saveSettingsToLocalStorage(): void {
     localStorage.setItem('settings', JSON.stringify({
       flippedModeEnabled: this._flippedModeEnabled,
       autoPlayEnabled: this._autoPlayEnabled,
+      languagePairCode: this._languagePairCode,
     }));
   }
 }
