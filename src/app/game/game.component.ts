@@ -4,7 +4,6 @@ import { SettingsComponent } from '../settings/settings.component';
 
 @Component({
   selector: 'app-game',
-  standalone: true,
   imports: [FlashcardComponent, SettingsComponent],
   templateUrl: './game.component.html',
   styleUrl: './game.component.css'

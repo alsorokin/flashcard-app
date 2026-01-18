@@ -8,8 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 
 @Component({
   selector: 'app-collection-editor-reactive',
-  standalone: true,
-  imports: [ ReactiveFormsModule, CommonModule, MatFormFieldModule, MatSelectModule ],
+  imports: [ReactiveFormsModule, CommonModule, MatFormFieldModule, MatSelectModule],
   templateUrl: './collection-editor-reactive.component.html',
   styleUrl: './collection-editor-reactive.component.css'
 })

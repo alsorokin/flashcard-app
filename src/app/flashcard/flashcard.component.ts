@@ -17,7 +17,6 @@ interface WordOption {
 
 @Component({
   selector: 'app-flashcard',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './flashcard.component.html',
   styleUrl: './flashcard.component.css'
