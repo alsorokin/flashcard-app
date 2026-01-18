@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { DEFAULT_LANGUAGE_PAIR_CODE, LanguagePairCode, getLanguagePair } from './words';
 
 @Injectable({
@@ -8,7 +8,7 @@ import { DEFAULT_LANGUAGE_PAIR_CODE, LanguagePairCode, getLanguagePair } from '.
 export class SettingsService {
   // flipped mode
   private _flippedModeEnabled: boolean = true;
-  private flippedModeChanged: Subject<boolean> = new Subject<boolean>();
+  private flippedModeChanged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
   flippedModeChanged$ = this.flippedModeChanged.asObservable();
 
   set flippedModeEnabled(value: boolean) {
@@ -35,7 +35,7 @@ export class SettingsService {
 
   // language pair
   private _languagePairCode: LanguagePairCode = DEFAULT_LANGUAGE_PAIR_CODE;
-  private languagePairChanged = new Subject<LanguagePairCode>();
+  private languagePairChanged = new BehaviorSubject<LanguagePairCode>(DEFAULT_LANGUAGE_PAIR_CODE);
   languagePairChanged$ = this.languagePairChanged.asObservable();
 
   set languagePairCode(value: LanguagePairCode) {
@@ -57,6 +57,9 @@ export class SettingsService {
     this._flippedModeEnabled = settings.flippedModeEnabled ?? this._flippedModeEnabled;
     this._autoPlayEnabled = settings.autoPlayEnabled ?? this._autoPlayEnabled;
     this._languagePairCode = getLanguagePair(settings.languagePairCode).code;
+    // Emit changes after loading from localStorage so subscribers get the loaded values
+    this.flippedModeChanged.next(this._flippedModeEnabled);
+    this.languagePairChanged.next(this._languagePairCode);
   }
 
   private saveSettingsToLocalStorage(): void {

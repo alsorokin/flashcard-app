@@ -1,4 +1,5 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { WordsService, WordCollection, CollectionChangeEvent } from '../words.service';
 import { SettingsService } from '../settings.service';
@@ -6,7 +7,7 @@ import { LANGUAGE_PAIRS, LanguagePairCode } from '../words';
 
 @Component({
   selector: 'app-settings',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.css'
 })
@@ -15,7 +16,7 @@ export class SettingsComponent {
   wordCollections: WordCollection[] = [];
   flippedModeEnabled: boolean = true;
   autoPlayEnabled: boolean = true;
-  languagePairCode: LanguagePairCode;
+  languagePairCode: LanguagePairCode = 'ru-hy';
   languagePairs = LANGUAGE_PAIRS;
 
   constructor(private wordsService: WordsService,
@@ -24,6 +25,13 @@ export class SettingsComponent {
     this.languagePairCode = settingsService.languagePairCode;
     this.flippedModeEnabled = settingsService.flippedModeEnabled;
     this.autoPlayEnabled = settingsService.autoPlayEnabled;
+
+    this.settingsService.languagePairChanged$.subscribe(code => {
+      this.languagePairCode = code;
+    });
+    this.settingsService.flippedModeChanged$.subscribe(enabled => {
+      this.flippedModeEnabled = enabled;
+    });
 
     this.wordsService.collectionsState$.subscribe(collections => {
       this.wordCollections = collections;
@@ -44,8 +52,6 @@ export class SettingsComponent {
   }
 
   changeLanguagePair(event: Event): void {
-    const target = event.target as HTMLSelectElement;
-    this.languagePairCode = target.value as LanguagePairCode;
     this.settingsService.languagePairCode = this.languagePairCode;
     this.wordsService.ensureInitialized().then(() => {
       this.wordCollections = this.wordsService.getWordCollections();

@@ -5,9 +5,9 @@
   <div class="settings" [class]="{'collapsed': isCollapsed}">
     <label htmlFor="language-pair">
       <span>Пара:</span>
-      <select id="language-pair" (change)="changeLanguagePair($event)" [value]="languagePairCode">
+      <select id="language-pair" [(ngModel)]="languagePairCode" (change)="changeLanguagePair($event)">
         @for (pair of languagePairs; track pair.code) {
-          <option [value]="pair.code">{{ pair.label }}</option>
+          <option [ngValue]="pair.code">{{ pair.label }}</option>
         }
       </select>
     </label>
