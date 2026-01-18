@@ -1,11 +1,11 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { WordsService, WordCollection, CollectionChangeEvent } from '../words.service';
 import { SettingsService } from '../settings.service';
 
 @Component({
   selector: 'app-settings',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.css'
 })

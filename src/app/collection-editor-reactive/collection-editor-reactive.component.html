@@ -10,21 +10,25 @@
       </thead>
       <tbody>
         <ng-container formArrayName="words">
-          <tr *ngFor="let word of paginatedWords; let i = index" [formGroupName]="word.index">
-            <td class="hide-on-small-screens">{{ i + 1 + currentPage * pageSize }}</td>
-            <td>
-              <span class="word-value">{{ word.group.value.value }}</span>
-              <br/>
-              <input class="word-translation" type="text" id="meaning-{{ word.index }}" formControlName="translation" />
-            </td>
-            <td>
-              <mat-select multiple formControlName="tags" placeholder="Выберите набор">
-                <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
-                  {{collection.name}}
-                </mat-option>
-              </mat-select>
-            </td>
-          </tr>
+          @for (word of paginatedWords; track word; let i = $index) {
+            <tr [formGroupName]="word.index">
+              <td class="hide-on-small-screens">{{ i + 1 + currentPage * pageSize }}</td>
+              <td>
+                <span class="word-value">{{ word.group.value.value }}</span>
+                <br/>
+                <input class="word-translation" type="text" id="meaning-{{ word.index }}" formControlName="translation" />
+              </td>
+              <td>
+                <mat-select multiple formControlName="tags" placeholder="Выберите набор">
+                  @for (collection of allCollections; track collection) {
+                    <mat-option [value]="collection.name">
+                      {{collection.name}}
+                    </mat-option>
+                  }
+                </mat-select>
+              </td>
+            </tr>
+          }
         </ng-container>
       </tbody>
     </table>
@@ -36,37 +40,39 @@
       <button (click)="goToLastPage()" [disabled]="currentPage >= totalPages - 1">&gt;&gt;</button>
     </div>
     <hr>
-    <div class="word-form">
-      <div class="row">
-        <div class="column">
-          <input type="text" formControlName="newWordValue" placeholder="Новое слово" inputmode="text" lang="hy" />
-          <br/>
-          <input type="text" formControlName="newWordTranslation" placeholder="Перевод" inputmode="text" lang="ru" />
+      <div class="word-form">
+        <div class="row">
+          <div class="column">
+            <input type="text" formControlName="newWordValue" placeholder="Новое слово" inputmode="text" lang="hy" />
+            <br/>
+            <input type="text" formControlName="newWordTranslation" placeholder="Перевод" inputmode="text" lang="ru" />
+          </div>
+          <div class="column">
+            <mat-select multiple formControlName="newWordTags" placeholder="Выберите набор">
+              @for (collection of allCollections; track collection) {
+                <mat-option [value]="collection.name">
+                  {{collection.name}}
+                </mat-option>
+              }
+            </mat-select>
+            <br/>
+            <button mat-raised-button (click)="addWord()">Добавить слово</button>
+          </div>
         </div>
-        <div class="column">
-          <mat-select multiple formControlName="newWordTags" placeholder="Выберите набор">
-            <mat-option *ngFor="let collection of allCollections" [value]="collection.name">
-              {{collection.name}}
-            </mat-option>
-          </mat-select>
-          <br/>
-          <button mat-raised-button (click)="addWord()">Добавить слово</button>
+        <hr>
+          <div class="row">
+            <div class="column">
+              <input type="text" formControlName="newCollectionName" placeholder="Новый набор" inputmode="text" lang="ru" />
+            </div>
+            <div class="column">
+              <button mat-raised-button (click)="addCollection()">Добавить набор</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+          <div class="footer">
+            <span>Всего слов: {{ totalWords }}</span>
+            <a href="#" class="back-link">Назад</a>
+          </div>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="column">
-          <input type="text" formControlName="newCollectionName" placeholder="Новый набор" inputmode="text" lang="ru" />
-        </div>
-        <div class="column">
-          <button mat-raised-button (click)="addCollection()">Добавить набор</button>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="footer">
-      <span>Всего слов: {{ totalWords }}</span>
-      <a href="#" class="back-link">Назад</a>
-    </div>
-  </div>
-</div>
