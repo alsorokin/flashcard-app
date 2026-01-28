@@ -1,32 +1,1178 @@
 [
-  {"value": "hello", "translation": "привет", "tags": ["Основы"]},
-  {"value": "goodbye", "translation": "до свидания", "tags": ["Основы"]},
-  {"value": "please", "translation": "пожалуйста", "tags": ["Основы"]},
-  {"value": "thank you", "translation": "спасибо", "tags": ["Основы"]},
-  {"value": "excuse me", "translation": "извините", "tags": ["Основы"]},
-  {"value": "yes", "translation": "да", "tags": ["Основы"]},
-  {"value": "no", "translation": "нет", "tags": ["Основы"]},
-  {"value": "family", "translation": "семья", "tags": ["Основы"]},
-  {"value": "water", "translation": "вода", "tags": ["Еда"]},
-  {"value": "bread", "translation": "хлеб", "tags": ["Еда"]},
-  {"value": "coffee", "translation": "кофе", "tags": ["Еда"]},
-  {"value": "tea", "translation": "чай", "tags": ["Еда"]},
-  {"value": "apple", "translation": "яблоко", "tags": ["Еда"]},
-  {"value": "milk", "translation": "молоко", "tags": ["Еда"]},
-  {"value": "airport", "translation": "аэропорт", "tags": ["Путешествия"]},
-  {"value": "ticket", "translation": "билет", "tags": ["Путешествия"]},
-  {"value": "station", "translation": "станция", "tags": ["Путешествия"]},
-  {"value": "city", "translation": "город", "tags": ["Путешествия"]},
-  {"value": "street", "translation": "улица", "tags": ["Путешествия"]},
-  {"value": "hotel", "translation": "отель", "tags": ["Путешествия"]},
-  {"value": "work", "translation": "работа", "tags": ["Работа"]},
-  {"value": "meeting", "translation": "встреча", "tags": ["Работа"]},
-  {"value": "office", "translation": "офис", "tags": ["Работа"]},
-  {"value": "colleague", "translation": "коллега", "tags": ["Работа"]},
-  {"value": "email", "translation": "электронное письмо", "tags": ["Работа"]},
-  {"value": "friend", "translation": "друг", "tags": ["Эмоции"]},
-  {"value": "happy", "translation": "счастливый", "tags": ["Эмоции"]},
-  {"value": "sad", "translation": "грустный", "tags": ["Эмоции"]},
-  {"value": "angry", "translation": "злой", "tags": ["Эмоции"]},
-  {"value": "love", "translation": "любовь", "tags": ["Эмоции"]}
+  {
+    "value": "hello",
+    "translation": "привет",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "goodbye",
+    "translation": "до свидания",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "please",
+    "translation": "пожалуйста",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "thank you",
+    "translation": "спасибо",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "excuse me",
+    "translation": "извините",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "yes",
+    "translation": "да",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "no",
+    "translation": "нет",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "family",
+    "translation": "семья",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "water",
+    "translation": "вода",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "bread",
+    "translation": "хлеб",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "coffee",
+    "translation": "кофе",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "tea",
+    "translation": "чай",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "apple",
+    "translation": "яблоко",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "milk",
+    "translation": "молоко",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "airport",
+    "translation": "аэропорт",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "ticket",
+    "translation": "билет",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "station",
+    "translation": "станция",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "city",
+    "translation": "город",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "street",
+    "translation": "улица",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "hotel",
+    "translation": "отель",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "work",
+    "translation": "работа",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "meeting",
+    "translation": "встреча",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "office",
+    "translation": "офис",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "colleague",
+    "translation": "коллега",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "email",
+    "translation": "электронное письмо",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "friend",
+    "translation": "друг",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "happy",
+    "translation": "счастливый",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "sad",
+    "translation": "грустный",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "angry",
+    "translation": "злой",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "love",
+    "translation": "любовь",
+    "tags": [
+      "Основы"
+    ]
+  },
+  {
+    "value": "blame",
+    "translation": "обвинять",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "guilty",
+    "translation": "виновный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "guilt",
+    "translation": "вина",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "double",
+    "translation": "удваивать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "assembled",
+    "translation": "собранный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "assembly",
+    "translation": "сборка",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "adoption",
+    "translation": "принятие",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "offensive",
+    "translation": "оскорбительный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "offensively",
+    "translation": "обидно",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "formidable",
+    "translation": "грозный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "wise",
+    "translation": "мудрый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "preparation",
+    "translation": "подготовка",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "assuage",
+    "translation": "успокаивать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "calm down",
+    "translation": "успокоиться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "opportunity",
+    "translation": "возможность",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "capability",
+    "translation": "способность",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "rather",
+    "translation": "скорее",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "obviously",
+    "translation": "очевидно",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "especially",
+    "translation": "особенно",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "preserve",
+    "translation": "сохранять",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "jute",
+    "translation": "джут",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "scraps",
+    "translation": "обрезки",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "honestly",
+    "translation": "честно",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "insist",
+    "translation": "настаивать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "squire",
+    "translation": "сквайр",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "purpose",
+    "translation": "цель",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "foe",
+    "translation": "враг",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "enemy",
+    "translation": "противник/враг",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "nevertheless",
+    "translation": "тем не менее",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "surround",
+    "translation": "окружать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "attention",
+    "translation": "внимание",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "struggling",
+    "translation": "борющийся",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "woolly",
+    "translation": "мохнатый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "bucket",
+    "translation": "ведро",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "crested",
+    "translation": "хохлатый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "wisdom",
+    "translation": "мудрость",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "entry",
+    "translation": "вход",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "shy",
+    "translation": "застенчивый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "curly",
+    "translation": "кудрявый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "stingy",
+    "translation": "жадный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "mean",
+    "translation": "вредный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "generous",
+    "translation": "щедрый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "stray",
+    "translation": "бродячий",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "slender",
+    "translation": "стройный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "grimace",
+    "translation": "кривляться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "to fool around",
+    "translation": "баловаться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "successful",
+    "translation": "успешный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "success",
+    "translation": "успех",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "poor",
+    "translation": "бедный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "pitiful",
+    "translation": "жалкий",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "unhappy",
+    "translation": "несчастный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "noisy",
+    "translation": "шумный",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "bald",
+    "translation": "лысый",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "doe",
+    "translation": "лань",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "moose",
+    "translation": "лось",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "beak",
+    "translation": "клюв",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "stag",
+    "translation": "олень",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "ram",
+    "translation": "баран",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "concur",
+    "translation": "соглашаться",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "temple",
+    "translation": "храм",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "release",
+    "translation": "выпускать",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "remaining",
+    "translation": "оставшийся",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "divorced",
+    "translation": "разведены",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "divorce",
+    "translation": "развод",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "assaulter",
+    "translation": "нападавший",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "earned",
+    "translation": "заработано",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "allow",
+    "translation": "позволять",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "squash",
+    "translation": "давить",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "direction",
+    "translation": "направление",
+    "tags": [
+      "Уроки 1-5"
+    ]
+  },
+  {
+    "value": "token",
+    "translation": "жетон",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "depends",
+    "translation": "зависит от",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "not really",
+    "translation": "не особо",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "suit them better",
+    "translation": "подходит им больше",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "behaves",
+    "translation": "ведет себя",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "behavior",
+    "translation": "поведение",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "nurse",
+    "translation": "мед.сестра",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "across",
+    "translation": "поперек/через/сквозь",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "above",
+    "translation": "сверху/над",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "jug",
+    "translation": "кувшин",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "leeks",
+    "translation": "лук-порей",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "prey",
+    "translation": "добыча",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "impression",
+    "translation": "впечатление",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "suggestion",
+    "translation": "предположение",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "introduce",
+    "translation": "представлять",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "pet",
+    "translation": "питомец/гладить",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "pet a pet",
+    "translation": "гладить питомца",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ironing",
+    "translation": "гладить одежду",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "laundry",
+    "translation": "стирка/бельё",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "put away",
+    "translation": "убирать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "take out",
+    "translation": "выбрасывать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "dust",
+    "translation": "пыль",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "load the dishwasher",
+    "translation": "загружать посудомоечную машину",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "messy",
+    "translation": "неряшливый",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "get rid of",
+    "translation": "избавиться",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "honeymoon",
+    "translation": "медовый месяц",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "spit",
+    "translation": "плевать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "terms",
+    "translation": "условия",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "shrink",
+    "translation": "психолог/психиатр",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "see a shrink",
+    "translation": "увидеть психотерапевта",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "put up",
+    "translation": "строить/собирать/устанавливать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "pull",
+    "translation": "тянуть",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "appropriate",
+    "translation": "уместный/подходящий",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "compare",
+    "translation": "сравнивать",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "hit on (someone)",
+    "translation": "заигрывать (с кем-либо)",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "apron",
+    "translation": "фартук",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "pants",
+    "translation": "штаны",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "underpants",
+    "translation": "подштанники/трико",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "underwear",
+    "translation": "нижнее белье",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "ring",
+    "translation": "кольцо",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "earring",
+    "translation": "серьга",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "blouse",
+    "translation": "блузка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "hat",
+    "translation": "шапка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "pyjamas",
+    "translation": "пижама",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "scarf",
+    "translation": "шарф",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "socks",
+    "translation": "носки",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "gloves",
+    "translation": "перчатки",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "flip-flop",
+    "translation": "шлёпки",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "cap",
+    "translation": "кепка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "shorts",
+    "translation": "шорты",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "tie",
+    "translation": "галстук",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "bow tie",
+    "translation": "галстук-бабочка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "dress",
+    "translation": "платье",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "shirt",
+    "translation": "рубашка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "trainers/sneakers",
+    "translation": "кроссовки",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "belt",
+    "translation": "пояс",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "tracksuit/sports suit",
+    "translation": "спортивный костюм",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "leggings",
+    "translation": "леггинсы",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "buckle",
+    "translation": "пряжка",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "tights",
+    "translation": "колготки",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "leotard",
+    "translation": "купальник",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "sweater",
+    "translation": "свитер",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "have a good time",
+    "translation": "хорошо провести время",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "have the time of one's life",
+    "translation": "отлично провести время",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "have an early night",
+    "translation": "лечь спать пораньше",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "get along with",
+    "translation": "ладить",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "get into a mess",
+    "translation": "попасть в переделку",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "get on somebody's nerves",
+    "translation": "действовать кому-то на нервы",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  },
+  {
+    "value": "give somebody one's word",
+    "translation": "дать слово",
+    "tags": [
+      "Уроки 6-10"
+    ]
+  }
 ]
