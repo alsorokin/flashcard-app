@@ -78,10 +78,21 @@ p.current-word {
     white-space: nowrap;
     text-wrap: wrap;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
-.word-button:hover {
-    background-color: #f1d6f7;
+@media (hover: hover) and (pointer: fine) {
+    .word-button:hover {
+        background-color: #f1d6f7;
+    }
+}
+
+@media (hover: none) {
+    /* iOS Safari can keep :hover “stuck” after tap; neutralize it. */
+    .word-button:hover {
+        background-color: #fcfcfc;
+    }
 }
 
 .word-button.correct {

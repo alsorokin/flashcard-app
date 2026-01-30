@@ -70,7 +70,15 @@ export class FlashcardComponent implements AfterViewInit {
     this.focusFrontContainer();
   }
 
+  private blurActiveElement(): void {
+    const activeElement = document.activeElement;
+    if (activeElement && activeElement instanceof HTMLElement) {
+      activeElement.blur();
+    }
+  }
+
   private goNext(): void {
+    this.blurActiveElement();
     this.isFlipped = !this.isFlipped;
     if (this.isFlipped) {
       setTimeout(() => {
@@ -193,6 +201,7 @@ export class FlashcardComponent implements AfterViewInit {
   }
 
   checkAnswer(selectedOption: WordOption): void {
+    this.blurActiveElement();
     const currentWord = this.getCurrentWord();
     if (selectedOption.word.value === this.getCurrentWord().value) {
       selectedOption.isCorrect = true;
