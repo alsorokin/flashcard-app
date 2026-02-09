@@ -49,9 +49,9 @@ div.settings input {
     height: 15px;
     padding: 0;
     margin: 0;
-    vertical-align: bottom;
+    vertical-align: top;
     position: relative;
-    top: -1px;
+    top: 3px;
 }
 
 div.settings label {

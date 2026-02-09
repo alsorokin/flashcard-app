@@ -7,29 +7,30 @@
       <span>Пара:</span>
       <select id="language-pair" [(ngModel)]="languagePairCode" (change)="changeLanguagePair($event)">
         @for (pair of languagePairs; track pair.code) {
-          <option [ngValue]="pair.code">{{ pair.label }}</option>
+        <option [ngValue]="pair.code">{{ pair.label }}</option>
         }
       </select>
     </label>
     <hr>
     <label htmlFor="flipped-mode">
-      <input type="checkbox" id="flipped-mode" (change)="toggleFlippedMode($event)" [checked]="flippedModeEnabled" /> Перевёртыши 🗘
+      <input type="checkbox" id="flipped-mode" (change)="toggleFlippedMode($event)" [checked]="flippedModeEnabled" />
+      Перевёртыши 🗘
     </label>
     <label htmlFor="auto-play">
       <input type="checkbox" id="auto-play" (change)="toggleAutoPlay($event)" [checked]="autoPlayEnabled" /> Звук 🔊
     </label>
     <hr>
-      <div class="collection-links">
-        <a href="#" (click)="toggleAll(true); $event.preventDefault()">Выбрать все</a>
-        <a href="#" (click)="toggleAll(false); $event.preventDefault()">Сбросить все</a>
-      </div>
-      @for (collection of wordCollections; track collection) {
-        <label [htmlFor]="collection.htmlId + '_checkbox'">
-          <input type="checkbox" [id]="collection.htmlId + '_checkbox'"
-            (change)="toggleCollectionSelected($event, collection)" [checked]="collection.selected" /> {{ collection.name }}
-          </label>
-        }
-        <hr>
-          <a href="#/edit">Редактор слов</a>
-        </div>
-      </div>
+    <div class="collection-links">
+      <a href="#" (click)="toggleAll(true); $event.preventDefault()">Выбрать все</a>
+      <a href="#" (click)="toggleAll(false); $event.preventDefault()">Сбросить все</a>
+    </div>
+    @for (collection of wordCollections; track collection) {
+    <label [htmlFor]="collection.htmlId + '_checkbox'">
+      <input type="checkbox" [id]="collection.htmlId + '_checkbox'"
+        (change)="toggleCollectionSelected($event, collection)" [checked]="collection.selected" /> {{ collection.name }}
+    </label>
+    }
+    <hr>
+    <a href="#/edit">Редактор слов</a>
+  </div>
+</div>

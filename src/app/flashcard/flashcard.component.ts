@@ -32,7 +32,7 @@ export class FlashcardComponent implements AfterViewInit {
   isFlipped:boolean = false;
   errors: Map<string, number> = new Map();
   frontGameMode: GameMode = GameMode.Flashcard;
-  backGameMode: GameMode = GameMode.ReverseFlashcard;
+  backGameMode: GameMode = GameMode.Flashcard;
   currentPair: LanguagePair;
 
   @ViewChild('flashcardBackContainer') flashcardBackContainer!: ElementRef;
@@ -179,8 +179,8 @@ export class FlashcardComponent implements AfterViewInit {
 
   private resolvePromptAndAnswer(mode: GameMode): { prompt: 'value' | 'translation'; answer: 'value' | 'translation' } {
     const prompt = this.currentPair.promptSide === 'translation'
-      ? (mode === GameMode.Flashcard ? 'translation' : 'value')
-      : (mode === GameMode.Flashcard ? 'value' : 'translation');
+      ? (mode === GameMode.Flashcard ? 'value' : 'translation')
+      : (mode === GameMode.Flashcard ? 'translation' : 'value');
     const answer = prompt === 'value' ? 'translation' : 'value';
     return { prompt, answer };
   }
