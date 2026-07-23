@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "jest",
     "test:watch": "jest --watch",
-    "deploy": "ng build --configuration production --base-href=/flashcard-app/"
+    "deploy": "ng build --configuration production --base-href=/flashcard-app/",
+    "lesson:import": "node scripts/import-lesson-batch.mjs"
   },
   "private": true,
   "dependencies": {
