@@ -27,4 +27,19 @@ describe('SettingsService', () => {
     const rehydrated = new SettingsService();
     expect(rehydrated.languagePairCode).toBe(nextPair.code);
   });
+
+  it('should persist correct answers count across sessions', () => {
+    service.incrementCorrectAnswersCount();
+    service.incrementCorrectAnswersCount();
+
+    const rehydrated = new SettingsService();
+    expect(rehydrated.correctAnswersCount).toBe(2);
+  });
+
+  it('should persist counter visibility setting', () => {
+    service.showCorrectAnswersCounter = true;
+
+    const rehydrated = new SettingsService();
+    expect(rehydrated.showCorrectAnswersCounter).toBe(true);
+  });
 });

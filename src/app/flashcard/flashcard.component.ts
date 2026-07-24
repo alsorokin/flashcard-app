@@ -204,7 +204,11 @@ export class FlashcardComponent implements AfterViewInit {
     this.blurActiveElement();
     const currentWord = this.getCurrentWord();
     if (selectedOption.word.value === this.getCurrentWord().value) {
+      const wasAlreadyMarkedCorrect = selectedOption.isCorrect === true;
       selectedOption.isCorrect = true;
+      if (!wasAlreadyMarkedCorrect) {
+        this.settingsService.incrementCorrectAnswersCount();
+      }
       if (this.goNextTimeout == null) {
         this.goNextTimeout = setTimeout(() => {
           this.goNext();

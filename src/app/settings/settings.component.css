@@ -19,6 +19,7 @@ div.settings-wrapper.collapsed {
 div.button-wrapper {
     display: inline-block;
     background: transparent;
+    position: relative;
 }
 
 button.settings-button {
@@ -32,6 +33,23 @@ button.settings-button {
     font-weight: bold;
     font-size: 24px;
     background: transparent;
+}
+
+span.correct-counter {
+    position: absolute;
+    top: 8.5px;
+    right: 22px;
+    min-width: auto;
+    height: auto;
+    line-height: 1;
+    padding: 0;
+    border-radius: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #2d8a34;
+    background-color: transparent;
+    font-weight: 600;
+    pointer-events: none;
 }
 
 div.settings {
@@ -53,7 +71,7 @@ div.settings input[type="checkbox"] {
     margin: 0;
     vertical-align: top;
     position: relative;
-    top: 3px;
+    top: 2px;
 }
 
 div.settings label.settings-toggle {

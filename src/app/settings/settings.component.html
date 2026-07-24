@@ -1,6 +1,9 @@
 <div class="settings-wrapper" [class]="{'collapsed': isCollapsed}">
   <div class="button-wrapper">
     <button class="settings-button" type="button" (click)="toggleCollapse()">⚙</button>
+    @if (showCorrectAnswersCounter) {
+      <span class="correct-counter" [attr.aria-label]="'Правильных ответов: ' + correctAnswersCount">{{ correctAnswersCount }}</span>
+    }
   </div>
   <div class="settings" [class]="{'collapsed': isCollapsed}">
     <label class="language-pair" htmlFor="language-pair">
@@ -14,10 +17,14 @@
     <hr>
     <label class="settings-toggle" htmlFor="flipped-mode">
       <input type="checkbox" id="flipped-mode" (change)="toggleFlippedMode($event)" [checked]="flippedModeEnabled" />
-      Перевёртыши 🗘
+      Перевёртыши 🙃
     </label>
     <label class="settings-toggle" htmlFor="auto-play">
       <input type="checkbox" id="auto-play" (change)="toggleAutoPlay($event)" [checked]="autoPlayEnabled" /> Звук 🔊
+    </label>
+    <label class="settings-toggle" htmlFor="show-correct-counter">
+      <input type="checkbox" id="show-correct-counter" (change)="toggleShowCorrectAnswersCounter($event)" [checked]="showCorrectAnswersCounter" />
+      Счётчик ✔️
     </label>
     <hr>
     <div class="collection-links">

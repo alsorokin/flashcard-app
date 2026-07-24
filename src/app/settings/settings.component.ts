@@ -21,6 +21,8 @@ export class SettingsComponent {
   totalWordsCount: number = 0;
   flippedModeEnabled: boolean = true;
   autoPlayEnabled: boolean = true;
+  correctAnswersCount: number = 0;
+  showCorrectAnswersCounter: boolean = false;
   languagePairCode: LanguagePairCode = 'ru-hy';
   languagePairs = LANGUAGE_PAIRS;
 
@@ -30,12 +32,20 @@ export class SettingsComponent {
     this.languagePairCode = settingsService.languagePairCode;
     this.flippedModeEnabled = settingsService.flippedModeEnabled;
     this.autoPlayEnabled = settingsService.autoPlayEnabled;
+    this.correctAnswersCount = settingsService.correctAnswersCount;
+    this.showCorrectAnswersCounter = settingsService.showCorrectAnswersCounter;
 
     this.settingsService.languagePairChanged$.subscribe(code => {
       this.languagePairCode = code;
     });
     this.settingsService.flippedModeChanged$.subscribe(enabled => {
       this.flippedModeEnabled = enabled;
+    });
+    this.settingsService.correctAnswersCountChanged$.subscribe(count => {
+      this.correctAnswersCount = count;
+    });
+    this.settingsService.showCorrectAnswersCounterChanged$.subscribe(show => {
+      this.showCorrectAnswersCounter = show;
     });
 
     this.wordsService.collectionsState$.subscribe(collections => {
@@ -93,6 +103,12 @@ export class SettingsComponent {
     const target = event.target as HTMLInputElement;
     this.settingsService.autoPlayEnabled = target.checked;
     this.autoPlayEnabled = target.checked;
+  }
+
+  toggleShowCorrectAnswersCounter(event: Event): void {
+    const target = event.target as HTMLInputElement;
+    this.settingsService.showCorrectAnswersCounter = target.checked;
+    this.showCorrectAnswersCounter = target.checked;
   }
 
   toggleAll(on: boolean): void {
