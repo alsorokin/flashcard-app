@@ -1,0 +1,27 @@
+<div class="search-page">
+    <div class="search-container">
+        <label class="lang-pair-label">{{ langPairLabel }}</label>
+        <input
+            type="text"
+            class="search-input"
+            placeholder="Search words…"
+            [(ngModel)]="query"
+            (ngModelChange)="onQueryChange()"
+            autofocus
+        />
+        @if (isLoading) {
+            <div class="status-message">Loading…</div>
+        } @else if (results.length > 0) {
+            <ul class="results-dropdown">
+                @for (result of results; track result.word.value) {
+                    <li class="result-item">
+                        <span class="result-value">{{ result.word.value }}</span>
+                        <span class="result-translation">{{ result.word.translation }}</span>
+                    </li>
+                }
+            </ul>
+        } @else if (query.trim()) {
+            <div class="status-message">No results found</div>
+        }
+    </div>
+</div>
