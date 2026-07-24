@@ -4,13 +4,13 @@
         <input
             type="text"
             class="search-input"
-            placeholder="Search words…"
+            placeholder="Искать слова…"
             [(ngModel)]="query"
             (ngModelChange)="onQueryChange()"
             autofocus
         />
         @if (isLoading) {
-            <div class="status-message">Loading…</div>
+            <div class="status-message">Загрузка…</div>
         } @else if (results.length > 0) {
             <ul class="results-dropdown">
                 @for (result of results; track result.word.value) {
@@ -21,7 +21,7 @@
                 }
             </ul>
         } @else if (query.trim()) {
-            <div class="status-message">No results found</div>
+            <div class="status-message">Результаты не найдены</div>
         }
     </div>
 </div>
