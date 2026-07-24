@@ -1,5 +1,7 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 import { WordsService, WordCollection, CollectionChangeEvent } from '../words.service';
 import { SettingsService } from '../settings.service';
@@ -7,13 +9,16 @@ import { LANGUAGE_PAIRS, LanguagePairCode } from '../words';
 
 @Component({
   selector: 'app-settings',
-  imports: [FormsModule],
+  imports: [FormsModule, MatFormFieldModule, MatSelectModule],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.css'
 })
 export class SettingsComponent {
   isCollapsed: boolean = true;
   wordCollections: WordCollection[] = [];
+  selectedCollectionNames: string[] = [];
+  selectedWordsCount: number = 0;
+  totalWordsCount: number = 0;
   flippedModeEnabled: boolean = true;
   autoPlayEnabled: boolean = true;
   languagePairCode: LanguagePairCode = 'ru-hy';
@@ -35,15 +40,22 @@ export class SettingsComponent {
 
     this.wordsService.collectionsState$.subscribe(collections => {
       this.wordCollections = collections;
+      this.syncSelectedCollectionNames();
+    });
+    this.wordsService.selectedWords$.subscribe(selectedWords => {
+      this.selectedWordsCount = selectedWords.length;
+      this.totalWordsCount = this.wordsService.getAllWords().length;
     });
     this.wordsService.collectionsChanged$.subscribe((event: CollectionChangeEvent) => {
       const collection = this.wordCollections.find(c => c.name === event.name);
       if (collection) {
         collection.selected = event.selected;
+        this.syncSelectedCollectionNames();
       }
     });
     this.wordsService.ensureInitialized().then(() => {
       this.wordCollections = this.wordsService.getWordCollections();
+      this.syncSelectedCollectionNames();
     });
   }
 
@@ -55,11 +67,20 @@ export class SettingsComponent {
     this.settingsService.languagePairCode = this.languagePairCode;
     this.wordsService.ensureInitialized().then(() => {
       this.wordCollections = this.wordsService.getWordCollections();
+      this.syncSelectedCollectionNames();
     });
   }
 
-  toggleCollectionSelected(event: Event, collection: WordCollection): void {
-    this.wordsService.setCollectionSelected(collection.name, (event.target as HTMLInputElement).checked);
+  updateSelectedCollections(selectedNames: string[]): void {
+    const selectedNameSet = new Set(selectedNames);
+    this.wordCollections.forEach(collection => {
+      const selected = selectedNameSet.has(collection.name);
+      if (collection.selected !== selected) {
+        collection.selected = selected;
+        this.wordsService.setCollectionSelected(collection.name, selected);
+      }
+    });
+    this.syncSelectedCollectionNames();
   }
 
   toggleFlippedMode(event: Event): void {
@@ -76,7 +97,14 @@ export class SettingsComponent {
 
   toggleAll(on: boolean): void {
     this.wordCollections.forEach(c => c.selected = on);
+    this.syncSelectedCollectionNames();
     this.wordsService.setAllCollectionsSelected(on);
+  }
+
+  private syncSelectedCollectionNames(): void {
+    this.selectedCollectionNames = this.wordCollections
+      .filter(collection => collection.selected)
+      .map(collection => collection.name);
   }
 
   @HostListener('document:click', ['$event'])
