@@ -3,7 +3,6 @@ import { provideHttpClient } from '@angular/common/http';
 import { provideHttpClientTesting, HttpTestingController } from '@angular/common/http/testing';
 import { WordsService } from './words.service';
 import { SettingsService } from './settings.service';
-import { DEFAULT_LANGUAGE_PAIR_CODE, LANGUAGE_PAIRS, LanguagePairCode } from './words';
 
 describe('WordsService', () => {
   let service: WordsService;
@@ -87,5 +86,44 @@ describe('WordsService', () => {
     // en should not have it
     const enCustomData = localStorage.getItem(enCustomKey);
     expect(enCustomData).toBeFalsy();
+  });
+
+  it('should order lesson tags numerically and place them before non-lesson tags', () => {
+    service.updateWord({ value: 'l-56', translation: 'x', tags: ['Уроки 56-60'] });
+    service.updateWord({ value: 'l-6', translation: 'x', tags: ['Уроки 6-10'] });
+    service.updateWord({ value: 'l-11', translation: 'x', tags: ['Уроки 11-15'] });
+    service.updateWord({ value: 'l-1', translation: 'x', tags: ['Уроки 1-5'] });
+    service.updateWord({ value: 'topic', translation: 'x', tags: ['Числительные и время'] });
+
+    const names = service.getWordCollections().map(c => c.name);
+    const lessonNames = names.filter(n => n.startsWith('Уроки '));
+
+    expect(lessonNames).toEqual([
+      'Уроки 1-5',
+      'Уроки 6-10',
+      'Уроки 11-15',
+      'Уроки 56-60',
+    ]);
+
+    const lastLessonIndex = Math.max(...lessonNames.map(name => names.indexOf(name)));
+    const nonLessonNames = names.filter(n => !n.startsWith('Уроки '));
+    expect(nonLessonNames.every(name => names.indexOf(name) > lastLessonIndex)).toBe(true);
+  });
+
+  it('should parse and sort numeric range tags with arbitrary text prefixes', () => {
+    service.updateWord({ value: 'm-56', translation: 'x', tags: ['Модуль 56-60'] });
+    service.updateWord({ value: 't-6', translation: 'x', tags: ['Тема 6-10'] });
+    service.updateWord({ value: 'b-11', translation: 'x', tags: ['Блок уроков 11-15'] });
+    service.updateWord({ value: 't-1', translation: 'x', tags: ['Тема 1-5'] });
+
+    const names = service.getWordCollections().map(c => c.name);
+    const rangeNames = names.filter(n => /(\d+)\s*-\s*(\d+)$/.test(n));
+
+    expect(rangeNames).toEqual([
+      'Тема 1-5',
+      'Тема 6-10',
+      'Блок уроков 11-15',
+      'Модуль 56-60',
+    ]);
   });
 });

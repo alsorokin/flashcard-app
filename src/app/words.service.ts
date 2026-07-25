@@ -22,6 +22,8 @@ export interface WordCollection {
   providedIn: 'root'
 })
 export class WordsService {
+  private static readonly LESSON_TAG_REGEX = /^[^\d].*?\s+(\d+)\s*-\s*(\d+)$/u;
+
   private wordCollections: WordCollection[] = [];
   private collectionsChanged = new Subject<CollectionChangeEvent>();
   collectionsChanged$: Observable<CollectionChangeEvent> = this.collectionsChanged.asObservable();
@@ -261,6 +263,7 @@ export class WordsService {
           });
         }
       });
+      this.wordCollections.sort((a, b) => this.compareCollectionNames(a.name, b.name));
       this.saveCollectionsToLocalStorage(pairCode);
       this.emitCollectionsState();
     }
@@ -284,6 +287,7 @@ export class WordsService {
         allTags.push(tag);
       }
     });
+    allTags.sort((a, b) => this.compareCollectionNames(a, b));
     const savedCollections = this.loadCollectionsFromLocalStorage(pair.code, isInitial);
     this.wordCollections = allTags.map(tag => {
       const savedCollection = savedCollections.find(collection => collection.name === tag);
@@ -351,6 +355,45 @@ export class WordsService {
   private setCustomWords(pairCode: LanguagePairCode, words: Word[]): void {
     this.customWordsByPair.set(pairCode, words);
     this.saveCustomWordsToLocalStorage(pairCode, words);
+  }
+
+  private compareCollectionNames(a: string, b: string): number {
+    const lessonA = this.parseLessonTag(a);
+    const lessonB = this.parseLessonTag(b);
+
+    if (lessonA && lessonB) {
+      if (lessonA.start !== lessonB.start) {
+        return lessonA.start - lessonB.start;
+      }
+      if (lessonA.end !== lessonB.end) {
+        return lessonA.end - lessonB.end;
+      }
+      return a.localeCompare(b, 'ru', { sensitivity: 'base' });
+    }
+
+    if (lessonA) {
+      return -1;
+    }
+    if (lessonB) {
+      return 1;
+    }
+
+    return a.localeCompare(b, 'ru', { numeric: true, sensitivity: 'base' });
+  }
+
+  private parseLessonTag(tag: string): { start: number; end: number } | null {
+    const match = tag.match(WordsService.LESSON_TAG_REGEX);
+    if (!match) {
+      return null;
+    }
+
+    const start = Number.parseInt(match[1], 10);
+    const end = Number.parseInt(match[2], 10);
+    if (!Number.isFinite(start) || !Number.isFinite(end)) {
+      return null;
+    }
+
+    return { start, end };
   }
 
   private loadCustomWordsFromLocalStorage(pairCode: LanguagePairCode): Word[] {
