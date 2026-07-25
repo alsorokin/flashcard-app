@@ -25,6 +25,7 @@ export class SearchComponent implements OnInit, OnDestroy {
 
     query = '';
     results: SearchResult[] = [];
+    selectedWord: Word | null = null;
     isLoading = false;
     langPairLabel = '';
 
@@ -46,10 +47,39 @@ export class SearchComponent implements OnInit, OnDestroy {
     }
 
     onQueryChange(): void {
+        if (this.selectedWord && this.query.trim() !== this.selectedWord.value) {
+            this.selectedWord = null;
+        }
         this.updateResults();
     }
 
+    selectWord(word: Word): void {
+        this.selectedWord = word;
+        this.query = word.value;
+        this.updateResults();
+        queueMicrotask(() => this.searchInput?.nativeElement.focus());
+    }
+
+    playSelectedWordSound(): void {
+        if (!this.selectedWord?.audioFileName) {
+            return;
+        }
+
+        const audio = new Audio(`audio/${this.selectedWord.audioFileName}`);
+        audio.play();
+    }
+
     onInputKeydown(event: KeyboardEvent): void {
+        if (event.key === 'Enter') {
+            if (this.results.length === 0) {
+                return;
+            }
+
+            event.preventDefault();
+            this.selectWord(this.results[0].word);
+            return;
+        }
+
         const isDownArrow = event.key === 'ArrowDown';
         const isTab = event.key === 'Tab' && !event.shiftKey;
 
@@ -70,6 +100,12 @@ export class SearchComponent implements OnInit, OnDestroy {
     }
 
     onResultItemKeydown(event: KeyboardEvent, index: number): void {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            this.selectWord(this.results[index].word);
+            return;
+        }
+
         if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') {
             return;
         }

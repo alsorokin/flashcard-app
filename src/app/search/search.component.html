@@ -11,14 +11,50 @@
             (keydown)="onInputKeydown($event)"
             autofocus
         />
+        @if (selectedWord) {
+            <section class="selected-word-card" aria-live="polite">
+                <div class="selected-word-header">
+                    <div class="selected-word-text">
+                        <div class="selected-word-value">{{ selectedWord.value }}</div>
+                        <div class="selected-word-translation">{{ selectedWord.translation }}</div>
+                    </div>
+                    @if (selectedWord.audioFileName) {
+                        <button
+                            class="audio-button"
+                            type="button"
+                            (click)="playSelectedWordSound()"
+                            [attr.aria-label]="'Воспроизвести звук для ' + selectedWord.value"
+                        >
+                            🔊
+                        </button>
+                    }
+                </div>
+                @if (selectedWord.tags.length > 0) {
+                    <div class="selected-word-tags">
+                        @for (tag of selectedWord.tags; track tag) {
+                            <span class="selected-word-tag">{{ tag }}</span>
+                        }
+                    </div>
+                }
+            </section>
+        }
         @if (isLoading) {
             <div class="status-message">Загрузка…</div>
         } @else if (results.length > 0) {
             <ul class="results-dropdown">
                 @for (result of results; track result.word.value; let i = $index) {
-                    <li class="result-item" #resultItem tabindex="0" (keydown)="onResultItemKeydown($event, i)">
+                    <li
+                        class="result-item"
+                        #resultItem
+                        tabindex="0"
+                        (click)="selectWord(result.word)"
+                        (keydown)="onResultItemKeydown($event, i)"
+                    >
                         <span class="result-value">{{ result.word.value }}</span>
                         <span class="result-translation">{{ result.word.translation }}</span>
+                        @if (result.word.audioFileName) {
+                            <span class="result-audio-indicator" aria-hidden="true">🔊</span>
+                        }
                     </li>
                 }
             </ul>
