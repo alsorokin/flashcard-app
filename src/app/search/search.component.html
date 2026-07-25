@@ -2,19 +2,21 @@
     <div class="search-container">
         <label class="lang-pair-label">{{ langPairLabel }}</label>
         <input
+            #searchInput
             type="text"
             class="search-input"
             placeholder="Искать слова…"
             [(ngModel)]="query"
             (ngModelChange)="onQueryChange()"
+            (keydown)="onInputKeydown($event)"
             autofocus
         />
         @if (isLoading) {
             <div class="status-message">Загрузка…</div>
         } @else if (results.length > 0) {
             <ul class="results-dropdown">
-                @for (result of results; track result.word.value) {
-                    <li class="result-item">
+                @for (result of results; track result.word.value; let i = $index) {
+                    <li class="result-item" #resultItem tabindex="0" (keydown)="onResultItemKeydown($event, i)">
                         <span class="result-value">{{ result.word.value }}</span>
                         <span class="result-translation">{{ result.word.translation }}</span>
                     </li>

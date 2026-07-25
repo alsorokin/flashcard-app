@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -19,6 +19,9 @@ interface SearchResult {
 export class SearchComponent implements OnInit, OnDestroy {
     private destroy$ = new Subject<void>();
     private allWords: Word[] = [];
+
+    @ViewChild('searchInput') private searchInput!: ElementRef<HTMLInputElement>;
+    @ViewChildren('resultItem') private resultItems!: QueryList<ElementRef<HTMLLIElement>>;
 
     query = '';
     results: SearchResult[] = [];
@@ -44,6 +47,47 @@ export class SearchComponent implements OnInit, OnDestroy {
 
     onQueryChange(): void {
         this.updateResults();
+    }
+
+    onInputKeydown(event: KeyboardEvent): void {
+        const isDownArrow = event.key === 'ArrowDown';
+        const isTab = event.key === 'Tab' && !event.shiftKey;
+
+        if (!isDownArrow && !isTab) {
+            return;
+        }
+
+        if (this.results.length === 0) {
+            return;
+        }
+
+        event.preventDefault();
+        this.focusFirstResultItem();
+    }
+
+    private focusFirstResultItem(): void {
+        this.resultItems.first?.nativeElement.focus();
+    }
+
+    onResultItemKeydown(event: KeyboardEvent, index: number): void {
+        if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') {
+            return;
+        }
+
+        event.preventDefault();
+
+        if (event.key === 'ArrowDown') {
+            const nextItem = this.resultItems.get(index + 1)?.nativeElement;
+            nextItem?.focus();
+            return;
+        }
+
+        if (index === 0) {
+            this.searchInput.nativeElement.focus();
+            return;
+        }
+
+        this.resultItems.get(index - 1)?.nativeElement.focus();
     }
 
     private updateResults(): void {
