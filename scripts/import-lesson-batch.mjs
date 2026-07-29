@@ -12,6 +12,7 @@ function parseArgs(argv) {
   const args = {
     input: null,
     dryRun: false,
+    lessonSize: 5,
   };
 
   for (let i = 0; i < argv.length; i += 1) {
@@ -28,6 +29,22 @@ function parseArgs(argv) {
         throw new Error('Expected a file path after --input/-i');
       }
       args.input = value;
+      i += 1;
+      continue;
+    }
+
+    if (token === '--lesson-size' || token === '--size' || token === '-s') {
+      const value = argv[i + 1];
+      if (!value) {
+        throw new Error('Expected a positive integer after --lesson-size/--size/-s');
+      }
+
+      const parsed = Number.parseInt(value, 10);
+      if (!Number.isFinite(parsed) || parsed < 1) {
+        throw new Error(`Invalid lesson size: "${value}". Expected a positive integer.`);
+      }
+
+      args.lessonSize = parsed;
       i += 1;
       continue;
     }
@@ -116,27 +133,46 @@ function readCurrentLessonNumber() {
   return number;
 }
 
+function getLessonTag(lessonNumber, lessonSize) {
+  const lessonStart = lessonNumber - ((lessonNumber - 1) % lessonSize);
+  const lessonEnd = lessonStart + lessonSize - 1;
+  return `Уроки ${lessonStart}-${lessonEnd}`;
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const batchText = readBatchText(args.input);
   const parsedBatch = parseBatch(batchText);
 
   const words = JSON.parse(fs.readFileSync(WORDS_PATH, 'utf8'));
-  const existingValues = new Set(
-    words.map((entry) => normalizeValue(String(entry.value ?? ''))),
+  const wordsByValue = new Map(
+    words.map((entry) => [normalizeValue(String(entry.value ?? '')), entry]),
   );
 
   const lessonStart = readCurrentLessonNumber();
-  const lessonEnd = lessonStart + 4;
-  const nextLesson = lessonEnd + 1;
-  const lessonTag = `Уроки ${lessonStart}-${lessonEnd}`;
+  const nextLesson = lessonStart + 1;
+  const lessonTag = getLessonTag(lessonStart, args.lessonSize);
 
   const toInsert = [];
-  const skipped = [];
+  const taggedExisting = [];
 
   for (const item of parsedBatch) {
-    if (existingValues.has(item.value)) {
-      skipped.push(item.value);
+    const existingWord = wordsByValue.get(item.value);
+    if (existingWord) {
+      existingWord.tags = existingWord.tags.filter((tag) => {
+        const match = /^Уроки (\d+)-(\d+)$/.exec(tag);
+        if (!match || tag === lessonTag) {
+          return true;
+        }
+
+        const tagStart = Number.parseInt(match[1], 10);
+        const tagEnd = Number.parseInt(match[2], 10);
+        return lessonStart < tagStart || lessonStart > tagEnd;
+      });
+      if (!existingWord.tags.includes(lessonTag)) {
+        existingWord.tags.push(lessonTag);
+        taggedExisting.push(item.value);
+      }
       continue;
     }
 
@@ -156,9 +192,9 @@ function main() {
   console.log(`Tag: ${lessonTag}`);
   console.log(`Parsed: ${parsedBatch.length}`);
   console.log(`Added: ${toInsert.length}`);
-  console.log(`Skipped existing: ${skipped.length}`);
-  if (skipped.length > 0) {
-    console.log(`Skipped words: ${skipped.join(', ')}`);
+  console.log(`Tagged existing: ${taggedExisting.length}`);
+  if (taggedExisting.length > 0) {
+    console.log(`Tagged existing words: ${taggedExisting.join(', ')}`);
   }
   console.log(`Next lesson number: ${nextLesson}`);
 }
