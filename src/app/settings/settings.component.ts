@@ -73,7 +73,7 @@ export class SettingsComponent {
     this.isCollapsed = !this.isCollapsed;
   }
 
-  changeLanguagePair(event: Event): void {
+  changeLanguagePair(): void {
     this.settingsService.languagePairCode = this.languagePairCode;
     this.wordsService.ensureInitialized().then(() => {
       this.wordCollections = this.wordsService.getWordCollections();

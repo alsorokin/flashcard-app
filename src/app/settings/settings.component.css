@@ -17,13 +17,14 @@ div.settings-wrapper.collapsed {
 }
 
 div.button-wrapper {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
     background: transparent;
-    position: relative;
 }
 
 button.settings-button {
-    float: right;
     color: black;
     border: none;
     border-radius: 0;
@@ -36,9 +37,6 @@ button.settings-button {
 }
 
 span.correct-counter {
-    position: absolute;
-    top: 8.5px;
-    right: 22px;
     min-width: auto;
     height: auto;
     line-height: 1;
@@ -62,6 +60,11 @@ div.settings {
 
 div.settings.collapsed {
     display: none;
+}
+
+div.settings hr {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 div.settings input[type="checkbox"] {
@@ -95,12 +98,13 @@ div.collection-actions {
     gap: 10px;
 }
 
-label.language-pair {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+div.settings a,
+div.settings a:visited {
+    color: #0645ad;
+    font-size: 14px;
 }
 
+.language-pair-field,
 .collections-field {
     width: 260px;
 }

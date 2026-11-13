@@ -1,19 +1,19 @@
 <div class="settings-wrapper" [class]="{'collapsed': isCollapsed}">
   <div class="button-wrapper">
-    <button class="settings-button" type="button" (click)="toggleCollapse()">⚙</button>
+    <button class="settings-button" type="button" aria-label="Настройки" (click)="toggleCollapse()">⚙</button>
     @if (showCorrectAnswersCounter) {
       <span class="correct-counter" [attr.aria-label]="'Правильных ответов: ' + correctAnswersCount">{{ correctAnswersCount }}</span>
     }
   </div>
   <div class="settings" [class]="{'collapsed': isCollapsed}">
-    <label class="language-pair" htmlFor="language-pair">
-      <span>Пара:</span>
-      <select id="language-pair" [(ngModel)]="languagePairCode" (change)="changeLanguagePair($event)">
+    <mat-form-field class="language-pair-field">
+      <mat-label>Пара</mat-label>
+      <mat-select id="language-pair" [(ngModel)]="languagePairCode" (selectionChange)="changeLanguagePair()">
         @for (pair of languagePairs; track pair.code) {
-        <option [ngValue]="pair.code">{{ pair.label }}</option>
+          <mat-option [value]="pair.code">{{ pair.label }}</mat-option>
         }
-      </select>
-    </label>
+      </mat-select>
+    </mat-form-field>
     <hr>
     <label class="settings-toggle" htmlFor="flipped-mode">
       <input type="checkbox" id="flipped-mode" (change)="toggleFlippedMode($event)" [checked]="flippedModeEnabled" />
